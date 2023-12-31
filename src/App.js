@@ -1,36 +1,25 @@
-import React, { Fragment } from "react";
-import Navbar from './components/Navbar'
-// import Banner from "./components/Banner";
-import FAQ from "./components/FAQ";
-import HomeBanner from "./components/HomeBanner";
-import Timeline from "./components/Timeline";
-import Sponsors from "./components/Sponsors";
-import Glimpses from "./components/Glimpses";
-import Footer from "./components/Footer";
+import logo from './logo.svg';
+import './App.css';
 
-const App = () => {
+function App() {
   return (
     <div className="App">
-      <Fragment>
-            <Navbar/>
-            <div
-                style={{
-                    // overflowY: "scroll",
-                    // height: "800px",
-                }}
-            ></div>
-        </Fragment>
-
-        {/* <Banner/> */}
-        <HomeBanner/>        
-        <Timeline/>
-        <Sponsors/>
-        <Glimpses/>
-        <FAQ/>
-        <Footer/>        
-        </div>
-    
-  )
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
-export default App
+export default App;
