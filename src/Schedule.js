@@ -1,5 +1,11 @@
 import React from 'react'
 import "../src/css/schedule.css"
+import speakers1 from "../src/Assets/speakers/1.jpg"
+import speakers2 from "../src/Assets/speakers/2.jpg"
+import speakers3 from "../src/Assets/speakers/3.jpg"
+import speakers4 from "../src/Assets/speakers/4.jpg"
+import speakers5 from "../src/Assets/speakers/5.jpg"
+import speakers6 from "../src/Assets/speakers/6.jpg"
 
 function Schedule() {
   return (
@@ -46,7 +52,7 @@ function Schedule() {
               <div className="col-md-2"><time>10:00 AM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/1.jpg" alt="Brenden Legros"/>
+                  <img src= {speakers1} alt="Brenden Legros"/>
                 </div>
                 <h4>Keynote <span>Brenden Legros</span></h4>
                 <p>Facere provident incidunt quos voluptas.</p>
@@ -57,7 +63,7 @@ function Schedule() {
               <div className="col-md-2"><time>11:00 AM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/2.jpg" alt="Hubert Hirthe"/>
+                  <img src= {speakers2} alt="Hubert Hirthe"/>
                 </div>
                 <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
                 <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
@@ -68,7 +74,7 @@ function Schedule() {
               <div className="col-md-2"><time>12:00 AM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/3.jpg" alt="Cole Emmerich"/>
+                  <img src= {speakers3} alt="Cole Emmerich"/>
                 </div>
                 <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
                 <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
@@ -79,7 +85,7 @@ function Schedule() {
               <div className="col-md-2"><time>02:00 PM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/4.jpg" alt="Jack Christiansen"/>
+                  <img src= {speakers4} alt="Jack Christiansen"/>
                 </div>
                 <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
                 <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
@@ -90,7 +96,7 @@ function Schedule() {
               <div className="col-md-2"><time>03:00 PM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel"/>
+                  <img src= {speakers5} alt="Alejandrin Littel"/>
                 </div>
                 <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
                 <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
@@ -101,7 +107,7 @@ function Schedule() {
               <div className="col-md-2"><time>04:00 PM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/6.jpg" alt="Willow Trantow"/>
+                  <img src= {speakers6} alt="Willow Trantow"/>
                 </div>
                 <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
                 <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
@@ -118,7 +124,7 @@ function Schedule() {
               <div className="col-md-2"><time>10:00 AM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/1.jpg" alt="Brenden Legros"/>
+                  <img src= {speakers1} alt="Brenden Legros"/>
                 </div>
                 <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
                 <p>Facere provident incidunt quos voluptas.</p>
@@ -129,7 +135,7 @@ function Schedule() {
               <div className="col-md-2"><time>11:00 AM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/2.jpg" alt="Hubert Hirthe"/>
+                  <img src= {speakers2} alt="Hubert Hirthe"/>
                 </div>
                 <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
                 <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
@@ -140,7 +146,7 @@ function Schedule() {
               <div className="col-md-2"><time>12:00 AM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/3.jpg" alt="Cole Emmerich"/>
+                  <img src= {speakers3} alt="Cole Emmerich"/>
                 </div>
                 <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
                 <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
@@ -151,7 +157,7 @@ function Schedule() {
               <div className="col-md-2"><time>02:00 PM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/4.jpg" alt="Jack Christiansen"/>
+                  <img src= {speakers4} alt="Jack Christiansen"/>
                 </div>
                 <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
                 <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
@@ -162,7 +168,7 @@ function Schedule() {
               <div className="col-md-2"><time>03:00 PM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel"/>
+                  <img src= {speakers5} alt="Alejandrin Littel"/>
                 </div>
                 <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
                 <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
@@ -173,7 +179,7 @@ function Schedule() {
               <div className="col-md-2"><time>04:00 PM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/6.jpg" alt="Willow Trantow"/>
+                  <img src= {speakers6} alt="Willow Trantow"/>
                 </div>
                 <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
                 <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
@@ -190,7 +196,7 @@ function Schedule() {
               <div className="col-md-2"><time>10:00 AM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/2.jpg" alt="Hubert Hirthe"/>
+                  <img src= {speakers2} alt="Hubert Hirthe"/>
                 </div>
                 <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
                 <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
@@ -201,7 +207,7 @@ function Schedule() {
               <div className="col-md-2"><time>11:00 AM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/3.jpg" alt="Cole Emmerich"/>
+                  <img src= {speakers3} alt="Cole Emmerich"/>
                 </div>
                 <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
                 <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
@@ -212,7 +218,7 @@ function Schedule() {
               <div className="col-md-2"><time>12:00 AM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/1.jpg" alt="Brenden Legros"/>
+                  <img src= {speakers1} alt="Brenden Legros"/>
                 </div>
                 <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
                 <p>Facere provident incidunt quos voluptas.</p>
@@ -223,7 +229,7 @@ function Schedule() {
               <div className="col-md-2"><time>02:00 PM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/4.jpg" alt="Jack Christiansen"/>
+                  <img src= {speakers4} alt="Jack Christiansen"/>
                 </div>
                 <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
                 <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
@@ -234,7 +240,7 @@ function Schedule() {
               <div className="col-md-2"><time>03:00 PM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel"/>
+                  <img src= {speakers5} alt="Alejandrin Littel"/>
                 </div>
                 <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
                 <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
@@ -245,7 +251,7 @@ function Schedule() {
               <div className="col-md-2"><time>04:00 PM</time></div>
               <div className="col-md-10">
                 <div className="speaker">
-                  <img src="img/speakers/6.jpg" alt="Willow Trantow"/>
+                  <img src= {speakers6} alt="Willow Trantow"/>
                 </div>
                 <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
                 <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
