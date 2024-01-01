@@ -21,12 +21,12 @@ button {
 }
 
 .join_disco {
-  width: 25rem;
+  width: 30rem;
   background: linear-gradient(90deg, #9796F0 0%, #FBC7D4 100%);
 }
 
 .join_disco i {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .join_dis {
