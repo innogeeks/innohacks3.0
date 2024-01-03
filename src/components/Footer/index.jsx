@@ -87,6 +87,7 @@ const Footer = () => {
           )}
         </div>
         <div className="footer_info">
+          <div className='hr'><hr></hr></div>
           <p>
             Contact us{' '}
             <a href={SOCIALS.email}>

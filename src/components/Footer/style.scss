@@ -35,11 +35,15 @@
 }
 .Register_a {
   padding: 70px 0;
-  background-color: #121930;
+  // background-color: #121930;
+  background-color: rgb(32, 32, 32);
 }
 .Register_a a {
   margin-left: 10px;
   margin-right: 10px;
+}
+.hr{
+  margin-bottom: 50px;
 }
 
 @media (max-width: 570px) {

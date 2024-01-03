@@ -26,9 +26,10 @@ import {
   TeamInfo,
   TOP_SECTION
 } from '../../Module/General';
-import MyCalender from '../calender';
+// import MyCalender from '../calender';
 import './about.css';
-import pattern from './assets/pattern4.png';
+import pattern from './assets/pattern.jpg';
+import myImage from './assets/imagee.png';
 
 const SponsorGroup = (props, index) => {
   return (
@@ -93,8 +94,11 @@ export default function HomePage() {
             <Col className="info-div" sm={12} lg={7} md={7}>
               <Myinfo />
             </Col>
-            <Col className="d-image" sm={12} lg={5} md={5}>
-              <MyCalender />
+            {/* <Col className="d-image" sm={12} lg={5} md={5}> */}
+              {/* <MyCalender /> */}
+            {/* </Col> */}
+            <Col className='contain'>
+                  <img className='imagee' src={myImage}></img>
             </Col>
           </Row>
 
@@ -123,7 +127,7 @@ export default function HomePage() {
         </div>
 
         {/* ********Prizes here ***** */}
-        <Row className="prizesection" id="prizes">
+        <Row className="prizesection" id="prizes" style={{padding:"10px"}}>
           <PrizeHeading type="Prize section" />
           {Prizeinfo.map(PrizeGroup)}
         </Row>
