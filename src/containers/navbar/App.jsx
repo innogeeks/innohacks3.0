@@ -6,8 +6,8 @@ import HomePage from '../Home/HomePage';
 import logoClose from './assets/ham-c.svg';
 import hamLogo from './assets/ham.svg';
 import './styles.scss';
-
 import {MdxContent} from '../Mdx';
+import myImage from './assets/hack.png';
 
 const NAVIGATION_OFFSET = 66;
 
@@ -97,13 +97,16 @@ const NAVBAR = ({}) => {
           <div className="nav-content" ref={navigation}>
             <ul>
               <li>
+                  <img src={myImage} className="links" width={50}></img>
+              </li>
+              <li>
                 <Link to={`#home`}>
-                  <span className="links">Home </span>{' '}
+                  <span className="links">Home</span>{' '}
                 </Link>
               </li>
               <li>
                 <Link to={`#faq`}>
-                  <span className="links">FAQ </span>{' '}
+                  <span className="links">FAQ</span>{' '}
                 </Link>
               </li>
               <li>
@@ -118,7 +121,7 @@ const NAVBAR = ({}) => {
               </li>
               <li>
                 <Link to={`#sponsors`}>
-                  <span className="links">Sponsors </span>{' '}
+                  <span className="links">Sponsors</span>{' '}
                 </Link>
               </li>
               <li>

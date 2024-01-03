@@ -204,24 +204,24 @@ const schedule = [
  * create as many arrays you want all prizes will be rendered
  * in a group of 3.
  */
-
+import "./prize.css";
 const Prizeinfo = [
   [
     //Array 1
     {
-      icon: <img src='https://cdn-icons-png.flaticon.com/512/6394/6394616.png' width={"100px"}></img>,
+      icon: <img src='https://cdn-icons-png.flaticon.com/512/6394/6394616.png' width={"100px"} className="icons"></img>,
       type: 'First Prize',
       content:
         '₹ 50,000 and cool Innohacks swags...'
     },
     {
-      icon: <img src='https://cdn-icons-png.flaticon.com/512/5406/5406798.png' width={"100px"}></img>,
+      icon: <img src='https://cdn-icons-png.flaticon.com/512/5406/5406798.png' width={"100px"} className="icons"></img>,
       type: 'Second Prize',
       content:
         '₹ 30,000 and cool Innohacks swags...'
     },
     {
-      icon: <img src='https://cdn-icons-png.flaticon.com/512/5406/5406800.png ' width={"100px"}></img>,
+      icon: <img src='https://cdn-icons-png.flaticon.com/512/5406/5406800.png ' width={"100px"} className="icons"></img>,
       type: 'Third Prize',
       content:
         '₹ 20,000 and cool Innohacks swags...'
@@ -230,18 +230,18 @@ const Prizeinfo = [
   [
     //Array 2
     {
-      icon: <i className="fab fourth fa-3x fa-wpbeginner"></i>,
+      icon: <div className="icons"><i className="fab fourth fa-3x fa-wpbeginner" ></i></div>,
       type: 'Best Use of Blockchain',
       content:
         '₹ 5,000 and cool Innohacks swags...'
     },
     {
-      icon: <i className="first fas fa-4x fa-trophy"></i>,
+      icon: <div className="icons"><i className="first fas fa-4x fa-trophy"></i></div>,
       type: ' Best Use of XR',
       content: '₹ 5,000 and cool Innohacks swags...'
     },
     {
-      icon: <i className=" fifth fa-3x fas fa-book-open"></i>,
+      icon: <div className="icons"><i className=" fifth fa-3x fas fa-book-open"></i></div>,
       type: 'Best Use of AIoT',
       content: '₹ 5,000 and cool Innohacks swags...'
     }
@@ -249,12 +249,12 @@ const Prizeinfo = [
   [
     //Array 3
     {
-      icon: <i className="fas fa-4x sixth fa-male"></i>,
+      icon: <div className="icons"><i className="fas fa-4x sixth fa-male"></i></div>,
       type: 'Most Socially impactful Hack',
       content: '₹ 5,000 and cool Innohacks swags...'
     },
     {
-      icon: <i className="fas fa-user-friends seventh fa-3x "></i>,
+      icon: <div className="icons"><i className="fas fa-user-friends seventh fa-3x "></i></div>,
       type: 'Best All Girl Team',
       content: '₹ 5,000 and cool Innohacks swags...'
     }
@@ -264,19 +264,19 @@ const Themeinfo = [
   [
     //Array 1
     {
-      icon: <img src='https://icons.veryicon.com/png/o/miscellaneous/color-work-icon/blockchain-2.png' width={"100px"}></img>,
+      icon: <img src='https://icons.veryicon.com/png/o/miscellaneous/color-work-icon/blockchain-2.png' width={"100px"} className="icons"></img>,
       type: 'BlockChain and Web3',
       content:
         ''
     },
     {
-      icon: <img src='https://cdn.iconscout.com/icon/premium/png-256-thumb/smart-security-8500115-6703694.png?f=webp' width={"100px"}></img>,
+      icon: <img src='https://cdn.iconscout.com/icon/premium/png-256-thumb/smart-security-8500115-6703694.png?f=webp' width={"100px"} className="icons"></img>,
       type: 'Smart Security',
       content:
         ''
     },
     {
-      icon: <img src='https://cdn-icons-png.flaticon.com/512/4538/4538154.png' width={"100px"}></img>,
+      icon: <img src='https://cdn-icons-png.flaticon.com/512/4538/4538154.png' width={"100px"} className="icons"></img>,
       type: 'Fintech',
       content:
         ''
@@ -285,18 +285,18 @@ const Themeinfo = [
   [
     //Array 2
     {
-      icon: <img src='https://cdn-icons-png.flaticon.com/512/8654/8654914.png' width={"100px"}></img>,
+      icon: <img src='https://cdn-icons-png.flaticon.com/512/8654/8654914.png' width={"100px"} className="icons"></img>,
       type: 'Extended Reality',
       content:
         ''
     },
     {
-      icon: <img src='https://static.thenounproject.com/png/1174552-200.png' width={"100px"}></img>,
+      icon: <img src='https://static.thenounproject.com/png/1174552-200.png' width={"100px"} className="icons"></img>,
       type: 'AIoT Integration',
       content: ''
     },
     {
-      icon: <img src='https://e7.pngegg.com/pngimages/753/477/png-clipart-blue-light-bulb-illustration-incandescent-light-bulb-brain-icon-cartoon-brain-bulb-icon-cartoon-character-text.png' width={"100px"}></img>,
+      icon: <img src='https://e7.pngegg.com/pngimages/753/477/png-clipart-blue-light-bulb-illustration-incandescent-light-bulb-brain-icon-cartoon-brain-bulb-icon-cartoon-character-text.png' width={"100px"} className="icons"></img>,
       type: 'Open Innovation',
       content: ''
     }
