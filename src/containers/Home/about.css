@@ -4,6 +4,8 @@
   background-size: auto 100vh;
   font-family: 'Montserrat', sans-serif;
   position: relative;
+  overflow-x:hidden;
+  width:100%;
 }
 .mediaInfo {
   margin-top: 10vh;
@@ -25,6 +27,7 @@ h1 {
 }
 .Row {
   text-align: center;
+  width:100vw;
 }
 
 .info {
@@ -59,7 +62,10 @@ h1 {
   margin: 17vh 0vh 0 0vh;
   border-radius: 14px;
   margin-top: 4vh;
-  background-color: #f3effe;
+  width: 100vw;
+  /* background-color: #f3effe; */
+  /* background-color: #f4dbee; */
+  background-color: rgb(255, 242, 242);
 }
 
 .Prizes{
@@ -76,6 +82,12 @@ h1 {
   margin: 0 auto;
   padding: 17vh 18vh 0 18vh;
   margin-top: -16vh;
+}
+
+@media (max-width: 450px){
+  .contain img{
+    width: 70vw;
+  }
 }
 
 @media (max-width: 570px) {
@@ -109,3 +121,36 @@ h1 {
     padding: 20vh 0vh 0 0vh;
   }
 }
+
+.contain{
+   transition: all;
+   margin: 0 auto;
+}
+
+.heroimg{
+   width: 100%; 
+   height:100%;
+  /* position: relative; */
+  display: inline-block;
+  /* object-fit: contain; */
+}
+
+.contain:hover img{
+  transform: scale(1.2);
+}
+
+.contain img {
+  transition: transform 0.2s ease-in-out;
+  /* animation: bounce 0.5s ease infinite; */
+}
+/* @keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+} */
