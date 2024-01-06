@@ -78,13 +78,25 @@ const Footer = () => {
         </div> */}
         <div className="Register_a">
           <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
-            <Btn type="Register" overlay="Fill the form" />
+            {/* <Btn type="Register" overlay="Fill the form" /> */}
+            <button className="butt">
+           Register Now
+          <div id="clip">
+              <div id="leftTop" class="corner"></div>
+              <div id="rightBottom" class="corner"></div>
+              <div id="rightTop" class="corner"></div>
+              <div id="leftBottom" class="corner"></div>
+          </div>
+          <span id="rightArrow" class="arrow"></span>
+          <span id="leftArrow" class="arrow"></span>
+      </button>
+
           </a>
-          {FOOTER.VOLUNTEERING_FORM.required && (
-            <a href={FOOTER.VOLUNTEERING_FORM.src}>
-              <Btn type="Volunteer" class="Volunteer" overlay="Fill the form" />
-            </a>
-          )}
+          {/* {FOOTER.VOLUNTEERING_FORM.required && (
+            // <a href={FOOTER.VOLUNTEERING_FORM.src}>
+            //   <Btn type="Volunteer" class="Volunteer" overlay="Fill the form" />
+            // </a>
+          )} */}
         </div>
         <div className="footer_info">
           <div className='hr'><hr></hr></div>
