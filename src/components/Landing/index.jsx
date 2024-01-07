@@ -49,7 +49,7 @@ const Myinfo = () => {
           <Btn
             class="register"
             type="Register "
-            overlay="Hackers registration"
+            overlay="Now"
           />
         </a>
       </div>
