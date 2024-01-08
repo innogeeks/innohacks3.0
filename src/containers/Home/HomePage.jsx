@@ -3,7 +3,7 @@ import {useState} from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import {Logo, LogoSectionAbout} from '../../components/About/index.jsx';
+import {CommunityPartner, Logo, LogoSectionAbout} from '../../components/About/index.jsx';
 import {Accordion} from '../../components/Accordian/index.jsx';
 import Birds from '../../components/Animation';
 import Footer from '../../components/Footer/index.jsx';
@@ -118,6 +118,9 @@ export default function HomePage() {
           <Col className="info-div" sm={12} lg={4} md={4}>
             <Logo />
           </Col>
+        </Row>
+        <Row>
+            <CommunityPartner/>
         </Row>
 
         {/* ********Frequently asked Questions here ***** */}
