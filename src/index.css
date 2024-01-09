@@ -1,3 +1,24 @@
+@font-face {
+    font-family: repo-light;
+    src: url('./containers/Home/assets/font-family/Repo-Light.otf');
+}
+@font-face {
+    font-family: repo-black;
+    src: url('./containers/Home/assets/font-family/Repo-Black.otf');
+}
+@font-face {
+    font-family: repo-bold;
+    src: url('./containers/Home/assets/font-family/Repo-Bold.otf');
+}
+@font-face {
+    font-family: repo-medium;
+    src: url('./containers/Home/assets/font-family/Repo-DemiBold.otf');
+}
+@font-face {
+    font-family: repo-extrabold;
+    src: url('./containers/Home/assets/font-family/Repo-ExtraBold.otf');
+}
+
 ::-webkit-scrollbar{
     appearance: none;
 }

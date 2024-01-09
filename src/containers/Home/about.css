@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 .Whole_div {
   background-repeat: repeat;
   background-size: auto 100vh;
@@ -6,8 +7,8 @@
   position: relative;
   overflow-x:hidden;
   width:100%;
-  
 }
+
 .mediaInfo {
   margin-top: 10vh;
   background-size: auto 100vh;
@@ -71,12 +72,14 @@ h1 {
   width: 100vw;
   /* background-color: #f3effe; */
   /* background-color: #f4dbee; */
-  background-color: rgb(255, 242, 242);
+  /* background-color: rgb(255, 242, 242); */
+  background-color: white;
+  
 }
 
 .Prizes{
   width: 100%;
-  text-decoration: underline;
+  font-family: repo-extrabold;
 }
 
 .sponsorSection {
@@ -162,14 +165,157 @@ text-decoration: underline;
   transition: transform 0.2s ease-in-out;
   /* animation: bounce 0.5s ease infinite; */
 }
-/* @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
+
+.cardone {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  border-radius: 14px;
+  z-index: 1111;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  z-index: 1;
+  margin-top: 30px;
+  margin-bottom: 30px;
+ 
+}
+
+
+.cardone .bg img{
+  position: absolute;
+  top: -60px ;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  
+}
+/* @keyframes imgRotate {
+  from{
+    transform:translateX(-50%) rotateY(0deg);
   }
-  40% {
-    transform: translateY(-20px);
-  }
-  60% {
-    transform: translateY(-10px);
+  to{
+    transform: translateX(-50%) rotateY(360deg);
+    
   }
 } */
+.text_prizes{
+  font-family: 'Russo One', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  line-height: 1.1;
+  background-color: red;
+    background-image: linear-gradient(45deg, red, #2D71D5);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+ .cards_prizes{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+/* card2 */
+.cardtwo {
+  position: relative;
+  width: 200px;
+  height: 280px;
+  border-radius: 14px;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  z-index: 1;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cardtwo .bg img{
+  position: absolute;
+  top: -130px ;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  animation: imgRotate 2s infinite;
+  transition: all 3s;
+}
+
+
+
+
+/* card3 */
+.cardthree {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  border-radius: 14px;
+  z-index: 1111;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  z-index: 1;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cardthree .bg img{
+  position: absolute;
+  top: -60px ;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+}
+.cards_{
+  transition: all 300ms ease-in;
+}
+.cards_:hover{
+  scale: 1.3;
+}
+
+
+/* more Prizes */
+.more_prizes{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.more-one{
+  width: 200px;
+  height:250px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.gif_prize{
+  width: 150px;
+}
+.more-title{
+  font-family: repo-bold;
+  background-color: red;
+  background-image: linear-gradient(45deg, red, #2D71D5);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}

@@ -17,21 +17,14 @@ function Sponsor(props) {
 function SponsorUS() {
   return (
     <div className="joinT sponsorUS">
-      <h3>Interested in Sponsoring </h3>
-      <a href={SOCIALS.email}>
+      {/* <h3>Interested in Sponsoring </h3> */}
         {/* <Btn className="sponsor_btn" type="Sponsor us" overlay="Send a mail" /> */}
-        <button className="butt">
-           Sponsor Us
-          <div id="clip">
-              <div id="leftTop" class="corner"></div>
-              <div id="rightBottom" class="corner"></div>
-              <div id="rightTop" class="corner"></div>
-              <div id="leftBottom" class="corner"></div>
-          </div>
-          <span id="rightArrow" class="arrow"></span>
-          <span id="leftArrow" class="arrow"></span>
-      </button>
-      </a>{' '}
+        <button class="Sponsor-button">
+          <a className='sponsor-link'  href={SOCIALS.email}>
+            <span>Sponsor Us</span>
+          </a>
+        </button>
+        
     </div>
   );
 }
