@@ -64,6 +64,7 @@ class Accordion extends React.Component {
   }
 
   render() {
+    
     const {panels} = this.props;
     const {activeTab} = this.state;
     return (

@@ -7,7 +7,10 @@
   z-index: 10;
   transition: height 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  background-color: #121930;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 
   @media (min-width: 1000px) {
     height: 88px;
@@ -23,7 +26,13 @@
       box-shadow: 0 8px 16px 0 rgba(145, 158, 171, 0.16);
     }
   }
-
+.logo-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
   .s-open,
   .s-close {
     display: none;
@@ -78,6 +87,9 @@
       position: absolute;
       right: 10px;
       top: 10px;
+    }
+    .logo-div{
+      display: none;
     }
   }
 

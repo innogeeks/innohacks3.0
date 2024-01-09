@@ -4,14 +4,30 @@
   margin-top: 0;
   padding: 0;
   position: relative;
-  right: 130px;
+  transform: translateX(-50%) translateY(10%);
 }
+
 .Logo {
   width: 60%;
   display: inline-block;
   margin: 0;
   padding: 0;
   position: absolute;
+}
+
+.arHeadset {
+  position: absolute;
+  transform: rotate(-30deg);
+  color: rgba(0, 0, 0, 0.272);
+  top: -100px;
+}
+
+.globe {
+  position: absolute;
+  transform: rotate(30deg);
+  color: rgba(0, 0, 0, 0.272);
+  bottom: -50px;
+  right: 0;
 }
 
 
@@ -22,6 +38,7 @@
   position: relative;
   font-family: 'Nunito', sans-serif;
 }
+
 .LogoSectionAbout h1 {
   font-weight: 700;
   text-align: left;
@@ -31,18 +48,22 @@
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 2s infinite alternate;
 }
+
 @-webkit-keyframes mover {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-10px);
   }
 }
+
 @keyframes mover {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-10px);
   }
@@ -53,18 +74,21 @@
     margin-top: 10rem;
     margin-bottom: -10rem;
   }
+
   .Logo {
     margin: 0 auto;
   }
 }
 
-@media (max-width: 570px) {
-  .logoS {
-    margin-top: 10rem;
-    margin-bottom: -10rem;
-    /* background-color: black; */
-  }
-  .Logo {
-    margin: 0 auto;
-  }
+.community-partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title_community {
+  margin-bottom: 5%;
+  margin-top: 6%;
+  font-weight: bolder;
+  text-decoration: underline;
 }
