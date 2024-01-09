@@ -30,6 +30,14 @@ import {
 import './about.css';
 import pattern from './assets/pattern.jpg';
 import myImage from './assets/imagee.png';
+import first from './assets/prizes/1.png'
+import second from './assets/prizes/2.png'
+import third from './assets/prizes/3.png'
+import threeD from './assets/prizes/3d.gif'
+import blockChain from './assets/prizes/blockchain.gif'
+import iot from './assets/prizes/light-control.gif'
+import girl from './assets/prizes/girl.gif'
+import social from './assets/prizes/fans.gif'
 
 const SponsorGroup = (props, index) => {
   return (
@@ -120,24 +128,86 @@ export default function HomePage() {
             <Logo/>
           </Col>
         </Row>
-        <Row>
-            <CommunityPartner/>
-        </Row>
-
-        {/* ********Frequently asked Questions here ***** */}
-        <div className="Myfaqs" id="faq">
-          <h1 className='my-faq-head'>FAQs</h1>
-          {frequentlyAskedQuestions.map(FrequentlyAsked)}
-          {/* ********Frequently asked Questions ending here ***** */}
-        </div>
 
         {/* ********Prizes here ***** */}
-        <Row className="prizesection" id="prizes" style={{padding:"10px"}}>
-          <PrizeHeading type="Prize section" />
-          {Prizeinfo.map(PrizeGroup)}
+          <h1 className='prize_heading' style={{fontFamily:"repo-bold"}}>Past Prizes</h1>
+        <Row className="prizesection" id="prizes" style={{padding:"10px", minHeight:"100vh" ,display:"flex" , flexDirection:"column" , justifyContent:"center" }}>
+          {/* <PrizeHeading type="Prize section" />
+          {Prizeinfo.map(PrizeGroup)} */}
+          {/* ARRAY -1 */}
+          <div className='cards_prizes'>
+            <div class="cardone cards_">
+              <div class="bg">
+              <img src={second}   alt="" />
+              <div className='text_prizes'>
+                <p>₹ 30,000</p>
+                <p>+</p>
+                <p>cool Innohacks swags...</p>
+              </div>
+              </div>
+              <div class="blob"> </div>
+            </div>
+            <div class="cardtwo cards_">
+              <div class="bg">
+              <img src={first} width={200}  alt="" />
+              <div className='text_prizes'>
+                <p style={{fontSize:"35px"}}>₹ 50,000</p>
+                <p>+</p>
+                <p>cool Innohacks swags...</p>
+              </div>
+              </div>
+              <div class="blob"></div>
+            </div>
+            <div class="cardthree cards_">
+              <div class="bg">
+              <img src={third} width={150}  alt="" />
+              <div className='text_prizes'>
+                <p>₹ 20,000</p>
+                <p>+</p>
+                <p>cool Innohacks swags...</p>
+              </div>
+              </div>
+              <div class="blob"></div>
+            </div>
+          </div>
+          {/* ARRAY-2 */}
+          <div className='more_prizes'>
+            <div className='more-one'>
+              <img className='gif_prize ' src={threeD} ></img>
+              <p className='more-title'>Best Use of XR</p>
+              <p>₹ 5,000 and cool Innohacks swags...</p>
+            </div>
+            <div className='more-one'>
+              <img className='gif_prize ' src={blockChain} ></img>
+              <p className='more-title'>Best Use of Blockchain</p>
+              <p>₹ 5,000 and cool Innohacks swags...</p>
+            </div>
+            <div className='more-one'>
+              <img className='gif_prize ' src={iot} ></img>
+              <p className='more-title'>Best Use of IoT</p>
+              <p>₹ 5,000 and cool Innohacks swags...</p>
+            </div>
+            <div className='more-one'>
+              <img className='gif_prize ' src={social} ></img>
+              <div>
+              <div>
+              <p className='more-title'>Most Socially impactful Hack</p>
+              <p>₹ 5,000 and cool Innohacks swags...</p>
+              </div>
+              </div>
+            </div>
+            <div className='more-one'>
+              <img className='gif_prize ' src={girl} ></img>
+              <p className='more-title'>Best All Girl Team</p>
+              <p>₹ 5,000 and cool Innohacks swags...</p>
+            </div>
+
+            
+          </div>
         </Row>
         {/* ********Prizes ending here ***** */}
 
+        {/* themes */}
         <Row className="prizesection" id="themes">
           <PrizeHeading type="Our Themes" />
           {Themeinfo.map(PrizeGroup)}
@@ -166,6 +236,17 @@ export default function HomePage() {
 
         {JudgesInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
+        <Row>
+            <CommunityPartner/>
+        </Row>
+
+        {/* ********Frequently asked Questions here ***** */}
+        <div className="Myfaqs" id="faq">
+          <h1 className='my-faq-head'>FAQs</h1>
+          {frequentlyAskedQuestions.map(FrequentlyAsked)}
+          {/* ********Frequently asked Questions ending here ***** */}
+        </div>
+
       </Container>
       <Footer />
     </div>
