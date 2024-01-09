@@ -87,7 +87,8 @@ export default function HomePage() {
   UseMedia('min-width', 1000, setMedia);
 
   return (
-    <div className="Whole_div" style={{backgroundImage: `url(${pattern})`}}>
+    // style={{backgroundImage: `url(${pattern})`}}
+    <div className="Whole_div" >
       <div className="color_sectiom" id="home">
         <Container fluid>
           <Row className="Row info">
@@ -115,8 +116,8 @@ export default function HomePage() {
           <Col className="info-div" sm={12} lg={8} md={8}>
             <LogoSectionAbout />
           </Col>
-          <Col className="info-div" sm={12} lg={4} md={4}>
-            <Logo />
+          <Col className="info-div"  lg={4} md={4}>
+            <Logo/>
           </Col>
         </Row>
         <Row>
@@ -125,6 +126,7 @@ export default function HomePage() {
 
         {/* ********Frequently asked Questions here ***** */}
         <div className="Myfaqs" id="faq">
+          <h1 className='my-faq-head'>FAQs</h1>
           {frequentlyAskedQuestions.map(FrequentlyAsked)}
           {/* ********Frequently asked Questions ending here ***** */}
         </div>

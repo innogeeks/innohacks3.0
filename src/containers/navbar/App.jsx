@@ -92,40 +92,43 @@ const NAVBAR = ({}) => {
 
   return (
     <Router>
-      <nav className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`}>
+      <nav className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`} >
+      
+     
+      <div className='logo-div'>
+        <img src={myImage} className="links" width={50}></img>
+      </div>
+
         <Wrapper toggle={toggle}>
           <div className="nav-content" ref={navigation}>
             <ul>
               <li>
-                  <img src={myImage} className="links" width={50}></img>
-              </li>
-              <li>
-                <Link to={`#home`}>
+                <Link to={`#home`} >
                   <span className="links">Home</span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#faq`}>
+                <Link to={`#faq`} smooth>
                   <span className="links">FAQ</span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#prizes`}>
+                <Link to={`#prizes`} smooth>
                   <span className="links">Prizes </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#themes`}>
+                <Link to={`#themes`} smooth>
                   <span className="links">Themes </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#sponsors`}>
+                <Link to={`#sponsors`} smooth>
                   <span className="links">Sponsors</span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#team`}>
+                <Link to={`#team`} smooth>
                   <span className="links">Team </span>{' '}
                 </Link>
               </li>
@@ -138,6 +141,7 @@ const NAVBAR = ({}) => {
           </div>
           <div className="ease" />
         </Wrapper>
+        
         <img
           className="s-open"
           onClick={() => setToggle(false)}
