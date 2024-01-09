@@ -314,21 +314,21 @@ const TeamInfo = [
     //Array 1
     {
       Name: 'Love Babbar',
-      role: 'Speaker',
+      role: 'Love Babbar',
       github: 'https://github.com/Limbo-Hacks/Hackathon-website-template',
       linkedin: '',
       img: babbar
     },
     {
       Name: 'Striver',
-      role: 'Speaker',
+      role: 'Striver',
       github: '',
       linkedin: '',
       img: striver
     },
     {
       Name: 'Akshay Saini',
-      role: 'Speaker',
+      role: 'Akshay Saini',
       github: '',
       linkedin: '',
       img: akshay
@@ -338,21 +338,21 @@ const TeamInfo = [
     //Array 2
     {
       Name: 'Sandeep Jain',
-      role: 'Speaker',
+      role: 'Sandeep Jain',
       github: '',
       linkedin: '',
       img: sandeep
     },
     {
       Name: 'Arsh Goyal',
-      role: 'Speaker',
+      role: 'Arsh Goyal',
       github: '',
       linkedin: '',
       img: arsh
     },
     {
       Name: 'Kshitiz Miglani',
-      role: 'Speaker',
+      role: 'Kshitiz Miglani',
       github: '',
       linkedin: '',
       img: kshitiz
@@ -365,14 +365,14 @@ const JudgesInfo = [
     //Array 1
     {
       Name: 'Kushal Vijay',
-      role: 'Judge',
+      role: 'Kushal Vijay',
       github: '',
       linkedin: '',
       img: kushal
     },
     {
       Name: 'Khushboo Verma',
-      role: 'Judge',
+      role: 'Khushboo Verma',
       github: '',
       linkedin: '',
       img: khushboo

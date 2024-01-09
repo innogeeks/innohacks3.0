@@ -91,6 +91,19 @@ const Footer = () => {
           <span id="leftArrow" class="arrow"></span>
       </button>
 
+            {/* <button>
+              <div>
+                <span>
+                  <p class="innerText">Register</p><p class="innerText">:)</p>
+                </span>
+              </div>
+              <div>
+                <span>
+                  <p class="innerText">Now</p><p class="innerText">:D</p>
+                </span>
+              </div>
+            </button> */}
+
           </a>
           {/* {FOOTER.VOLUNTEERING_FORM.required && (
             // <a href={FOOTER.VOLUNTEERING_FORM.src}>
