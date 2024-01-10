@@ -7,9 +7,7 @@ const rootElement = document.getElementById('body');
 
 ReactDOM.render(
   <React.Fragment>
-
       <Nav />
-
   </React.Fragment>,
   rootElement
 );

@@ -15,7 +15,7 @@ function Sponsor(props) {
 function SponsorUS() {
   return (
     <div className="joinT sponsorUS">
-      {/* <h3>Interested in Sponsoring </h3> */}
+      <h3>Interested in Sponsoring. Click Below 👇</h3>
         {/* <Btn className="sponsor_btn" type="Sponsor us" overlay="Send a mail" /> */}
         <button class="Sponsor-button">
           <a className='sponsor-link'  href="https://docs.google.com/forms/d/e/1FAIpQLScutHvEcWOPeqLWagnzfEIqeeeSz1_FMe26br62gjd1WiTkrw/viewform?usp=sf_link" target='bl
