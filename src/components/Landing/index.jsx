@@ -76,7 +76,7 @@ const Myinfo = () => {
           </a>
         </div>
 
-        <a href='#'>
+        <a href='/'>
           {' '}
           <Btn
             class="register"

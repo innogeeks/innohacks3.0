@@ -87,12 +87,16 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-logo">
-        <HashLink className="footer-logo-link" to="#" smooth>
-          <img src={logo} width={"100%"} alt="" />
-        </HashLink>
+        <div>
+          <HashLink className="footer-logo-link" to="#" smooth>
+            <img src={logo} width={"100%"} alt="" />
+          </HashLink>
+        </div>
+        <div>
         <a className="footer-logo-link" href="https://innogeeks.in/" target='_blank'>
           <img src={Innologo} width={"100%"} alt="" />
         </a>
+        </div>
       </div>
       <div className="footer-team">
         <h4>❤️Design by Team-INNOGEEKS💙 </h4>

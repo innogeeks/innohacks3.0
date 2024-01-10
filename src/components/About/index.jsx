@@ -28,7 +28,7 @@ function Logo() {
 function CommunityPartner() {
   return(
     <div className="community-partner" >
-    <h1 className="title_community" >Community Partner</h1>
+    <h1 className="title_community" >Community Partners</h1>
     <div className="community_logo_container" >
       <div className='logo-community' style={{color: 'white', textAlign: 'center', margin: "0 5% 2% 5%"}}>
         <img src={iosc} className="iosc_logo" width="100%" alt="" />

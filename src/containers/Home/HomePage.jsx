@@ -1,21 +1,21 @@
-import {UseMedia} from 'hooks/useMedia';
-import {useState} from 'react';
+import { UseMedia } from 'hooks/useMedia';
+import { useState } from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import {CommunityPartner, Logo, LogoSectionAbout} from '../../components/About/index.jsx';
-import {Accordion} from '../../components/Accordian/index.jsx';
+import { CommunityPartner, Logo, LogoSectionAbout } from '../../components/About/index.jsx';
+import { Accordion } from '../../components/Accordian/index.jsx';
 import Birds from '../../components/Animation';
 import Footer from '../../components/Footer/index.jsx';
-import {Myinfo} from '../../components/Landing/index.jsx';
-import {FirstPrize, PrizeHeading} from '../../components/Prizes/index.jsx';
+import { Myinfo } from '../../components/Landing/index.jsx';
+import { FirstPrize, PrizeHeading } from '../../components/Prizes/index.jsx';
 import Media from '../../components/Socials/index.jsx';
 import {
   Sponsor,
   SponsorsHead,
   SponsorUS
 } from '../../components/Sponsors/sponsors.jsx';
-import {JoinTeam, Member} from '../../components/Team';
+import { JoinTeam, Member } from '../../components/Team';
 import {
   FOOTER,
   frequentlyAskedQuestions,
@@ -42,7 +42,7 @@ import social from './assets/prizes/fans.gif'
 // const SponsorGroup = (props, index) => {
 //   return (
 //     <Row key={index}>
-      
+
 //     </Row>
 //   );
 // };
@@ -99,10 +99,10 @@ export default function HomePage() {
               <Myinfo />
             </Col>
             {/* <Col className="d-image" sm={12} lg={5} md={5}> */}
-              {/* <MyCalender /> */}
+            {/* <MyCalender /> */}
             {/* </Col> */}
             <Col className='contain'>
-                  <img className='imagee' src={myImage}></img>
+              <img className='imagee' src={myImage}></img>
             </Col>
           </Row>
 
@@ -120,47 +120,49 @@ export default function HomePage() {
             <LogoSectionAbout />
           </Col>
           <Col className="info-div" >
-            <Logo/>
+            <Logo />
           </Col>
         </Row>
 
         {/* ********Prizes here ***** */}
-          <h1 id="prizes" className='prize_heading' style={{fontFamily:"repo-bold"}}>Past Prizes</h1>
-        <Row className="prizesection"  style={{padding:"10px", minHeight:"100vh" ,display:"flex" , flexDirection:"column" , justifyContent:"center" }}>
+        <h1 id="prizes" className='prize_heading' style={{ fontFamily: "repo-bold" }}>Prizes</h1>
+        <Row className="prizesection" style={{ padding: "10px", minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center" ,marginTop:"5vh"}}>
           {/* <PrizeHeading type="Prize section" /> */}
           {/* {Prizeinfo.map(PrizeGroup)} */}
           {/* ARRAY -1 */}
           <div className='cards_prizes'>
-            <div class="cardone cards_">
-              <div class="bg">
-              <img src={second}   alt="" />
-              <div className='text_prizes'>
-                <p>₹ 30,000</p>
-                <p>+</p>
-                <p>cool Innohacks swags...</p>
+            <div className="reverse">
+              <div class="cardone cards_">
+                <div class="bg">
+                  <img src={second} alt="" />
+                  <div className='text_prizes'>
+                    <p>₹ 30,000</p>
+                    <p>+</p>
+                    <p>cool Innohacks swags...</p>
+                  </div>
+                </div>
+                <div class="blob"> </div>
               </div>
+              <div class="cardtwo cards_">
+                <div class="bg">
+                  <img src={first} width={200} alt="" />
+                  <div className='text_prizes'>
+                    <p style={{ fontSize: "35px" }}>₹ 50,000</p>
+                    <p>+</p>
+                    <p>cool Innohacks swags...</p>
+                  </div>
+                </div>
+                <div class="blob"></div>
               </div>
-              <div class="blob"> </div>
-            </div>
-            <div class="cardtwo cards_">
-              <div class="bg">
-              <img src={first} width={200}  alt="" />
-              <div className='text_prizes'>
-                <p style={{fontSize:"35px"}}>₹ 50,000</p>
-                <p>+</p>
-                <p>cool Innohacks swags...</p>
-              </div>
-              </div>
-              <div class="blob"></div>
             </div>
             <div class="cardthree cards_">
               <div class="bg">
-              <img src={third} width={150}  alt="" />
-              <div className='text_prizes'>
-                <p>₹ 20,000</p>
-                <p>+</p>
-                <p>cool Innohacks swags...</p>
-              </div>
+                <img src={third} width={150} alt="" />
+                <div className='text_prizes'>
+                  <p>₹ 20,000</p>
+                  <p>+</p>
+                  <p>cool Innohacks swags...</p>
+                </div>
               </div>
               <div class="blob"></div>
             </div>
@@ -185,10 +187,10 @@ export default function HomePage() {
             <div className='more-one'>
               <img className='gif_prize ' src={social} ></img>
               <div>
-              <div>
-              <p className='more-title'>Most Socially impactful Hack</p>
-              <p>₹ 5,000 and cool Innohacks swags...</p>
-              </div>
+                <div>
+                  <p className='more-title'>Most Socially impactful Hack</p>
+                  <p>₹ 5,000 and cool Innohacks swags...</p>
+                </div>
               </div>
             </div>
             <div className='more-one'>
@@ -197,7 +199,7 @@ export default function HomePage() {
               <p>₹ 5,000 and cool Innohacks swags...</p>
             </div>
 
-            
+
           </div>
         </Row>
         {/* ********Prizes ending here ***** */}
@@ -240,7 +242,7 @@ export default function HomePage() {
         {JudgesInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
         <Row>
-            <CommunityPartner/>
+          <CommunityPartner />
         </Row>
 
         {/* ********Frequently asked Questions here ***** */}

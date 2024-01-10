@@ -90,8 +90,6 @@ h1 {
 
 .sponsorSection {
   padding: 17vh 18vh 0 18vh;
-  margin-top: -10vh;
-  margin-top: 0vh;
 }
 #team{
   font-family: repo-bold
@@ -107,7 +105,19 @@ h1 {
 margin-bottom: 50px;
 font-family: repo-bold;
 }
-
+.reverse{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+@media (max-width:779.99px) {
+  .reverse{
+    flex-direction: row-reverse;
+  }
+}
 @media (max-width: 450px){
   .contain img{
     margin-top: 5rem;
@@ -117,6 +127,9 @@ font-family: repo-bold;
   }
   .imagee{
     display: none;
+  }
+  .reverse{
+    flex-direction: column-reverse;
   }
 }
 
@@ -133,7 +146,7 @@ font-family: repo-bold;
     margin-top: 0vh;
   }
   .members {
-    margin: 0;
+    margin-left: -15px;
     padding: 0;
   }
 
@@ -144,7 +157,8 @@ font-family: repo-bold;
   .sponsorSection {
     padding: 0;
     margin: 0;
-    margin: 12rem auto;
+    margin-top: 12rem ;
+    margin-left: -10px;
   }
   .logoSection {
     text-align: left;
@@ -156,7 +170,12 @@ font-family: repo-bold;
   .imagee{
     display: none;
   }
+  .reverse{
+    flex-direction: column-reverse;
+  }
 }
+
+
 @media (max-width: 1175.99px)  {
   .imagee{
     display: none;
@@ -188,6 +207,7 @@ font-family: repo-bold;
   /* animation: bounce 0.5s ease infinite; */
 }
 
+
 .cardone {
   position: relative;
   width: 200px;
@@ -203,7 +223,7 @@ font-family: repo-bold;
   z-index: 1;
   margin-top: 30px;
   margin-bottom: 30px;
-
+  /* margin-right: 20px; */
 }
 
 
@@ -358,6 +378,7 @@ font-family: repo-bold;
   justify-content: space-around; 
   align-items: center; 
   margin-top: 20px;
+  margin-left: -25px;
 }
 
 .sponsor-logos {
