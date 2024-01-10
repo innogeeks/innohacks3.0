@@ -1,4 +1,4 @@
-name: prod pipeline
+name: test pipeline
 
 on:
   push:
