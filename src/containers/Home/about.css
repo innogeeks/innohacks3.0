@@ -84,6 +84,9 @@ h1 {
   width: 100%;
   font-family: repo-extrabold;
 }
+.prize_heading{
+  margin-top: 20vh;
+}
 
 .sponsorSection {
   padding: 17vh 18vh 0 18vh;
@@ -111,6 +114,9 @@ font-family: repo-bold;
     margin-bottom: 5rem;
     width: 30rem;
     /* width: 10rem; */
+  }
+  .imagee{
+    display: none;
   }
 }
 
@@ -147,8 +153,15 @@ font-family: repo-bold;
   .info-div{
     width: 100%;
   }
+  .imagee{
+    display: none;
+  }
 }
-
+@media (max-width: 1175.99px)  {
+  .imagee{
+    display: none;
+  }
+}
 .contain{
    transition: all;
    margin-top: 5rem;
@@ -157,12 +170,17 @@ font-family: repo-bold;
 
 .imagee{
    width: 70vh;
-  display: inline-block;
-  
+  transition: all 300ms ease-in;
+  animation: upDown 1s infinite alternate ease;
 }
 
- .imagee:hover{
-  transform: scale(1.2);
+@keyframes upDown {
+  from{
+    transform:translateY(-20px)
+  }
+  to{
+    transform: translateY(0px);
+  }
 }
 
 .contain img {
@@ -185,7 +203,7 @@ font-family: repo-bold;
   z-index: 1;
   margin-top: 30px;
   margin-bottom: 30px;
- 
+
 }
 
 

@@ -68,7 +68,6 @@ const Myinfo = () => {
                 height="36px"
               />
                 <rect width="36" height="36" x="0" y="0" fill="#fdd835"></rect>
-                {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy08k0MIQiQYcYS3ZZbeusy2KC7fwe6Bpm00KYDZNVeQ&s" width="36px" alt=""/> */}
                 <BsDiscord className='img' fontSize={50} color='white'/>
               <span class="now">now!</span>
               <span class="play">Join</span>

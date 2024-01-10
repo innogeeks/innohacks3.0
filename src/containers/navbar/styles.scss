@@ -59,6 +59,8 @@
   nav ul li {
     margin-left: 20px;
     position: relative;
+    list-style: none;
+    text-decoration: none;
   }
   .links::after{
     content: "";

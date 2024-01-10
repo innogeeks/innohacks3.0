@@ -56,12 +56,12 @@ import arsh from "./Assets/teami/arsh goyal.jpg"
 import kushal from "./Assets/teami/kushal.jpeg"
 
 // importing all themes
-import security from '../containers/Home/assets/prizes/online-security.gif'
-import blockchain from '../containers/Home/assets/prizes/blockchain.gif'
-import fintech from '../containers/Home/assets/prizes/artificial-intelligence.gif'
-import iot from '../containers/Home/assets/prizes/connection.gif'
-import vr from '../containers/Home/assets/prizes/virtual-reality.gif'
-import open from '../containers/Home/assets/prizes/innovation.gif'
+import security from '../containers/Home/assets/theme/9.png'
+import blockchain from '../containers/Home/assets/theme/4.png'
+import fintech from '../containers/Home/assets/theme/5.png'
+import iot from '../containers/Home/assets/theme/7.png'
+import vr from '../containers/Home/assets/theme/6.png'
+import open from '../containers/Home/assets/theme/8.png'
 
 
 const TOP_SECTION = {
@@ -301,7 +301,7 @@ const Themeinfo = [
     },
     {
       icon: <img src={iot} width={"100px"} className="icons"></img>,
-      type: 'IoT Integration',
+      type: 'AIoT Integration',
       content: ''
     },
     {
