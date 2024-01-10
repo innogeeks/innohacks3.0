@@ -76,7 +76,11 @@ const Myinfo = () => {
           </a>
         </div>
 
+
         <a href='https://forms.gle/LabTKRJEHvyZuXd78' target='_blank'>
+
+        <a href='https://forms.gle/LabTKRJEHvyZuXd78'>
+
           {' '}
           <Btn
             className="register"
