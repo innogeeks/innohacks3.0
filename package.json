@@ -60,13 +60,6 @@
   },
   "description": "### Thanks [ella](https://github.com/eilla1) for design snippets",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Limbo-Hacks/Limbo-hacks-website.git"
-  },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Limbo-Hacks/Limbo-hacks-website/issues"
-  }
+  "license": "ISC"
 }

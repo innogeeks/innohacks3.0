@@ -7,7 +7,7 @@ function SponsorsHead() {
 function Sponsor(props) {
   return (
     <div className="Sponsor ">
-      <img src={props.srcx} alt="InnoHacks"></img>
+      <img src={props} alt="InnoHacks"></img>
     </div>
   );
 }
@@ -23,7 +23,7 @@ function SponsorUS() {
             <span>Sponsor Us</span>
           </a>
         </button>
-        
+
     </div>
   );
 }

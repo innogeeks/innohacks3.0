@@ -2,6 +2,8 @@
   margin-bottom: 1rem;
   transition: 0.3s;
   margin-left: -30rem;
+  height: 200px;
+  object-fit: contain;
 }
 .Sponsor:hover{
   transform: scale(1.1);
@@ -10,6 +12,7 @@
     width: 25rem;
     display: inline-block;
     margin: 0;
+
 }
 
 .shead{
@@ -32,15 +35,18 @@
 @media  (max-width: 570px){
   .Sponsor{
     margin-left: 2rem;
+    height: 100px;
   }
 
   .shead{
     margin-top:0;
-    margin-right: 2rem;
+    // margin-right: 2rem;
   }
   .Sponsor img{
-     margin-bottom: 50rem;
-}
+    width: 30vw;
+  }
+  
+  
 }
   .Sponsor img{
  

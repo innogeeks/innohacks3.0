@@ -7,7 +7,7 @@ import logoClose from './assets/ham-c.svg';
 import hamLogo from './assets/ham.svg';
 import './styles.scss';
 import {MdxContent} from '../Mdx';
-import myImage from './assets/hack.png';
+import myImage from './assets/Innohacks 3.0 Logo (1) (1).png';
 
 const NAVIGATION_OFFSET = 66;
 
@@ -70,13 +70,13 @@ const NAVBAR = ({}) => {
     return () => window.removeEventListener('scroll', listenScrollEvent);
   }, []);
 
-  const handleOutsideCick = (event, ref) => {
-    if (!ref.current.contains(event.target)) {
-      setToggle(true);
-    } else {
-      setToggle(false);
-    }
-  };
+  // const handleOutsideCick = (event, ref) => {
+  //   if (!ref.current.contains(event.target)) {
+  //     setToggle(true);
+  //   } else {
+  //     setToggle(false);
+  //   }
+  // };
 
   // useEffect(() => {
   //   document.addEventListener('mousedown', e =>
@@ -96,7 +96,7 @@ const NAVBAR = ({}) => {
       
      
       <div className='logo-div'>
-        <img src={myImage} className="links" width={50}></img>
+        <img src={myImage} className="nav-logo" width={200}></img>
       </div>
 
         <Wrapper toggle={toggle}>
@@ -107,11 +107,7 @@ const NAVBAR = ({}) => {
                   <span className="links">Home</span>{' '}
                 </Link>
               </li>
-              <li>
-                <Link to={`#faq`} smooth>
-                  <span className="links">FAQ</span>{' '}
-                </Link>
-              </li>
+              
               <li>
                 <Link to={`#prizes`} smooth>
                   <span className="links">Prizes </span>{' '}
@@ -130,6 +126,11 @@ const NAVBAR = ({}) => {
               <li>
                 <Link to={`#team`} smooth>
                   <span className="links">Team </span>{' '}
+                </Link>
+              </li>
+              <li>
+                <Link to={`#faq`} smooth>
+                  <span className="links">FAQ</span>{' '}
                 </Link>
               </li>
               <img
