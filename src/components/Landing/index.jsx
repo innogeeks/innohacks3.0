@@ -76,10 +76,10 @@ const Myinfo = () => {
           </a>
         </div>
 
-        <a href='/'>
+        <a href='https://forms.gle/LabTKRJEHvyZuXd78' target='_blank'>
           {' '}
           <Btn
-            class="register"
+            className="register"
             type="Register "
             overlay="Now"
           />
