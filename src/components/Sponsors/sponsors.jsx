@@ -1,5 +1,3 @@
-import {SOCIALS} from '../../Module/General';
-import {Btn} from '../Landing/index.jsx';
 import './sponsors.scss';
 
 function SponsorsHead() {
@@ -9,7 +7,7 @@ function SponsorsHead() {
 function Sponsor(props) {
   return (
     <div className="Sponsor ">
-      <img src={props.srcx} alt="InnoHacks"></img>
+      <img src={props} alt="InnoHacks"></img>
     </div>
   );
 }
@@ -17,21 +15,15 @@ function Sponsor(props) {
 function SponsorUS() {
   return (
     <div className="joinT sponsorUS">
-      <h3>Interested in Sponsoring </h3>
-      <a href={SOCIALS.email}>
+      <h3>Interested in Sponsoring. Click Below 👇</h3>
         {/* <Btn className="sponsor_btn" type="Sponsor us" overlay="Send a mail" /> */}
-        <button className="butt">
-           Sponsor Us
-          <div id="clip">
-              <div id="leftTop" class="corner"></div>
-              <div id="rightBottom" class="corner"></div>
-              <div id="rightTop" class="corner"></div>
-              <div id="leftBottom" class="corner"></div>
-          </div>
-          <span id="rightArrow" class="arrow"></span>
-          <span id="leftArrow" class="arrow"></span>
-      </button>
-      </a>{' '}
+        <button class="Sponsor-button">
+          <a className='sponsor-link'  href="https://docs.google.com/forms/d/e/1FAIpQLScutHvEcWOPeqLWagnzfEIqeeeSz1_FMe26br62gjd1WiTkrw/viewform?usp=sf_link" target='bl
+          '>
+            <span>Sponsor Us</span>
+          </a>
+        </button>
+
     </div>
   );
 }

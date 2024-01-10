@@ -2,12 +2,16 @@
   list-style-type: none;
   height: 50px;
   font-size: 1.8rem;
+  font-family: repo-medium;
   position: fixed;
   width: 100vw;
   z-index: 10;
   transition: height 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  background-color: #121930;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 
   @media (min-width: 1000px) {
     height: 88px;
@@ -24,14 +28,26 @@
     }
   }
 
-  .s-open,
-  .s-close {
+  .nav-logo{
+    cursor: pointer;
+    
+  }
+
+.nav_bar .logo-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
+ .nav_bar .s-open,
+ .nav_bar .s-close {
     display: none;
   }
-  .nav-inner {
+  .nav_bar .nav-inner {
     width: 30%;
   }
-  ul {
+  .nav_bar  ul {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -41,10 +57,33 @@
     align-items: center;
   }
   nav ul li {
-    display: inline-block;
     margin-left: 20px;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
   }
-  .links {
+  .links::after{
+    content: "";
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 200ms ease-in;
+  }
+  .links:hover{
+    // background: linear-gradient(-45deg, red 0%, blue 100% );
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    color: white;
+  }
+  .links:hover::after{
+    width: 100%;
+  }
+  .nav_bar .links {
     color: rgb(231, 228, 228);
     transition: 0.5s;
     font-weight: 300;
@@ -56,28 +95,33 @@
   }
 
   @media (max-width: 1000px) {
-    .ease {
+    .nav_bar .ease {
       background: #484848;
       height: 75%;
       opacity: 0.2;
       pointer-events: none;
     }
-    ul {
+   .nav_bar ul {
       flex-direction: column;
       padding: 30px 20;
+      background-color: black;
+      border-bottom: 2px solid white;
     }
-    .s-open {
+    .nav_bar .s-open {
       display: inline;
       position: absolute;
       right: 10px;
       top: 10px;
       z-index: -1;
     }
-    .s-close {
+    .nav_bar .s-close {
       display: block;
       position: absolute;
       right: 10px;
       top: 10px;
+    }
+    .nav_bar .logo-div{
+      display: none;
     }
   }
 

@@ -2,42 +2,45 @@ import './style.css';
 import algos from './img/algocs.png';
 import gdsc from './img/gdsc.png';
 import iosc from './img/iosc.png';
-
+import { BsHeadsetVr } from "react-icons/bs";
+import { FaGlobeAmericas } from "react-icons/fa";
 import {MIDDLE_SECTION} from '../../Module/General';
 
 function LogoSectionAbout() {
   return (
-    <div className="LogoSectionAbout">
+    <div className="LogoSectionAbout" >
+      <BsHeadsetVr fontSize={200} className='arHeadset'/>
+      <FaGlobeAmericas fontSize={200} className='globe'/>
       <h1>{MIDDLE_SECTION.TITLE}</h1>
       <p>{MIDDLE_SECTION.LONG_DESCRIPTION}</p>
+      
     </div>
   );
 }
 
 function Logo() {
   return (
-    <div className="logoS">
-      <img className="Logo" src={MIDDLE_SECTION.LOGO} alt="Innohacks" />
-    </div>
+   
+      <img className="Logo-about" src={MIDDLE_SECTION.LOGO}  alt="Innohacks" />
   );
 }
 
 function CommunityPartner() {
   return(
-    <div className="community-partner">
-    <h1 className="title" style={{marginBottom:'5%', marginTop:'6%', fontWeight:'bolder'}}>Community Partner</h1>
-    <div className="" style={{display: 'flex',  justifyContent: 'center', flexWrap: 'wrap',marginBottom:'6%'}}>
-      <div style={{color: 'white', textAlign: 'center', margin: "0 5% 2% 5%"}}>
-        <img src={iosc} className="iosc_logo" width="200" alt=""/>
-        <p style={{fontFamily: 'cursive', color:'black', fontWeight:'bold'}}>IOSC</p>
+    <div className="community-partner" >
+    <h1 className="title_community" >Community Partners</h1>
+    <div className="community_logo_container" >
+      <div className='logo-community' style={{color: 'white', textAlign: 'center', margin: "0 5% 2% 5%"}}>
+        <img src={iosc} className="iosc_logo" width="100%" alt="" />
+        <p >IOSC</p>
       </div>
-      <div style={{color: 'white', textAlign: 'center', margin: '0 5% 2% 5%'}}>
-        <img src={gdsc} className="iosc_logo" width="200" alt=""/>
-        <p style={{fontFamily: 'cursive', color:'black', fontWeight:'bold'}}>GDSC-ABESEC</p>
+      <div className='logo-community' style={{color: 'white', textAlign: 'center', margin: '0 5% 2% 5%'}}>
+        <img src={gdsc} className="iosc_logo" width="100%" alt=""/>
+        <p >GDSC-ABESEC</p>
       </div>
-      <div style={{color: 'white', textAlign: 'center', margin: '0 5% 2% 5%'}}>
-        <img src={algos} className="iosc_logo" width="200" alt=""/>
-        <p style={{fontFamily: 'cursive', color:'black', fontWeight:'bold'}}>ALGOCS</p>
+      <div  className='logo-community' style={{color: 'white', textAlign: 'center', margin: '0 5% 2% 5%'}}>
+        <img src={algos} className="iosc_logo" width="100%" alt=""/>
+        <p >ALGOCS</p>
        </div>
     </div>
   </div>

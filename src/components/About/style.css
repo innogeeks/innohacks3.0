@@ -4,24 +4,65 @@
   margin-top: 0;
   padding: 0;
   position: relative;
-  right: 130px;
+  transform: translateX(-50%) translateY(10%);
 }
-.Logo {
-  width: 60%;
-  display: inline-block;
+
+.Logo-about {
+  width: 40%;
   margin: 0;
   padding: 0;
+  /* position: absolute;
+  left: 50%; */
+  transform: translateX(100%);
+  border-radius: 50%;
+  animation: upDown 1s infinite alternate;
+  transition: all 0s ease-in;
+}
+
+@keyframes upDown {
+  from{
+    transform: translateY(-10px);
+  }
+  to{
+    transform: translateY(10px);
+
+  }
+}
+
+.arHeadset {
   position: absolute;
+  transition: all 1s;
+  color: rgba(0, 0, 0, 0.272);
+  top: -100px;
+  transform: rotate(0deg);
+  animation: rotate 5s infinite ease-in-out;
+}
+@keyframes rotate {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.globe {
+  position: absolute;
+  transform: rotate(30deg);
+  color: rgba(0, 0, 0, 0.272);
+  bottom: -50px;
+  right: 0;
 }
 
 
 .LogoSectionAbout {
   text-align: left;
-  width: 80%;
   display: inline-block;
   position: relative;
   font-family: 'Nunito', sans-serif;
+  padding-left: 20%;
 }
+
 .LogoSectionAbout h1 {
   font-weight: 700;
   text-align: left;
@@ -31,30 +72,30 @@
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 2s infinite alternate;
 }
+
 @-webkit-keyframes mover {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-10px);
   }
 }
+
 @keyframes mover {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-10px);
   }
 }
-
-@media (max-width: 570px) {
-  .logoS {
-    margin-top: 10rem;
-    margin-bottom: -10rem;
-  }
-  .Logo {
-    margin: 0 auto;
+@media (max-width: 1000px){
+  .Logo-about{
+    /* margin-left:9rem;   */
+    width: 40vw;
   }
 }
 
@@ -62,9 +103,43 @@
   .logoS {
     margin-top: 10rem;
     margin-bottom: -10rem;
-    /* background-color: black; */
   }
+
   .Logo {
     margin: 0 auto;
   }
+  .Logo-about{
+    margin-left:10rem;  
+    width: 50vw;
+  }
+}
+
+
+
+.title_community {
+  margin-bottom: 5%;
+  margin-top: 6%;
+  font-weight: bolder;
+  font-size: repo-bold;
+}
+
+.community_logo_container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom:'6%'
+}
+.community_logo_container .logo-community{
+  width: 200px;
+  object-fit: contain;
+  transition: all 200ms ease-in;
+
+}
+.logo-community:hover{
+  scale: 1.2;
+}
+
+.community_logo_container p{
+  font-family: repo-extrabold;
+  color: gray;
 }

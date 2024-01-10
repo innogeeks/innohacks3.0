@@ -1,5 +1,5 @@
 // import hackathonLogo from './Assets/hackathonLogo.png';
-import hackathonLogo from './Assets/2100290130180_SurajUpadhayay.pdf.png.png';
+import hackathonLogo from './Assets/Innohacks 3.0 Logo.png';
 
 // Importing all sponsors logos from Assets
 /** Put all your Team member image inside folder `Team Images`
@@ -55,11 +55,20 @@ import akshay from "./Assets/teami/akshay saini.jpg"
 import arsh from "./Assets/teami/arsh goyal.jpg"
 import kushal from "./Assets/teami/kushal.jpeg"
 
+// importing all themes
+import security from '../containers/Home/assets/theme/9.png'
+import blockchain from '../containers/Home/assets/theme/4.png'
+import fintech from '../containers/Home/assets/theme/5.png'
+import iot from '../containers/Home/assets/theme/7.png'
+import vr from '../containers/Home/assets/theme/6.png'
+import open from '../containers/Home/assets/theme/8.png'
+
+
 const TOP_SECTION = {
   TITLE: 'Join InnoHacks3.0',
-  Typed_effect: ['24 hours of creation', 'Win awesome prizes'],
+  Typed_effect: ['24 hours of Innovations', 'Win awesome prizes'],
   SHORT_DESCRIPTION:
-    'Join us on 27th April 2024 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.',
+    'Join us on 27th April 2024 with over Hundreds of students from across the nation for 24 hours of creation, innovation, & fun.',
   IMG_SRC: hackathonLogo,
   DISCORD_LINK: '',
   JUDGES_FORM_LINK:
@@ -209,19 +218,19 @@ const Prizeinfo = [
   [
     //Array 1
     {
-      icon: <img src='https://cdn-icons-png.flaticon.com/512/6394/6394616.png' width={"100px"} className="icons"></img>,
+      icon: <img src='https://cdn-icons-png.flaticon.com/512/6394/6394616.png' width={"100%"} className="icons"></img>,
       type: 'First Prize',
       content:
         '₹ 50,000 and cool Innohacks swags...'
     },
     {
-      icon: <img src='https://cdn-icons-png.flaticon.com/512/5406/5406798.png' width={"100px"} className="icons"></img>,
+      icon: <img src='https://cdn-icons-png.flaticon.com/512/5406/5406798.png' width={"100%"} className="icons"></img>,
       type: 'Second Prize',
       content:
         '₹ 30,000 and cool Innohacks swags...'
     },
     {
-      icon: <img src='https://cdn-icons-png.flaticon.com/512/5406/5406800.png ' width={"100px"} className="icons"></img>,
+      icon: <img src='https://cdn-icons-png.flaticon.com/512/5406/5406800.png ' width={"100%"} className="icons"></img>,
       type: 'Third Prize',
       content:
         '₹ 20,000 and cool Innohacks swags...'
@@ -264,19 +273,19 @@ const Themeinfo = [
   [
     //Array 1
     {
-      icon: <img src='https://icons.veryicon.com/png/o/miscellaneous/color-work-icon/blockchain-2.png' width={"100px"} className="icons"></img>,
+      icon: <img src={blockchain} width={"100px"} className="icons"></img>,
       type: 'BlockChain and Web3',
       content:
         ''
     },
     {
-      icon: <img src='https://cdn.iconscout.com/icon/premium/png-256-thumb/smart-security-8500115-6703694.png?f=webp' width={"100px"} className="icons"></img>,
+      icon: <img src={security} width={"100px"} className="icons"></img>,
       type: 'Smart Security',
       content:
         ''
     },
     {
-      icon: <img src='https://cdn-icons-png.flaticon.com/512/4538/4538154.png' width={"100px"} className="icons"></img>,
+      icon: <img src={fintech} width={"100px"} className="icons"></img>,
       type: 'Fintech',
       content:
         ''
@@ -285,18 +294,18 @@ const Themeinfo = [
   [
     //Array 2
     {
-      icon: <img src='https://cdn-icons-png.flaticon.com/512/8654/8654914.png' width={"100px"} className="icons"></img>,
+      icon: <img src={vr} width={"100px"} className="icons"></img>,
       type: 'Extended Reality',
       content:
         ''
     },
     {
-      icon: <img src='https://static.thenounproject.com/png/1174552-200.png' width={"100px"} className="icons"></img>,
+      icon: <img src={iot} width={"100px"} className="icons"></img>,
       type: 'AIoT Integration',
       content: ''
     },
     {
-      icon: <img src='https://e7.pngegg.com/pngimages/753/477/png-clipart-blue-light-bulb-illustration-incandescent-light-bulb-brain-icon-cartoon-brain-bulb-icon-cartoon-character-text.png' width={"100px"} className="icons"></img>,
+      icon: <img src={open} width={"100px"} className="icons"></img>,
       type: 'Open Innovation',
       content: ''
     }
@@ -315,22 +324,22 @@ const TeamInfo = [
     {
       Name: 'Love Babbar',
       role: 'Love Babbar',
-      github: 'https://github.com/Limbo-Hacks/Hackathon-website-template',
-      linkedin: '',
+      github: '',
+      linkedin: 'https://www.linkedin.com/in/love-babbar-38ab2887/',
       img: babbar
     },
     {
       Name: 'Striver',
       role: 'Striver',
       github: '',
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/rajstriver/',
       img: striver
     },
     {
       Name: 'Akshay Saini',
       role: 'Akshay Saini',
       github: '',
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/akshaymarch7/',
       img: akshay
     }
   ],
@@ -340,21 +349,21 @@ const TeamInfo = [
       Name: 'Sandeep Jain',
       role: 'Sandeep Jain',
       github: '',
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/sandeep-jain-/',
       img: sandeep
     },
     {
       Name: 'Arsh Goyal',
       role: 'Arsh Goyal',
       github: '',
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/arshgoyal/',
       img: arsh
     },
     {
       Name: 'Kshitiz Miglani',
       role: 'Kshitiz Miglani',
       github: '',
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/kshitizmiglani/',
       img: kshitiz
     }
   ]
@@ -367,41 +376,17 @@ const JudgesInfo = [
       Name: 'Kushal Vijay',
       role: 'Kushal Vijay',
       github: '',
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/kushalvijay/',
       img: kushal
     },
     {
       Name: 'Khushboo Verma',
       role: 'Khushboo Verma',
       github: '',
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/verma-khushboo/',
       img: khushboo
     },
-    // {
-    //   Name: 'Ryah Garcia',
-    //   role: 'Organizer',
-    //   github: '',
-    //   linkedin: '',
-    //   img: Ryah
-    // }
   ],
-  [
-    //Array 2
-    // {
-    //   Name: 'Lyanola',
-    //   role: 'Organizer',
-    //   github: '',
-    //   linkedin: '',
-    //   img: lyin
-    // },
-    // {
-    //   Name: 'Zoheb',
-    //   role: 'Organizer',
-    //   github: '',
-    //   linkedin: '',
-    //   img: zoha
-    // }
-  ]
 ];
 
 /** Instructions
@@ -411,13 +396,13 @@ const JudgesInfo = [
  */
 
 const sponsorLogos = [
-  [{src: first}, {src: second}, {src: sixteen}], //Array 1
-  [{src: forth}, {src: fifth}, {src: sixth}],
-  [{src: seventh}, {src: eight}, {src: nine}],
-  [{src: seventeen}, {src: eleven}, {src: twelve}],
-  [{src: thirteen}, {src: fourteen}, {src: fifteen}],
-  [{src: coding}, {src: auth}, {src: fire}],
-  [{src: eighteen}, {src: twenty}],
+  {src: first}, {src: second}, {src: sixteen},
+  {src: forth}, {src: fifth}, {src: sixth},
+  {src: seventh}, {src: eight}, {src: nine},
+  {src: seventeen}, {src: eleven}, {src: twelve},
+  {src: thirteen}, {src: fourteen}, {src: fifteen},
+  {src: coding}, {src: auth}, {src: fire},
+  {src: eighteen}, {src: twenty}
 ];
 
 /** Instructions

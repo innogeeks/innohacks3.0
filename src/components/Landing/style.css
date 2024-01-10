@@ -21,7 +21,6 @@ button {
 }
 
 .join_disco {
-  width: 30rem;
   background: linear-gradient(90deg, #9796F0 0%, #FBC7D4 100%);
 }
 
@@ -32,12 +31,14 @@ button {
 .join_dis {
   margin-bottom: 29px;
   margin-top: 19px;
-  
+  width: 100%;
+  display: flex;
+  justify-content: start;
 }
 
 .buttom-group{
   width: 100%;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .register {
@@ -53,13 +54,13 @@ button {
 
 p {
   font-size: 2rem;
-  line-height: 1.6;
   font-weight: 300;
 }
 
 .Myinfo {
   text-align: left;
   margin-left: 10vh;
+  margin-top: -5vh;
 }
 
 .Myinfo p {
@@ -107,6 +108,11 @@ button:hover .overlay {
 
 /* main targer */
 
+@media (max-width:570px) {
+  .join_dis{
+    justify-content: center;
+  }
+}
 @media (max-width: 570px) {
   .Myinfo p {
     width: 100%;
@@ -141,4 +147,158 @@ button:hover .overlay {
   .Myinfo p {
     font-size: 1.6rem;
   }
+  
+}
+
+
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: rgb(255, 0, 0);
+  box-shadow: 0 0 0 2px rgb(255, 0, 0);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  margin-left: 3px;
+  width: 100%;
+  /* transform: translateX(-50%); */
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: rgb(255, 0, 0);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  /* background-color: rgb(30, 120, 228); */
+  border-radius: 20px;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: rgb(30, 120, 228);
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: rgb(30, 120, 228);
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px rgb(30, 120, 228);
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+
+.anime-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  color: white;
+  text-shadow: 2px 2px rgb(116, 116, 116);
+  text-transform: uppercase;
+  cursor: pointer;
+  border: solid 2px black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: red;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.anime-btn:active {
+  transform: scale(0.9);
+  transition: all 100ms ease;
+}
+
+.anime-btn .img {
+  transition: all 0.5s ease;
+  z-index: 2;
+  position: absolute;
+  left: 10%;
+  bottom: 4%;
+}
+
+.play {
+  transition: all 0.5s ease;
+  transition-delay: 300ms;
+}
+
+.anime-btn:hover .img {
+  transform: scale(2) translate(50%) translateX(80%);
+}
+
+.now {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.anime-btn:hover .now {
+  transform: translateX(10px);
+  transition-delay: 100ms;
+}
+
+.anime-btn:hover .play {
+  transform: translateX(200%);
+  transition-delay: 100ms;
 }

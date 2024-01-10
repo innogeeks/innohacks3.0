@@ -1,19 +1,26 @@
-import {useEffect, useState} from 'react';
-import {FOOTER, SOCIALS, TOP_SECTION} from '../../Module/General';
-import {Btn} from '../Landing/index.jsx';
-import cross from './assets/cross.svg';
-import DevPost from './assets/icons8-dev-post.svg';
-import Dis from './assets/icons8-discord.svg';
-import Insta from './assets/icons8-instagram.svg';
-import Linked from './assets/icons8-linkedin-2.svg';
-import Mail from './assets/icons8-mail.svg';
-import Twitter from './assets/icons8-twitter.svg';
-import PrivacyPolicy from './assets/Privacy policy.pdf';
-import TermsOfUse from './assets/Terms of use.pdf';
+import { useEffect, useState } from 'react';
+import { FOOTER, SOCIALS, TOP_SECTION } from '../../Module/General';
+// import cross from './assets/cross.svg';
+// import {Btn} from '../Landing/index.jsx';
+// import DevPost from './assets/icons8-dev-post.svg';
+// import Dis from './assets/icons8-discord.svg';
+// import Insta from './assets/icons8-instagram.svg';
+// import Linked from './assets/icons8-linkedin-2.svg';
+// import Mail from './assets/icons8-mail.svg';
+// import Twitter from './assets/icons8-twitter.svg';
+// import PrivacyPolicy from './assets/Privacy policy.pdf';
+// import TermsOfUse from './assets/Terms of use.pdf';
+import { FaInstagram } from "react-icons/fa6";
+import { BiLogoDiscordAlt } from "react-icons/bi";
+import { CiLinkedin } from "react-icons/ci";
+import { IoLogoTwitter } from "react-icons/io";
+import logo from './assets/InnohacksFullLogo.png'
+import Innologo from './assets/logo.png'
+import { HashLink } from 'react-router-hash-link';
 //------------------------------------------------------------------
 import './style.scss';
 
-const GithubTemplate = ({hideTemplate}) => {
+const GithubTemplate = ({ hideTemplate }) => {
   return (
     <div className="template">
       <div className="template-left">
@@ -30,99 +37,74 @@ const GithubTemplate = ({hideTemplate}) => {
 };
 
 const Footer = () => {
-  const [template, setTemplate] = useState(false);
-  const [viewTemplate, setViewTemplate] = useState(true);
+  // const [template, setTemplate] = useState(false);
+  // const [viewTemplate, setViewTemplate] = useState(true);
 
-  useEffect(() => {
-    window.addEventListener('scroll', listenScrollEvent);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', listenScrollEvent);
 
-    return () => {
-      window.removeEventListener('scroll', listenScrollEvent);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('scroll', listenScrollEvent);
+  //   };
+  // }, []);
 
-  const listenScrollEvent = e => {
-    if (window.scrollY > 2800) setTemplate(true);
-    else if (window.scrollY < 2800) setTemplate(false);
-  };
+  // const listenScrollEvent = e => {
+  //   if (window.scrollY > 2800) setTemplate(true);
+  //   else if (window.scrollY < 2800) setTemplate(false);
+  // };
 
   return (
-    <div>
-      <div className="footer">
-        {/* <div className="social-icons-container">
-          <div className="social-icon">
-            <a rel="noreferrer" target="_blank" href={SOCIALS.instagram}>
-              <img src={Insta} alt="" />
-            </a>
-          </div>
-          <div className="social-icon">
-            <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
-              <img src={Dis} alt="" />
-            </a>
-          </div>
-          <div className="social-icon">
-            <a rel="noreferrer" target="_blank" href={SOCIALS.linkedin}>
-              <img src={Linked} alt="" />
-            </a>
-          </div>
-          <div className="social-icon">
-            <a rel="noreferrer" target="_blank" href={SOCIALS.email}>
-              <img src={Mail} alt="" />
-            </a>
-          </div>
-          <div className="social-icon">
-            <a rel="noreferrer" target="_blank" href={SOCIALS.twitter}>
-              <img src={Twitter} alt="" />
-            </a>
-          </div>
-        </div> */}
+    <div className="footer" >
+      <div className='main-footer'>
         <div className="Register_a">
-          <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
-            {/* <Btn type="Register" overlay="Fill the form" /> */}
-            <button className="butt">
-           Register Now
-          <div id="clip">
-              <div id="leftTop" class="corner"></div>
-              <div id="rightBottom" class="corner"></div>
-              <div id="rightTop" class="corner"></div>
-              <div id="leftBottom" class="corner"></div>
-          </div>
-          <span id="rightArrow" class="arrow"></span>
-          <span id="leftArrow" class="arrow"></span>
-      </button>
-
-            {/* <button>
-              <div>
-                <span>
-                  <p class="innerText">Register</p><p class="innerText">:)</p>
-                </span>
-              </div>
-              <div>
-                <span>
-                  <p class="innerText">Now</p><p class="innerText">:D</p>
-                </span>
-              </div>
-            </button> */}
-
-          </a>
-          {/* {FOOTER.VOLUNTEERING_FORM.required && (
-            // <a href={FOOTER.VOLUNTEERING_FORM.src}>
-            //   <Btn type="Volunteer" class="Volunteer" overlay="Fill the form" />
-            // </a>
-          )} */}
+          <button class="register-button">
+            <HashLink smooth className='register-link' to="#">
+              <span>Register Now</span>
+            </HashLink>
+          </button>
         </div>
-        <div className="footer_info">
-          <div className='hr'><hr></hr></div>
-          <p>
-            Contact us{' '}
-            <a href={SOCIALS.email}>
-              <em>{SOCIALS.mail}</em>
-            </a>{' '}
-          </p>
-          <p>Made with ❤️ By team Innogeeks</p>
+        <div className='social-links'>
+          <span className="single" >
+            <a rel="noreferrer " target="_blank" href={SOCIALS.instagram}  >
+              <FaInstagram fontSize={40} className='redBlue1' />
+            </a>
+          </span>
+          <span className="single">
+            <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
+              <BiLogoDiscordAlt fontSize={40} className='redBlue2' />
+            </a>
+          </span>
+          <span className="single">
+            <a rel="noreferrer" target="_blank" href={SOCIALS.linkedin}>
+              <CiLinkedin fontSize={40} className='redBlue3' />
+            </a>
+          </span>
+          <span className="single">
+            <a rel="noreferrer" target="_blank" href={SOCIALS.twitter}>
+              <IoLogoTwitter fontSize={40} className='redBlue4' />
+            </a>
+          </span>
         </div>
       </div>
+      <div className="footer-logo">
+        <div>
+          <HashLink className="footer-logo-link" to="#" smooth>
+            <img src={logo} width={"100%"} alt="" />
+          </HashLink>
+        </div>
+        <div>
+        <a className="footer-logo-link" href="https://innogeeks.in/" target='_blank'>
+          <img src={Innologo} width={"100%"} alt="" />
+        </a>
+        </div>
+      </div>
+      <div className="footer-team">
+        <h4>❤️Design by Team-INNOGEEKS💙 </h4>
+        <p>©2024 Innogeeks™</p>
+        <p><a href="mailto:innogeeks@kiet.edu">Contact us @Innogeeks™</a></p>
+      </div>
     </div>
+
   );
 };
 
