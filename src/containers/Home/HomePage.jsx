@@ -230,16 +230,18 @@ export default function HomePage() {
         {media && <Birds top="120vh" left="0vh" type="" />}
 
         {/* ********Team here ***** */}
-        <h1 id="team">Past Speakers</h1>
+        <h1 id="team">Past Speakers and Judges</h1>
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
 
         {/* ********Judges here ***** */}
 
-        <br></br><br></br>
-        <h1 id="team">Judges</h1>
+        {/* <br></br><br></br>
+        <h1 id="team">Judges</h1> */}
 
-        {JudgesInfo.map(TeamMembers)}
+        <div className='judges-container'>
+          {JudgesInfo.map(TeamMembers)}
+        </div>
         {/* ********Team ending here ***** */}
         <Row>
           <CommunityPartner />
