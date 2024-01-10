@@ -17,26 +17,26 @@ import hackathonLogo from './Assets/2100290130180_SurajUpadhayay.pdf.png.png';
 // import codingMinutes from "./Assets/sponsorsLogos/coding minutes.jpeg"
 // import metty from "./Assets/sponsorsLogos/metty.png"
 
-import first from "./Assets/sponsorsLogos/1.png"
-import second from "./Assets/sponsorsLogos/2.png"
-import coding from "./Assets/sponsorsLogos/coding.jpeg"
-import forth from "./Assets/sponsorsLogos/4.png"
-import fifth from "./Assets/sponsorsLogos/5.png"
-import sixth from "./Assets/sponsorsLogos/6.png"
-import seventh from "./Assets/sponsorsLogos/7.png"
-import eight from "./Assets/sponsorsLogos/8.png"
-import nine from "./Assets/sponsorsLogos/9.png"
-import auth from "./Assets/sponsorsLogos/auth.png"
-import eleven from "./Assets/sponsorsLogos/11.png"
-import twelve from "./Assets/sponsorsLogos/12.png"
-import thirteen from "./Assets/sponsorsLogos/13.png"
-import fourteen from "./Assets/sponsorsLogos/14.png"
-import fifteen from "./Assets/sponsorsLogos/15.png"
-import sixteen from "./Assets/sponsorsLogos/16.png"
-import seventeen from "./Assets/sponsorsLogos/17.png"
-import eighteen from "./Assets/sponsorsLogos/18.png"
-import fire from "./Assets/sponsorsLogos/5ire.png"
-import twenty from "./Assets/sponsorsLogos/20.png"
+// import first from "./Assets/sponsorsLogos/1.png"
+// import second from "./Assets/sponsorsLogos/2.png"
+// import coding from "./Assets/sponsorsLogos/coding.jpeg"
+// import forth from "./Assets/sponsorsLogos/4.png"
+// import fifth from "./Assets/sponsorsLogos/5.png"
+// import sixth from "./Assets/sponsorsLogos/6.png"
+// import seventh from "./Assets/sponsorsLogos/7.png"
+// import eight from "./Assets/sponsorsLogos/8.png"
+// import nine from "./Assets/sponsorsLogos/9.png"
+// import auth from "./Assets/sponsorsLogos/auth.png"
+// import eleven from "./Assets/sponsorsLogos/11.png"
+// import twelve from "./Assets/sponsorsLogos/12.png"
+// import thirteen from "./Assets/sponsorsLogos/13.png"
+// import fourteen from "./Assets/sponsorsLogos/14.png"
+// import fifteen from "./Assets/sponsorsLogos/15.png"
+// import sixteen from "./Assets/sponsorsLogos/16.png"
+// import seventeen from "./Assets/sponsorsLogos/17.png"
+// import eighteen from "./Assets/sponsorsLogos/18.png"
+// import fire from "./Assets/sponsorsLogos/5ire.png"
+// import twenty from "./Assets/sponsorsLogos/20.png"
 
 
 /** Put all your sponsors logo inside folder `sponsorLogos`
@@ -57,9 +57,9 @@ import kushal from "./Assets/teami/kushal.jpeg"
 
 const TOP_SECTION = {
   TITLE: 'Join InnoHacks3.0',
-  Typed_effect: ['24 hours of creation', 'Win awesome prizes'],
+  Typed_effect: ['24 hours of innovation', 'Win awesome prizes'],
   SHORT_DESCRIPTION:
-    'Join us on 27th April 2024 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.',
+    'Join us on 27th April 2024 with over hundreds of students from across the nation for 24 hours of creation, innovation, & fun.',
   IMG_SRC: hackathonLogo,
   DISCORD_LINK: '',
   JUDGES_FORM_LINK:
@@ -410,15 +410,15 @@ const JudgesInfo = [
  * in a group of 3.
  */
 
-const sponsorLogos = [
-  [{src: first}, {src: second}, {src: sixteen}], //Array 1
-  [{src: forth}, {src: fifth}, {src: sixth}],
-  [{src: seventh}, {src: eight}, {src: nine}],
-  [{src: seventeen}, {src: eleven}, {src: twelve}],
-  [{src: thirteen}, {src: fourteen}, {src: fifteen}],
-  [{src: coding}, {src: auth}, {src: fire}],
-  [{src: eighteen}, {src: twenty}],
-];
+// const sponsorLogos = [
+//   [{src: first}, {src: second}, {src: sixteen}], //Array 1
+//   [{src: forth}, {src: fifth}, {src: sixth}],
+//   [{src: seventh}, {src: eight}, {src: nine}],
+//   [{src: seventeen}, {src: eleven}, {src: twelve}],
+//   [{src: thirteen}, {src: fourteen}, {src: fifteen}],
+//   [{src: coding}, {src: auth}, {src: fire}],
+//   [{src: eighteen}, {src: twenty}],
+// ];
 
 /** Instructions
  * Follow the strcuture provided below to add as many as FAQ's you want
@@ -477,7 +477,7 @@ export {
   SOCIALS,
   FOOTER,
   Prizeinfo,
-  sponsorLogos,
+  // sponsorLogos,
   TeamInfo,
   JudgesInfo,
   frequentlyAskedQuestions,

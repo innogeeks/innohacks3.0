@@ -10,11 +10,7 @@ import Footer from '../../components/Footer/index.jsx';
 import {Myinfo} from '../../components/Landing/index.jsx';
 import {FirstPrize, PrizeHeading} from '../../components/Prizes/index.jsx';
 import Media from '../../components/Socials/index.jsx';
-import {
-  Sponsor,
-  SponsorsHead,
-  SponsorUS
-} from '../../components/Sponsors/sponsors.jsx';
+import Sponsors from '../../components/Sponsors/sponsors.jsx';
 import {JoinTeam, Member} from '../../components/Team';
 import {
   FOOTER,
@@ -22,7 +18,7 @@ import {
   JudgesInfo,
   Prizeinfo,
   Themeinfo,
-  sponsorLogos,
+  // sponsorLogos,
   TeamInfo,
   TOP_SECTION
 } from '../../Module/General';
@@ -37,7 +33,7 @@ const SponsorGroup = (props, index) => {
       {props.map((s, i) => (
         <Col key={i} className="" sm={12} lg={4} md={6}>
           {' '}
-          <Sponsor srcx={s.src} />{' '}
+          <Sponsors srcx={s.src} />{' '}
         </Col>
       ))}
     </Row>
@@ -144,9 +140,10 @@ export default function HomePage() {
         {/* ********Sponsors here ***** */}
 
         <Row className="sponsorSection" id="sponsors">
-          <SponsorsHead />
-          <SponsorUS />
-          {sponsorLogos.map(SponsorGroup)}
+          <Sponsors/>
+          {/* <SponsorsHead />
+          <SponsorUS /> */}
+          {/* {sponsorLogos.map(SponsorGroup)} */}
         </Row>
         {/* ********Sponsors ending here ***** */}
 
