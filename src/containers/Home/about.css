@@ -53,10 +53,13 @@ h1 {
   padding: 20vh 10vh 0 10vh;
   margin-top: 3vh;
   margin-bottom: 3vh;
-  display:flex ;
+  display:flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+}
+.info-div{
+  width: 50%;
+  position: relative;
 }
 .members {
   padding: 0vh 10vh 0 10vh;
@@ -96,7 +99,7 @@ h1 {
 }
 .my-faq-head{
 margin-bottom: 50px;
-text-decoration: underline;
+font-family: repo-bold;
 }
 
 @media (max-width: 450px){
@@ -135,8 +138,11 @@ text-decoration: underline;
     margin: 12rem auto;
   }
   .logoSection {
-    text-align: center;
+    text-align: left;
     padding: 20vh 0vh 0 0vh;
+  }
+  .info-div{
+    width: 100%;
   }
 }
 
