@@ -90,6 +90,9 @@ h1 {
   margin-top: -10vh;
   margin-top: 0vh;
 }
+#team{
+  font-family: repo-bold
+}
 .faqsSection {
   text-align: center;
   margin: 0 auto;
@@ -148,22 +151,17 @@ font-family: repo-bold;
 
 .contain{
    transition: all;
-   /* margin: 0 auto; */
    margin-top: 5rem;
    margin-bottom: 5rem;
-   /* width: 10%; */
 }
 
 .imagee{
-   /* width: 100%; 
-   height:100%; */
    width: 70vh;
-  /* position: relative; */
   display: inline-block;
-  /* object-fit: contain; */
+  
 }
 
-.contain:hover img{
+ .imagee:hover{
   transform: scale(1.2);
 }
 
@@ -230,6 +228,7 @@ font-family: repo-bold;
   justify-content: center;
   align-items: center;
   gap: 8rem;
+  margin-top: 10vh;
 }
 
 /* card2 */
@@ -324,4 +323,49 @@ font-family: repo-bold;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent; 
   -moz-text-fill-color: transparent;
+}
+/* .sponsor-logos{
+  width: 90vw;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.sponsor-bg{
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+} */
+.sponsor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  align-items: center; 
+  margin-top: 20px;
+}
+
+.sponsor-logos {
+  width: 100%;
+
+  max-width: 300px; 
+  margin-bottom: 20px; 
+  transition: all 200ms ease-in;
+}
+.sponsor-logos:hover{
+  scale: 1.1;
+}
+
+.sponsor-bg {
+  /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px;   */
+  background-color: #e0dfdf84;
+  box-shadow: 10px 10px 60px #00000060 ,inset -20px -20px 60px #ffffff5d ;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor-bg img {
+  width: 100%; 
+  height: auto; 
+  scale: 0.6;
 }

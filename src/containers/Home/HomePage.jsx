@@ -39,18 +39,13 @@ import iot from './assets/prizes/light-control.gif'
 import girl from './assets/prizes/girl.gif'
 import social from './assets/prizes/fans.gif'
 
-const SponsorGroup = (props, index) => {
-  return (
-    <Row key={index}>
-      {props.map((s, i) => (
-        <Col key={i} className="" sm={12} lg={4} md={6}>
-          {' '}
-          <Sponsor srcx={s.src} />{' '}
-        </Col>
-      ))}
-    </Row>
-  );
-};
+// const SponsorGroup = (props, index) => {
+//   return (
+//     <Row key={index}>
+      
+//     </Row>
+//   );
+// };
 
 // Prize group
 const PrizeGroup = (props, index) => {
@@ -130,10 +125,10 @@ export default function HomePage() {
         </Row>
 
         {/* ********Prizes here ***** */}
-          <h1 className='prize_heading' style={{fontFamily:"repo-bold"}}>Past Prizes</h1>
-        <Row className="prizesection" id="prizes" style={{padding:"10px", minHeight:"100vh" ,display:"flex" , flexDirection:"column" , justifyContent:"center" }}>
-          {/* <PrizeHeading type="Prize section" />
-          {Prizeinfo.map(PrizeGroup)} */}
+          <h1 id="prizes" className='prize_heading' style={{fontFamily:"repo-bold"}}>Past Prizes</h1>
+        <Row className="prizesection"  style={{padding:"10px", minHeight:"100vh" ,display:"flex" , flexDirection:"column" , justifyContent:"center" }}>
+          {/* <PrizeHeading type="Prize section" /> */}
+          {/* {Prizeinfo.map(PrizeGroup)} */}
           {/* ARRAY -1 */}
           <div className='cards_prizes'>
             <div class="cardone cards_">
@@ -218,7 +213,15 @@ export default function HomePage() {
         <Row className="sponsorSection" id="sponsors">
           <SponsorsHead />
           <SponsorUS />
-          {sponsorLogos.map(SponsorGroup)}
+          <div className="sponsor-grid">
+            {sponsorLogos.map((item, i) => (
+              <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                <div className='sponsor-bg'>
+                  <img src={item.src} width={180} alt="" />
+                </div>
+              </Col>
+            ))}
+          </div>
         </Row>
         {/* ********Sponsors ending here ***** */}
 

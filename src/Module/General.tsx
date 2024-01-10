@@ -66,9 +66,9 @@ import open from '../containers/Home/assets/prizes/innovation.gif'
 
 const TOP_SECTION = {
   TITLE: 'Join InnoHacks3.0',
-  Typed_effect: ['24 hours of creation', 'Win awesome prizes'],
+  Typed_effect: ['24 hours of Innovations', 'Win awesome prizes'],
   SHORT_DESCRIPTION:
-    'Join us on 27th April 2024 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.',
+    'Join us on 27th April 2024 with over Hundreds of students from across the nation for 24 hours of creation, innovation, & fun.',
   IMG_SRC: hackathonLogo,
   DISCORD_LINK: '',
   JUDGES_FORM_LINK:
@@ -324,22 +324,22 @@ const TeamInfo = [
     {
       Name: 'Love Babbar',
       role: 'Love Babbar',
-      github: 'https://github.com/Limbo-Hacks/Hackathon-website-template',
-      linkedin: '',
+      github: '',
+      linkedin: 'https://www.linkedin.com/in/love-babbar-38ab2887/',
       img: babbar
     },
     {
       Name: 'Striver',
       role: 'Striver',
       github: '',
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/rajstriver/',
       img: striver
     },
     {
       Name: 'Akshay Saini',
       role: 'Akshay Saini',
       github: '',
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/akshaymarch7/',
       img: akshay
     }
   ],
@@ -349,21 +349,21 @@ const TeamInfo = [
       Name: 'Sandeep Jain',
       role: 'Sandeep Jain',
       github: '',
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/sandeep-jain-/',
       img: sandeep
     },
     {
       Name: 'Arsh Goyal',
       role: 'Arsh Goyal',
       github: '',
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/arshgoyal/',
       img: arsh
     },
     {
       Name: 'Kshitiz Miglani',
       role: 'Kshitiz Miglani',
       github: '',
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/kshitizmiglani/',
       img: kshitiz
     }
   ]
@@ -376,41 +376,17 @@ const JudgesInfo = [
       Name: 'Kushal Vijay',
       role: 'Kushal Vijay',
       github: '',
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/kushalvijay/',
       img: kushal
     },
     {
       Name: 'Khushboo Verma',
       role: 'Khushboo Verma',
       github: '',
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/verma-khushboo/',
       img: khushboo
     },
-    // {
-    //   Name: 'Ryah Garcia',
-    //   role: 'Organizer',
-    //   github: '',
-    //   linkedin: '',
-    //   img: Ryah
-    // }
   ],
-  [
-    //Array 2
-    // {
-    //   Name: 'Lyanola',
-    //   role: 'Organizer',
-    //   github: '',
-    //   linkedin: '',
-    //   img: lyin
-    // },
-    // {
-    //   Name: 'Zoheb',
-    //   role: 'Organizer',
-    //   github: '',
-    //   linkedin: '',
-    //   img: zoha
-    // }
-  ]
 ];
 
 /** Instructions
@@ -420,13 +396,13 @@ const JudgesInfo = [
  */
 
 const sponsorLogos = [
-  [{src: first}, {src: second}, {src: sixteen}], //Array 1
-  [{src: forth}, {src: fifth}, {src: sixth}],
-  [{src: seventh}, {src: eight}, {src: nine}],
-  [{src: seventeen}, {src: eleven}, {src: twelve}],
-  [{src: thirteen}, {src: fourteen}, {src: fifteen}],
-  [{src: coding}, {src: auth}, {src: fire}],
-  [{src: eighteen}, {src: twenty}],
+  {src: first}, {src: second}, {src: sixteen},
+  {src: forth}, {src: fifth}, {src: sixth},
+  {src: seventh}, {src: eight}, {src: nine},
+  {src: seventeen}, {src: eleven}, {src: twelve},
+  {src: thirteen}, {src: fourteen}, {src: fifteen},
+  {src: coding}, {src: auth}, {src: fire},
+  {src: eighteen}, {src: twenty}
 ];
 
 /** Instructions

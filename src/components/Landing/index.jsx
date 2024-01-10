@@ -1,7 +1,7 @@
 import { SOCIALS, TOP_SECTION } from '../../Module/General';
 import MytypedComponent from '../Typed/index.js';
 import './style.css';
-
+import { BsDiscord } from "react-icons/bs";
 const Btn = props => {
   return (
     <button className={props.class}>
@@ -46,7 +46,7 @@ const Myinfo = () => {
             type="Join Discord"
             overlay="Click the link"
           /> */}
-            <button class="animated-button">
+            {/* <button class="animated-button">
               <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
@@ -59,12 +59,25 @@ const Myinfo = () => {
                   d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
                 ></path>
               </svg>
-            </button>
+            </button> */}
+            <button className='anime-btn'>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 36 36"
+                width="36px"
+                height="36px"
+              />
+                <rect width="36" height="36" x="0" y="0" fill="#fdd835"></rect>
+                {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy08k0MIQiQYcYS3ZZbeusy2KC7fwe6Bpm00KYDZNVeQ&s" width="36px" alt=""/> */}
+                <BsDiscord className='img' fontSize={50} color='white'/>
+              <span class="now">now!</span>
+              <span class="play">Join</span>
+          </button>
 
           </a>
         </div>
 
-        <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
+        <a href='#'>
           {' '}
           <Btn
             class="register"

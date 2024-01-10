@@ -38,7 +38,7 @@ button {
 
 .buttom-group{
   width: 100%;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .register {
@@ -60,6 +60,7 @@ p {
 .Myinfo {
   text-align: left;
   margin-left: 10vh;
+  margin-top: -5vh;
 }
 
 .Myinfo p {
@@ -241,3 +242,63 @@ button:hover .overlay {
 }
 
 
+.anime-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  color: white;
+  text-shadow: 2px 2px rgb(116, 116, 116);
+  text-transform: uppercase;
+  cursor: pointer;
+  border: solid 2px black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: red;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.anime-btn:active {
+  transform: scale(0.9);
+  transition: all 100ms ease;
+}
+
+.anime-btn .img {
+  transition: all 0.5s ease;
+  z-index: 2;
+  position: absolute;
+  left: 10%;
+  bottom: 4%;
+}
+
+.play {
+  transition: all 0.5s ease;
+  transition-delay: 300ms;
+}
+
+.anime-btn:hover .img {
+  transform: scale(2) translate(50%) translateX(80%);
+}
+
+.now {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.anime-btn:hover .now {
+  transform: translateX(10px);
+  transition-delay: 100ms;
+}
+
+.anime-btn:hover .play {
+  transform: translateX(200%);
+  transition-delay: 100ms;
+}

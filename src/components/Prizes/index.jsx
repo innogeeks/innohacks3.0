@@ -2,7 +2,7 @@ import './style.scss';
 
 function PrizeHeading(props) {
   return (
-    <div className="PrizeHeading">
+    <div  className="PrizeHeading">
       <h1>{props.type}</h1>
     </div>
   );
