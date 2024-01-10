@@ -76,7 +76,7 @@ const Myinfo = () => {
           </a>
         </div>
 
-        <a href='/'>
+        <a href='https://docs.google.com/forms/d/e/1FAIpQLScutHvEcWOPeqLWagnzfEIqeeeSz1_FMe26br62gjd1WiTkrw/viewform?usp=sf_link'>
           {' '}
           <Btn
             class="register"
