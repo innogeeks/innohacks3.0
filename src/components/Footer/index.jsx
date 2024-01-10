@@ -58,9 +58,10 @@ const Footer = () => {
       <div className='main-footer'>
         <div className="Register_a">
           <button class="register-button">
-            <HashLink smooth className='register-link' to="https://docs.google.com/forms/d/e/1FAIpQLScutHvEcWOPeqLWagnzfEIqeeeSz1_FMe26br62gjd1WiTkrw/viewform?usp=sf_link">
+
+            <a smooth className='register-link' href='https://forms.gle/LabTKRJEHvyZuXd78' target='_blank'>
               <span>Register Now</span>
-            </HashLink>
+            </a>
           </button>
         </div>
         <div className='social-links'>
