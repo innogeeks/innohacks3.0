@@ -1,5 +1,5 @@
 // import hackathonLogo from './Assets/hackathonLogo.png';
-import hackathonLogo from './Assets/2100290130180_SurajUpadhayay.pdf.png.png';
+import hackathonLogo from './Assets/Innohacks 3.0 Logo.png';
 
 // Importing all sponsors logos from Assets
 /** Put all your Team member image inside folder `Team Images`

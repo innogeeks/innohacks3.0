@@ -78,17 +78,17 @@ const NAVBAR = ({}) => {
     }
   };
 
-  useEffect(() => {
-    document.addEventListener('mousedown', e =>
-      handleOutsideCick(e, navigation)
-    );
+  // useEffect(() => {
+  //   document.addEventListener('mousedown', e =>
+  //     handleOutsideCick(e, navigation)
+  //   );
 
-    return () => {
-      document.removeEventListener('mousedown', e =>
-        handleOutsideCick(e, navigation)
-      );
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener('mousedown', e =>
+  //       handleOutsideCick(e, navigation)
+  //     );
+  //   };
+  // }, []);
 
   return (
     <Router>
@@ -103,7 +103,7 @@ const NAVBAR = ({}) => {
           <div className="nav-content" ref={navigation}>
             <ul>
               <li>
-                <Link to={`#home`} >
+                <Link to={`#home`} smooth>
                   <span className="links">Home</span>{' '}
                 </Link>
               </li>

@@ -7,19 +7,43 @@
   transform: translateX(-50%) translateY(10%);
 }
 
-.Logo {
-  width: 60%;
-  display: inline-block;
+.Logo-about {
+  width: 40%;
   margin: 0;
   padding: 0;
-  position: absolute;
+  /* position: absolute;
+  left: 50%; */
+  transform: translateX(100%);
+  border-radius: 50%;
+  animation: upDown 1s infinite alternate;
+  transition: all 0s ease-in;
+}
+
+@keyframes upDown {
+  from{
+    transform: translateY(-10px);
+  }
+  to{
+    transform: translateY(10px);
+
+  }
 }
 
 .arHeadset {
   position: absolute;
-  transform: rotate(-30deg);
+  transition: all 1s;
   color: rgba(0, 0, 0, 0.272);
   top: -100px;
+  transform: rotate(0deg);
+  animation: rotate 5s infinite ease-in-out;
+}
+@keyframes rotate {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
 }
 
 .globe {
@@ -28,6 +52,8 @@
   color: rgba(0, 0, 0, 0.272);
   bottom: -50px;
   right: 0;
+  transform: rotate(0deg);
+  animation: rotate 5s infinite ease-in-out;
 }
 
 
@@ -37,6 +63,7 @@
   display: inline-block;
   position: relative;
   font-family: 'Nunito', sans-serif;
+  padding-left: 20%;
 }
 
 .LogoSectionAbout h1 {
@@ -68,6 +95,12 @@
     transform: translateY(-10px);
   }
 }
+@media (max-width: 1000px){
+  .Logo-about{
+    /* margin-left:9rem;   */
+    width: 40vw;
+  }
+}
 
 @media (max-width: 570px) {
   .logoS {
@@ -78,17 +111,38 @@
   .Logo {
     margin: 0 auto;
   }
+  .Logo-about{
+    margin-left:10rem;  
+    width: 50vw;
+  }
 }
 
-.community-partner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .title_community {
   margin-bottom: 5%;
   margin-top: 6%;
   font-weight: bolder;
-  text-decoration: underline;
+  font-size: repo-bold;
+}
+
+.community_logo_container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom:'6%'
+}
+.community_logo_container .logo-community{
+  width: 200px;
+  object-fit: contain;
+  transition: all 200ms ease-in;
+
+}
+.logo-community:hover{
+  scale: 1.2;
+}
+
+.community_logo_container p{
+  font-family: repo-extrabold;
+  color: gray;
 }

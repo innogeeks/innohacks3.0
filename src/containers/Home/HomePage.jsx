@@ -121,10 +121,10 @@ export default function HomePage() {
       <Container fluid>
         {/* Logo section  */}
         <Row className=" logoSection">
-          <Col className="info-div" sm={12} lg={8} md={8}>
+          <Col className="info-div" >
             <LogoSectionAbout />
           </Col>
-          <Col className="info-div"  lg={4} md={4}>
+          <Col className="info-div" >
             <Logo/>
           </Col>
         </Row>
