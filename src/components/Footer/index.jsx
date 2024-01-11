@@ -54,8 +54,11 @@ const Footer = () => {
   // };
 
   return (
-    <div className="footer" >
-      <div className='main-footer'>
+    <div className="footer new_footer_top" >
+      <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+        <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
+      </svg>
+      <div className='main-footer '>
         <div className="Register_a">
           <button class="register-button">
 
@@ -71,7 +74,7 @@ const Footer = () => {
             </a>
           </span>
           <span className="single">
-            <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
+            <a rel="noreferrer" target="_blank" href="https://discord.gg/qNmEeAsuqQ">
               <BiLogoDiscordAlt fontSize={40} className='redBlue2' />
             </a>
           </span>
@@ -90,12 +93,12 @@ const Footer = () => {
       <div className="footer-logo">
         <div>
           <HashLink className="footer-logo-link" to="#" smooth>
-            <img src={logo} width={"100%"} alt="" />
+            <img src={logo} className='hacks' width={"100%"} alt="" />
           </HashLink>
         </div>
         <div>
-        <a className="footer-logo-link" href="https://innogeeks.in/" target='_blank'>
-          <img src={Innologo} width={"100%"} alt="" />
+        <a className="footer-logo-link " href="https://innogeeks.in/" target='_blank'>
+          <img className='inno' src={Innologo} width={"100%"} alt="" />
         </a>
         </div>
       </div>
@@ -103,6 +106,10 @@ const Footer = () => {
         <h4>❤️Design by Team-INNOGEEKS💙 </h4>
         <p>©2024 Innogeeks™</p>
         <p><a href="mailto:innogeeks@kiet.edu">Contact us @Innogeeks™</a></p>
+      </div>
+      <div class="footer_bg">
+          {/* <div class="footer_bg_one"></div> 
+         <div class="footer_bg_two"></div> */}
       </div>
     </div>
 

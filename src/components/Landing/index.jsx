@@ -39,7 +39,7 @@ const Myinfo = () => {
           <Btn class="sponsor_btn" type="Judges" overlay="Fill the form" />
         </a> */}
         <div className="join_dis">
-          <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
+          <a rel="noreferrer" target="_blank" href="https://discord.gg/qNmEeAsuqQ">
             {/* <Btn
             ico="fab fa-2x fa-discord"
             class="join_disco"
