@@ -132,8 +132,8 @@ export default function HomePage() {
           {/* ARRAY -1 */}
           <div className='cards_prizes'>
             <div className="reverse">
-              <div class="cardone cards_">
-                <div class="bg">
+              <div className="cardone cards_">
+                <div className="bg">
                   <img src={second} alt="" />
                   <div className='text_prizes'>
                     <p>₹ 30,000</p>
@@ -141,10 +141,10 @@ export default function HomePage() {
                     <p>cool Innohacks swags...</p>
                   </div>
                 </div>
-                <div class="blob"> </div>
+                <div className="blob"> </div>
               </div>
-              <div class="cardtwo cards_">
-                <div class="bg">
+              <div className="cardtwo cards_">
+                <div className="bg">
                   <img src={first} width={200} alt="" />
                   <div className='text_prizes'>
                     <p style={{ fontSize: "35px" }}>₹ 50,000</p>
@@ -152,11 +152,11 @@ export default function HomePage() {
                     <p>cool Innohacks swags...</p>
                   </div>
                 </div>
-                <div class="blob"></div>
+                <div className="blob"></div>
               </div>
             </div>
-            <div class="cardthree cards_">
-              <div class="bg">
+            <div className="cardthree cards_">
+              <div className="bg">
                 <img src={third} width={150} alt="" />
                 <div className='text_prizes'>
                   <p>₹ 20,000</p>
@@ -164,7 +164,7 @@ export default function HomePage() {
                   <p>cool Innohacks swags...</p>
                 </div>
               </div>
-              <div class="blob"></div>
+              <div className="blob"></div>
             </div>
           </div>
           {/* ARRAY-2 */}
