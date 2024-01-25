@@ -99,7 +99,7 @@ const NAVBAR = ({}) => {
         <img src={myImage} className="nav-logo" width={200}></img>
       </div>
 
-        <Wrapper toggle={toggle}>
+        <Wrapper  toggle={toggle}>
           <div className="nav-content" ref={navigation}>
             <ul>
               <li>
