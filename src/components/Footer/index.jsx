@@ -14,6 +14,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { BiLogoDiscordAlt } from "react-icons/bi";
 import { CiLinkedin } from "react-icons/ci";
 import { IoLogoTwitter } from "react-icons/io";
+import { FaPhone } from "react-icons/fa";
 import logo from './assets/InnohacksFullLogo.png'
 import Innologo from './assets/logo.png'
 import { HashLink } from 'react-router-hash-link';
@@ -86,6 +87,11 @@ const Footer = () => {
           <span className="single">
             <a rel="noreferrer" target="_blank" href={SOCIALS.twitter}>
               <IoLogoTwitter fontSize={40} className='redBlue4' />
+            </a>
+          </span>
+          <span className="single">
+            <a rel="noreferrer"  href="tel:+917669816088">
+              <FaPhone fontSize={35} className='redBlue5' />
             </a>
           </span>
         </div>

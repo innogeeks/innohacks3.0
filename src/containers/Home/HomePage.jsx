@@ -38,6 +38,7 @@ import blockChain from './assets/prizes/blockchain.gif'
 import iot from './assets/prizes/light-control.gif'
 import girl from './assets/prizes/girl.gif'
 import social from './assets/prizes/fans.gif'
+import PastWinner from 'components/pastWinners/index.jsx';
 
 // const SponsorGroup = (props, index) => {
 //   return (
@@ -124,6 +125,12 @@ export default function HomePage() {
           </Col>
         </Row>
 
+        {/* past winners */}
+        <Row>
+          <PastWinner />
+        </Row>
+
+
         {/* ********Prizes here ***** */}
         <h1 id="prizes" className='prize_heading' style={{ fontFamily: "repo-bold" }}>Prizes</h1>
         <Row className="prizesection" style={{ padding: "10px", minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center" ,marginTop:"5vh"}}>
@@ -181,7 +188,7 @@ export default function HomePage() {
             </div>
             <div className='more-one'>
               <img className='gif_prize ' src={iot} ></img>
-              <p className='more-title'>Best Use of IoT</p>
+              <p className='more-title'>Best Use of AIoT</p>
               <p>₹ 5,000 and cool Innohacks swags...</p>
             </div>
             <div className='more-one'>

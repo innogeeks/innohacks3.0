@@ -17,6 +17,7 @@
   background-color: #000000;
   padding-bottom: 5rem;
 }
+
 .container-fluid {
   /* max-width: 1500px; */
   margin-left: auto;
@@ -103,12 +104,13 @@ h1 {
   text-align: center;
   margin: 0 auto;
   padding: 17vh 18vh 0 18vh;
-  margin-top: 0vh;
+  margin-top: 10vh;
   height: 100vh;
 }
 .my-faq-head{
 margin-bottom: 50px;
 font-family: repo-bold;
+margin-top: 10vh;
 }
 .reverse{
   display: flex;
@@ -117,6 +119,11 @@ font-family: repo-bold;
   justify-content: center;
   flex-wrap: wrap;
   gap: 80px;
+}
+@media (max-width:1100px) {
+  .info-div{
+    width: 100%;
+  }
 }
 @media (max-width:779.99px) {
   .reverse{
@@ -138,6 +145,7 @@ font-family: repo-bold;
     flex-direction: column-reverse;
   }
 }
+
 
 @media (max-width: 570px) {
   .mediaInfo {
@@ -163,7 +171,7 @@ font-family: repo-bold;
   .sponsorSection {
     padding: 0;
     margin: 0;
-    margin-top: 12rem ;
+    margin-top: 10rem ;
     margin-left: -10px;
   }
   .logoSection {
@@ -334,7 +342,7 @@ font-family: repo-bold;
   transition: all 300ms ease-in;
 }
 .cards_:hover{
-  scale: 1.3;
+  scale: 1.1;
 }
 
 
@@ -344,6 +352,7 @@ font-family: repo-bold;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 25px;
 }
 
 .more-one{

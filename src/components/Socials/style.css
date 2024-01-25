@@ -43,6 +43,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
   background-color: white;
   border-radius: 10px;
 }
+.redBlue5{
+  padding: 4px;
+}
+.redBlue5:hover{
+  color: #1C9CEA;
+  background-color: white;
+  padding: 4px;
+  font-size: 35px;
+  border-radius: 10px;
+}
 
 @media (max-width: 570px) {
   .single {

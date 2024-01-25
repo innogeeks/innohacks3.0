@@ -19,12 +19,11 @@ const About = () => {
     background: 'linear-gradient(to right, #ff0000, #1E78E4)',
     WebkitBackgroundClip: 'text',
     WebkitTextFillColor: 'transparent',
-    fontSize:"7rem",
     whiteSpace: "wrap"
   };
   return (
     <div className="AboutMe">
-      <h2 >Join <span style={titleStyle} >InnoHacks 3.0</span></h2>
+      <h2 >Join <br /> <span style={titleStyle} className='innohacks-text' >InnoHacks 3.0</span></h2>
       <MytypedComponent />
     </div>
   );
