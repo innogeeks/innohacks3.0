@@ -132,11 +132,8 @@ export default function HomePage() {
             <Logo />
           </Col>
         </Row>
-
-        {/* past winners */}
-        <Row >
-          <PastWinner />
-        </Row>
+        {media && <Birds top="120vh" left="0vh" type="" />}
+        
 
 
         {/* ********Prizes here ***** */}
@@ -242,7 +239,12 @@ export default function HomePage() {
         </Row>
         {/* ********Sponsors ending here ***** */}
 
-        {media && <Birds top="120vh" left="0vh" type="" />}
+        
+
+        {/* past winners */}
+        <Row >
+          <PastWinner />
+        </Row>
 
         {/* ********Team here ***** */}
         <h1 data-aos="zoom-in" data-aos-duration="800" id="team">Past Speakers and Judges</h1>

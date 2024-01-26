@@ -16,7 +16,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { IoLogoTwitter } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
 import logo from './assets/InnohacksFullLogo.png'
-import Innologo from './assets/logo.png'
+import Innologo from './assets/imageSkin.png'
 import { HashLink } from 'react-router-hash-link';
 //------------------------------------------------------------------
 import './style.scss';
@@ -97,12 +97,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-logo">
-        <div>
+        <div className='hacks-footer-container'>
           <HashLink className="footer-logo-link" to="#" smooth>
             <img src={logo} className='hacks' width={"100%"} alt="" />
           </HashLink>
         </div>
-        <div>
+        <div className='inno-footer-container'>
         <a className="footer-logo-link " href="https://innogeeks.in/" target='_blank'>
           <img className='inno' src={Innologo} width={"100%"} alt="" />
         </a>

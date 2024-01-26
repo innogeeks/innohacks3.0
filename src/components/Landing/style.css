@@ -21,9 +21,7 @@ button {
   position: relative;
 }
 
-.join_disco {
-  background: linear-gradient(90deg, #9796F0 0%, #FBC7D4 100%);
-}
+
 
 .join_disco i {
   margin-right: 5px;
