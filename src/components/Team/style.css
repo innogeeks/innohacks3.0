@@ -30,7 +30,6 @@
 .joinT h3 {
   display: inline-block;
   font-weight: 500;
-  margin-right: 40px;
 }
 @media (max-width: 570px) {
   .member {

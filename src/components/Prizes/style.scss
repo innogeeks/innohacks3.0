@@ -4,6 +4,9 @@
     margin: 0 auto;
     text-align: center;
     margin-top: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
 }
 
 .PrizeHeading h1{
@@ -15,6 +18,7 @@
 }
 .prize-icons{
  animation: mover 1s infinite alternate ease ;
+
 }
 @-webkit-keyframes mover {
     0% { transform: translateY(0); }
@@ -34,42 +38,15 @@
     -moz-text-fill-color: transparent;
     color: rgba(0, 0, 0, 0.532);
 }
-.Prizes p{
-    color: rgb(145, 143, 143);
 
-}
-.Prizes .first{
-    color:#A239EA;
-}
-
-.Prizes .second{
-    color:#39A2DB;
-}
-
-.Prizes .third{
-    color:#FF616D;
-}
-
-.Prizes .fourth{
-    color:#3C8DAD;
-}
-
-.Prizes .fifth{
-    color:#BF1363;
-}
-
-.Prizes .sixth{
-    color:#FF96AD;
-}
-
-.Prizes .seventh{
-    color:#E4BAD4;
-}
 @media (max-width:578px) {
     .Prizes{
         width: 90vw;
     }
     .icons{
         width: 40vw;
+    }
+    .PrizeHeading h1{
+        margin-top: -10vh;
     }
 }
