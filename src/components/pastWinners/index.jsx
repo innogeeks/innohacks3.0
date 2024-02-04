@@ -1,5 +1,10 @@
 import React from "react";
 import "./style.scss";
+import one from "./assets/1.jpg"
+import two from "./assets/2.jpg"
+import three from "./assets/3.jpg"
+import four from "./assets/4.jpg"
+import five from "./assets/5.jpg"
 
 export default function PastWinner() {
   return (
@@ -7,23 +12,23 @@ export default function PastWinner() {
        <div className="left">
         <div class="gallery">
           <img
-            src="https://lh3.googleusercontent.com/p/AF1QipMH98yyrBwn3fbrT3GBHR3fvIzRgl8oczboHBfO=s1360-w1360-h1020"
+            src={one}
             alt=""
           />
           <img
-            src="https://lh3.googleusercontent.com/p/AF1QipMH98yyrBwn3fbrT3GBHR3fvIzRgl8oczboHBfO=s1360-w1360-h1020"
+            src={two}
             alt=""
           />
           <img
-            src="https://lh3.googleusercontent.com/p/AF1QipMH98yyrBwn3fbrT3GBHR3fvIzRgl8oczboHBfO=s1360-w1360-h1020"
+            src={three}
             alt=""
           />
           <img
-            src="https://lh3.googleusercontent.com/p/AF1QipMH98yyrBwn3fbrT3GBHR3fvIzRgl8oczboHBfO=s1360-w1360-h1020"
+            src={four}
             alt=""
           />
           <img
-            src="https://lh3.googleusercontent.com/p/AF1QipMH98yyrBwn3fbrT3GBHR3fvIzRgl8oczboHBfO=s1360-w1360-h1020"
+            src={five}
             alt=""
           />
         </div>
@@ -31,7 +36,7 @@ export default function PastWinner() {
 
       {/* right */}
       <div className="right">
-        <h1 class="glimpses-heading">Past Winners</h1>
+        <h1 class="glimpses-heading">Past Glimpse</h1>
         <p className="glimpses-text">
         InnoHacks, the largest code feast of Delhi NCR, has seen some remarkable past winners who have left their mark on the event's legacy. These talented individuals have showcased their innovation, creativity, and technical prowess, rising above challenges to claim victory in their respective categories. With their groundbreaking hacks, they have not only won prestigious accolades but have also inspired others to push the boundaries of technology.
         </p>

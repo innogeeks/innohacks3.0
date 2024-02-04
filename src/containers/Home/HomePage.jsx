@@ -104,14 +104,14 @@ export default function HomePage() {
       <div className="color_sectiom" id="home">
         <Container fluid>
           <Row className="Row info">
-            <Col data-aos="fade-right" data-aos-duration="800" className="info-div" sm={12} lg={7} md={7}>
+            <Col  className="info-div" sm={12} lg={7} md={7}>
               <Myinfo />
             </Col>
             {/* <Col className="d-image" sm={12} lg={5} md={5}> */}
             {/* <MyCalender /> */}
             {/* </Col> */}
-            <Col data-aos="fade-left" data-aos-duration="800" className='contain'>
-              <img className='imagee' src={myImage}></img>
+            <Col  className='contain'>
+              <img data-aos="fade-left" data-aos-duration="800" className='imagee' src={myImage}></img>
             </Col>
           </Row>
 
@@ -241,10 +241,7 @@ export default function HomePage() {
 
         
 
-        {/* past winners */}
-        <Row >
-          <PastWinner />
-        </Row>
+        
 
         {/* ********Team here ***** */}
         <h1 data-aos="zoom-in" data-aos-duration="800" id="team">Past Speakers and Judges</h1>
@@ -262,6 +259,11 @@ export default function HomePage() {
         {/* ********Team ending here ***** */}
         <Row>
           <CommunityPartner />
+        </Row>
+
+        {/* past winners */}
+        <Row >
+          <PastWinner />
         </Row>
 
         {/* ********Frequently asked Questions here ***** */}
