@@ -15,7 +15,7 @@ function Sponsor(props) {
     Aos.init({duration:1200})
   },[])
   return (
-    <div data-aos="zoom-in" className="Sponsor ">
+    <div data-aos="zoom-in" className="Sponsor">
       <img src={props} alt="InnoHacks"></img>
     </div>
   );
