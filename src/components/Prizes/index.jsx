@@ -24,5 +24,13 @@ function FirstPrize(props) {
     </div>
   );
 }
-
-export {FirstPrize, PrizeHeading};
+function ThemePrize(props){
+  return (
+    <div  data-aos={props.i%2===0?'fade-left':"fade-right"} data-aos-duaration="800"  className="theme">
+      <div className='theme-icons'>{props.icon}</div>
+      <h2>{props.type}</h2>
+      <p>{props.content}</p>
+    </div>
+  );
+}
+export {FirstPrize, PrizeHeading,ThemePrize};

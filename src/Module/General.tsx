@@ -274,7 +274,7 @@ const Themeinfo = [
     //Array 1
     {
       icon: <img src={blockchain} width={"100px"} className="icons"></img>,
-      type: 'BlockChain and Web3',
+      type: 'BlockChain/Web3',
       content:
         ''
     },
@@ -295,13 +295,13 @@ const Themeinfo = [
     //Array 2
     {
       icon: <img src={vr} width={"100px"} className="icons"></img>,
-      type: 'Extended Reality',
+      type: 'AR/VR',
       content:
         ''
     },
     {
       icon: <img src={iot} width={"100px"} className="icons"></img>,
-      type: 'AIoT Integration',
+      type: 'AIoT',
       content: ''
     },
     {
