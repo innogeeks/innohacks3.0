@@ -57,6 +57,7 @@ h1 {
   display:flex;
   flex-wrap: wrap;
   align-items: center;
+  min-height: 600px;
 }
 .info-div{
   width: 50%;
@@ -70,28 +71,22 @@ h1 {
   justify-content: center;
 }
 .prizesection {
-  text-align: center;
-  /* margin: 0 auto; */
-  padding: 0 4vh 0 4vh;
-  /* margin: 17vh -20vh 0 -2vh; */
-  margin-left: -2rem;
-  border-radius: 50px 50px;
-  margin-top: 4vh;
   width: 100vw;
   /* background-color: #f3effe; */
   /* background-color: #f4dbee; */
   /* background-color: rgb(255, 242, 242); */
   background-color: white;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: max-content;
 }
 
 .Prizes{
   width: 100%;
   font-family: repo-extrabold;
 }
-.prize_heading{
-  margin-top: 20vh;
-}
+
 
 .sponsorSection {
   padding: 17vh 18vh 0 18vh;
@@ -161,8 +156,7 @@ margin-top: 15vh;
   }
 
   .prizesection {
-    margin: 5vh -5vh 0 -2vh;
-    padding: 17vh 0 0 4vh;
+    padding-top: 17vh ;
   }
   .sponsorSection {
     padding: 0;
@@ -335,7 +329,7 @@ margin-top: 15vh;
   width: 150px;
 }
 .cards_{
-  transition: all 300ms ease-in;
+  transition: all 300ms ease-in-out !important;
 }
 .cards_:hover{
   scale: 1.1;
@@ -397,7 +391,7 @@ margin-top: 15vh;
 
   max-width: 300px; 
   margin-bottom: 20px; 
-  transition: all 200ms ease-in;
+  transition: all 200ms ease-in !important;
 }
 .sponsor-logos:hover{
   scale: 1.1;

@@ -8,7 +8,7 @@ import { Accordion } from '../../components/Accordian/index.jsx';
 import Birds from '../../components/Animation';
 import Footer from '../../components/Footer/index.jsx';
 import { Myinfo } from '../../components/Landing/index.jsx';
-import { FirstPrize, PrizeHeading } from '../../components/Prizes/index.jsx';
+import { FirstPrize, PrizeHeading, ThemePrize } from '../../components/Prizes/index.jsx';
 import Media from '../../components/Socials/index.jsx';
 import {
   Sponsor,
@@ -53,10 +53,10 @@ import 'aos/dist/aos.css'
 // Prize group
 const PrizeGroup = (props, index) => {
   return (
-    <Row key={index}>
+    <Row className='theme-container' key={index}>
       {props.map((s, i) => (
         <Col key={i} className="" sm={12} lg={4} md={4}>
-          <FirstPrize icon={s.icon} type={s.type} content={s.content} />
+          <ThemePrize i={i} icon={s.icon} type={s.type} content={s.content} />
         </Col>
       ))}
     </Row>
@@ -138,7 +138,7 @@ export default function HomePage() {
 
         {/* ********Prizes here ***** */}
         <h1 data-aos="zoom-in" data-aos-duration="800" id="prizes" className='prize_heading' style={{ fontFamily: "repo-bold" }}>Prizes</h1>
-        <Row className="prizesection" style={{ padding: "10px", minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center" ,marginTop:"5vh"}}>
+        <Row className="prizesection" style={{ padding: "10px", display: "flex", flexDirection: "column", justifyContent: "center" ,marginTop:"5vh"}}>
           {/* <PrizeHeading type="Prize section" /> */}
           {/* {Prizeinfo.map(PrizeGroup)} */}
           {/* ARRAY -1 */}
