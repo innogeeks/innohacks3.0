@@ -2,9 +2,9 @@ import React from "react";
 import "./style.scss";
 import one from "./assets/1.jpg"
 import two from "./assets/2.jpg"
-import three from "./assets/3.JPG"
-import four from "./assets/4.JPG"
-import five from "./assets/5.JPG"
+import three from "./assets/3.jpg"
+import four from "./assets/4.jpg"
+import five from "./assets/5.jpg"
 
 export default function PastWinner() {
   return (
