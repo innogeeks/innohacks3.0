@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './style.css';
 import algos from './img/algocs.png';
 import gdsc from './img/gdsc.png';
@@ -5,6 +6,8 @@ import iosc from './img/iosc.png';
 import { BsHeadsetVr } from "react-icons/bs";
 import { FaGlobeAmericas } from "react-icons/fa";
 import {MIDDLE_SECTION} from '../../Module/General';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function LogoSectionAbout() {
   return (
@@ -26,9 +29,13 @@ function Logo() {
 }
 
 function CommunityPartner() {
+  useEffect(()=>{
+    Aos.init({duration:1200})
+  },[])
+
   return(
     <div className="community-partner" >
-    <h1 className="title_community" >Community Partners</h1>
+    <h1 data-aos="zoom-in" className="title_community" >Community Partners</h1>
     <div className="community_logo_container" >
       <div className='logo-community' style={{color: 'white', textAlign: 'center', margin: "0 5% 2% 5%"}}>
         <img src={iosc} className="iosc_logo" width="100%" alt="" />

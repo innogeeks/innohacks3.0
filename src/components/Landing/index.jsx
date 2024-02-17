@@ -17,12 +17,13 @@ const Btn = props => {
 const About = () => {
   const titleStyle = {
     background: 'linear-gradient(to right, #ff0000, #1E78E4)',
-    '-webkit-background-clip': 'text',
-    '-webkit-text-fill-color': 'transparent',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    whiteSpace: "wrap"
   };
   return (
     <div className="AboutMe">
-      <h2 >Join <span style={titleStyle} >InnoHacks3.0</span></h2>
+      <h2 >Join <br /> <span style={titleStyle} className='innohacks-text' >InnoHacks 3.0</span></h2>
       <MytypedComponent />
     </div>
   );
@@ -36,25 +37,25 @@ const Myinfo = () => {
       <div className="buttom-group">
         {/* <a href={TOP_SECTION.JUDGES_FORM_LINK}>
           {' '}
-          <Btn class="sponsor_btn" type="Judges" overlay="Fill the form" />
+          <Btn className="sponsor_btn" type="Judges" overlay="Fill the form" />
         </a> */}
         <div className="join_dis">
-          <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
+          <a rel="noreferrer" target="_blank" href="https://discord.gg/qNmEeAsuqQ">
             {/* <Btn
             ico="fab fa-2x fa-discord"
-            class="join_disco"
+            className="join_disco"
             type="Join Discord"
             overlay="Click the link"
           /> */}
-            {/* <button class="animated-button">
-              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+            {/* <button className="animated-button">
+              <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
                 ></path>
               </svg>
-              <span class="text">Join Discord</span>
-              <span class="circle"></span>
-              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+              <span className="text">Join Discord</span>
+              <span className="circle"></span>
+              <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
                 ></path>
@@ -69,8 +70,8 @@ const Myinfo = () => {
               />
                 <rect width="36" height="36" x="0" y="0" fill="#fdd835"></rect>
                 <BsDiscord className='img' fontSize={50} color='white'/>
-              <span class="now">now!</span>
-              <span class="play">Join</span>
+              <span className="now">now!</span>
+              <span className="play">Join</span>
           </button>
 
           </a>
@@ -88,11 +89,11 @@ const Myinfo = () => {
           
         </a>
         {/* <div className='Register_button'>
-        <button class="learn-more buttonR">
-            <span aria-hidden="true" class="circleR">
-              <span class="icon arrow"></span>
+        <button className="learn-more buttonR">
+            <span aria-hidden="true" className="circleR">
+              <span className="icon arrow"></span>
             </span>
-            <span class="button-text">Learn More</span>
+            <span className="button-text">Learn More</span>
           </button>
         </div> */}
       </div>

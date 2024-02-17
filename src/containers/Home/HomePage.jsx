@@ -1,5 +1,5 @@
 import { UseMedia } from 'hooks/useMedia';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -8,7 +8,7 @@ import { Accordion } from '../../components/Accordian/index.jsx';
 import Birds from '../../components/Animation';
 import Footer from '../../components/Footer/index.jsx';
 import { Myinfo } from '../../components/Landing/index.jsx';
-import { FirstPrize, PrizeHeading } from '../../components/Prizes/index.jsx';
+import { FirstPrize, PrizeHeading, ThemePrize } from '../../components/Prizes/index.jsx';
 import Media from '../../components/Socials/index.jsx';
 import {
   Sponsor,
@@ -38,6 +38,9 @@ import blockChain from './assets/prizes/blockchain.gif'
 import iot from './assets/prizes/light-control.gif'
 import girl from './assets/prizes/girl.gif'
 import social from './assets/prizes/fans.gif'
+import PastWinner from 'components/pastWinners/index.jsx';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 // const SponsorGroup = (props, index) => {
 //   return (
@@ -50,10 +53,10 @@ import social from './assets/prizes/fans.gif'
 // Prize group
 const PrizeGroup = (props, index) => {
   return (
-    <Row key={index}>
+    <Row className='theme-container' key={index}>
       {props.map((s, i) => (
         <Col key={i} className="" sm={12} lg={4} md={4}>
-          <FirstPrize icon={s.icon} type={s.type} content={s.content} />
+          <ThemePrize i={i} icon={s.icon} type={s.type} content={s.content} />
         </Col>
       ))}
     </Row>
@@ -62,10 +65,13 @@ const PrizeGroup = (props, index) => {
 
 // Prize group ending
 const TeamMembers = (props, index) => {
+  useEffect(()=>{
+    Aos.init({duration:800})
+  },[])
   return (
     <Row key={index} className="members">
       {props.map((s, i) => (
-        <Col key={i} className="" sm={12} lg={4} md={4}>
+        <Col data-aos="fade-up" key={i} className="" sm={12} lg={4} md={4}>
           <Member info={s} />
         </Col>
       ))}
@@ -88,6 +94,9 @@ const FrequentlyAsked = (props, index) => {
 export default function HomePage() {
   const [media, setMedia] = useState();
   UseMedia('min-width', 1000, setMedia);
+  useEffect(()=>{
+    Aos.init({duration:800})
+  },[])
 
   return (
     // style={{backgroundImage: `url(${pattern})`}}
@@ -95,14 +104,14 @@ export default function HomePage() {
       <div className="color_sectiom" id="home">
         <Container fluid>
           <Row className="Row info">
-            <Col className="info-div" sm={12} lg={7} md={7}>
+            <Col  className="info-div" sm={12} lg={7} md={7}>
               <Myinfo />
             </Col>
             {/* <Col className="d-image" sm={12} lg={5} md={5}> */}
             {/* <MyCalender /> */}
             {/* </Col> */}
-            <Col className='contain'>
-              <img className='imagee' src={myImage}></img>
+            <Col  className='contain'>
+              <img data-aos="fade-left" data-aos-duration="800" className='imagee' src={myImage}></img>
             </Col>
           </Row>
 
@@ -115,7 +124,7 @@ export default function HomePage() {
       </div>
       <Container fluid>
         {/* Logo section  */}
-        <Row className=" logoSection">
+        <Row  className=" logoSection">
           <Col className="info-div" >
             <LogoSectionAbout />
           </Col>
@@ -123,17 +132,20 @@ export default function HomePage() {
             <Logo />
           </Col>
         </Row>
+        {media && <Birds top="120vh" left="0vh" type="" />}
+        
+
 
         {/* ********Prizes here ***** */}
-        <h1 id="prizes" className='prize_heading' style={{ fontFamily: "repo-bold" }}>Prizes</h1>
-        <Row className="prizesection" style={{ padding: "10px", minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center" ,marginTop:"5vh"}}>
+        <h1 data-aos="zoom-in" data-aos-duration="800" id="prizes" className='prize_heading' style={{ fontFamily: "repo-bold" }}>Prizes</h1>
+        <Row className="prizesection" style={{ padding: "10px", display: "flex", flexDirection: "column", justifyContent: "center" ,marginTop:"5vh"}}>
           {/* <PrizeHeading type="Prize section" /> */}
           {/* {Prizeinfo.map(PrizeGroup)} */}
           {/* ARRAY -1 */}
           <div className='cards_prizes'>
             <div className="reverse">
-              <div class="cardone cards_">
-                <div class="bg">
+              <div data-aos="fade-up" className="cardone cards_">
+                <div className="bg">
                   <img src={second} alt="" />
                   <div className='text_prizes'>
                     <p>₹ 30,000</p>
@@ -141,10 +153,10 @@ export default function HomePage() {
                     <p>cool Innohacks swags...</p>
                   </div>
                 </div>
-                <div class="blob"> </div>
+                <div  className="blob"> </div>
               </div>
-              <div class="cardtwo cards_">
-                <div class="bg">
+              <div data-aos="fade-up" className="cardtwo cards_">
+                <div className="bg">
                   <img src={first} width={200} alt="" />
                   <div className='text_prizes'>
                     <p style={{ fontSize: "35px" }}>₹ 50,000</p>
@@ -152,11 +164,11 @@ export default function HomePage() {
                     <p>cool Innohacks swags...</p>
                   </div>
                 </div>
-                <div class="blob"></div>
+                <div className="blob"></div>
               </div>
             </div>
-            <div class="cardthree cards_">
-              <div class="bg">
+            <div data-aos="fade-up" className="cardthree cards_">
+              <div className="bg">
                 <img src={third} width={150} alt="" />
                 <div className='text_prizes'>
                   <p>₹ 20,000</p>
@@ -164,27 +176,27 @@ export default function HomePage() {
                   <p>cool Innohacks swags...</p>
                 </div>
               </div>
-              <div class="blob"></div>
+              <div className="blob"></div>
             </div>
           </div>
           {/* ARRAY-2 */}
           <div className='more_prizes'>
-            <div className='more-one'>
+            <div  data-aos="fade-left" className='more-one'>
               <img className='gif_prize ' src={threeD} ></img>
               <p className='more-title'>Best Use of XR</p>
               <p>₹ 5,000 and cool Innohacks swags...</p>
             </div>
-            <div className='more-one'>
+            <div data-aos="fade-right" className='more-one'>
               <img className='gif_prize ' src={blockChain} ></img>
               <p className='more-title'>Best Use of Blockchain</p>
               <p>₹ 5,000 and cool Innohacks swags...</p>
             </div>
-            <div className='more-one'>
+            <div data-aos="fade-left" className='more-one'>
               <img className='gif_prize ' src={iot} ></img>
-              <p className='more-title'>Best Use of IoT</p>
+              <p className='more-title'>Best Use of AIoT</p>
               <p>₹ 5,000 and cool Innohacks swags...</p>
             </div>
-            <div className='more-one'>
+            <div data-aos="fade-right" className='more-one'>
               <img className='gif_prize ' src={social} ></img>
               <div>
                 <div>
@@ -193,7 +205,7 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className='more-one'>
+            <div data-aos="fade-left" className='more-one'>
               <img className='gif_prize ' src={girl} ></img>
               <p className='more-title'>Best All Girl Team</p>
               <p>₹ 5,000 and cool Innohacks swags...</p>
@@ -206,7 +218,7 @@ export default function HomePage() {
 
         {/* themes */}
         <Row className="prizesection" id="themes">
-          <PrizeHeading type="Our Themes" />
+          <PrizeHeading data-aos="zoom-in" data-aos-duration="800" type="Our Themes" />
           {Themeinfo.map(PrizeGroup)}
         </Row>
 
@@ -215,10 +227,10 @@ export default function HomePage() {
         <Row className="sponsorSection" id="sponsors">
           <SponsorsHead />
           <SponsorUS />
-          <div className="sponsor-grid">
+          <div  className="sponsor-grid">
             {sponsorLogos.map((item, i) => (
-              <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
-                <div className='sponsor-bg'>
+              <Col data-aos={i%2===0 ?`fade-right`:`fade-left`} data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                <div  className='sponsor-bg'>
                   <img src={item.src} width={180} alt="" />
                 </div>
               </Col>
@@ -227,10 +239,12 @@ export default function HomePage() {
         </Row>
         {/* ********Sponsors ending here ***** */}
 
-        {media && <Birds top="120vh" left="0vh" type="" />}
+        
+
+        
 
         {/* ********Team here ***** */}
-        <h1 id="team">Past Speakers and Judges</h1>
+        <h1 data-aos="zoom-in" data-aos-duration="800" id="team">Past Speakers and Judges</h1>
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
 
@@ -247,8 +261,13 @@ export default function HomePage() {
           <CommunityPartner />
         </Row>
 
+        {/* past winners */}
+        <Row >
+          <PastWinner />
+        </Row>
+
         {/* ********Frequently asked Questions here ***** */}
-        <div className="Myfaqs" id="faq">
+        <div data-aos="fade-up" data-aos-duration="800" className="Myfaqs" id="faq">
           <h1 className='my-faq-head'>FAQs</h1>
           {frequentlyAskedQuestions.map(FrequentlyAsked)}
           {/* ********Frequently asked Questions ending here ***** */}

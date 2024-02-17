@@ -35,7 +35,7 @@
   color: rgba(0, 0, 0, 0.272);
   top: -100px;
   transform: rotate(0deg);
-  animation: rotate 5s infinite ease-in-out;
+  /* animation: rotate 5s infinite ease-in-out; */
 }
 @keyframes rotate {
   from{
@@ -59,8 +59,8 @@
   text-align: left;
   display: inline-block;
   position: relative;
-  font-family: 'Nunito', sans-serif;
-  padding-left: 20%;
+  font-family: repo-light;
+  padding-left: 10%;
 }
 
 .LogoSectionAbout h1 {
@@ -92,6 +92,7 @@
     transform: translateY(-10px);
   }
 }
+
 @media (max-width: 1000px){
   .Logo-about{
     /* margin-left:9rem;   */
@@ -123,22 +124,25 @@
 
 .title_community {
   margin-bottom: 5%;
-  margin-top: 6%;
-  font-weight: bolder;
-  font-size: repo-bold;
+  margin-top: 15vh;
+  font-family: repo-bold;
+  font-size: 5rem;
 }
 
 .community_logo_container{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom:'6%'
+  margin-bottom:'6%';
+
 }
 .community_logo_container .logo-community{
   width: 200px;
   object-fit: contain;
   transition: all 200ms ease-in;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .logo-community:hover{
   scale: 1.2;

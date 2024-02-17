@@ -21,9 +21,7 @@ button {
   position: relative;
 }
 
-.join_disco {
-  background: linear-gradient(90deg, #9796F0 0%, #FBC7D4 100%);
-}
+
 
 .join_disco i {
   margin-right: 5px;
@@ -53,7 +51,7 @@ button {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 300;
 }
 
@@ -100,19 +98,9 @@ button:hover .overlay {
   left: 0;
 }
 
-@media (max-width: 1200px) {
-  .AboutMe h2 {
-    /* font-size: 6rem; */
-  }
-}
 
 /* main targer */
 
-@media (max-width:570px) {
-  .join_dis{
-    justify-content: center;
-  }
-}
 @media (max-width: 570px) {
   .Myinfo p {
     width: 100%;
@@ -134,6 +122,12 @@ button:hover .overlay {
   .AboutMe {
     text-align: center;
   }
+  .innohacks-text{
+    font-size: 6rem;
+  }
+  .join_dis{
+    justify-content: center;
+  }
 }
 
 @media (max-width: 330px) {
@@ -146,6 +140,9 @@ button:hover .overlay {
   }
   .Myinfo p {
     font-size: 1.6rem;
+  }
+  .innohacks-text{
+    font-size: 4rem;
   }
   
 }

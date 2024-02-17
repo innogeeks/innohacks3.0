@@ -4,6 +4,9 @@
     margin: 0 auto;
     text-align: center;
     margin-top: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
 }
 
 .PrizeHeading h1{
@@ -15,6 +18,45 @@
 }
 .prize-icons{
  animation: mover 1s infinite alternate ease ;
+
+}
+
+.theme-container{
+    max-width: 1200px;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.44);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.3px);
+    -webkit-backdrop-filter: blur(10.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 3px 0px 20px grey,inset 3px 0px 20px gray;
+    transition: all 200ms ease-in;
+}
+.theme img{
+    transition: all 300ms ease-in-out;
+}
+.theme:hover img{
+    scale: 1.5;
 }
 @-webkit-keyframes mover {
     0% { transform: translateY(0); }
@@ -34,42 +76,30 @@
     -moz-text-fill-color: transparent;
     color: rgba(0, 0, 0, 0.532);
 }
-.Prizes p{
-    color: rgb(145, 143, 143);
-
-}
-.Prizes .first{
-    color:#A239EA;
-}
-
-.Prizes .second{
-    color:#39A2DB;
-}
-
-.Prizes .third{
-    color:#FF616D;
+.theme-container h2{
+    background-color: red;
+    background-image: linear-gradient(45deg, red, blue);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    color: rgba(0, 0, 0, 0.532);
 }
 
-.Prizes .fourth{
-    color:#3C8DAD;
-}
 
-.Prizes .fifth{
-    color:#BF1363;
-}
 
-.Prizes .sixth{
-    color:#FF96AD;
-}
-
-.Prizes .seventh{
-    color:#E4BAD4;
-}
 @media (max-width:578px) {
     .Prizes{
         width: 90vw;
     }
     .icons{
         width: 40vw;
+    }
+    .PrizeHeading h1{
+        margin-top: -10vh;
+    }
+    .theme:hover img{
+        scale: 1;
     }
 }
