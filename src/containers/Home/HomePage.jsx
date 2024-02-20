@@ -151,7 +151,7 @@ export default function HomePage() {
                   <div className='text_prizes'>
                     <p>₹ 30K</p>
                     <p>+</p>
-                    <p>cool Innohacks swags...</p>
+                    <p>Innohacks <br/>swags, t-shirts, stickers.</p>
                   </div>
                 </div>
                 <div  className="blob"> </div>
@@ -162,7 +162,7 @@ export default function HomePage() {
                   <div className='text_prizes'>
                     <p style={{ fontSize: "35px" }}>₹ 50K</p>
                     <p>+</p>
-                    <p>cool Innohacks swags...</p>
+                    <p>Innohacks <br/>swags, t-shirts, stickers.</p>
                   </div>
                 </div>
                 <div className="blob"></div>
@@ -174,7 +174,7 @@ export default function HomePage() {
                 <div className='text_prizes'>
                   <p>₹ 20K</p>
                   <p>+</p>
-                  <p>cool Innohacks swags...</p>
+                  <p>Innohacks <br/>swags, t-shirts, stickers.</p>
                 </div>
               </div>
               <div className="blob"></div>
