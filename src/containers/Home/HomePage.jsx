@@ -7,6 +7,7 @@ import { CommunityPartner, Logo, LogoSectionAbout } from '../../components/About
 import { Accordion } from '../../components/Accordian/index.jsx';
 import Birds from '../../components/Animation';
 import Footer from '../../components/Footer/index.jsx';
+import Schedule from 'components/Schedule/schedule.jsx';
 import { Myinfo } from '../../components/Landing/index.jsx';
 import { FirstPrize, PrizeHeading, ThemePrize } from '../../components/Prizes/index.jsx';
 import Media from '../../components/Socials/index.jsx';
@@ -148,7 +149,7 @@ export default function HomePage() {
                 <div className="bg">
                   <img src={second} alt="" />
                   <div className='text_prizes'>
-                    <p>₹ 30,000</p>
+                    <p>₹ 30K</p>
                     <p>+</p>
                     <p>cool Innohacks swags...</p>
                   </div>
@@ -159,7 +160,7 @@ export default function HomePage() {
                 <div className="bg">
                   <img src={first} width={200} alt="" />
                   <div className='text_prizes'>
-                    <p style={{ fontSize: "35px" }}>₹ 50,000</p>
+                    <p style={{ fontSize: "35px" }}>₹ 50K</p>
                     <p>+</p>
                     <p>cool Innohacks swags...</p>
                   </div>
@@ -171,7 +172,7 @@ export default function HomePage() {
               <div className="bg">
                 <img src={third} width={150} alt="" />
                 <div className='text_prizes'>
-                  <p>₹ 20,000</p>
+                  <p>₹ 20K</p>
                   <p>+</p>
                   <p>cool Innohacks swags...</p>
                 </div>
@@ -221,6 +222,13 @@ export default function HomePage() {
           <PrizeHeading data-aos="zoom-in" data-aos-duration="800" type="Our Themes" />
           {Themeinfo.map(PrizeGroup)}
         </Row>
+
+        {/* Schedule here */}
+        <Row className='schedule' id="timeline">
+        <PrizeHeading data-aos="zoom-in" data-aos-duration="800" type="Schedule" />  
+        <Schedule />
+        </Row>
+        {/* Schedule section ends here */}
 
         {/* ********Sponsors here ***** */}
 
