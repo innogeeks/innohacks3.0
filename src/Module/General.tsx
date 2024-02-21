@@ -274,7 +274,7 @@ const Themeinfo = [
     //Array 1
     {
       icon: <img src={blockchain} width={"100px"} className="icons"/>,
-      type: 'BlockChain/Web3',
+      type: 'Blockchain/Web3',
       content:
         ''
     },
@@ -286,7 +286,7 @@ const Themeinfo = [
     },
     {
       icon: <img src={fintech} width={"100px"} className="icons"></img>,
-      type: 'Fintech',
+      type: 'FinTech',
       content:
         ''
     }
