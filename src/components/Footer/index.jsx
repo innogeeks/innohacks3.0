@@ -109,7 +109,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-team">
-        <h4>❤️Design by Team-INNOGEEKS💙 </h4>
+        <h4>With 💙 by Team Innogeeks</h4>
         <p>©2024 Innogeeks™</p>
         <p><a href="mailto:innogeeks@kiet.edu">Contact us @Innogeeks™</a></p>
       </div>

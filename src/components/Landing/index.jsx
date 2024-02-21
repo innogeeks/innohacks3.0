@@ -23,7 +23,7 @@ const About = () => {
   };
   return (
     <div className="AboutMe">
-      <h2 >Join <br /> <span style={titleStyle} className='innohacks-text' >InnoHacks 3.0</span></h2>
+      <h2 >Embrace the challenge<br /> <span style={titleStyle} className='innohacks-text' >InnoHacks 3.0</span></h2>
       <MytypedComponent />
     </div>
   );
