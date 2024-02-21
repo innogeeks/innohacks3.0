@@ -414,34 +414,34 @@ const frequentlyAskedQuestions = [
       {
         label: 'What is a hackathon?',
         content:
-          'A hackathon is a 24 hour event where "hackers" all over the globe will collaborate on creating a functioning software and hardware by the end of the event.'
+          'A hackathon is a 24 hour event where "hackers" all over the globe collaborate on creating a functioning software and hardware by the end of the event.'
       },
       {
         label: 'Who can attend?',
         content:
-          'InnoHacks is open to all undergraduate, high school students and middle school students from all schools.'
+          'InnoHacks is open to all undergraduates, high school students and middle school students from all over India.'
       },
       {
         label: 'I am a first time hacker, what should I do?',
         content:
-          'No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathon and hacking in general.'
+          'No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathons in general.'
       },
       {
-        label: 'How team formation works?',
+        label: 'How does team formation works?',
         content:
-          "You can form team with 4 members in it at maximum. If you don't have a team, there'll be plenty of opportunities for you to meet hackers and form a team!"
+          "You can form team with maximum 4 members. If you don't have a team, there will be plenty of opportunities for you to meet hackers and form a team!"
       }
     ],
     [
       {
-        label: 'How to register myself in the hackathon?',
+        label: 'How to register myself in the Innohacks 3.0?',
         content:
-          'All you need is to fill our form above and join Discord, we will guide you through everything there'
+          'All you need to do is fill our form mentioned above and join our Discord channel, we will guide you through everything there'
       },
       {
         label: 'I have more questions?',
         content:
-          'Reach us directly at (innogeeks@kiet.edu) we would happy to help you.'
+          'Reach us directly at (innogeeks@kiet.edu). We would happy to help you.'
       },
       {
         label: 'Will there be a Registration Fee?',
@@ -449,8 +449,8 @@ const frequentlyAskedQuestions = [
           'No!'
       },
       {
-        label: 'Will there be swag?',
-        content: 'Yes! Participants will recieveing InnoHacks swag!.'
+        label: 'Will there be swags?',
+        content: 'Yes! Participants will many chances to win InnoHacks 3.0 swags!.'
       }
     ]
   ]
