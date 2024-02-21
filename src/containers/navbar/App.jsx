@@ -103,33 +103,33 @@ const NAVBAR = ({}) => {
           <div className="nav-content" ref={navigation}>
             <ul>
               <li>
-                <Link to={`home`} smooth>
+                <Link to={`#home`} smooth>
                   <span className="links">Home</span>{' '}
                 </Link>
               </li>
               
               <li>
-                <Link to={`prizes`} smooth>
+                <Link to={`#prizes`} smooth>
                   <span className="links">Prizes </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`themes`} smooth>
+                <Link to={`#themes`} smooth>
                   <span className="links">Themes </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`sponsors`} smooth>
+                <Link to={`#sponsors`} smooth>
                   <span className="links">Sponsors</span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`judges`} smooth>
+                <Link to={`#judges`} smooth>
                   <span className="links">Judges </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`faq`} smooth>
+                <Link to={`#faq`} smooth>
                   <span className="links">FAQ</span>{' '}
                 </Link>
               </li>

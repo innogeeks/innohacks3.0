@@ -274,7 +274,7 @@ export default function HomePage() {
         
 
         {/* ********Team here ***** */}
-        <h1 data-aos="zoom-in" data-aos-duration="800" id="judge">Past Speakers and Judges</h1>
+        <h1 data-aos="zoom-in" data-aos-duration="800" id="judges">Past Speakers and Judges</h1>
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
 
