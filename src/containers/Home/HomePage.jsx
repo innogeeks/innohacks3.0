@@ -154,6 +154,10 @@ export default function HomePage() {
 
         {/* ********Prizes here ***** */}
         <h1 data-aos="zoom-in" data-aos-duration="800" id="prizes" className='prize_heading' style={{ fontFamily: "repo-bold" }}>Prizes</h1>
+        <div className='prizepool'>
+          <p data-aos="zoom-in" data-aos-duration="800" id="prizes" className='worth'>worth</p>
+          <h4 data-aos="zoom-in" data-aos-duration="800" id="prizes" className='prizee' style={{ fontFamily: "poppins" }}>₹ 1.25 L</h4>
+        </div>
         <Row className="prizesection" style={{ padding: "10px", display: "flex", flexDirection: "column", justifyContent: "center" ,marginTop:"5vh"}}>
           {/* <PrizeHeading type="Prize section" /> */}
           {/* {Prizeinfo.map(PrizeGroup)} */}

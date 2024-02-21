@@ -82,6 +82,24 @@ h1 {
   height: max-content;
 }
 
+.prizepool{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.worth{
+  margin: 5px 10px 10px 0;
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #420457;
+}
+.prizee{
+  font-style: oblique;
+  font-size: 3rem;
+  color: #420457;
+}
+
 .Prizes{
   width: 100%;
   font-family: repo-extrabold;

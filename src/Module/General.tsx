@@ -16,7 +16,7 @@ import hackathonLogo from './Assets/Innohacks 3.0 Logo.png';
 // import github from "./Assets/sponsorsLogos/github.jpg"
 // import codingMinutes from "./Assets/sponsorsLogos/coding minutes.jpeg"
 // import metty from "./Assets/sponsorsLogos/metty.png"
-
+import React from 'react';
 import first from "./Assets/sponsorsLogos/1.png"
 import second from "./Assets/sponsorsLogos/2.png"
 import coding from "./Assets/sponsorsLogos/coding.jpeg"
@@ -218,7 +218,7 @@ const Prizeinfo = [
   [
     //Array 1
     {
-      icon: <img src='https://cdn-icons-png.flaticon.com/512/6394/6394616.png' width={"100%"} className="icons"></img>,
+      icon: <img src='https://cdn-icons-png.flaticon.com/512/6394/6394616.png' width={"100%"} className="icons"/>,
       type: 'First Prize',
       content:
         '₹ 50,000 and cool Innohacks swags...'
@@ -273,7 +273,7 @@ const Themeinfo = [
   [
     //Array 1
     {
-      icon: <img src={blockchain} width={"100px"} className="icons"></img>,
+      icon: <img src={blockchain} width={"100px"} className="icons"/>,
       type: 'BlockChain/Web3',
       content:
         ''
