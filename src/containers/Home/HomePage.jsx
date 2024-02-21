@@ -8,6 +8,7 @@ import { Accordion } from '../../components/Accordian/index.jsx';
 import Birds from '../../components/Animation';
 import Footer from '../../components/Footer/index.jsx';
 import Schedule from 'components/Schedule/schedule.jsx';
+import Footfall from 'components/Footfall/footfall.jsx';
 import { Myinfo } from '../../components/Landing/index.jsx';
 import { FirstPrize, PrizeHeading, ThemePrize } from '../../components/Prizes/index.jsx';
 import Media from '../../components/Socials/index.jsx';
@@ -132,10 +133,24 @@ export default function HomePage() {
           <Col className="info-div" >
             <Logo />
           </Col>
+          <Col >
+          
+          </Col>
         </Row>
+        <Row className="mediaInfo">
+            <Col className="" sm={12} lg={12} md={12}>
+            <Footfall />
+            </Col>
+          </Row>
         {media && <Birds top="120vh" left="0vh" type="" />}
         
 
+        {/* Footfalls last year */}
+          
+        
+        
+        
+        {/* Footfall section ends here */}
 
         {/* ********Prizes here ***** */}
         <h1 data-aos="zoom-in" data-aos-duration="800" id="prizes" className='prize_heading' style={{ fontFamily: "repo-bold" }}>Prizes</h1>
@@ -149,7 +164,7 @@ export default function HomePage() {
                 <div className="bg">
                   <img src={second} alt="" />
                   <div className='text_prizes'>
-                    <p>₹ 30K</p>
+                    <p style={{ textShadow: "1px 1px 4px #702963"}}>₹ 30K</p>
                     <p>+</p>
                     <p>cool Innohacks swags...</p>
                   </div>
@@ -160,7 +175,7 @@ export default function HomePage() {
                 <div className="bg">
                   <img src={first} width={200} alt="" />
                   <div className='text_prizes'>
-                    <p style={{ fontSize: "35px" }}>₹ 50K</p>
+                    <p style={{ fontSize: "35px" , textShadow: "1px 1px 4px #702963"}}>₹ 50k</p>
                     <p>+</p>
                     <p>cool Innohacks swags...</p>
                   </div>
@@ -172,7 +187,7 @@ export default function HomePage() {
               <div className="bg">
                 <img src={third} width={150} alt="" />
                 <div className='text_prizes'>
-                  <p>₹ 20K</p>
+                  <p style={{ textShadow: "1px 1px 4px #702963"}}>₹ 20k</p>
                   <p>+</p>
                   <p>cool Innohacks swags...</p>
                 </div>
@@ -214,6 +229,7 @@ export default function HomePage() {
 
 
           </div>
+
         </Row>
         {/* ********Prizes ending here ***** */}
 
@@ -230,6 +246,8 @@ export default function HomePage() {
         </Row>
         {/* Schedule section ends here */}
 
+        
+        
         {/* ********Sponsors here ***** */}
 
         <Row className="sponsorSection" id="sponsors">

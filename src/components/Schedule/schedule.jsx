@@ -9,56 +9,56 @@ return(
       <div className="main-timeline">
         <div className="timeline">
           <a href="#" className="timeline-content">
-            <span className="timeline-year">27th April </span>
+            <span className="timeline-year">10:00 am</span>
             <div className="timeline-icon">
               <i className="fa fa-rocket" aria-hidden="true"></i>
             </div>
             <div className="content">
-              <h3 className="title">10:00 am - 11:00 am</h3>
+              <h3 className="title">Opening Ceremony</h3>
               <p className="description">
-                Opening Ceremony - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam minima beatae sapiente iure, perferendis labore nesciunt a cupiditate eum ipsa quis doloribus laudantium. Sed corporis in repudiandae quos nesciunt veritatis?
+               On 27th April, Day 1 of the event starts with an Opening Ceremony through our esteemed faculties and Judges
               </p>
             </div>
           </a>
         </div>
         <div className="timeline">
           <a href="#" className="timeline-content">
-            <span className="timeline-year">Day 1</span>
+            <span className="timeline-year">11:00 am</span>
             <div className="timeline-icon">
-              <i className="fa fa-users" aria-hidden="true"></i>
+              <i className="fa fa-flag" aria-hidden="true"></i>
             </div>
             <div className="content">
-              <h3 className="title">11:00 am</h3>
+              <h3 className="title">Start Hacking !</h3>
               <p className="description">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                The Fun begins ! Start your systems and Get ready for an adventure filled with code and adventure.
               </p>
             </div>
           </a>
         </div>
         <div className="timeline">
           <a href="#" className="timeline-content">
-            <span className="timeline-year">Lunch</span>
-            <div className="timeline-icon">
-              <i className="fa fa-cog" aria-hidden="true"></i>
-            </div>
-            <div className="content">
-              <h3 className="title">1:30 pm - 2:30 pm</h3>
-              <p className="description">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-              </p>
-            </div>
-          </a>
-        </div>
-        <div className="timeline">
-          <a href="#" className="timeline-content">
-            <span className="timeline-year">Mentoring</span>
+            <span className="timeline-year">1:30 pm</span>
             <div className="timeline-icon">
               <i className="fa fa-heart" aria-hidden="true"></i>
             </div>
             <div className="content">
-              <h3 className="title">5:00 pm </h3>
+              <h3 className="title">Lunch</h3>
               <p className="description">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                It's time for break. Relax and enjoy the meal while networking with like-minded individuals  
+              </p>
+            </div>
+          </a>
+        </div>
+        <div className="timeline">
+          <a href="#" className="timeline-content">
+            <span className="timeline-year">5:00 pm</span>
+            <div className="timeline-icon">
+              <i className="fa fa-cog" aria-hidden="true"></i>
+            </div>
+            <div className="content">
+              <h3 className="title">Mentoring</h3>
+              <p className="description">
+                Here comes the First round of Judging ! Don't worry as it is an unmoderated round. So, ask away all your doubts !
               </p>
             </div>
           </a>
@@ -72,7 +72,7 @@ return(
             <div className="content">
               <h3 className="title">Breakfast</h3>
               <p className="description">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                28th April begins with a hearty breakfast as we step into the last leg of the Hackathon !
               </p>
             </div>
           </a>
@@ -81,12 +81,12 @@ return(
           <a href="#" className="timeline-content">
             <span className="timeline-year">Judging</span>
             <div className="timeline-icon">
-              <i className="fa fa-apple" aria-hidden="true"></i>
+              <i className="fa fa-edit" aria-hidden="true"></i>
             </div>
             <div className="content">
-              <h3 className="title">10:00 am - 10:30 am</h3>
+              <h3 className="title">11:00 am - 1:30 pm</h3>
               <p className="description">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                The round to present your solutions to the judges is here ! All the best 
               </p>
             </div>
           </a>
@@ -95,12 +95,12 @@ return(
           <a href="#" className="timeline-content">
             <span className="timeline-year">Results</span>
             <div className="timeline-icon">
-              <i className="fa fa-edit" aria-hidden="true"></i>
+              <i className="fa fa-trophy" aria-hidden="true"></i>
             </div>
             <div className="content">
-              <h3 className="title">12:00 pm</h3>
+              <h3 className="title">3:30 pm - 4:30 pm</h3>
               <p className="description">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                We end 24hours of adventure with speakers sessions and Announcing the winners !
               </p>
             </div>
           </a>
