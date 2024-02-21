@@ -166,7 +166,7 @@ export default function HomePage() {
                   <div className='text_prizes'>
                     <p style={{ textShadow: "1px 1px 4px #702963"}}>₹ 30K</p>
                     <p>+</p>
-                    <p>cool Innohacks swags...</p>
+                    <p>Innohacks <br/>swags, t-shirts, stickers.</p>
                   </div>
                 </div>
                 <div  className="blob"> </div>
@@ -177,7 +177,7 @@ export default function HomePage() {
                   <div className='text_prizes'>
                     <p style={{ fontSize: "35px" , textShadow: "1px 1px 4px #702963"}}>₹ 50k</p>
                     <p>+</p>
-                    <p>cool Innohacks swags...</p>
+                    <p>Innohacks <br/>swags, t-shirts, stickers.</p>
                   </div>
                 </div>
                 <div className="blob"></div>
@@ -189,7 +189,7 @@ export default function HomePage() {
                 <div className='text_prizes'>
                   <p style={{ textShadow: "1px 1px 4px #702963"}}>₹ 20k</p>
                   <p>+</p>
-                  <p>cool Innohacks swags...</p>
+                  <p>Innohacks <br/>swags, t-shirts, stickers.</p>
                 </div>
               </div>
               <div className="blob"></div>

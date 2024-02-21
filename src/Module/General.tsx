@@ -66,7 +66,7 @@ import open from '../containers/Home/assets/theme/8.png'
 
 const TOP_SECTION = {
   TITLE: 'Join InnoHacks3.0',
-  Typed_effect: ['24 hours of Innovations', 'Win awesome prizes'],
+  Typed_effect: ['24 hours of Innovation', 'Win awesome prizes'],
   SHORT_DESCRIPTION:
     'Join us on 27th April 2024 with over Hundreds of students from across the nation for 24 hours of creation, innovation, & fun.',
   IMG_SRC: hackathonLogo,
