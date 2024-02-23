@@ -70,7 +70,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
 }
-.prizesection {
+.prizesection,.scheduleSection {
   width: 100vw;
   /* background-color: #f3effe; */
   /* background-color: #f4dbee; */
@@ -80,6 +80,26 @@ h1 {
   flex-direction: column;
   align-items: center;
   height: max-content;
+  
+}
+
+
+.prizepool{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.worth{
+  margin: 5px 10px 10px 0;
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #420457;
+}
+.prizee{
+  font-style: oblique;
+  font-size: 3rem;
+  color: #420457;
 }
 
 .Prizes{
@@ -141,7 +161,7 @@ margin-top: 15vh;
 }
 
 
-@media (max-width: 570px) {
+@media (max-width: 578px) {
   .mediaInfo {
     margin-top: 0;
   }
@@ -156,6 +176,9 @@ margin-top: 15vh;
   }
 
   .prizesection {
+    padding-top: 17vh ;
+  }
+  .scheduleSection {
     padding-top: 17vh ;
   }
   .sponsorSection {
@@ -255,13 +278,15 @@ margin-top: 15vh;
   gap: 0;
   line-height: 1.1;
   background-color: red;
-    background-image: linear-gradient(45deg, red, #2D71D5);
+    background-image: linear-gradient(45deg, rgb(67, 67, 67), #141313);
     background-size: 100%;
     -webkit-background-clip: text;
+    background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
 }
+
 
  .cards_prizes{
   width: 100%;
@@ -362,6 +387,7 @@ margin-top: 15vh;
   background-color: red;
   background-image: linear-gradient(45deg, red, #2D71D5);
   background-size: 100%;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent; 

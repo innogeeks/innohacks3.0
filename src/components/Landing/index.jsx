@@ -23,7 +23,7 @@ const About = () => {
   };
   return (
     <div className="AboutMe">
-      <h2 >Join <br /> <span style={titleStyle} className='innohacks-text' >InnoHacks 3.0</span></h2>
+      <h2 >Embrace the challenge<br /> <span style={titleStyle} className='innohacks-text' >InnoHacks 3.0</span></h2>
       <MytypedComponent />
     </div>
   );
@@ -61,7 +61,7 @@ const Myinfo = () => {
                 ></path>
               </svg>
             </button> */}
-            <button className='anime-btn'>
+            {/* <button className='anime-btn'>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 36 36"
@@ -72,7 +72,22 @@ const Myinfo = () => {
                 <BsDiscord className='img' fontSize={50} color='white'/>
               <span className="now">now!</span>
               <span className="play">Join</span>
+          </button> */}
+
+          <button class="btn" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg"/>
+          <BsDiscord className='img' fontSize={400} color='white' style={{marginRight:"25px"}}/>
+            <strong>Join Now</strong>
+            <div id="container-stars">
+              <div id="stars"></div>
+            </div>
+
+            <div id="glow">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
           </button>
+
 
           </a>
         </div>

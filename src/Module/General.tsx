@@ -16,7 +16,7 @@ import hackathonLogo from './Assets/Innohacks 3.0 Logo.png';
 // import github from "./Assets/sponsorsLogos/github.jpg"
 // import codingMinutes from "./Assets/sponsorsLogos/coding minutes.jpeg"
 // import metty from "./Assets/sponsorsLogos/metty.png"
-
+import React from 'react';
 import first from "./Assets/sponsorsLogos/1.png"
 import second from "./Assets/sponsorsLogos/2.png"
 import coding from "./Assets/sponsorsLogos/coding.jpeg"
@@ -66,9 +66,9 @@ import open from '../containers/Home/assets/theme/8.png'
 
 const TOP_SECTION = {
   TITLE: 'Join InnoHacks3.0',
-  Typed_effect: ['24 hours of Innovations', 'Win awesome prizes'],
+  Typed_effect: ['24 hours of Innovation', 'Win awesome prizes'],
   SHORT_DESCRIPTION:
-    'Join us on 27th April 2024 with over Hundreds of students from across the nation for 24 hours of creation, innovation, & fun.',
+    'Unleash your creativity for 24 hours! Join us on April 27th for a nationwide hackathon alongside hundreds of other student innovators. Build, learn, and connect - are you in?',
   IMG_SRC: hackathonLogo,
   DISCORD_LINK: '',
   JUDGES_FORM_LINK:
@@ -90,7 +90,7 @@ const SOCIALS = {
 const MIDDLE_SECTION = {
   TITLE: 'What is InnoHacks?',
   LONG_DESCRIPTION:
-    'The largest code feast of Delhi NCR is back! Join a 24 Hour Hackathon to hustle and shine through 5 amazing tracks, Embark on an Odyssey to learn new technologies in captivating environment seek guidance from experienced mentors and engrave your name on boards of our esteemed Judges! Not just that, win huge prizes and hampers by brainstorming and creating the best hack! Be ready to sail through an amazing night of fun, code and much more!',
+    'The largest code fest of Delhi NCR is back! Join a 24 Hour Hackathon to hustle and shine through 5 amazing tracks, Embark on an Odyssey to learn new technologies in captivating environment seek guidance from experienced mentors and engrave your name on boards of our esteemed Judges! Not just that, win huge prizes and hampers by brainstorming and creating the best hack! Be ready to sail through an amazing night of fun, code and much more!',
   LOGO: hackathonLogo
 };
 
@@ -218,7 +218,7 @@ const Prizeinfo = [
   [
     //Array 1
     {
-      icon: <img src='https://cdn-icons-png.flaticon.com/512/6394/6394616.png' width={"100%"} className="icons"></img>,
+      icon: <img src='https://cdn-icons-png.flaticon.com/512/6394/6394616.png' width={"100%"} className="icons"/>,
       type: 'First Prize',
       content:
         '₹ 50,000 and cool Innohacks swags...'
@@ -273,8 +273,8 @@ const Themeinfo = [
   [
     //Array 1
     {
-      icon: <img src={blockchain} width={"100px"} className="icons"></img>,
-      type: 'BlockChain/Web3',
+      icon: <img src={blockchain} width={"100px"} className="icons"/>,
+      type: 'Blockchain/Web3',
       content:
         ''
     },
@@ -286,7 +286,7 @@ const Themeinfo = [
     },
     {
       icon: <img src={fintech} width={"100px"} className="icons"></img>,
-      type: 'Fintech',
+      type: 'FinTech',
       content:
         ''
     }
@@ -414,34 +414,34 @@ const frequentlyAskedQuestions = [
       {
         label: 'What is a hackathon?',
         content:
-          'A hackathon is a 24 hour event where "hackers" all over the globe will collaborate on creating a functioning software and hardware by the end of the event.'
+          'A hackathon is a 24 hour event where "hackers" all over the globe collaborate on creating a functioning software and hardware by the end of the event.'
       },
       {
         label: 'Who can attend?',
         content:
-          'InnoHacks is open to all undergraduate, high school students and middle school students from all schools.'
+          'InnoHacks is open to all undergraduates, high school students and middle school students from all over India.'
       },
       {
         label: 'I am a first time hacker, what should I do?',
         content:
-          'No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathon and hacking in general.'
+          'No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathons in general.'
       },
       {
-        label: 'How team formation works?',
+        label: 'How does team formation works?',
         content:
-          "You can form team with 4 members in it at maximum. If you don't have a team, there'll be plenty of opportunities for you to meet hackers and form a team!"
+          "You can form team with maximum 4 members. If you don't have a team, there will be plenty of opportunities for you to meet hackers and form a team!"
       }
     ],
     [
       {
-        label: 'How to register myself in the hackathon?',
+        label: 'How to register myself in the Innohacks 3.0?',
         content:
-          'All you need is to fill our form above and join Discord, we will guide you through everything there'
+          'All you need to do is fill our form mentioned above and join our Discord channel, we will guide you through everything there'
       },
       {
         label: 'I have more questions?',
         content:
-          'Reach us directly at (innogeeks@kiet.edu) we would happy to help you.'
+          'Reach us directly at (innogeeks@kiet.edu). We would happy to help you.'
       },
       {
         label: 'Will there be a Registration Fee?',
@@ -449,8 +449,8 @@ const frequentlyAskedQuestions = [
           'No!'
       },
       {
-        label: 'Will there be swag?',
-        content: 'Yes! Participants will recieveing InnoHacks swag!.'
+        label: 'Will there be swags?',
+        content: 'Yes! Participants will many chances to win InnoHacks 3.0 swags!.'
       }
     ]
   ]

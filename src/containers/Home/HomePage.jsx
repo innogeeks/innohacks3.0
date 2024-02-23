@@ -7,6 +7,8 @@ import { CommunityPartner, Logo, LogoSectionAbout } from '../../components/About
 import { Accordion } from '../../components/Accordian/index.jsx';
 import Birds from '../../components/Animation';
 import Footer from '../../components/Footer/index.jsx';
+import Schedule from 'components/Schedule/schedule.jsx';
+import Footfall from 'components/Footfall/footfall.jsx';
 import { Myinfo } from '../../components/Landing/index.jsx';
 import { FirstPrize, PrizeHeading, ThemePrize } from '../../components/Prizes/index.jsx';
 import Media from '../../components/Socials/index.jsx';
@@ -131,13 +133,31 @@ export default function HomePage() {
           <Col className="info-div" >
             <Logo />
           </Col>
+          <Col >
+          
+          </Col>
         </Row>
+        <Row className="mediaInfo">
+            <Col className="" sm={12} lg={12} md={12}>
+            <Footfall />
+            </Col>
+          </Row>
         {media && <Birds top="120vh" left="0vh" type="" />}
         
 
+        {/* Footfalls last year */}
+          
+        
+        
+        
+        {/* Footfall section ends here */}
 
         {/* ********Prizes here ***** */}
         <h1 data-aos="zoom-in" data-aos-duration="800" id="prizes" className='prize_heading' style={{ fontFamily: "repo-bold" }}>Prizes</h1>
+        <div className='prizepool'>
+          <p data-aos="zoom-in" data-aos-duration="800" id="prizes" className='worth'>worth</p>
+          <h4 data-aos="zoom-in" data-aos-duration="800" id="prizes" className='prizee' style={{ fontFamily: "poppins" }}>₹ 1,50,000+</h4>
+        </div>
         <Row className="prizesection" style={{ padding: "10px", display: "flex", flexDirection: "column", justifyContent: "center" ,marginTop:"5vh"}}>
           {/* <PrizeHeading type="Prize section" /> */}
           {/* {Prizeinfo.map(PrizeGroup)} */}
@@ -148,9 +168,9 @@ export default function HomePage() {
                 <div className="bg">
                   <img src={second} alt="" />
                   <div className='text_prizes'>
-                    <p>₹ 30,000</p>
+                    <p style={{ textShadow: "1px 1px 4px #702963", fontSize:"26px"}}>₹ 30,000</p>
                     <p>+</p>
-                    <p>cool Innohacks swags...</p>
+                    <p>Innohacks <br/>swags.</p>
                   </div>
                 </div>
                 <div  className="blob"> </div>
@@ -159,9 +179,9 @@ export default function HomePage() {
                 <div className="bg">
                   <img src={first} width={200} alt="" />
                   <div className='text_prizes'>
-                    <p style={{ fontSize: "35px" }}>₹ 50,000</p>
+                    <p style={{ fontSize: "35px" , textShadow: "1px 1px 4px #702963"}}>₹ 50,000</p>
                     <p>+</p>
-                    <p>cool Innohacks swags...</p>
+                    <p>Innohacks <br/>swags.</p>
                   </div>
                 </div>
                 <div className="blob"></div>
@@ -171,9 +191,9 @@ export default function HomePage() {
               <div className="bg">
                 <img src={third} width={150} alt="" />
                 <div className='text_prizes'>
-                  <p>₹ 20,000</p>
+                  <p style={{ textShadow: "1px 1px 4px #702963", fontSize:"26px"}}>₹ 20,000</p>
                   <p>+</p>
-                  <p>cool Innohacks swags...</p>
+                  <p>Innohacks <br/>swags.</p>
                 </div>
               </div>
               <div className="blob"></div>
@@ -213,6 +233,7 @@ export default function HomePage() {
 
 
           </div>
+
         </Row>
         {/* ********Prizes ending here ***** */}
 
@@ -222,6 +243,15 @@ export default function HomePage() {
           {Themeinfo.map(PrizeGroup)}
         </Row>
 
+        {/* Schedule here */}
+        <Row className='scheduleSection' id="timeline">
+        <PrizeHeading data-aos="zoom-in" data-aos-duration="800" type="Schedule" />  
+        <Schedule />
+        </Row>
+        {/* Schedule section ends here */}
+
+        
+        
         {/* ********Sponsors here ***** */}
 
         <Row className="sponsorSection" id="sponsors">
@@ -244,7 +274,7 @@ export default function HomePage() {
         
 
         {/* ********Team here ***** */}
-        <h1 data-aos="zoom-in" data-aos-duration="800" id="team">Past Speakers and Judges</h1>
+        <h1 data-aos="zoom-in" data-aos-duration="800" id="judges" style={{marginTop:"15rem", marginBottom:"5rem"}}>Past Speakers and Judges</h1>
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
 
