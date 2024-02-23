@@ -244,7 +244,7 @@ export default function HomePage() {
         </Row>
 
         {/* Schedule here */}
-        <Row className='schedule' id="timeline">
+        <Row className='scheduleSection' id="timeline">
         <PrizeHeading data-aos="zoom-in" data-aos-duration="800" type="Schedule" />  
         <Schedule />
         </Row>
