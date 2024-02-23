@@ -30,7 +30,7 @@ return(
             <div className="content">
               <h3 className="title">Start Hacking !</h3>
               <p className="description">
-                The Fun begins ! Start your systems and Get ready for an adventure filled with code and adventure.
+                The Fun begins ! Start your systems and Get ready for an adventure filled with collaboration and code.
               </p>
             </div>
           </a>

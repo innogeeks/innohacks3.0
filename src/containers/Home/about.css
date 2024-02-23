@@ -70,7 +70,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
 }
-.prizesection {
+.prizesection,.scheduleSection {
   width: 100vw;
   /* background-color: #f3effe; */
   /* background-color: #f4dbee; */
@@ -80,7 +80,9 @@ h1 {
   flex-direction: column;
   align-items: center;
   height: max-content;
+  
 }
+
 
 .prizepool{
   display: flex;
@@ -159,7 +161,7 @@ margin-top: 15vh;
 }
 
 
-@media (max-width: 570px) {
+@media (max-width: 578px) {
   .mediaInfo {
     margin-top: 0;
   }
@@ -174,6 +176,9 @@ margin-top: 15vh;
   }
 
   .prizesection {
+    padding-top: 17vh ;
+  }
+  .scheduleSection {
     padding-top: 17vh ;
   }
   .sponsorSection {
