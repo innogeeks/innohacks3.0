@@ -55,11 +55,16 @@
 .inno-footer-container .inno{
   width: 200px;
 }
+
 }
 @media (max-width:700px) {
   .hacks-footer-container .hacks{
     margin-left:50%;
     transform: translateX(-50%);
+  }
+  .footer-map{
+    scale: 0;
+    display: none;
   }
 }
 @media (max-width: 570px) {
@@ -207,6 +212,7 @@
   display: flex;
   width: 100vw;
   flex-wrap: wrap;
+  position: relative;
 }
 .footer p {
   font-weight: 500;
@@ -290,7 +296,13 @@ background-size:100%;
   -webkit-animation: myfirst 30s linear infinite;
   animation: myfirst 30s linear infinite;
 }
-
+.footer-map{
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  z-index: 999;
+  display: block;
+}
 
 
 @-moz-keyframes myfirst {

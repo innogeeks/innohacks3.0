@@ -307,7 +307,7 @@ export default function HomePage() {
           {/* ********Frequently asked Questions ending here ***** */}
         </div>
 
-        <Row >
+        <Row className="homepage-map">
           <Map />
         </Row>
 

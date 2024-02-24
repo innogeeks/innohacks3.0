@@ -20,6 +20,7 @@ import Innologo from './assets/imageSkin.png'
 import { HashLink } from 'react-router-hash-link';
 //------------------------------------------------------------------
 import './style.scss';
+import Map from 'components/map';
 
 const GithubTemplate = ({ hideTemplate }) => {
   return (
@@ -117,6 +118,11 @@ const Footer = () => {
           {/* <div className="footer_bg_one"></div> 
          <div className="footer_bg_two"></div> */}
       </div>
+
+      <div className='footer-map'>
+        <Map/>
+      </div>
+
     </div>
 
   );
