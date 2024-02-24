@@ -43,6 +43,7 @@ import social from './assets/prizes/fans.gif'
 import PastWinner from 'components/pastWinners/index.jsx';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Map from 'components/map/index.jsx';
 
 // const SponsorGroup = (props, index) => {
 //   return (
@@ -302,6 +303,10 @@ export default function HomePage() {
           {frequentlyAskedQuestions.map(FrequentlyAsked)}
           {/* ********Frequently asked Questions ending here ***** */}
         </div>
+
+        <Row >
+          <Map />
+        </Row>
 
       </Container>
       <Footer />
