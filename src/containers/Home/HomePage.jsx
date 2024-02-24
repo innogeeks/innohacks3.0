@@ -139,6 +139,7 @@ export default function HomePage() {
         </Row>
         <Row className="mediaInfo">
             <Col className="" sm={12} lg={12} md={12}>
+            <h1 data-aos="zoom-in" data-aos-duration="800" id="prizes" className='prize_heading' style={{ fontFamily: "repo-bold", marginBottom:"10rem" }}>Past Statistics</h1>
             <Footfall />
             </Col>
           </Row>
