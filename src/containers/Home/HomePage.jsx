@@ -276,7 +276,7 @@ export default function HomePage() {
         
 
         {/* ********Team here ***** */}
-        <div className='PrizeHeading'>
+        <div >
         <h1 data-aos="zoom-in" data-aos-duration="800" id="judges">Past Speakers and Judges</h1>
         </div>
         {TeamInfo.map(TeamMembers)}
