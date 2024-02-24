@@ -100,7 +100,7 @@ return(
             <div className="content">
               <h3 className="title">3:30 pm - 4:30 pm</h3>
               <p className="description">
-                We end 24hours of adventure with speakers sessions and Announcing the winners !
+                We end 24-Hour of adventure with speakers sessions and Announcing the winners !
               </p>
             </div>
           </a>

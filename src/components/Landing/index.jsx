@@ -23,7 +23,8 @@ const About = () => {
   };
   return (
     <div className="AboutMe">
-      <h2 >Embrace the challenge<br /> <span style={titleStyle} className='innohacks-text' >InnoHacks 3.0</span></h2>
+      <h2 ><span style={{fontSize:"3rem"}}>Embrace the challenge</span><br /> <span style={titleStyle} className='innohacks-text' >InnoHacks 3.0</span></h2>
+      <h6 style={{fontSize:"1.6rem"}}>Hack n' Innovate</h6>
       <MytypedComponent />
     </div>
   );
@@ -39,14 +40,15 @@ const Myinfo = () => {
           {' '}
           <Btn className="sponsor_btn" type="Judges" overlay="Fill the form" />
         </a> */}
-        <div className="join_dis">
+        <div className="join_dis" >
           <a rel="noreferrer" target="_blank" href="https://discord.gg/qNmEeAsuqQ">
-            {/* <Btn
+            <Btn
             ico="fab fa-2x fa-discord"
             className="join_disco"
             type="Join Discord"
-            overlay="Click the link"
-          /> */}
+            overlay="Now"
+            style={{display:"flex", justifyContent:"center"}}
+          />
             {/* <button className="animated-button">
               <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -74,7 +76,7 @@ const Myinfo = () => {
               <span className="play">Join</span>
           </button> */}
 
-          <button class="btn" type="button">
+          {/* <button class="btn" type="button">
           <svg xmlns="http://www.w3.org/2000/svg"/>
           <BsDiscord className='img' fontSize={400} color='white' style={{marginRight:"25px"}}/>
             <strong>Join Now</strong>
@@ -86,7 +88,7 @@ const Myinfo = () => {
               <div class="circle"></div>
               <div class="circle"></div>
             </div>
-          </button>
+          </button> */}
 
 
           </a>

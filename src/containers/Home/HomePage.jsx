@@ -245,7 +245,7 @@ export default function HomePage() {
         </Row>
 
         {/* Schedule here */}
-        <Row className='schedule' id="timeline">
+        <Row className='schedule PrizeHeading' id="timeline">
         <h1 className="Schedule-heading" data-aos="zoom-in" data-aos-duration="800" >Schedule</h1>  
         <Schedule />
         </Row>
@@ -275,7 +275,9 @@ export default function HomePage() {
         
 
         {/* ********Team here ***** */}
+        <div className='PrizeHeading'>
         <h1 data-aos="zoom-in" data-aos-duration="800" id="judges">Past Speakers and Judges</h1>
+        </div>
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
 
