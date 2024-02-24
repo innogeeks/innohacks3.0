@@ -8,6 +8,7 @@ import five from "./assets/5.jpg"
 import six from "./assets/6.jpg"
 import seven from "./assets/7.jpg"
 
+
 export default function PastWinner() {
   return (
     <div className="past-winner-container">
