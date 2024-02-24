@@ -313,8 +313,12 @@
 
 
   @media screen and (max-width: 990px){
-    .main-timeline .timeline-icon{
+    .main-timeline .timeline-icon {
       display: none;
+    }
+    .Schedule-heading{
+      display: none;
+
     }
   }
 

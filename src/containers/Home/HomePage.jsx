@@ -43,6 +43,7 @@ import social from './assets/prizes/fans.gif'
 import PastWinner from 'components/pastWinners/index.jsx';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Map from 'components/map/index.jsx';
 
 // const SponsorGroup = (props, index) => {
 //   return (
@@ -156,7 +157,7 @@ export default function HomePage() {
         <h1 data-aos="zoom-in" data-aos-duration="800" id="prizes" className='prize_heading' style={{ fontFamily: "repo-bold" }}>Prizes</h1>
         <div className='prizepool'>
           <p data-aos="zoom-in" data-aos-duration="800" id="prizes" className='worth'>worth</p>
-          <h4 data-aos="zoom-in" data-aos-duration="800" id="prizes" className='prizee' style={{ fontFamily: "poppins" }}>₹ 1,50,000+</h4>
+          <h4 data-aos="zoom-in" data-aos-duration="800" id="prizes" className='prizee' style={{ fontFamily: "poppins" }}>₹ 1.25 L</h4>
         </div>
         <Row className="prizesection" style={{ padding: "10px", display: "flex", flexDirection: "column", justifyContent: "center" ,marginTop:"5vh"}}>
           {/* <PrizeHeading type="Prize section" /> */}
@@ -168,9 +169,9 @@ export default function HomePage() {
                 <div className="bg">
                   <img src={second} alt="" />
                   <div className='text_prizes'>
-                    <p style={{ textShadow: "1px 1px 4px #702963", fontSize:"26px"}}>₹ 30,000</p>
+                    <p style={{ textShadow: "1px 1px 4px #702963"}}>₹ 30K</p>
                     <p>+</p>
-                    <p>Innohacks <br/>swags.</p>
+                    <p>Innohacks <br/>swags, t-shirts, stickers.</p>
                   </div>
                 </div>
                 <div  className="blob"> </div>
@@ -179,9 +180,9 @@ export default function HomePage() {
                 <div className="bg">
                   <img src={first} width={200} alt="" />
                   <div className='text_prizes'>
-                    <p style={{ fontSize: "35px" , textShadow: "1px 1px 4px #702963"}}>₹ 50,000</p>
+                    <p style={{ fontSize: "35px" , textShadow: "1px 1px 4px #702963"}}>₹ 50k</p>
                     <p>+</p>
-                    <p>Innohacks <br/>swags.</p>
+                    <p>Innohacks <br/>swags, t-shirts, stickers.</p>
                   </div>
                 </div>
                 <div className="blob"></div>
@@ -191,9 +192,9 @@ export default function HomePage() {
               <div className="bg">
                 <img src={third} width={150} alt="" />
                 <div className='text_prizes'>
-                  <p style={{ textShadow: "1px 1px 4px #702963", fontSize:"26px"}}>₹ 20,000</p>
+                  <p style={{ textShadow: "1px 1px 4px #702963"}}>₹ 20k</p>
                   <p>+</p>
-                  <p>Innohacks <br/>swags.</p>
+                  <p>Innohacks <br/>swags, t-shirts, stickers.</p>
                 </div>
               </div>
               <div className="blob"></div>
@@ -244,8 +245,8 @@ export default function HomePage() {
         </Row>
 
         {/* Schedule here */}
-        <Row className='scheduleSection' id="timeline">
-        <PrizeHeading data-aos="zoom-in" data-aos-duration="800" type="Schedule" />  
+        <Row className='schedule PrizeHeading' id="timeline">
+        <h1 className="Schedule-heading" data-aos="zoom-in" data-aos-duration="800" >Schedule</h1>  
         <Schedule />
         </Row>
         {/* Schedule section ends here */}
@@ -274,7 +275,9 @@ export default function HomePage() {
         
 
         {/* ********Team here ***** */}
-        <h1 data-aos="zoom-in" data-aos-duration="800" id="judges" style={{marginTop:"15rem", marginBottom:"5rem"}}>Past Speakers and Judges</h1>
+        <div className='PrizeHeading'>
+        <h1 data-aos="zoom-in" data-aos-duration="800" id="judges">Past Speakers and Judges</h1>
+        </div>
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
 
@@ -302,6 +305,10 @@ export default function HomePage() {
           {frequentlyAskedQuestions.map(FrequentlyAsked)}
           {/* ********Frequently asked Questions ending here ***** */}
         </div>
+
+        <Row >
+          <Map />
+        </Row>
 
       </Container>
       <Footer />
