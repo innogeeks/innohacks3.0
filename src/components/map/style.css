@@ -1,0 +1,10 @@
+#map{
+    margin-top: 0;
+}
+
+@media (max-width:600px) {
+    #map{
+        margin-top: 10rem;
+    }
+    
+}
