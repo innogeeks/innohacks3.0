@@ -202,28 +202,26 @@ export default function HomePage() {
           {/* ARRAY-2 */}
           <div className='more_prizes'>
             <div  data-aos="fade-left" className='more-one'>
-              <img className='gif_prize ' src={threeD} ></img>
+              <img className='gif_prize' src={threeD} ></img>
               <p className='more-title'>Best Use of XR</p>
               <p>₹ 5,000 and cool Innohacks swags...</p>
             </div>
             <div data-aos="fade-right" className='more-one'>
-              <img className='gif_prize ' src={blockChain} ></img>
+              <img className='gif_prize' src={blockChain} ></img>
               <p className='more-title'>Best Use of Blockchain</p>
               <p>₹ 5,000 and cool Innohacks swags...</p>
             </div>
             <div data-aos="fade-left" className='more-one'>
-              <img className='gif_prize ' src={iot} ></img>
+              <img className='gif_prize' src={iot} ></img>
               <p className='more-title'>Best Use of AIoT</p>
               <p>₹ 5,000 and cool Innohacks swags...</p>
             </div>
             <div data-aos="fade-right" className='more-one'>
-              <img className='gif_prize ' src={social} ></img>
-              <div>
-                <div>
+              <img className='gif_prize' src={social} ></img>
                   <p className='more-title'>Most Socially impactful Hack</p>
                   <p>₹ 5,000 and cool Innohacks swags...</p>
-                </div>
-              </div>
+                
+            
             </div>
             <div data-aos="fade-left" className='more-one'>
               <img className='gif_prize ' src={girl} ></img>
