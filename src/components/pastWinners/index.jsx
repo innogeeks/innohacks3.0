@@ -5,6 +5,8 @@ import two from "./assets/2.jpg"
 import three from "./assets/3.jpg"
 import four from "./assets/4.jpg"
 import five from "./assets/5.jpg"
+import six from "./assets/6.jpg"
+import seven from "./assets/7.jpg"
 
 export default function PastWinner() {
   return (
@@ -29,6 +31,14 @@ export default function PastWinner() {
           />
           <img
             src={five}
+            alt=""
+          />
+          <img
+            src={six}
+            alt=""
+          />
+          <img
+            src={seven}
             alt=""
           />
         </div>
