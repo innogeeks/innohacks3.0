@@ -8,7 +8,7 @@
     font-family: tahoma;
     padding: 2.3% 5% 5% ;
     position: relative;
-
+    margin-top: 2rem;
   }
   .main-timeline::before{
     margin-top: 1%;
@@ -356,7 +356,7 @@
       .main-timeline .timeline-icon{ font-size: 60px; }
       .main-timeline .timeline-year{ font-size: 40px; }
   }
-  @media screen and (max-width:479px){
+   @media screen and (max-width:570px){
       .main-timeline .timeline-icon{
           font-size: 50px;
           transform:translateY(0);
@@ -380,4 +380,4 @@
       .main-timeline .timeline:nth-child(even) .timeline-year{
           right: 9%;
       }
-  }
+  } 
