@@ -38,7 +38,7 @@ export default function PastWinner() {
       <div className="right">
         <h1 className="glimpses-heading">Past Edition</h1>
         <p className="glimpses-text">
-        InnoHacks, the largest code fest of Delhi NCR, has seen some remarkable past winners who have left their mark on the event's legacy. These talented individuals have showcased their innovation, creativity, and technical prowess, rising above challenges to claim victory in their respective categories. With their groundbreaking hacks, they have not only won prestigious accolades but have also inspired others to push the boundaries of technology.
+        InnoHacks, the largest code fest of Delhi-NCR, has seen some remarkable past winners who have left their mark on the event's legacy. These talented individuals have showcased their innovation, creativity, and technical prowess, rising above challenges to claim victory in their respective categories. With their groundbreaking hacks, they have not only won prestigious accolades but have also inspired others to push the boundaries of technology.
         </p>
       </div>
      

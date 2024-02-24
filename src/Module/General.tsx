@@ -66,9 +66,9 @@ import open from '../containers/Home/assets/theme/8.png'
 
 const TOP_SECTION = {
   TITLE: 'Join InnoHacks3.0',
-  Typed_effect: ['24 hours of Innovation', 'Win awesome prizes'],
+  Typed_effect: ['24-Hour of Innovation', 'Win awesome prizes'],
   SHORT_DESCRIPTION:
-    'Unleash your creativity for 24 hours! Join us on April 27th for a nationwide hackathon alongside hundreds of other student innovators. Build, learn, and connect - are you in?',
+    'Unleash your creativity for 24-Hour! Join us on April 27th for a nationwide hackathon alongside hundreds of other student innovators. Build, learn, and connect - are you in?',
   IMG_SRC: hackathonLogo,
   DISCORD_LINK: '',
   JUDGES_FORM_LINK:
@@ -88,9 +88,9 @@ const SOCIALS = {
 };
 
 const MIDDLE_SECTION = {
-  TITLE: 'What is InnoHacks?',
+  TITLE: 'What is InnoHacks ?',
   LONG_DESCRIPTION:
-    'The largest code fest of Delhi NCR is back! Join a 24 Hour Hackathon to hustle and shine through 5 amazing tracks, Embark on an Odyssey to learn new technologies in captivating environment seek guidance from experienced mentors and engrave your name on boards of our esteemed Judges! Not just that, win huge prizes and hampers by brainstorming and creating the best hack! Be ready to sail through an amazing night of fun, code and much more!',
+    'The largest code fest of Delhi-NCR is back! Join a 24-Hour Hackathon to hustle and shine through 5 amazing tracks, Embark on an Odyssey to learn new technologies in captivating environment seek guidance from experienced mentors and engrave your name on boards of our esteemed Judges! Not just that, win huge prizes and hampers by brainstorming and creating the best hack! Be ready to sail through an amazing night of fun, code and much more!',
   LOGO: hackathonLogo
 };
 
@@ -412,45 +412,45 @@ const frequentlyAskedQuestions = [
   [
     [
       {
-        label: 'What is a hackathon?',
+        label: <div className='faqs'>What is a hackathon?</div>,
         content:
-          'A hackathon is a 24 hour event where "hackers" all over the globe collaborate on creating a functioning software and hardware by the end of the event.'
+          <div>A hackathon is a 24 hour event where "hackers" all over the globe collaborate on creating a functioning software and hardware by the end of the event.</div>
       },
       {
-        label: 'Who can attend?',
+        label: <div className='faqs'>Who can attend?</div>,
         content:
-          'InnoHacks is open to all undergraduates, high school students and middle school students from all over India.'
+           <div className="faqs">InnoHacks is open to all undergraduates from all over India.</div>
       },
       {
-        label: 'I am a first time hacker, what should I do?',
+        label: <div className="faqs">I am a first time hacker, what should I do?</div>,
         content:
-          'No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathons in general.'
+          <div className="faqs">No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathons in general.</div>
       },
       {
-        label: 'How does team formation works?',
+        label: <div className="faqs">How does team formation works?</div>,
         content:
-          "You can form team with maximum 4 members. If you don't have a team, there will be plenty of opportunities for you to meet hackers and form a team!"
+          <div className="faqs">You can form team with maximum 4 members. If you don't have a team, there will be plenty of opportunities for you to meet hackers and form a team!</div>
       }
     ],
     [
       {
-        label: 'How to register myself in the Innohacks 3.0?',
+        label: <div className="faqs">How to register myself in the Innohacks 3.0?</div>,
         content:
-          'All you need to do is fill our form mentioned above and join our Discord channel, we will guide you through everything there'
+          <div className="faqs">All you need to do is fill our form mentioned above and join our Discord channel, we will guide you through everything there</div>
       },
       {
-        label: 'I have more questions?',
+        label: <div className="faqs">I have more questions?</div>,
         content:
-          'Reach us directly at (innogeeks@kiet.edu). We would happy to help you.'
+          <div className="faqs">Reach us directly at (innohacks@kiet.edu). We would happy to help you.</div>
       },
       {
-        label: 'Will there be a Registration Fee?',
+        label: <div className="faqs">Will there be a Registration Fee?</div>,
         content:
-          'No!'
+          <div className="faqs">No!</div>
       },
       {
-        label: 'Will there be swags?',
-        content: 'Yes! Participants will many chances to win InnoHacks 3.0 swags!.'
+        label: <div className="faqs">Will there be swags?</div>,
+        content: <div className="faqs">Yes! Participants will many chances to win InnoHacks 3.0 swags!.</div>
       }
     ]
   ]
