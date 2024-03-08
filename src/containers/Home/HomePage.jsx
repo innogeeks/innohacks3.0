@@ -31,7 +31,7 @@ import {
 // import MyCalender from '../calender';
 import './about.css';
 import pattern from './assets/pattern.jpg';
-import myImage from './assets/imagee.png';
+import myImage from './assets/imagee1.png';
 import first from './assets/prizes/1.png'
 import second from './assets/prizes/2.png'
 import third from './assets/prizes/3.png'
@@ -112,9 +112,9 @@ export default function HomePage() {
             </Col>
             {/* <Col className="d-image" sm={12} lg={5} md={5}> */}
             {/* <MyCalender /> */}
-            {/* </Col> */}
+            {/* </Col> */} 
             <Col  className='contain'>
-              <img data-aos="fade-left" data-aos-duration="800" className='imagee' src={myImage}></img>
+              <img data-aos="fade-left" data-aos-duration="800" className='imagee' src={myImage} style={{width: "470px"}}></img>
             </Col>
           </Row>
 
@@ -206,31 +206,31 @@ export default function HomePage() {
             <div  data-aos="fade-left" className='more-one'>
               <img className='gif_prize ' src={threeD} ></img>
               <p className='more-title'>Best Use of XR</p>
-              <p>₹ 5,000 and cool Innohacks swags...</p>
+              
             </div>
             <div data-aos="fade-right" className='more-one'>
               <img className='gif_prize ' src={blockChain} ></img>
               <p className='more-title'>Best Use of Blockchain</p>
-              <p>₹ 5,000 and cool Innohacks swags...</p>
+             
             </div>
             <div data-aos="fade-left" className='more-one'>
               <img className='gif_prize ' src={iot} ></img>
               <p className='more-title'>Best Use of AIoT</p>
-              <p>₹ 5,000 and cool Innohacks swags...</p>
+             
             </div>
             <div data-aos="fade-right" className='more-one'>
               <img className='gif_prize ' src={social} ></img>
               <div>
                 <div>
                   <p className='more-title'>Most Socially impactful Hack</p>
-                  <p>₹ 5,000 and cool Innohacks swags...</p>
+                 
                 </div>
               </div>
             </div>
             <div data-aos="fade-left" className='more-one'>
               <img className='gif_prize ' src={girl} ></img>
               <p className='more-title'>Best All Girl Team</p>
-              <p>₹ 5,000 and cool Innohacks swags...</p>
+             
             </div>
 
 

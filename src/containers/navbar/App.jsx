@@ -7,7 +7,7 @@ import logoClose from './assets/ham-c.svg';
 import hamLogo from './assets/ham.svg';
 import './styles.scss';
 import {MdxContent} from '../Mdx';
-import myImage from './assets/Innohacks 3.0 Logo (1) (1).png';
+import myImage from './assets/hackathonlogo.png';
 
 const NAVIGATION_OFFSET = 66;
 
@@ -96,7 +96,7 @@ const NAVBAR = ({}) => {
       
      
       <div className='logo-div'>
-        <img src={myImage} className="nav-logo" width={200}></img>
+        <img src="https://template-mail-images.s3.ap-south-1.amazonaws.com/INNOHACKS_3.0_Logo-removebg-preview+(1).png" className="nav-logo" width={240}></img>
       </div>
 
         <Wrapper  toggle={toggle}>
