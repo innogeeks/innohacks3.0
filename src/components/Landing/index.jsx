@@ -22,7 +22,7 @@ const About = () => {
   };
   return (
     <div className="AboutMe">
-      <h2><span style={{fontSize:"3rem"}}>Embrace the challenge</span><br /> <span style={titleStyle} className='innohacks-text' >InnoHacks 3.0</span></h2>
+      <h2><span style={{fontSize:"3rem"}}>Embrace the challenge</span><br /> <span style={titleStyle} className='innohacks-text' >Innohacks 3.0</span></h2>
       <h6 style={{fontSize:"1.6rem"}}>Hack n' Innovate</h6>
       <MytypedComponent />
     </div>
@@ -44,7 +44,7 @@ const Myinfo = () => {
             <Btn
             ico="fab fa-2x fa-discord"
             className="join_disco"
-            type="Join Discord"
+            type="&nbsp;&nbsp;Join Discord"
             overlay="Now"
             style={{display:"flex", justifyContent:"center"}}
           />

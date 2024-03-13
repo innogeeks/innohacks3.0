@@ -65,7 +65,7 @@ import open from '../containers/Home/assets/theme/8.png'
 
 
 const TOP_SECTION = {
-  TITLE: 'Join InnoHacks3.0',
+  TITLE: 'Join Innohacks3.0',
   Typed_effect: ['24-Hour of Innovation', 'Win awesome prizes'],
   SHORT_DESCRIPTION:
     'Unleash your creativity for 24-Hour! Join us on April 27th for a nationwide hackathon alongside hundreds of other student innovators. Build, learn, and connect - are you in?',
@@ -88,7 +88,7 @@ const SOCIALS = {
 };
 
 const MIDDLE_SECTION = {
-  TITLE: 'What is InnoHacks ?',
+  TITLE: 'What is Innohacks ?',
   LONG_DESCRIPTION:
     'The largest code fest of Delhi-NCR is back! Join a 24-Hour Hackathon to hustle and shine through 5 amazing tracks, Embark on an Odyssey to learn new technologies in captivating environment seek guidance from experienced mentors and engrave your name on boards of our esteemed Judges! Not just that, win huge prizes and hampers by brainstorming and creating the best hack! Be ready to sail through an amazing night of fun, code and much more!',
   LOGO: hackathonLogo
@@ -395,15 +395,18 @@ const JudgesInfo = [
  * in a group of 3.
  */
 
-const sponsorLogos = [
-  {src: first}, {src: second}, {src: sixteen},
+const titleSponsor = [{src: twenty}];
+const platinumSponsor = [{src: seventeen}, {src: fire}];
+const goldSponsor = [{src: fifteen}];
+const silverSponsor = [{src: eight}, {src: first}, {src: second}, {src: sixteen},
   {src: forth}, {src: fifth}, {src: sixth},
-  {src: seventh}, {src: eight}, {src: nine},
-  {src: seventeen}, {src: eleven}, {src: twelve},
-  {src: thirteen}, {src: fourteen}, {src: fifteen},
-  {src: coding}, {src: auth}, {src: fire},
-  {src: eighteen}, {src: twenty}
-];
+  {src: seventh}, {src: nine}, {src: twelve},
+  {src: thirteen}, {src: coding}, {src: auth},
+  {src: eighteen}];
+const educationSponsor = [{src: eleven}];
+const certificateSponsor = [{src: fourteen}];
+
+// const sponsorLogos = [ ];
 
 /** Instructions
  * Follow the strcuture provided below to add as many as FAQ's you want
@@ -462,11 +465,17 @@ export {
   SOCIALS,
   FOOTER,
   Prizeinfo,
-  sponsorLogos,
+  // sponsorLogos,
   TeamInfo,
   JudgesInfo,
   frequentlyAskedQuestions,
   schedule,
   calenderStartingDate,
-  Themeinfo
+  Themeinfo,
+  titleSponsor,
+  platinumSponsor,
+  goldSponsor,
+  silverSponsor,
+  educationSponsor,
+  certificateSponsor
 };

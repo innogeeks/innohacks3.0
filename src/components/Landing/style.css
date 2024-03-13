@@ -198,6 +198,7 @@ button{
 
 .join_disco i {
   margin-right: 5px;
+  
 }
 
 .join_dis {
@@ -210,6 +211,7 @@ button{
 
 .buttom-group{
   width: 100%;
+  margin-top: 8%;
   /* overflow: auto; */
 }
 
