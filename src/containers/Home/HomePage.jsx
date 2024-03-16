@@ -329,7 +329,7 @@ export default function HomePage() {
         
 
         {/* ********Team here ***** */}
-        <div >
+        <div id="judges">
         {/* <h1 data-aos="zoom-in" data-aos-duaration="800" className="shead">Past Speakers and Judges</h1> */}
         <h1 data-aos="zoom-in" className="title_community" >Past Speakers and Judges</h1>
         </div>
@@ -341,7 +341,7 @@ export default function HomePage() {
         {/* <br></br><br></br>
         <h1 id="team">Judges</h1> */}
 
-        <div className='judges-container'>
+        <div className='judges-container' >
           {JudgesInfo.map(TeamMembers)}
         </div>
         {/* ********Team ending here ***** */}
