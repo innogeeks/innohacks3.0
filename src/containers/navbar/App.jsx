@@ -129,6 +129,11 @@ const NAVBAR = ({}) => {
                 </Link>
               </li>
               <li>
+                <Link to={`#testimonial`} smooth>
+                  <span className="links">Team </span>{' '}
+                </Link>
+              </li>
+              <li>
                 <Link to={`#faq`} smooth>
                   <span className="links">FAQ</span>{' '}
                 </Link>
