@@ -49,6 +49,7 @@ import PastWinner from 'components/pastWinners/index.jsx';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import Map from 'components/map/index.jsx';
+import Organiser from 'components/organisers/Organiser.jsx';
 
 // const SponsorGroup = (props, index) => {
 //   return (
@@ -360,7 +361,11 @@ export default function HomePage() {
           {/* ********Frequently asked Questions ending here ***** */}
         </div>
 
-        <Row className="homepage-map">
+        <Row className="">
+          <Organiser/>
+        </Row>
+        <Row className="homepage-map PrizeHeading">
+          <h1>How to Reach ?</h1>
           <Map />
         </Row>
 

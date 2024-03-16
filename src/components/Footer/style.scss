@@ -62,10 +62,6 @@
     margin-left:50%;
     transform: translateX(-50%);
   }
-  .footer-map{
-    scale: 0;
-    display: none;
-  }
 }
 @media (max-width: 570px) {
   .Register_a a {
@@ -297,13 +293,7 @@ background-size:100%;
   -webkit-animation: myfirst 30s linear infinite;
   animation: myfirst 30s linear infinite;
 }
-.footer-map{
-  position: absolute;
-  top: 30px;
-  right: 20px;
-  z-index: 999;
-  display: block;
-}
+
 
 
 @-moz-keyframes myfirst {
