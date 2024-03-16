@@ -7,7 +7,6 @@ import logoClose from './assets/ham-c.svg';
 import hamLogo from './assets/ham.svg';
 import './styles.scss';
 import {MdxContent} from '../Mdx';
-import myImage from './assets/hackathonlogo.png';
 
 const NAVIGATION_OFFSET = 66;
 
@@ -30,26 +29,6 @@ const Wrapper = styled.div`
   }
 `;
 
-// const MdxContent = () => {
-//   return (
-//     <div
-//       style={{
-//         backgroundColor: 'red'
-//       }}
-//     >
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-
-//     </div>
-//   );
-// };
 
 const NAVBAR = ({}) => {
   const [toggle, setToggle] = useState(true);
@@ -70,25 +49,6 @@ const NAVBAR = ({}) => {
     return () => window.removeEventListener('scroll', listenScrollEvent);
   }, []);
 
-  // const handleOutsideCick = (event, ref) => {
-  //   if (!ref.current.contains(event.target)) {
-  //     setToggle(true);
-  //   } else {
-  //     setToggle(false);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   document.addEventListener('mousedown', e =>
-  //     handleOutsideCick(e, navigation)
-  //   );
-
-  //   return () => {
-  //     document.removeEventListener('mousedown', e =>
-  //       handleOutsideCick(e, navigation)
-  //     );
-  //   };
-  // }, []);
 
   return (
     <Router>

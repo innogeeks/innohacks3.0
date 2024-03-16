@@ -1,4 +1,3 @@
-import {SOCIALS} from '../../Module/General';
 import './style.css';
 import { FaInstagram } from "react-icons/fa6";
 import { BiLogoDiscordAlt } from "react-icons/bi";

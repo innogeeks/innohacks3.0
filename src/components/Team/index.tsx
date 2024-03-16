@@ -27,9 +27,6 @@ const Member = ({info}: {info: any}) => {
       <div className="members-link">
         <h3>{name}</h3>
         <p>{role}</p>
-        {/* <a href={github}>
-          <i className="fab fa-2x fa-github"></i>
-        </a> */}
         <a href={linkedin}>
           <i className="fab fa-2x fa-linkedin"></i>
         </a>

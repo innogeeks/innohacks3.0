@@ -3,7 +3,6 @@ import './style.scss'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import aos from "aos"
 import "aos/dist/aos.css"
 
 const openLink = (url) => {
@@ -133,16 +132,12 @@ const settings={
 
 
 export default function Organiser() {
-//  const [setLink] = useState('');
- useEffect(()=>{
-   aos.init({duration:400})
- },[]) 
  return (
-  <div data-aos="fade-down" data-aos-anchor-placement="top-bottom" className ="" id='testimonial'>
+  <div className ="" id='testimonial'>
     <h1 className="meet-heading">
         Meet the Organizing Team 
       </h1>
-    <div className="organiser-container" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
+    <div className="organiser-container">
     <Slider{...settings}>
       {data.map((d,index) =>(
         <div key={index} className="morphism">

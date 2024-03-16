@@ -15,12 +15,7 @@
   width: 40%;
   margin: 0;
   padding: 0;
-  /* position: absolute;
-  left: 50%; */
-  /* transform: translateX(100%); */
   border-radius: 50%;
-  /* animation: upDown 1s infinite alternate; */
-  /* transition: all 0s ease-in; */
 }
 
 @keyframes upDown {
@@ -39,7 +34,6 @@
   color: rgba(0, 0, 0, 0.272);
   top: -100px;
   transform: rotate(0deg);
-  /* animation: rotate 5s infinite ease-in-out; */
 }
 @keyframes rotate {
   from{
@@ -124,9 +118,6 @@
   }
   
 }
-
-
-
 .title_community {
   margin-bottom: 5%;
   margin-top: 15vh;
