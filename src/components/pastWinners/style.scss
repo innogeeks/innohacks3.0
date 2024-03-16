@@ -78,7 +78,7 @@ $n:5; /* number of images*/
   font-size: 50px;
 }
  .glimpses-text{
-  text-align: left;
+  text-align: justify;
   display: inline-block;
  }
 .glimpses{
@@ -89,7 +89,7 @@ $n:5; /* number of images*/
   overflow: hidden;
 }
 .left{
-  width: 50vw;
+  width: 43vw;
   padding: 5rem;
   padding-left: 10rem;
   margin-left: 20px;
@@ -118,6 +118,7 @@ $n:5; /* number of images*/
 
   .glimpses-text{
     display: none;
+    text-align: center;
    }
  
   .gallery  {

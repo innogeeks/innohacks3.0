@@ -15,7 +15,7 @@ function LogoSectionAbout() {
       <BsHeadsetVr fontSize={200} className='arHeadset'/>
       <FaGlobeAmericas fontSize={200} className='globe'/>
       <h1>{MIDDLE_SECTION.TITLE}</h1>
-      <p>{MIDDLE_SECTION.LONG_DESCRIPTION}</p>
+      <p className='long desc'>{MIDDLE_SECTION.LONG_DESCRIPTION}</p>
       
     </div>
   );

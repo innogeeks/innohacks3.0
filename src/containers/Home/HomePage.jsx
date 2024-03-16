@@ -24,7 +24,12 @@ import {
   JudgesInfo,
   Prizeinfo,
   Themeinfo,
-  sponsorLogos,
+  titleSponsor,
+  platinumSponsor,
+  goldSponsor,
+  silverSponsor,
+  educationSponsor,
+  certificateSponsor,
   TeamInfo,
   TOP_SECTION
 } from '../../Module/General';
@@ -260,13 +265,60 @@ export default function HomePage() {
           <SponsorsHead />
           <SponsorUS />
           <div  className="sponsor-grid">
-            {sponsorLogos.map((item, i) => (
+            <div><p className='more-title-sponsor'>Title sponsor</p>
+            {titleSponsor.map((item, i) => (
+              <Col data-aos={i%2===0 ?`fade-right`:`fade-left`} data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                <div  className='sponsor-bg'>
+                  <img src={item.src} width={200} alt="" />
+                </div>
+              </Col>
+            ))}
+            </div>
+            <div><p className='more-title-sponsor'>Education Sponsor</p>
+            {educationSponsor.map((item, i) => (
+              <Col data-aos={i%2===0 ?`fade-right`:`fade-left`} data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                <div  className='sponsor-bg'>
+                  <img src={item.src} width={200} alt="" />
+                </div>
+              </Col>
+            ))}
+            </div>
+            <div><p className='more-title-sponsor'>Certificate Sponsor</p>
+            {certificateSponsor.map((item, i) => (
               <Col data-aos={i%2===0 ?`fade-right`:`fade-left`} data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
                 <div  className='sponsor-bg'>
                   <img src={item.src} width={180} alt="" />
                 </div>
               </Col>
             ))}
+            </div>
+            <div><p className='more-title-sponsor'>Platinum Sponsor</p>
+            {platinumSponsor.map((item, i) => (
+              <Col data-aos={i%2===0 ?`fade-right`:`fade-left`} data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                <div  className='sponsor-bg'>
+                  <img src={item.src} width={180} alt="" />
+                </div>
+              </Col>
+            ))}
+            </div>
+            <div><p className='more-title-sponsor'>Gold Sponsor</p>
+            {goldSponsor.map((item, i) => (
+              <Col data-aos={i%2===0 ?`fade-right`:`fade-left`} data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                <div  className='sponsor-bg'>
+                  <img src={item.src} width={180} alt="" />
+                </div>
+              </Col>
+            ))}
+            </div>
+            <div><p className='more-title-sponsor'>Silver Sponsor</p>
+            {silverSponsor.map((item, i) => (
+              <Col data-aos={i%2===0 ?`fade-right`:`fade-left`} data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                <div  className='sponsor-bg'>
+                  <img src={item.src} width={180} alt="" />
+                </div>
+              </Col>
+            ))}
+            </div>
           </div>
         </Row>
         {/* ********Sponsors ending here ***** */}
@@ -277,7 +329,8 @@ export default function HomePage() {
 
         {/* ********Team here ***** */}
         <div >
-        <h1 data-aos="zoom-in" data-aos-duration="800" id="judges">Past Speakers and Judges</h1>
+        {/* <h1 data-aos="zoom-in" data-aos-duaration="800" className="shead">Past Speakers and Judges</h1> */}
+        <h1 data-aos="zoom-in" className="title_community" >Past Speakers and Judges</h1>
         </div>
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
