@@ -135,14 +135,14 @@ const settings={
 export default function Organiser() {
 //  const [setLink] = useState('');
  useEffect(()=>{
-   aos.init(1800)
+   aos.init({duration:400})
  },[]) 
  return (
-  <div className ="" id='testimonial'>
-    <h1 data-aos="fade-down" className="meet-heading">
+  <div data-aos="fade-down" data-aos-anchor-placement="top-bottom" className ="" id='testimonial'>
+    <h1 className="meet-heading">
         Meet the Organizing Team 
       </h1>
-    <div className="organiser-container" data-aos="fade-down">
+    <div className="organiser-container" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
     <Slider{...settings}>
       {data.map((d,index) =>(
         <div key={index} className="morphism">

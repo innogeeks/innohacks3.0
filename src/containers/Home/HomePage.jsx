@@ -75,12 +75,12 @@ const PrizeGroup = (props, index) => {
 // Prize group ending
 const TeamMembers = (props, index) => {
   useEffect(()=>{
-    Aos.init({duration:800})
+    Aos.init({duration:400})
   },[])
   return (
     <Row key={index} className="members">
       {props.map((s, i) => (
-        <Col data-aos="fade-up" key={i} className="" sm={12} lg={4} md={4}>
+        <Col data-aos="fade-up" data-aos-anchor-placement="top-bottom" key={i} className="" sm={12} lg={4} md={4}>
           <Member info={s} />
         </Col>
       ))}
@@ -104,7 +104,7 @@ export default function HomePage() {
   const [media, setMedia] = useState();
   UseMedia('min-width', 1000, setMedia);
   useEffect(()=>{
-    Aos.init({duration:800})
+    Aos.init({duration:400})
   },[])
 
   return (
@@ -268,7 +268,7 @@ export default function HomePage() {
           <div  className="sponsor-grid">
             <div><p className='more-title-sponsor'>Title sponsor</p>
             {titleSponsor.map((item, i) => (
-              <Col data-aos={i%2===0 ?`fade-right`:`fade-left`} data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+              <Col data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
                 <div  className='sponsor-bg'>
                   <img src={item.src} width={200} alt="" />
                 </div>
@@ -277,7 +277,7 @@ export default function HomePage() {
             </div>
             <div><p className='more-title-sponsor'>Education Sponsor</p>
             {educationSponsor.map((item, i) => (
-              <Col data-aos={i%2===0 ?`fade-right`:`fade-left`} data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+              <Col data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
                 <div  className='sponsor-bg'>
                   <img src={item.src} width={200} alt="" />
                 </div>
@@ -286,7 +286,7 @@ export default function HomePage() {
             </div>
             <div><p className='more-title-sponsor'>Certificate Sponsor</p>
             {certificateSponsor.map((item, i) => (
-              <Col data-aos={i%2===0 ?`fade-right`:`fade-left`} data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+              <Col data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
                 <div  className='sponsor-bg'>
                   <img src={item.src} width={180} alt="" />
                 </div>
@@ -295,7 +295,7 @@ export default function HomePage() {
             </div>
             <div><p className='more-title-sponsor'>Platinum Sponsor</p>
             {platinumSponsor.map((item, i) => (
-              <Col data-aos={i%2===0 ?`fade-right`:`fade-left`} data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+              <Col data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
                 <div  className='sponsor-bg'>
                   <img src={item.src} width={180} alt="" />
                 </div>
@@ -304,7 +304,7 @@ export default function HomePage() {
             </div>
             <div><p className='more-title-sponsor'>Gold Sponsor</p>
             {goldSponsor.map((item, i) => (
-              <Col data-aos={i%2===0 ?`fade-right`:`fade-left`} data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+              <Col data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
                 <div  className='sponsor-bg'>
                   <img src={item.src} width={180} alt="" />
                 </div>
@@ -313,7 +313,7 @@ export default function HomePage() {
             </div>
             <div><p className='more-title-sponsor'>Silver Sponsor</p>
             {silverSponsor.map((item, i) => (
-              <Col data-aos={i%2===0 ?`fade-right`:`fade-left`} data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+              <Col data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
                 <div  className='sponsor-bg'>
                   <img src={item.src} width={180} alt="" />
                 </div>
@@ -329,9 +329,9 @@ export default function HomePage() {
         
 
         {/* ********Team here ***** */}
-        <div >
+        <div id="judges">
         {/* <h1 data-aos="zoom-in" data-aos-duaration="800" className="shead">Past Speakers and Judges</h1> */}
-        <h1 data-aos="zoom-in" className="title_community" >Past Speakers and Judges</h1>
+        <h1 data-aos="zoom-in" data-aos-anchor-placement="top-bottom" className="title_community" >Past Speakers and Judges</h1>
         </div>
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
@@ -341,7 +341,7 @@ export default function HomePage() {
         {/* <br></br><br></br>
         <h1 id="team">Judges</h1> */}
 
-        <div className='judges-container'>
+        <div className='judges-container' >
           {JudgesInfo.map(TeamMembers)}
         </div>
         {/* ********Team ending here ***** */}
@@ -360,7 +360,7 @@ export default function HomePage() {
         </Row>
 
         {/* ********Frequently asked Questions here ***** */}
-        <div data-aos="fade-up" data-aos-duration="800" className="Myfaqs" id="faq">
+        <div data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="top-bottom" className="Myfaqs" id="faq">
           <h1 className='my-faq-head'>FAQs</h1>
           {frequentlyAskedQuestions.map(FrequentlyAsked)}
           {/* ********Frequently asked Questions ending here ***** */}
