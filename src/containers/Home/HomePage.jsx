@@ -354,16 +354,17 @@ export default function HomePage() {
           <PastWinner />
         </Row>
 
+        {/* organizing Team */}
+        <Row className="">
+          <Organiser/>
+        </Row>
+
         {/* ********Frequently asked Questions here ***** */}
         <div data-aos="fade-up" data-aos-duration="800" className="Myfaqs" id="faq">
           <h1 className='my-faq-head'>FAQs</h1>
           {frequentlyAskedQuestions.map(FrequentlyAsked)}
           {/* ********Frequently asked Questions ending here ***** */}
         </div>
-
-        <Row className="">
-          <Organiser/>
-        </Row>
         <Row className="homepage-map PrizeHeading">
           <h1>How to Reach ?</h1>
           <Map />
