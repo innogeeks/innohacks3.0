@@ -35,7 +35,7 @@ function CommunityPartner() {
 
   return(
     <div className="community-partner" >
-    <h1 data-aos="zoom-in" className="title_community" >Community Partners</h1>
+    <h1 data-aos="zoom-in" data-aos-anchor-placement="top-bottom" className="title_community" >Community Partners</h1>
     <div className="community_logo_container" >
       <div className='logo-community' style={{color: 'white', textAlign: 'center', margin: "0 5% 2% 5%"}}>
         <img src={iosc} className="iosc_logo" width="100%" alt="" />
