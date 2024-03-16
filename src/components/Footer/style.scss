@@ -55,6 +55,7 @@
 .inno-footer-container .inno{
   width: 250px;
 }
+
 }
 @media (max-width:700px) {
   .hacks-footer-container .hacks{
@@ -208,6 +209,7 @@
   display: flex;
   width: 100vw;
   flex-wrap: wrap;
+  position: relative;
 }
 .footer p {
   font-weight: 500;

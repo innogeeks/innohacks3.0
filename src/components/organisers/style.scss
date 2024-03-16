@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#testimonial{
+  width: 75%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+.meet-heading{
+  font-family: "repo-extrabold";
+  font-size: 5rem;
+  padding: 20px;
+  text-align: center;
+
+}
+.organiser-container{
+  margin-top: 50px;
+  height: 500px;
+
+}
+.morphism {
+  background: rgba(171, 171, 171, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(171, 171, 171, 0.3);
+  height: 400px;
+  color: black;
+  border-radius: 25px;
+}
+.organiser-card{
+  height: 240px;
+  border-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.organiser-img{
+  height: 154px;
+  width: 154px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.organiser-text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.organiser-name{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "repo-medium";
+}
+.organiser-designation{
+  font-family: "repo-extrabold";
+}
+.contact-btn{
+  transition: all 300ms ease-in;
+  font-family: "repo-extrabold";
+  background-color: black;
+}
+.contact-btn:hover {
+  background: linear-gradient(to right, rgb(51, 51, 51), rgb(238, 238, 238));
+}
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-dots li.slick-active button:before {
+  color: rgb(0, 0, 0) !important;
+  font-size: 0.8rem;
+}
+
+.slick-dots li button:before {
+  color: rgb(97, 97, 97) !important;
+}

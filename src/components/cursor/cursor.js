@@ -9,7 +9,7 @@ export default function Cursor() {
         <AnimatedCursor
           innerSize={16}
           outerSize={16}
-          color='255, 0, 0'
+          color='128, 128, 128'
           outerAlpha={0.2}
           innerScale={1}
           outerScale={3}

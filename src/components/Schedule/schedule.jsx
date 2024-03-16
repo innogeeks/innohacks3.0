@@ -16,7 +16,7 @@ return(
             <div className="content">
               <h3 className="title">Opening Ceremony</h3>
               <p className="description">
-               On 27th April, Day 1 of the event starts with an Opening Ceremony through our esteemed faculties and Judges
+               On 28th April, Day 1 of the event starts with an Opening Ceremony through our esteemed faculties and Judges
               </p>
             </div>
           </a>
@@ -72,7 +72,7 @@ return(
             <div className="content">
               <h3 className="title">Breakfast</h3>
               <p className="description">
-                28th April begins with a hearty breakfast as we step into the last leg of the Hackathon !
+                29th April begins with a hearty breakfast as we step into the last leg of the Hackathon !
               </p>
             </div>
           </a>
