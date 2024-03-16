@@ -7,7 +7,6 @@ function PrizeHeading(props) {
   useEffect(()=>{
     Aos.init({duration:1200})
   },[])
-
   return (
     <div data-aos="fade-up" data-aos-duaration="800"  className="PrizeHeading">
       <h1>{props.type}</h1>
