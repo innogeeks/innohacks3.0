@@ -20,6 +20,7 @@ import Innologo from './assets/imageSkin.png'
 import { HashLink } from 'react-router-hash-link';
 //------------------------------------------------------------------
 import './style.scss';
+import Map from 'components/map';
 
 const GithubTemplate = ({ hideTemplate }) => {
   return (
