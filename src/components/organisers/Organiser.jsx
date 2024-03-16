@@ -140,7 +140,7 @@ export default function Organiser() {
  return (
   <div className ="" id='testimonial'>
     <h1 data-aos="fade-down" className="meet-heading">
-        Meet the Team 
+        Meet the Organizing Team 
       </h1>
     <div className="organiser-container" data-aos="fade-down">
     <Slider{...settings}>
