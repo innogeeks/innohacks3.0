@@ -11,6 +11,12 @@ const openLink = (url) => {
 
 const data =[
   {
+    name: 'Ayush Kumar',
+    img: 'https://s3.ap-south-1.amazonaws.com/innohacks3.0/aayush.jpeg',
+    review: 'Github Campus Expert',
+    link: ['https://www.linkedin.com/in/ayush-kumar-984443191/']
+  },
+  {
     name: 'Tejash Seth',
     img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/Tejash+Seth.jpg',
     review: 'Core Lead',
