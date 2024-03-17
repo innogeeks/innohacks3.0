@@ -11,6 +11,12 @@ const openLink = (url) => {
 
 const data =[
   {
+    name: 'Ayush Kumar',
+    img: 'https://s3.ap-south-1.amazonaws.com/innohacks3.0/aayush.jpeg',
+    review: 'Github Campus Expert',
+    link: ['https://www.linkedin.com/in/ayush-kumar-984443191/']
+  },
+  {
     name: 'Tejash Seth',
     img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/Tejash+Seth.jpg',
     review: 'Core Lead',
@@ -99,7 +105,104 @@ const data =[
     img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/Vidushi+Pandey.jpg',
     review: 'Core Lead',
     link: ['https://tr.ee/BOpXu3cXly']
+  },
+  {
+    name: 'Alisha Raghav',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/Alisha.jpg',
+    review: 'Core Team',
+    link: ['https://www.linkedin.com/in/alisharaghav/']
+  },
+  {
+    name: 'Varun Agarwal',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/varun.jpg',
+    review: 'Core Team',
+    link: ['https://www.linkedin.com/in/1010varun/']
+  },
+  {
+    name: 'Sambhrant Tiwari',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/sambhrant.jpeg',
+    review: 'Core Team',
+    link: ['https://www.linkedin.com/in/sambhrant-tiwari-3998b5218/']
+  },
+  {
+    name: 'Rachitavya Sharma',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/Rachit.jpeg',
+    review: 'Core Team',
+    link: ['https://www.linkedin.com/in/rachitavya/']
+  },
+  {
+    name: 'Neha Maurya',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/neha.jpeg',
+    review: 'Core Team',
+    link: ['https://www.linkedin.com/in/neha-maurya-6a8771226/']
+  },
+  {
+    name: 'Aditya Pachuari',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/Aditya.jpg',
+    review: 'Core Team',
+    link: ['https://www.linkedin.com/in/aditya-pachauri/']
+  },
+  {
+    name: 'Pranjal Raj',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/pranjal.jpg',
+    review: 'Core Team',
+    link: ['https://www.linkedin.com/in/pranjal-raj-79596a23a/']
+  },
+  {
+    name: 'Kapil Kumar Singh',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/kapil.jpg',
+    review: 'Core Team',
+    link: ['https://www.linkedin.com/in/kapilsingh2003/']
+  },
+  {
+    name: 'Shubhi Pandey',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/Shubhi+Pandey.jpg',
+    review: 'Core Team',
+    link: ['https://www.linkedin.com/in/shubhi-pandey/']
+  },
+  {
+    name: 'Nivedita Rai',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/Nivedita+Rai.jpg',
+    review: 'Core Team',
+    link: ['https://www.linkedin.com/in/nivedita-rai-670a4723a/']
+  },
+  {
+    name: 'Mrigya Sahai',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/Mrigya.jpg',
+    review: 'Core Team',
+    link: ['https://www.linkedin.com/in/mrigya-sahai-246842196/']
+  },
+  {
+    name: 'Suraj Upadhyaya',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/Suraj.jpg',
+    review: 'Core Team',
+    link: ['https://www.linkedin.com/in/suraj-upadhayay-533b22264/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app']
+  },
+  {
+    name: 'Nayan Pathak',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/Nayan.jpg',
+    review: 'Core Team',
+    link: ['https://www.linkedin.com/in/nayan-pathak-softwaredeveloper/']
+  },
+  {
+    name: 'Bhavishya Chaudhary',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/Bhavishya.JPG',
+    review: 'Core Team',
+    link: ['https://www.linkedin.com/in/bhavishya-chaudhary-044324231/']
+  },
+  {
+    name: 'Aryan Mishra',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/AryanMishra.jpg',
+    review: 'Core Team',
+    link: ['https://www.linkedin.com/in/aryanmishra29/']
+  },
+  {
+    name: 'Harsh Singh',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/Harsh.jpg',
+    review: 'Core Team',
+    link: ['https://www.linkedin.com/in/the-harsh-singh/']
   }
+
 ]
 
 const settings={
