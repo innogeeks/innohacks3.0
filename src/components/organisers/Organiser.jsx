@@ -174,7 +174,7 @@ const data =[
   },
   {
     name: 'Nayan Pathak',
-    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/Tejash+Seth.jpg',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/Nayan.jpg',
     review: 'Core Team',
     link: ['https://www.linkedin.com/in/nayan-pathak-softwaredeveloper/']
   },
@@ -187,6 +187,7 @@ const data =[
   {
     name: 'Aryan Mishra',
     img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/core+team/Core+team+photos/AryanMishra.jpg',
+    review: 'Core Team',
     link: ['https://www.linkedin.com/in/aryanmishra29/']
   },
   {
