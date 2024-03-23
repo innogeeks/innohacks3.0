@@ -7,7 +7,6 @@ import logoClose from './assets/ham-c.svg';
 import hamLogo from './assets/ham.svg';
 import './styles.scss';
 import {MdxContent} from '../Mdx';
-import myImage from './assets/Innohacks 3.0 Logo (1) (1).png';
 
 const NAVIGATION_OFFSET = 66;
 
@@ -30,26 +29,6 @@ const Wrapper = styled.div`
   }
 `;
 
-// const MdxContent = () => {
-//   return (
-//     <div
-//       style={{
-//         backgroundColor: 'red'
-//       }}
-//     >
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-//       <h1>This is blog</h1>
-
-//     </div>
-//   );
-// };
 
 const NAVBAR = ({}) => {
   const [toggle, setToggle] = useState(true);
@@ -70,25 +49,6 @@ const NAVBAR = ({}) => {
     return () => window.removeEventListener('scroll', listenScrollEvent);
   }, []);
 
-  // const handleOutsideCick = (event, ref) => {
-  //   if (!ref.current.contains(event.target)) {
-  //     setToggle(true);
-  //   } else {
-  //     setToggle(false);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   document.addEventListener('mousedown', e =>
-  //     handleOutsideCick(e, navigation)
-  //   );
-
-  //   return () => {
-  //     document.removeEventListener('mousedown', e =>
-  //       handleOutsideCick(e, navigation)
-  //     );
-  //   };
-  // }, []);
 
   return (
     <Router>
@@ -96,7 +56,7 @@ const NAVBAR = ({}) => {
       
      
       <div className='logo-div'>
-        <img src={myImage} className="nav-logo" width={200}></img>
+        <img src="https://template-mail-images.s3.ap-south-1.amazonaws.com/INNOHACKS_3.0_Logo-removebg-preview+(1).png" className="nav-logo" width={240}></img>
       </div>
 
         <Wrapper  toggle={toggle}>
@@ -126,6 +86,11 @@ const NAVBAR = ({}) => {
               <li>
                 <Link to={`#judges`} smooth>
                   <span className="links">Judges </span>{' '}
+                </Link>
+              </li>
+              <li>
+                <Link to={`#testimonial`} smooth>
+                  <span className="links">Team </span>{' '}
                 </Link>
               </li>
               <li>

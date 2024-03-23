@@ -1,62 +1,48 @@
-import { UseMedia } from 'hooks/useMedia';
-import { useState,useEffect } from 'react';
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import { CommunityPartner, Logo, LogoSectionAbout } from '../../components/About/index.jsx';
-import { Accordion } from '../../components/Accordian/index.jsx';
-import Birds from '../../components/Animation';
-import Footer from '../../components/Footer/index.jsx';
-import Schedule from 'components/Schedule/schedule.jsx';
-import Footfall from 'components/Footfall/footfall.jsx';
-import { Myinfo } from '../../components/Landing/index.jsx';
-import { FirstPrize, PrizeHeading, ThemePrize } from '../../components/Prizes/index.jsx';
-import Media from '../../components/Socials/index.jsx';
+import { UseMedia } from "hooks/useMedia";
+import { useState } from "react";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import "aos/dist/aos.css";
+import "./about.css";
+
+// components
 import {
-  Sponsor,
+  CommunityPartner,
+  Logo,
+  LogoSectionAbout,
+} from "../../components/About/index.jsx";
+import { Accordion } from "../../components/Accordian/index.jsx";
+import Birds from "../../components/Animation";
+import Footer from "../../components/Footer/index.jsx";
+import Schedule from "components/Schedule/schedule.jsx";
+import Footfall from "components/Footfall/footfall.jsx";
+import { Myinfo } from "../../components/Landing/index.jsx";
+import { PrizeHeading, ThemePrize } from "../../components/Prizes/index.jsx";
+import Media from "../../components/Socials/index.jsx";
+import {
   SponsorsHead,
-  SponsorUS
-} from '../../components/Sponsors/sponsors.jsx';
-import { JoinTeam, Member } from '../../components/Team';
+  SponsorUS,
+} from "../../components/Sponsors/sponsors.jsx";
+import { Member } from "../../components/Team";
 import {
-  FOOTER,
   frequentlyAskedQuestions,
-  JudgesInfo,
-  Prizeinfo,
   Themeinfo,
-  sponsorLogos,
+  titleSponsor,
+  platinumSponsor,
+  goldSponsor,
+  silverSponsor,
+  educationSponsor,
+  certificateSponsor,
   TeamInfo,
-  TOP_SECTION
-} from '../../Module/General';
-// import MyCalender from '../calender';
-import './about.css';
-import pattern from './assets/pattern.jpg';
-import myImage from './assets/imagee.png';
-import first from './assets/prizes/1.png'
-import second from './assets/prizes/2.png'
-import third from './assets/prizes/3.png'
-import threeD from './assets/prizes/3d.gif'
-import blockChain from './assets/prizes/blockchain.gif'
-import iot from './assets/prizes/light-control.gif'
-import girl from './assets/prizes/girl.gif'
-import social from './assets/prizes/fans.gif'
-import PastWinner from 'components/pastWinners/index.jsx';
-import Aos from 'aos'
-import 'aos/dist/aos.css'
-import Map from 'components/map/index.jsx';
+} from "../../Module/General";
+import PastWinner from "components/pastWinners/index.jsx";
+import Map from "components/map/index.jsx";
+import Organiser from "components/organisers/Organiser.jsx";
 
-// const SponsorGroup = (props, index) => {
-//   return (
-//     <Row key={index}>
-
-//     </Row>
-//   );
-// };
-
-// Prize group
 const PrizeGroup = (props, index) => {
   return (
-    <Row className='theme-container' key={index}>
+    <Row className="theme-container" key={index}>
       {props.map((s, i) => (
         <Col key={i} className="" sm={12} lg={4} md={4}>
           <ThemePrize i={i} icon={s.icon} type={s.type} content={s.content} />
@@ -66,15 +52,11 @@ const PrizeGroup = (props, index) => {
   );
 };
 
-// Prize group ending
 const TeamMembers = (props, index) => {
-  useEffect(()=>{
-    Aos.init({duration:800})
-  },[])
   return (
     <Row key={index} className="members">
       {props.map((s, i) => (
-        <Col data-aos="fade-up" key={i} className="" sm={12} lg={4} md={4}>
+        <Col key={i} className="" sm={12} lg={4} md={4}>
           <Member info={s} />
         </Col>
       ))}
@@ -96,28 +78,26 @@ const FrequentlyAsked = (props, index) => {
 
 export default function HomePage() {
   const [media, setMedia] = useState();
-  UseMedia('min-width', 1000, setMedia);
-  useEffect(()=>{
-    Aos.init({duration:800})
-  },[])
+  UseMedia("min-width", 1000, setMedia);
 
   return (
-    // style={{backgroundImage: `url(${pattern})`}}
-    <div className="Whole_div" >
+    <div className="Whole_div">
       <div className="color_sectiom" id="home">
         <Container fluid>
           <Row className="Row info">
-            <Col  className="info-div" sm={12} lg={7} md={7}>
+            <Col className="info-div" sm={12} lg={7} md={7}>
               <Myinfo />
             </Col>
-            {/* <Col className="d-image" sm={12} lg={5} md={5}> */}
-            {/* <MyCalender /> */}
-            {/* </Col> */}
-            <Col  className='contain'>
-              <img data-aos="fade-left" data-aos-duration="800" className='imagee' src={myImage}></img>
+            <Col className="contain">
+              <img
+                className="imagee"
+                src={
+                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/innohacks3.0+logo.png"
+                }
+                style={{ width: "470px" }}
+              ></img>
             </Col>
           </Row>
-
           <Row className="mediaInfo">
             <Col className="" sm={12} lg={12} md={12}>
               <Media />
@@ -126,64 +106,112 @@ export default function HomePage() {
         </Container>
       </div>
       <Container fluid>
-        {/* Logo section  */}
-        <Row  className=" logoSection">
-          <Col className="info-div" >
+        <Row className=" logoSection">
+          <Col className="info-div">
             <LogoSectionAbout />
           </Col>
-          <Col className="info-div" >
+          <Col className="info-div">
             <Logo />
           </Col>
-          <Col >
-          
-          </Col>
+          <Col></Col>
         </Row>
         <Row className="mediaInfo">
-            <Col className="" sm={12} lg={12} md={12}>
-            <h1 data-aos="zoom-in" data-aos-duration="800" id="prizes" className='prize_heading' style={{ fontFamily: "repo-bold", marginBottom:"10rem" }}>Past Statistics</h1>
+          <Col className="" sm={12} lg={12} md={12}>
+            <h1
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              id="prizes"
+              className="prize_heading"
+              style={{ fontFamily: "repo-bold", marginBottom: "10rem" }}
+            >
+              Past Statistics
+            </h1>
             <Footfall />
-            </Col>
-          </Row>
+          </Col>
+        </Row>
         {media && <Birds top="120vh" left="0vh" type="" />}
-        
-
-        {/* Footfalls last year */}
-          
-        
-        
-        
-        {/* Footfall section ends here */}
-
-        {/* ********Prizes here ***** */}
-        <h1 data-aos="zoom-in" data-aos-duration="800" id="prizes" className='prize_heading' style={{ fontFamily: "repo-bold" }}>Prizes</h1>
-        <div className='prizepool'>
-          <p data-aos="zoom-in" data-aos-duration="800" id="prizes" className='worth'>worth</p>
-          <h4 data-aos="zoom-in" data-aos-duration="800" id="prizes" className='prizee' style={{ fontFamily: "poppins" }}>₹ 1.25 L</h4>
+        <h1
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          id="prizes"
+          className="prize_heading"
+          style={{ fontFamily: "repo-bold" }}
+        >
+          Prizes
+        </h1>
+        <div className="prizepool">
+          <p
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            id="prizes"
+            className="worth"
+          >
+            worth
+          </p>
+          <h4
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            id="prizes"
+            className="prizee"
+            style={{ fontFamily: "poppins" }}
+          >
+            ₹ 1.25 L
+          </h4>
         </div>
-        <Row className="prizesection" style={{ padding: "10px", display: "flex", flexDirection: "column", justifyContent: "center" ,marginTop:"5vh"}}>
-          {/* <PrizeHeading type="Prize section" /> */}
-          {/* {Prizeinfo.map(PrizeGroup)} */}
-          {/* ARRAY -1 */}
-          <div className='cards_prizes'>
+        <Row
+          className="prizesection"
+          style={{
+            padding: "10px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            marginTop: "5vh",
+          }}
+        >
+          <div className="cards_prizes">
             <div className="reverse">
               <div data-aos="fade-up" className="cardone cards_">
                 <div className="bg">
-                  <img src={second} alt="" />
-                  <div className='text_prizes'>
-                    <p style={{ textShadow: "1px 1px 4px #702963"}}>₹ 30K</p>
+                  <img
+                    src={
+                      "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/2.png"
+                    }
+                    alt=""
+                  />
+                  <div className="text_prizes">
+                    <p style={{ textShadow: "1px 1px 4px #702963" }}>₹ 30K</p>
                     <p>+</p>
-                    <p>Innohacks <br/>swags, t-shirts, stickers.</p>
+                    <p>
+                      Innohacks <br />
+                      swags, t-shirts, stickers.
+                    </p>
                   </div>
                 </div>
-                <div  className="blob"> </div>
+                <div className="blob"> </div>
               </div>
               <div data-aos="fade-up" className="cardtwo cards_">
                 <div className="bg">
-                  <img src={first} width={200} alt="" />
-                  <div className='text_prizes'>
-                    <p style={{ fontSize: "35px" , textShadow: "1px 1px 4px #702963"}}>₹ 50k</p>
+                  <img
+                    src={
+                      "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/1.png"
+                    }
+                    width={200}
+                    alt=""
+                  />
+                  <div className="text_prizes">
+                    <p
+                      style={{
+                        fontSize: "35px",
+                        textShadow: "1px 1px 4px #702963",
+                      }}
+                    >
+                      ₹ 50k
+                    </p>
                     <p>+</p>
-                    <p>Innohacks <br/>swags, t-shirts, stickers.</p>
+                    <p>
+                      Innohacks <br />
+                      swags, t-shirts, stickers.
+                    </p>
                   </div>
                 </div>
                 <div className="blob"></div>
@@ -191,128 +219,262 @@ export default function HomePage() {
             </div>
             <div data-aos="fade-up" className="cardthree cards_">
               <div className="bg">
-                <img src={third} width={150} alt="" />
-                <div className='text_prizes'>
-                  <p style={{ textShadow: "1px 1px 4px #702963"}}>₹ 20k</p>
+                <img
+                  src={
+                    "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/3.png"
+                  }
+                  width={150}
+                  alt=""
+                />
+                <div className="text_prizes">
+                  <p style={{ textShadow: "1px 1px 4px #702963" }}>₹ 20k</p>
                   <p>+</p>
-                  <p>Innohacks <br/>swags, t-shirts, stickers.</p>
+                  <p>
+                    Innohacks <br />
+                    swags, t-shirts, stickers.
+                  </p>
                 </div>
               </div>
               <div className="blob"></div>
             </div>
           </div>
-          {/* ARRAY-2 */}
-          <div className='more_prizes'>
-            <div  data-aos="fade-left" className='more-one'>
-              <img className='gif_prize ' src={threeD} ></img>
-              <p className='more-title'>Best Use of XR</p>
-              <p>₹ 5,000 and cool Innohacks swags...</p>
+          <div className="more_prizes">
+            <div data-aos="fade-left" className="more-one">
+              <img
+                className="gif_prize "
+                src={
+                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/xr.gif"
+                }
+              ></img>
+              <p className="more-title">Best Use of XR</p>
             </div>
-            <div data-aos="fade-right" className='more-one'>
-              <img className='gif_prize ' src={blockChain} ></img>
-              <p className='more-title'>Best Use of Blockchain</p>
-              <p>₹ 5,000 and cool Innohacks swags...</p>
+            <div data-aos="fade-right" className="more-one">
+              <img
+                className="gif_prize "
+                src={
+                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/blockchain.gif"
+                }
+              ></img>
+              <p className="more-title">Best Use of Blockchain</p>
             </div>
-            <div data-aos="fade-left" className='more-one'>
-              <img className='gif_prize ' src={iot} ></img>
-              <p className='more-title'>Best Use of AIoT</p>
-              <p>₹ 5,000 and cool Innohacks swags...</p>
+            <div data-aos="fade-left" className="more-one">
+              <img
+                className="gif_prize "
+                src={
+                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/aiIOT.gif"
+                }
+              ></img>
+              <p className="more-title">Best Use of AIoT</p>
             </div>
-            <div data-aos="fade-right" className='more-one'>
-              <img className='gif_prize ' src={social} ></img>
+            <div data-aos="fade-right" className="more-one">
+              <img
+                className="gif_prize "
+                src={
+                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/social.gif"
+                }
+              ></img>
               <div>
                 <div>
-                  <p className='more-title'>Most Socially impactful Hack</p>
-                  <p>₹ 5,000 and cool Innohacks swags...</p>
+                  <p className="more-title">Most Socially impactful Hack</p>
                 </div>
               </div>
             </div>
-            <div data-aos="fade-left" className='more-one'>
-              <img className='gif_prize ' src={girl} ></img>
-              <p className='more-title'>Best All Girl Team</p>
-              <p>₹ 5,000 and cool Innohacks swags...</p>
+            <div data-aos="fade-left" className="more-one">
+              <img
+                className="gif_prize "
+                src={
+                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/girl.gif"
+                }
+              ></img>
+              <p className="more-title">Best All Girl Team</p>
             </div>
-
-
           </div>
-
         </Row>
         {/* ********Prizes ending here ***** */}
 
         {/* themes */}
         <Row className="prizesection" id="themes">
-          <PrizeHeading data-aos="zoom-in" data-aos-duration="800" type="Our Themes" />
+          <PrizeHeading
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            type="Our Themes"
+          />
           {Themeinfo.map(PrizeGroup)}
         </Row>
+        {/* Theme end */}
 
         {/* Schedule here */}
-        <Row className='schedule PrizeHeading' id="timeline">
-        <h1 className="Schedule-heading" data-aos="zoom-in" data-aos-duration="800" >Schedule</h1>  
-        <Schedule />
+        <Row className="schedule PrizeHeading" id="timeline">
+          <h1
+            className="Schedule-heading"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+          >
+            Schedule
+          </h1>
+          <Schedule />
         </Row>
         {/* Schedule section ends here */}
 
-        
-        
         {/* ********Sponsors here ***** */}
-
         <Row className="sponsorSection" id="sponsors">
           <SponsorsHead />
           <SponsorUS />
-          <div  className="sponsor-grid">
-            {sponsorLogos.map((item, i) => (
-              <Col data-aos={i%2===0 ?`fade-right`:`fade-left`} data-aos-duration="200" key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
-                <div  className='sponsor-bg'>
-                  <img src={item.src} width={180} alt="" />
-                </div>
-              </Col>
-            ))}
+          <div className="sponsor-grid">
+            <div>
+              <p className="more-title-sponsor">Title sponsor</p>
+              {titleSponsor.map((item, i) => (
+                <Col
+                  data-aos="fade-left"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="200"
+                  key={i}
+                  className="sponsor-logos"
+                  sm={12}
+                  lg={4}
+                  md={6}
+                >
+                  <div className="sponsor-bg">
+                    <img src={item.src} width={200} alt="" />
+                  </div>
+                </Col>
+              ))}
+            </div>
+            <div>
+              <p className="more-title-sponsor">Education Sponsor</p>
+              {educationSponsor.map((item, i) => (
+                <Col
+                  data-aos="fade-left"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="200"
+                  key={i}
+                  className="sponsor-logos"
+                  sm={12}
+                  lg={4}
+                  md={6}
+                >
+                  <div className="sponsor-bg">
+                    <img src={item.src} width={200} alt="" />
+                  </div>
+                </Col>
+              ))}
+            </div>
+            <div>
+              <p className="more-title-sponsor">Certificate Sponsor</p>
+              {certificateSponsor.map((item, i) => (
+                <Col
+                  data-aos="fade-left"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="200"
+                  key={i}
+                  className="sponsor-logos"
+                  sm={12}
+                  lg={4}
+                  md={6}
+                >
+                  <div className="sponsor-bg">
+                    <img src={item.src} width={180} alt="" />
+                  </div>
+                </Col>
+              ))}
+            </div>
+            <div>
+              <p className="more-title-sponsor">Platinum Sponsor</p>
+              {platinumSponsor.map((item, i) => (
+                <Col
+                  data-aos="fade-left"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="200"
+                  key={i}
+                  className="sponsor-logos"
+                  sm={12}
+                  lg={4}
+                  md={6}
+                >
+                  <div className="sponsor-bg">
+                    <img src={item.src} width={180} alt="" />
+                  </div>
+                </Col>
+              ))}
+            </div>
+            <div>
+              <p className="more-title-sponsor">Gold Sponsor</p>
+              {goldSponsor.map((item, i) => (
+                <Col
+                  data-aos="fade-left"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="200"
+                  key={i}
+                  className="sponsor-logos"
+                  sm={12}
+                  lg={4}
+                  md={6}
+                >
+                  <div className="sponsor-bg">
+                    <img src={item.src} width={180} alt="" />
+                  </div>
+                </Col>
+              ))}
+            </div>
+            <div>
+              <p className="more-title-sponsor">Silver Sponsor</p>
+              <div className="more-title-sponsor-silver">
+                {silverSponsor.map((item, i) => (
+                  <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                    <div className="sponsor-bg">
+                      <img src={item.src} width={180} alt="" />
+                    </div>
+                  </Col>
+                ))}
+              </div>
+            </div>
           </div>
         </Row>
         {/* ********Sponsors ending here ***** */}
 
-        
-
-        
-
-        {/* ********Team here ***** */}
-        <div className='PrizeHeading'>
-        <h1 data-aos="zoom-in" data-aos-duration="800" id="judges">Past Speakers and Judges</h1>
+        {/* Judges start */}
+        <div id="judges">
+          <h1 className="title_community">Past Speakers and Judges</h1>
         </div>
         {TeamInfo.map(TeamMembers)}
-        {/* ********Team ending here ***** */}
+        {/* Judges End */}
 
-        {/* ********Judges here ***** */}
-
-        {/* <br></br><br></br>
-        <h1 id="team">Judges</h1> */}
-
-        <div className='judges-container'>
-          {JudgesInfo.map(TeamMembers)}
-        </div>
-        {/* ********Team ending here ***** */}
+        {/* Community partners */}
         <Row>
           <CommunityPartner />
         </Row>
+        {/* Cumminity partners End */}
 
         {/* past winners */}
-        <Row >
+        <Row>
           <PastWinner />
         </Row>
+        {/* past Winners End */}
+
+        {/* organizing Team */}
+        <Row>
+          <Organiser />
+        </Row>
+        {/* Organizing team End */}
 
         {/* ********Frequently asked Questions here ***** */}
-        <div data-aos="fade-up" data-aos-duration="800" className="Myfaqs" id="faq">
-          <h1 className='my-faq-head'>FAQs</h1>
+        <div className="Myfaqs" id="faq">
+          <h1 className="my-faq-head">FAQs</h1>
           {frequentlyAskedQuestions.map(FrequentlyAsked)}
-          {/* ********Frequently asked Questions ending here ***** */}
         </div>
+        {/* FAQ Ends */}
 
-        <Row >
+        {/* Map */}
+        <Row className="homepage-map PrizeHeading">
+          <h1>How to Reach ?</h1>
           <Map />
         </Row>
+        {/* Map End */}
 
+        {/* Footer */}
       </Container>
       <Footer />
+      {/* Footer End */}
     </div>
   );
 }

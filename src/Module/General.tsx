@@ -1,22 +1,5 @@
-// import hackathonLogo from './Assets/hackathonLogo.png';
-import hackathonLogo from './Assets/Innohacks 3.0 Logo.png';
+import "./prize.css";
 
-// Importing all sponsors logos from Assets
-/** Put all your Team member image inside folder `Team Images`
- * and import them like in the above and update src in TeamInfo
- * or you can provide a cloud link in src also
- */
-
-// import boy from './Assets/boy.png';
-// import lyin from './Assets/teami/lyin.jpg';
-
-// import hdfc from "./Assets/sponsorsLogos/hdfc.png"
-// import gfg from "./Assets/sponsorsLogos/gfg.png"
-// import taskade from './Assets/sponsorsLogos/taskade.png';
-// import github from "./Assets/sponsorsLogos/github.jpg"
-// import codingMinutes from "./Assets/sponsorsLogos/coding minutes.jpeg"
-// import metty from "./Assets/sponsorsLogos/metty.png"
-import React from 'react';
 import first from "./Assets/sponsorsLogos/1.png"
 import second from "./Assets/sponsorsLogos/2.png"
 import coding from "./Assets/sponsorsLogos/coding.jpeg"
@@ -39,13 +22,6 @@ import fire from "./Assets/sponsorsLogos/5ire.png"
 import twenty from "./Assets/sponsorsLogos/20.png"
 
 
-/** Put all your sponsors logo inside folder `sponsorLogos`
- * and import them in the above and update `src` in sponsorLogos
- * or you can provide a cloud link in src
- */
-
-// Importing all Team members images  from Assets
-
 import babbar from "./Assets/teami/babbar.jpg"
 import khushboo from "./Assets/teami/khushboo.jpg"
 import striver from "./Assets/teami/striver.jpeg"
@@ -55,21 +31,14 @@ import akshay from "./Assets/teami/akshay saini.jpg"
 import arsh from "./Assets/teami/arsh goyal.jpg"
 import kushal from "./Assets/teami/kushal.jpeg"
 
-// importing all themes
-import security from '../containers/Home/assets/theme/9.png'
-import blockchain from '../containers/Home/assets/theme/4.png'
-import fintech from '../containers/Home/assets/theme/5.png'
-import iot from '../containers/Home/assets/theme/7.png'
-import vr from '../containers/Home/assets/theme/6.png'
-import open from '../containers/Home/assets/theme/8.png'
 
 
 const TOP_SECTION = {
-  TITLE: 'Join InnoHacks3.0',
+  TITLE: 'Join Innohacks3.0',
   Typed_effect: ['24-Hour of Innovation', 'Win awesome prizes'],
   SHORT_DESCRIPTION:
-    'Unleash your creativity for 24-Hour! Join us on April 27th for a nationwide hackathon alongside hundreds of other student innovators. Build, learn, and connect - are you in?',
-  IMG_SRC: hackathonLogo,
+    'Unleash your creativity for 24-Hour! Join us on April 28th for a nationwide hackathon alongside hundreds of other student innovators. Build, learn, and connect - are you in?',
+  IMG_SRC: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/Innohacks+3.0+Logo.png",
   DISCORD_LINK: '',
   JUDGES_FORM_LINK:
     '#',
@@ -88,10 +57,10 @@ const SOCIALS = {
 };
 
 const MIDDLE_SECTION = {
-  TITLE: 'What is InnoHacks ?',
+  TITLE: 'What is Innohacks ?',
   LONG_DESCRIPTION:
     'The largest code fest of Delhi-NCR is back! Join a 24-Hour Hackathon to hustle and shine through 5 amazing tracks, Embark on an Odyssey to learn new technologies in captivating environment seek guidance from experienced mentors and engrave your name on boards of our esteemed Judges! Not just that, win huge prizes and hampers by brainstorming and creating the best hack! Be ready to sail through an amazing night of fun, code and much more!',
-  LOGO: hackathonLogo
+  LOGO: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/Innohacks+3.0+Logo.png"
 };
 
 const FOOTER = {
@@ -113,12 +82,6 @@ const FOOTER = {
   }
 };
 
-/** SCHEDULE
- *
- * INSTRUCTIONS
- *
- * Date format : 8-11-2021, 18-11-2021 (without trailing zeros)
- */
 
 const calenderStartingDate = {
   month: 4,
@@ -132,7 +95,6 @@ const schedule = [
       {
         title: 'Idea Prototyping ans submission',
         timings: '12 AM - 11PM',
-        // link: 'https://google.com'
       }
     ]
   },
@@ -202,18 +164,7 @@ const schedule = [
   }
 ];
 
-/** ICON
- *
- * icons are from fontawesome visit = https://fontawesome.com
- * and just copy paste icon links and update icon in Prizeinfo
- *
- * INSTRUCTIONS
- *
- * Insert only 3 or less then 3 prizes per array in `Prizeinfo`, you can
- * create as many arrays you want all prizes will be rendered
- * in a group of 3.
- */
-import "./prize.css";
+
 const Prizeinfo = [
   [
     //Array 1
@@ -273,19 +224,19 @@ const Themeinfo = [
   [
     //Array 1
     {
-      icon: <img src={blockchain} width={"100px"} className="icons"/>,
+      icon: <img src={"https://s3.ap-south-1.amazonaws.com/innohacks3.0/theme/bolockchain.png"} width={"100px"} className="icons"/>,
       type: 'Blockchain/Web3',
       content:
         ''
     },
     {
-      icon: <img src={security} width={"100px"} className="icons"></img>,
+      icon: <img src={"https://s3.ap-south-1.amazonaws.com/innohacks3.0/theme/smart+security.png"} width={"100px"} className="icons"></img>,
       type: 'Smart Security',
       content:
         ''
     },
     {
-      icon: <img src={fintech} width={"100px"} className="icons"></img>,
+      icon: <img src={"https://s3.ap-south-1.amazonaws.com/innohacks3.0/theme/fintech.png"} width={"100px"} className="icons"></img>,
       type: 'FinTech',
       content:
         ''
@@ -294,29 +245,23 @@ const Themeinfo = [
   [
     //Array 2
     {
-      icon: <img src={vr} width={"100px"} className="icons"></img>,
+      icon: <img src={"https://s3.ap-south-1.amazonaws.com/innohacks3.0/theme/arvr.png"} width={"100px"} className="icons"></img>,
       type: 'AR/VR',
       content:
         ''
     },
     {
-      icon: <img src={iot} width={"100px"} className="icons"></img>,
+      icon: <img src={"https://s3.ap-south-1.amazonaws.com/innohacks3.0/theme/aiiot.png"} width={"100px"} className="icons"></img>,
       type: 'AIoT',
       content: ''
     },
     {
-      icon: <img src={open} width={"100px"} className="icons"></img>,
+      icon: <img src={"https://s3.ap-south-1.amazonaws.com/innohacks3.0/theme/open+innovation.png"} width={"100px"} className="icons"></img>,
       type: 'Open Innovation',
       content: ''
     }
   ]
 ];
-
-/** Instructions
- * Insert only 3 or less then 3 members per array in `TeamInfo`, you can
- * create as many arrays you want all team members will be rendered
- * in a group of 3.
- */
 
 const TeamInfo = [
   [
@@ -365,13 +310,7 @@ const TeamInfo = [
       github: '',
       linkedin: 'https://www.linkedin.com/in/kshitizmiglani/',
       img: kshitiz
-    }
-  ]
-];
-
-const JudgesInfo = [
-  [
-    //Array 1
+    },
     {
       Name: 'Kushal Vijay',
       role: 'Kushal Vijay',
@@ -386,24 +325,21 @@ const JudgesInfo = [
       linkedin: 'https://www.linkedin.com/in/verma-khushboo/',
       img: khushboo
     },
-  ],
+  ]
 ];
 
-/** Instructions
- * Only put 3 logos per array inside `sponsorLogos`, you can
- * create as many arrays you want all logos will be rendered
- * in a group of 3.
- */
-
-const sponsorLogos = [
-  {src: first}, {src: second}, {src: sixteen},
+const titleSponsor = [{src: twenty}];
+const platinumSponsor = [{src: seventeen}, {src: fire}];
+const goldSponsor = [{src: fifteen}];
+const silverSponsor = [{src: eight}, {src: first}, {src: second}, {src: sixteen},
   {src: forth}, {src: fifth}, {src: sixth},
-  {src: seventh}, {src: eight}, {src: nine},
-  {src: seventeen}, {src: eleven}, {src: twelve},
-  {src: thirteen}, {src: fourteen}, {src: fifteen},
-  {src: coding}, {src: auth}, {src: fire},
-  {src: eighteen}, {src: twenty}
-];
+  {src: seventh}, {src: nine}, {src: twelve},
+  {src: thirteen}, {src: coding}, {src: auth},
+  {src: eighteen}];
+const educationSponsor = [{src: eleven}];
+const certificateSponsor = [{src: fourteen}];
+
+// const sponsorLogos = [ ];
 
 /** Instructions
  * Follow the strcuture provided below to add as many as FAQ's you want
@@ -462,11 +398,15 @@ export {
   SOCIALS,
   FOOTER,
   Prizeinfo,
-  sponsorLogos,
   TeamInfo,
-  JudgesInfo,
   frequentlyAskedQuestions,
   schedule,
   calenderStartingDate,
-  Themeinfo
+  Themeinfo,
+  titleSponsor,
+  platinumSponsor,
+  goldSponsor,
+  silverSponsor,
+  educationSponsor,
+  certificateSponsor
 };

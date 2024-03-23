@@ -1,58 +1,14 @@
-import { useEffect, useState } from 'react';
-import { FOOTER, SOCIALS, TOP_SECTION } from '../../Module/General';
-// import cross from './assets/cross.svg';
-// import {Btn} from '../Landing/index.jsx';
-// import DevPost from './assets/icons8-dev-post.svg';
-// import Dis from './assets/icons8-discord.svg';
-// import Insta from './assets/icons8-instagram.svg';
-// import Linked from './assets/icons8-linkedin-2.svg';
-// import Mail from './assets/icons8-mail.svg';
-// import Twitter from './assets/icons8-twitter.svg';
-// import PrivacyPolicy from './assets/Privacy policy.pdf';
-// import TermsOfUse from './assets/Terms of use.pdf';
+import { SOCIALS } from '../../Module/General';
 import { FaInstagram } from "react-icons/fa6";
 import { BiLogoDiscordAlt } from "react-icons/bi";
 import { CiLinkedin } from "react-icons/ci";
 import { IoLogoTwitter } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
-import logo from './assets/InnohacksFullLogo.png'
-import Innologo from './assets/imageSkin.png'
 import { HashLink } from 'react-router-hash-link';
-//------------------------------------------------------------------
 import './style.scss';
 
-const GithubTemplate = ({ hideTemplate }) => {
-  return (
-    <div className="template">
-      <div className="template-left">
-        <p>
-          Join us to{' '}
-          <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>Gear Up</a>,
-          where we will be hosting PUBLIC workshops, tech talks, panel
-          discussions, and career sessions!
-        </p>
-      </div>
-      <img onClick={hideTemplate} src={cross} />
-    </div>
-  );
-};
 
 const Footer = () => {
-  // const [template, setTemplate] = useState(false);
-  // const [viewTemplate, setViewTemplate] = useState(true);
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', listenScrollEvent);
-
-  //   return () => {
-  //     window.removeEventListener('scroll', listenScrollEvent);
-  //   };
-  // }, []);
-
-  // const listenScrollEvent = e => {
-  //   if (window.scrollY > 2800) setTemplate(true);
-  //   else if (window.scrollY < 2800) setTemplate(false);
-  // };
 
   return (
     <div className="footer new_footer_top" >
@@ -99,12 +55,12 @@ const Footer = () => {
       <div className="footer-logo">
         <div className='hacks-footer-container'>
           <HashLink className="footer-logo-link" to="#" smooth>
-            <img src={logo} className='hacks' width={"100%"} alt="" />
+            <img src="https://template-mail-images.s3.ap-south-1.amazonaws.com/INNOHACKS_3.0_Logo-removebg-preview+(1).png" className='hacks' width={"100%"} alt="" />
           </HashLink>
         </div>
         <div className='inno-footer-container'>
         <a className="footer-logo-link " href="https://innogeeks.in/" target='_blank'>
-          <img className='inno' src={Innologo} width={"100%"} alt="" />
+          <img className='inno' src="https://template-mail-images.s3.ap-south-1.amazonaws.com/inno+logo+(3).png" width={"120%"} alt="" />
         </a>
         </div>
       </div>
@@ -114,8 +70,6 @@ const Footer = () => {
         <p><a href="mailto:innogeeks@kiet.edu">Contact us @Innogeeks™</a></p>
       </div>
       <div className="footer_bg">
-          {/* <div className="footer_bg_one"></div> 
-         <div className="footer_bg_two"></div> */}
       </div>
     </div>
 
