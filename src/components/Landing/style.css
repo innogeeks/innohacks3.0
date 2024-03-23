@@ -189,7 +189,11 @@ button {
   font-weight: 300;
   position: relative;
 }
-
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 .join_disco i {
@@ -215,7 +219,7 @@ button {
 }
 
 .AboutMe h2 {
-  font-size: 5rem;
+  font-size: 8rem;
   font-family: 'Noto Sans', sans-serif;
 }
 
@@ -296,6 +300,11 @@ button:hover .overlay {
   }
   .join_dis{
     justify-content: center;
+  }
+  .buttom-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

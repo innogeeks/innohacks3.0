@@ -66,9 +66,9 @@ import open from '../containers/Home/assets/theme/8.png'
 
 const TOP_SECTION = {
   TITLE: 'Join InnoHacks3.0',
-  Typed_effect: ['24 hours of Innovation', 'Win awesome prizes'],
+  Typed_effect: ['24-Hour of Innovation', 'Win awesome prizes'],
   SHORT_DESCRIPTION:
-    'Unleash your creativity for 24 hours! Join us on April 27th for a nationwide hackathon alongside hundreds of other student innovators. Build, learn, and connect - are you in?',
+    'Unleash your creativity for 24-Hour! Join us on April 27th for a nationwide hackathon alongside hundreds of other student innovators. Build, learn, and connect - are you in?',
   IMG_SRC: hackathonLogo,
   DISCORD_LINK: '',
   JUDGES_FORM_LINK:
@@ -88,9 +88,9 @@ const SOCIALS = {
 };
 
 const MIDDLE_SECTION = {
-  TITLE: 'What is InnoHacks?',
+  TITLE: 'What is InnoHacks ?',
   LONG_DESCRIPTION:
-    'The largest code fest of Delhi NCR is back! Join a 24 Hour Hackathon to hustle and shine through 5 amazing tracks, Embark on an Odyssey to learn new technologies in captivating environment seek guidance from experienced mentors and engrave your name on boards of our esteemed Judges! Not just that, win huge prizes and hampers by brainstorming and creating the best hack! Be ready to sail through an amazing night of fun, code and much more!',
+    'The largest code fest of Delhi-NCR is back! Join a 24-Hour Hackathon to hustle and shine through 5 amazing tracks, Embark on an Odyssey to learn new technologies in captivating environment seek guidance from experienced mentors and engrave your name on boards of our esteemed Judges! Not just that, win huge prizes and hampers by brainstorming and creating the best hack! Be ready to sail through an amazing night of fun, code and much more!',
   LOGO: hackathonLogo
 };
 

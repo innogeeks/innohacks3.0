@@ -59,13 +59,14 @@
   text-align: left;
   display: inline-block;
   position: relative;
-  font-family: repo-light;
+  font-family: repo-medium;
   padding-left: 10%;
 }
 
 .LogoSectionAbout h1 {
   font-weight: 700;
   text-align: left;
+  font-family: repo-bold;
 }
 
 .Logo {
