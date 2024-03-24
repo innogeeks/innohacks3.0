@@ -221,8 +221,8 @@ margin-top: 15vh;
 
 .imagee{
    width: 70vh;
-  transition: all 300ms ease-in;
-  animation: upDown 1s infinite alternate ease;
+  /* transition: all 300ms ease-in;
+  animation: upDown 1s infinite alternate ease; */
 }
 
 @keyframes upDown {
