@@ -13,9 +13,9 @@ import {MIDDLE_SECTION} from '../../Module/General';
 
 function LogoSectionAbout() {
   return (
-    <div className="LogoSectionAbout" >
-      <BsHeadsetVr fontSize={200} className='arHeadset'/>
-      <FaGlobeAmericas fontSize={200} className='globe'/>
+    <div className="LogoSectionAbout"  >
+      {/* <BsHeadsetVr fontSize={200} className='arHeadset'/>
+      <FaGlobeAmericas fontSize={200} className='globe'/> */}
       <h1>{MIDDLE_SECTION.TITLE}</h1>
       <p className='long desc'>{MIDDLE_SECTION.LONG_DESCRIPTION}</p>
       

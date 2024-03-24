@@ -40,28 +40,26 @@ const Myinfo = () => {
     <div className="Myinfo">
       <About />
       <p> {TOP_SECTION.SHORT_DESCRIPTION}</p>
-      <div className="buttom-group">
-        <div className="join_dis">
-          <a
-            rel="noreferrer"
-            target="_blank"
-            href="https://discord.gg/qNmEeAsuqQ"
-          >
-            <Btn
-              ico="fab fa-2x fa-discord"
-              className="join_disco"
-              type="&nbsp;&nbsp;Join Discord"
-              overlay="Now"
-              style={{ display: "flex", justifyContent: "center" }}
-            />
-          </a>
-        </div>
+      <div className="buttom-group" style={{ display: 'flex', justifyContent: 'center', gap: '2vh' }}>
+      <div className="join_dis" style={{ display: 'flex', justifyContent: 'center', gap: '2vh', flexWrap: 'wrap' }}>
+  <a rel="noreferrer" target="_blank" href="https://discord.gg/qNmEeAsuqQ">
+    <Btn
+      ico="fab fa-2x fa-discord"
+      className="join_disco"
+      type="&nbsp;&nbsp;Join Discord"
+      overlay="Now"
+    />
+  </a>
+  <div>
+    <a href="https://forms.gle/LabTKRJEHvyZuXd78" target="_blank">
+      <Btn className="register" type="Register " overlay="Now" />
+    </a>
+  </div>
+</div>
 
-        <a href="https://forms.gle/LabTKRJEHvyZuXd78" target="_blank">
-          {" "}
-          <Btn className="register" type="Register " overlay="Now" />
-        </a>
-      </div>
+ 
+</div>
+
     </div>
   );
 };

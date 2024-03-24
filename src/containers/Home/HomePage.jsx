@@ -106,7 +106,7 @@ export default function HomePage() {
         </Container>
       </div>
       <Container fluid>
-        <Row className=" logoSection">
+        <Row className=" logoSection" >
           <Col className="info-div">
             <LogoSectionAbout />
           </Col>
@@ -115,14 +115,14 @@ export default function HomePage() {
           </Col>
           <Col></Col>
         </Row>
-        <Row className="mediaInfo">
+        <Row className="mediaInfo" >
           <Col className="" sm={12} lg={12} md={12}>
             <h1
               data-aos="zoom-in"
               data-aos-duration="800"
               id="prizes"
               className="prize_heading"
-              style={{ fontFamily: "repo-bold", marginBottom: "10rem" }}
+              style={{ fontFamily: "repo-bold", marginBottom: "10rem"  }}
             >
               Past Statistics
             </h1>
@@ -238,7 +238,17 @@ export default function HomePage() {
               <div className="blob"></div>
             </div>
           </div>
+          <h1
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          id="prizes"
+          className="prize_heading"
+          style={{ fontFamily: "repo-bold" }}
+        >
+        Tracks and Prizes
+        </h1>
           <div className="more_prizes">
+            
             <div data-aos="fade-left" className="more-one">
               <img
                 className="gif_prize "
@@ -294,6 +304,7 @@ export default function HomePage() {
 
         {/* themes */}
         <Row className="prizesection" id="themes">
+          
           <PrizeHeading
             data-aos="zoom-in"
             data-aos-duration="800"
@@ -312,7 +323,8 @@ export default function HomePage() {
           >
             Schedule
           </h1>
-          <Schedule />
+          {/* <Schedule /> */}
+          <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/Copy+of+Copy+of+Innohacks+3.0+brochure+(2)+(1).png" alt="" />
         </Row>
         {/* Schedule section ends here */}
 
@@ -322,6 +334,7 @@ export default function HomePage() {
           <SponsorUS />
           <div className="sponsor-grid">
             <div>
+
               <p className="more-title-sponsor">Title sponsor</p>
               {titleSponsor.map((item, i) => (
                 <Col
