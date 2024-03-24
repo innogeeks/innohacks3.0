@@ -129,7 +129,7 @@ export default function HomePage() {
             <Footfall />
           </Col>
         </Row>
-        {media && <Birds top="120vh" left="0vh" type="" />}
+        {/* {media && <Birds top="120vh" left="0vh" type="" />} */}
         <h1
           data-aos="zoom-in"
           data-aos-duration="800"

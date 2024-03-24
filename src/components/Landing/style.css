@@ -220,6 +220,14 @@ button{
   background-color: black;
 }
 
+.fa-2x{
+  font-size: 25px;
+}
+
+.registerbtn{
+  margin-left: 25px;
+}
+
 .AboutMe h2 {
   font-size: 8rem;
   font-family: 'Noto Sans', sans-serif;
@@ -228,6 +236,10 @@ button{
 p {
   font-size: 1.9rem;
   font-weight: 300;
+}
+
+.topsection{
+  margin-top: -30px;
 }
 
 .Myinfo {
