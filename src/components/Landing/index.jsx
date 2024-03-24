@@ -39,9 +39,10 @@ const Myinfo = () => {
   return (
     <div className="Myinfo">
       <About />
-      <p> {TOP_SECTION.SHORT_DESCRIPTION}</p>
+      <p className="topsection"> {TOP_SECTION.SHORT_DESCRIPTION}</p>
       <div className="buttom-group">
         <div className="join_dis">
+        <div>
           <a
             rel="noreferrer"
             target="_blank"
@@ -50,17 +51,19 @@ const Myinfo = () => {
             <Btn
               ico="fab fa-2x fa-discord"
               className="join_disco"
-              type="&nbsp;&nbsp;Join Discord"
+              type="&nbsp;&nbsp;&nbsp;Join Discord"
               overlay="Now"
               style={{ display: "flex", justifyContent: "center" }}
             />
           </a>
-        </div>
-
-        <a href="https://forms.gle/LabTKRJEHvyZuXd78" target="_blank">
-          {" "}
-          <Btn className="register" type="Register " overlay="Now" />
-        </a>
+          </div>
+          <div className="registerbtn"> 
+            <a href="https://forms.gle/LabTKRJEHvyZuXd78" target="_blank">
+              {" "}
+              <Btn className="register" type="Register " overlay="Now" style={{ marginLeft: "50px" }}/>
+            </a>
+          </div>
+          </div>
       </div>
     </div>
   );

@@ -348,45 +348,45 @@ const frequentlyAskedQuestions = [
   [
     [
       {
-        label: <div className='faqs'>What is a hackathon?</div>,
+        label: 'What is a hackathon?',
         content:
-          <div>A hackathon is a 24 hour event where "hackers" all over the globe collaborate on creating a functioning software and hardware by the end of the event.</div>
+        'A hackathon is a 24 hour event where "hackers" all over the globe collaborate on creating a functioning software and hardware by the end of the event.'
       },
       {
-        label: <div className='faqs'>Who can attend?</div>,
+        label:' Who can attend?',
         content:
-           <div className="faqs">InnoHacks is open to all undergraduates from all over India.</div>
+           'InnoHacks is open to all undergraduates from all over India.'
       },
       {
-        label: <div className="faqs">I am a first time hacker, what should I do?</div>,
+        label: 'I am a first time hacker, what should I do?',
         content:
-          <div className="faqs">No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathons in general.</div>
+          'No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathons in general.'
       },
       {
-        label: <div className="faqs">How does team formation works?</div>,
+        label: 'How does team formation works?',
         content:
-          <div className="faqs">You can form team with maximum 4 members. If you don't have a team, there will be plenty of opportunities for you to meet hackers and form a team!</div>
+          "You can form team with maximum 4 members. If you don't have a team, there will be plenty of opportunities for you to meet hackers and form a team!"
       }
     ],
     [
       {
-        label: <div className="faqs">How to register myself in the Innohacks 3.0?</div>,
+        label: 'How to register myself in the Innohacks 3.0?',
         content:
-          <div className="faqs">All you need to do is fill our form mentioned above and join our Discord channel, we will guide you through everything there</div>
+          'All you need to do is fill our form mentioned above and join our Discord channel, we will guide you through everything there'
       },
       {
-        label: <div className="faqs">I have more questions?</div>,
+        label: 'I have more questions?',
         content:
-          <div className="faqs">Reach us directly at (innohacks@kiet.edu). We would happy to help you.</div>
+          'Reach us directly at (innohacks@kiet.edu). We would happy to help you.'
       },
       {
-        label: <div className="faqs">Will there be a Registration Fee?</div>,
+        label: 'Will there be a Registration Fee?',
         content:
-          <div className="faqs">No!</div>
+          'No!'
       },
       {
-        label: <div className="faqs">Will there be swags?</div>,
-        content: <div className="faqs">Yes! Participants will many chances to win InnoHacks 3.0 swags!.</div>
+        label: 'Will there be swags?',
+        content: 'Yes! Participants will many chances to win InnoHacks 3.0 swags!.'
       }
     ]
   ]

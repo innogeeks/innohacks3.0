@@ -26,10 +26,10 @@ const Member = ({info}: {info: any}) => {
       <img src={img} alt="Inno-Hack"></img>
       <div className="members-link">
         <h3>{name}</h3>
-        <p>{role}</p>
-        <a href={linkedin}>
+        <p className='namess'>{role}</p>
+        {/* <a href={linkedin}>
           <i className="fab fa-2x fa-linkedin"></i>
-        </a>
+        </a> */}
       </div>
     </div>
   );
