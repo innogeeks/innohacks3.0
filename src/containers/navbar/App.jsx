@@ -25,6 +25,17 @@ const Wrapper = styled.div`
     .nav-content {
       height: 35%;
       background-color: rgba(50, 13, 136);
+      ul {
+        margin-left: 0; // Remove margin-left in mobile view
+      }
+    }
+  }
+
+  @media (min-width: 1001px) {
+    .nav-content {
+      ul {
+        margin-left: -40vh; // Set margin-left to -40vh in laptop view
+      }
     }
   }
 `;
@@ -60,7 +71,7 @@ const NAVBAR = ({}) => {
       </div>
 
         <Wrapper  toggle={toggle}>
-          <div className="nav-content" ref={navigation}>
+          <div className="nav-content" ref={navigation} >
             <ul>
               <li>
                 <Link to={`#home`} smooth>
@@ -97,6 +108,11 @@ const NAVBAR = ({}) => {
                 <Link to={`#faq`} smooth>
                   <span className="links">FAQ</span>{' '}
                 </Link>
+              </li>
+              <li>
+                <a href='https://drive.google.com/file/d/1-erC54DIgsqZ9wCTSaeX7zhj5a0aQS-d/view?usp=sharing'>
+                  <span className="links">Guidelines</span>{' '}
+                </a>
               </li>
               <img
                 className="s-close"
