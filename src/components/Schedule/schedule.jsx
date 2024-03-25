@@ -7,10 +7,12 @@ return(
   
   <div>
   <h1
-            className="Schedule-heading"
-            data-aos="zoom-in"
-            data-aos-duration="800"
-          >
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              id="prizes"
+              className="prize_heading"
+              style={{ fontFamily: "repo-bold", marginBottom: "10rem"  }}
+            >
             Schedule
           </h1>
   </div>
