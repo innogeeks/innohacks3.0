@@ -392,7 +392,7 @@ export default function HomePage() {
                   md={6}
                 >
                   <div className="sponsor-bg">
-                    <img src={item.src} width={180} alt="polygon" />
+                    <img src={item.src} width={180} alt="DEVFOLIO LOGO" />
                   </div>
                 </Col>
               ))}
