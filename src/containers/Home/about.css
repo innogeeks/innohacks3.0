@@ -470,3 +470,31 @@ margin-top: 15vh;
   scale: 0.6;
 }
 
+
+
+/* Default styles for both mobile and laptop views */
+.image-container {
+  display: flex; /* Use flexbox for positioning images */
+  justify-content: center; /* Center images horizontally */
+}
+
+.mobile-image,
+.laptop-image {
+  display: none; /* Hide all images by default */
+  max-width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Styles for mobile view (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+  .mobile-image {
+    display: block; /* Display the mobile image */
+  }
+}
+
+/* Styles for laptop view (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+  .laptop-image {
+    display: block; /* Display the laptop image */
+  }
+}
