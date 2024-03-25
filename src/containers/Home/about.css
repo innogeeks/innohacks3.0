@@ -498,3 +498,14 @@ margin-top: 15vh;
     display: block; /* Display the laptop image */
   }
 }
+@media (max-width: 767px) {
+  .Schedule-heading {
+    display: block;
+    font-size: 24px; /* Adjust the font size as needed */
+    /* Add any other styles you need to make it visible and look good on smaller screens */
+  }
+}
+
+
+/* Default styles for both divs */
+

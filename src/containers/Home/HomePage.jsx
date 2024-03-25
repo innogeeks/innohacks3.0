@@ -245,7 +245,7 @@ export default function HomePage() {
           className="prize_heading"
           style={{ fontFamily: "repo-bold" }}
         >
-        Tracks and Prizes
+        Track Prizes
         </h1>
           <div className="more_prizes">
             
@@ -296,7 +296,7 @@ export default function HomePage() {
                   "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/girl.gif"
                 }
               ></img>
-              <p className="more-title">Best All Girl Team</p>
+              <p className="more-title">Best All Girls Team</p>
             </div>
           </div>
         </Row>
@@ -315,20 +315,10 @@ export default function HomePage() {
         {/* Theme end */}
 
         {/* Schedule here */}
-        <Row className="schedule PrizeHeading" id="timeline">
-          <h1
-            className="Schedule-heading"
-            data-aos="zoom-in"
-            data-aos-duration="800"
-          >
-            Schedule
-          </h1>
-          {/* <Schedule /> */}
-          <div class="image-container">
-       
-  <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/mobileviewupdated.png" alt="" className="mobile-image"/>
-  <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/Copy+of+Copy+of+Innohacks+3.0+brochure+(2)+(1).png" alt="" className="laptop-image"/>
-</div>
+        <Row style={{marginTop:"5vh"}}>
+    
+          <Schedule  />
+  
 
         </Row>
         {/* Schedule section ends here */}
