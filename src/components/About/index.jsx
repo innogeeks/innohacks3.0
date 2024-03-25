@@ -13,12 +13,21 @@ import {MIDDLE_SECTION} from '../../Module/General';
 
 function LogoSectionAbout() {
   return (
-    <div className="LogoSectionAbout" >
-      <BsHeadsetVr fontSize={200} className='arHeadset'/>
-      <FaGlobeAmericas fontSize={200} className='globe'/>
+    <div className="LogoSectionAbout"  >
+      {/* <BsHeadsetVr fontSize={200} className='arHeadset'/>
+      <FaGlobeAmericas fontSize={200} className='globe'/> */}
       <h1>{MIDDLE_SECTION.TITLE}</h1>
-      <p className='long desc'>{MIDDLE_SECTION.LONG_DESCRIPTION}</p>
-      
+      <div>
+      <p className='long desc'>
+
+      The largest code fest of Delhi-NCR is back! ⚡<br />
+        Join this 24-Hour Hackathon to hustle and shine through 5 amazing tracks, Embark on an Odyssey to learn new technologies, seek guidance from experienced mentors and engrave your name on the boards of our esteemed Judges.<br />
+        Witness prodigious Speakers of the Nation live! ✨<br />
+        Not just that, win huge prizes and hampers by brainstorming and creating the best hack!<br />
+        Be ready to sail through an amazing night of fun, code and much more on 28th & 29th April! 💫
+
+      </p>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,37 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .heart {
+    background-color: #f9f9f9;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .heart:hover {
+    color: #1e050f;
+    background-color: #fb076d40;
+  }
+  
+  .heart .counter {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    border-radius: 10px;
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    background-color: #d2a2b6;
+  }
+  
