@@ -335,7 +335,7 @@ export default function HomePage() {
                   md={6}
                 >
                   <div className="sponsor-bg">
-                    <img src={item.src} width={200} alt="" />
+                    <img src={item.src} width={200}  />
                   </div>
                 </Col>
               ))}
@@ -392,7 +392,7 @@ export default function HomePage() {
                   md={6}
                 >
                   <div className="sponsor-bg">
-                    <img src={item.src} width={180} alt="" />
+                    <img src={item.src} width={180} alt="polygon" />
                   </div>
                 </Col>
               ))}
@@ -411,7 +411,7 @@ export default function HomePage() {
                   md={6}
                 >
                   <div className="sponsor-bg">
-                    <img src={item.src} width={180} alt="" />
+                    <img src={item.src} width={180} alt={item.alt} />
                   </div>
                 </Col>
               ))}
