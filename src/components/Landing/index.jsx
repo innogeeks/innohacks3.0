@@ -56,7 +56,7 @@ const Myinfo = () => {
        
        <div
             class="apply-button"
-            data-hackathon-slug="YOUR-HACKATHON-SLUG"
+            data-hackathon-slug="innohacks-3"
             data-button-theme="light"
             style={{ height: "44px", width: "312px" }}
           ></div>
