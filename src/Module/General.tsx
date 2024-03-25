@@ -329,8 +329,8 @@ const TeamInfo = [
 ];
 
 const titleSponsor = [{src: twenty}];
-const platinumSponsor = [{src: seventeen}, {src: fire}];
-const goldSponsor = [{src: fifteen}];
+const platinumSponsor = [{src: seventeen}, {src: fire}, {src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/polygon-removebg-preview.png"}];
+const goldSponsor = [{src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/images-removebg-preview.png"}];
 const silverSponsor = [{src: eight}, {src: first}, {src: second}, {src: sixteen},
   {src: forth}, {src: fifth}, {src: sixth},
   {src: seventh}, {src: nine}, {src: twelve},
