@@ -324,7 +324,12 @@ export default function HomePage() {
             Schedule
           </h1>
           {/* <Schedule /> */}
-          <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/Copy+of+Copy+of+Innohacks+3.0+brochure+(2)+(1).png" alt="" />
+          <div class="image-container">
+       
+  <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/mobileviewupdated.png" alt="" className="mobile-image"/>
+  <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/Copy+of+Copy+of+Innohacks+3.0+brochure+(2)+(1).png" alt="" className="laptop-image"/>
+</div>
+
         </Row>
         {/* Schedule section ends here */}
 
