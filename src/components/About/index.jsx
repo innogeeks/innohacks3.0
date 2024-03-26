@@ -18,7 +18,7 @@ function LogoSectionAbout() {
       <FaGlobeAmericas fontSize={200} className='globe'/> */}
       <h1>{MIDDLE_SECTION.TITLE}</h1>
       <div>
-      <p className='long desc'>
+      <p className='long-desc'>
 
       The largest code fest of Delhi-NCR is back! ⚡<br />
         Join this 24-Hour Hackathon to hustle and shine through 5 amazing tracks, Embark on an Odyssey to learn new technologies, seek guidance from experienced mentors and engrave your name on the boards of our esteemed Judges.<br />

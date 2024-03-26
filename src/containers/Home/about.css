@@ -145,6 +145,9 @@ margin-top: 15vh;
   .reverse{
     flex-direction: row-reverse;
   }
+  .homepage-map{
+    margin-top: 80px;
+   }
 }
 
 @media (max-width: 450px){
@@ -160,9 +163,7 @@ margin-top: 15vh;
   .reverse{
     flex-direction: column-reverse;
   }
-  .homepage-map{
-   margin-top: 80px;
-  }
+  
 }
 
 

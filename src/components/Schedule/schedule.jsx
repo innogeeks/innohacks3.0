@@ -17,7 +17,7 @@ return(
           </h1>
   </div>
 
-  <div class="image-container">
+  <div className="image-container">
             
        
             <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/mobileviewupdated.png" alt="" className="mobile-image"/>

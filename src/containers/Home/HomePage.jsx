@@ -39,6 +39,7 @@ import {
 import PastWinner from "components/pastWinners/index.jsx";
 import Map from "components/map/index.jsx";
 import Organiser from "components/organisers/Organiser.jsx";
+import PastEdition from "components/PastEdition";
 
 const PrizeGroup = (props, index) => {
   return (
@@ -452,11 +453,17 @@ export default function HomePage() {
           <CommunityPartner />
         </Row>
         {/* Cumminity partners End */}
-
-        {/* past winners */}
+        
+        {/* Past Edition start*/}
         <Row>
-          <PastWinner />
+          <PastEdition/>
         </Row>
+        {/* Past Edition end */}
+        
+        {/* past winners */}
+        {/* <Row>
+          <PastWinner />
+        </Row> */}
         {/* past Winners End */}
 
         {/* organizing Team */}
@@ -464,6 +471,7 @@ export default function HomePage() {
           <Organiser />
         </Row>
         {/* Organizing team End */}
+
 
         {/* ********Frequently asked Questions here ***** */}
         <div className="Myfaqs" id="faq">

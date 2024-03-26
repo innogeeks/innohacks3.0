@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="Register_a">
           <button className="register-button">
 
-            <a smooth className='register-link' href='https://forms.gle/LabTKRJEHvyZuXd78' target='_blank'>
+            <a smooth="true" className='register-link' href='https://forms.gle/LabTKRJEHvyZuXd78' target='_blank'>
               <span>Register Now</span>
             </a>
           </button>
@@ -54,7 +54,7 @@ const Footer = () => {
       </div>
       <div className="footer-logo">
         <div className='hacks-footer-container'>
-          <HashLink className="footer-logo-link" to="#" smooth>
+          <HashLink className="footer-logo-link" to="#" smooth="true">
             <img src="https://template-mail-images.s3.ap-south-1.amazonaws.com/INNOHACKS_3.0_Logo-removebg-preview+(1).png" className='hacks' width={"100%"} alt="" />
           </HashLink>
         </div>
