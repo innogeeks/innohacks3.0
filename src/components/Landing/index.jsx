@@ -1,7 +1,7 @@
 import { TOP_SECTION } from "../../Module/General";
 import MytypedComponent from "../Typed/index.js";
 import "./style.css";
-
+import React from "react";
 const Btn = (props) => {
   return (
     <button className={props.class}>
@@ -13,6 +13,7 @@ const Btn = (props) => {
     </button>
   );
 };
+
 
 const About = () => {
   const titleStyle = {
@@ -36,34 +37,36 @@ const About = () => {
 };
 
 const Myinfo = () => {
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
+
   return (
     <div className="Myinfo">
       <About />
       <p className="topsection"> {TOP_SECTION.SHORT_DESCRIPTION}</p>
-      <div className="buttom-group">
-        <div className="join_dis">
-        <div>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            href="https://discord.gg/qNmEeAsuqQ"
-          >
-            <Btn
-              ico="fab fa-2x fa-discord"
-              className="join_disco"
-              type="&nbsp;&nbsp;&nbsp;Join Discord"
-              overlay="Now"
-              style={{ display: "flex", justifyContent: "center" }}
-            />
-          </a>
-          </div>
-          <div className="registerbtn"> 
+      <div className="buttom-group" style={{display:"flex", flexDirection:"column"}}>
+       
+       <div
+            class="apply-button"
+            data-hackathon-slug="innohacks-3"
+            data-button-theme="light"
+            style={{ height: "44px", width: "312px" }}
+          ></div>
+<br />
+          <div className="registerbtn">
             <a href="https://forms.gle/LabTKRJEHvyZuXd78" target="_blank">
-              {" "}
-              <Btn className="register" type="Register " overlay="Now" style={{ marginLeft: "50px" }}/>
+              <Btn class="register" type="Register" overlay="Now" />
             </a>
           </div>
-          </div>
+       
       </div>
     </div>
   );
