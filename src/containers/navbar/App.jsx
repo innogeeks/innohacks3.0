@@ -7,6 +7,9 @@ import logoClose from './assets/ham-c.svg';
 import hamLogo from './assets/ham.svg';
 import './styles.scss';
 import {MdxContent} from '../Mdx';
+import navLogo from "./assets/nav-logo.png"
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const NAVIGATION_OFFSET = 66;
 
@@ -56,6 +59,8 @@ const NAVBAR = ({}) => {
   };
 
   useEffect(() => {
+    Aos.init({duration:400})
+
     window.addEventListener('scroll', listenScrollEvent);
     return () => window.removeEventListener('scroll', listenScrollEvent);
   }, []);
@@ -63,49 +68,49 @@ const NAVBAR = ({}) => {
 
   return (
     <Router>
-      <nav className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`} >
+      <nav data-aos="fade-down" className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`} >
       
      
       <div className='logo-div'>
-        <img src="https://template-mail-images.s3.ap-south-1.amazonaws.com/INNOHACKS_3.0_Logo-removebg-preview+(1).png" className="nav-logo" width={190}></img>
+        <img src={navLogo} className="nav-logo" width={180}></img>
       </div>
 
         <Wrapper  toggle={toggle}>
           <div className="nav-content" ref={navigation} >
             <ul>
               <li>
-                <Link to={`#home`} smooth>
+                <Link to={`#home`} smooth="true">
                   <span className="links">Home</span>{' '}
                 </Link>
               </li>
               
               <li>
-                <Link to={`#prizes`} smooth>
+                <Link to={`#prizes`} smooth="true">
                   <span className="links">Prizes </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#themes`} smooth>
+                <Link to={`#themes`} smooth="true">
                   <span className="links">Themes </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#sponsors`} smooth>
+                <Link to={`#sponsors`} smooth="true">
                   <span className="links">Sponsors</span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#judges`} smooth>
+                <Link to={`#judges`} smooth="true">
                   <span className="links">Judges </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#testimonial`} smooth>
+                <Link to={`#testimonial`} smooth="true">
                   <span className="links">Team </span>{' '}
                 </Link>
               </li>
               <li>
-                <Link to={`#faq`} smooth>
+                <Link to={`#faq`} smooth="true">
                   <span className="links">FAQ</span>{' '}
                 </Link>
               </li>

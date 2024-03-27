@@ -17,7 +17,7 @@ const HeartButton = () => {
 //     </div>
 
 const increaseCount = () => {
-    fetch('http://localhost:3001/api/increment')
+    fetch('http://localhost:3000/api/increment')
       .then(response => response.json())
       .then(data => setCount(data.count))
       .catch(error => console.error('Error:', error));
