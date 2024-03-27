@@ -453,7 +453,7 @@ const frequentlyAskedQuestions = [
       {
         label: "What is a hackathon?",
         content:
-          'A hackathon is a 24 hour event where "hackers" all over the globe collaborate on creating a functioning software and hardware by the end of the event.',
+          'A hackathon is a 24 hour event where "hackers" all over the globe collaborate on creating a functioning software or hardware by the end of the event.',
       },
       {
         label: " Who can attend?",
@@ -462,7 +462,7 @@ const frequentlyAskedQuestions = [
       {
         label: "I am a first time hacker, what should I do?",
         content:
-          "No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathons in general.",
+          "No worries, we love to welcome first time hackers and start their hacking journey from our hackathon. We have some awesome workshops and events which will help you get started with hackathons in general.",
       },
       {
         label: "How does team formation works?",
@@ -479,7 +479,7 @@ const frequentlyAskedQuestions = [
       {
         label: "I have more questions?",
         content:
-          "Reach us directly at (innohacks@kiet.edu). We would happy to help you.",
+          "Reach us directly at (innohacks@kiet.edu). We would be happy to help you.",
       },
       {
         label: "Will there be a Registration Fee?",
@@ -488,7 +488,7 @@ const frequentlyAskedQuestions = [
       {
         label: "Will there be swags?",
         content:
-          "Yes! Participants will many chances to win InnoHacks 3.0 swags!.",
+          "Yes! Participants will have many chances to win InnoHacks 3.0 swags!.",
       },
     ],
   ],
