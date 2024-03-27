@@ -63,7 +63,7 @@ const TeamMembers = (props, index) => {
     <Row key={index} className="members">
       {props.map((s, i) => (
         <Col data-aos="fade-up" key={i} className="" sm={12} lg={4} md={4}>
-          <Member info={s} />
+          <Member info={s}/>
         </Col>
       ))}
     </Row>
@@ -74,7 +74,13 @@ const FrequentlyAsked = (props, index) => {
   return (
     <Row key={index} className="sf">
       {props.map((s, i) => (
-        <Col data-aos={`${i%2===0?"fade-right":"fade-left"}`} key={i} sm={12} lg={6} md={6}>
+        <Col
+          data-aos={`${i % 2 === 0 ? "fade-right" : "fade-left"}`}
+          key={i}
+          sm={12}
+          lg={6}
+          md={6}
+        >
           <Accordion panels={s} />
         </Col>
       ))}
@@ -83,9 +89,10 @@ const FrequentlyAsked = (props, index) => {
 };
 
 export default function HomePage() {
-  useEffect(()=>{
-    Aos.init({duration:400})
-  },[])
+  useEffect(() => {
+    Aos.init({ duration: 400 });
+  }, []);
+
   const [media, setMedia] = useState();
   UseMedia("min-width", 1000, setMedia);
 
@@ -94,7 +101,13 @@ export default function HomePage() {
       <div className="color_sectiom" id="home">
         <Container fluid>
           <Row className="Row info">
-            <Col data-aos="fade-right" className="info-div" sm={12} lg={7} md={7}>
+            <Col
+              data-aos="fade-right"
+              className="info-div"
+              sm={12}
+              lg={7}
+              md={7}
+            >
               <Myinfo />
             </Col>
             <Col className="contain" data-aos="fade-left">
@@ -264,7 +277,9 @@ export default function HomePage() {
                   "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/xr.gif"
                 }
               ></img>
-              <p className="more-title">Best Use of XR</p>
+              <p className="more-title" style={{ fontFamily: "repo-light" }}>
+                Best Use of XR
+              </p>
             </div>
             <div data-aos="fade-right" className="more-one">
               <img
@@ -273,7 +288,9 @@ export default function HomePage() {
                   "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/blockchain.gif"
                 }
               ></img>
-              <p className="more-title">Best Use of Blockchain</p>
+              <p className="more-title" style={{ fontFamily: "repo-light" }}>
+                Best Use of Blockchain
+              </p>
             </div>
             <div data-aos="fade-left" className="more-one">
               <img
@@ -282,7 +299,9 @@ export default function HomePage() {
                   "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/aiIOT.gif"
                 }
               ></img>
-              <p className="more-title">Best Use of AIoT</p>
+              <p className="more-title" style={{ fontFamily: "repo-light" }}>
+                Best Use of AIoT
+              </p>
             </div>
             <div data-aos="fade-right" className="more-one">
               <img
@@ -293,7 +312,12 @@ export default function HomePage() {
               ></img>
               <div>
                 <div>
-                  <p className="more-title">Most Socially impactful Hack</p>
+                  <p
+                    className="more-title"
+                    style={{ fontFamily: "repo-light" }}
+                  >
+                    Most Socially impactful Hack
+                  </p>
                 </div>
               </div>
             </div>
@@ -304,7 +328,9 @@ export default function HomePage() {
                   "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/girl.gif"
                 }
               ></img>
-              <p className="more-title">Best All Girls Team</p>
+              <p className="more-title" style={{ fontFamily: "repo-light" }}>
+                Best All Girls Team
+              </p>
             </div>
           </div>
         </Row>
@@ -446,7 +472,13 @@ export default function HomePage() {
 
         {/* Judges start */}
         <div id="judges">
-          <h1 className="title_community">Past Speakers and Judges</h1>
+          <h1
+            className="title_community"
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+          >
+            Past Speakers and Judges
+          </h1>
         </div>
         {TeamInfo.map(TeamMembers)}
         {/* Judges End */}
@@ -501,6 +533,17 @@ export default function HomePage() {
           <Map />
         </Row>
         {/* Map End */}
+
+        {/* Contact Us */}
+        <Row>
+          <div className="contact-us-container">
+            <h3 >Have more Query?</h3>
+            <a href="mailto:innogeeks@kiet.edu">
+            <button>Contact Us</button>
+            </a>
+          </div>
+        </Row>
+        {/* Contact Us end */}
 
         {/* Footer */}
       </Container>

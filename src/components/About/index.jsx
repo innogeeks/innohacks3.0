@@ -76,7 +76,7 @@ function CommunityPartner() {
           style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%" }}
         >
           <img src={iosc} className="iosc_logo" width="100%" alt="" />
-          <p>IOSC</p>
+          <p style={{fontFamily:"repo-bold", fontSize:"16px"}}>IOSC</p>
         </div>
         <div
           className="logo-community"
@@ -84,7 +84,7 @@ function CommunityPartner() {
           style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%" }}
         >
           <img src={gdsc} className="iosc_logo" width="100%" alt="" />
-          <p>GDSC-ABESEC</p>
+          <p style={{fontFamily:"repo-bold", fontSize:"16px"}}>GDSC-ABESEC</p>
         </div>
         <div
           className="logo-community"
@@ -92,7 +92,7 @@ function CommunityPartner() {
           style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%" }}
         >
           <img src={algos} className="iosc_logo" width="100%" alt="" />
-          <p>ALGOCS</p>
+          <p style={{fontFamily:"repo-bold", fontSize:"16px"}}>ALGOCS</p>
         </div>
       </div>
     </div>

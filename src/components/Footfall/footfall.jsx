@@ -21,7 +21,7 @@ const Footfall =()=>{
             <div className="col2">
                 <div className="f1">
                     <img src={Pen} alt="" style={{height:'auto', width:'15rem'}}/>
-                    <p style={{fontWeight:'900',fontSize:'3rem',padding:'0px'}}>2.5k+</p>
+                    <p style={{fontWeight:'900',fontSize:'3rem',padding:'0px'}}>3k+</p>
                     <p style={{fontWeight:'800',fontSize:'2rem', padding:'0px'}}>Registrations</p>
                 </div>
                 <div className="f1">

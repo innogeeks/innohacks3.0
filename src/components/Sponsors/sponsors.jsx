@@ -11,7 +11,6 @@ function SponsorsHead() {
     <h1
       data-aos="zoom-in"
       data-aos-anchor-placement="top-bottom"
-      data-aos-duaration="800"
       className="shead"
     >
       Our Sponsors & Partners
