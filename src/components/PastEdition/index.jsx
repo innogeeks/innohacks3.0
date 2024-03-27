@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Aos from "aos"
+import "aos/dist/aos.css"
 import "./style.scss";
 import one from "./assets/2.jpg";
 import two from "./assets/1.jpg";
@@ -17,6 +19,7 @@ function PastEdition() {
   };
 
   useEffect(() => {
+    Aos.init({duration:400})
     const intervalId = setInterval(() => {
       setMainImage(thumbnails[Math.floor(Math.random() * 6)]);
     }, 5000);
@@ -26,7 +29,15 @@ function PastEdition() {
 
   return (
     <div className="past-edition-container">
-      <h1 className="past-heading" style={{fontWeight:900, marginTop:"100px",marginBottom:"20px"}}>Past Edition</h1>
+      <h1
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duaration="800"
+        className="past-heading"
+        style={{ fontWeight: 900, marginTop: "100px", marginBottom: "20px" }}
+      >
+        Past Edition
+      </h1>
       <img src={mainImage} id="main" />
       <div id="thumbnails">
         {thumbnails.map((thumbnail, index) => (
