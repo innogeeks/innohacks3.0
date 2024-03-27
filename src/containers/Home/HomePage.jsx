@@ -136,7 +136,7 @@ export default function HomePage() {
           data-aos-duration="800"
           id="prizes"
           className="prize_heading"
-          style={{ fontFamily: "repo-bold" }}
+          style={{ fontFamily: "repo-bold", marginTop:"100px" }}
         >
           Prizes
         </h1>
@@ -244,7 +244,7 @@ export default function HomePage() {
           data-aos-duration="800"
           id="prizes"
           className="prize_heading"
-          style={{ fontFamily: "repo-bold" }}
+          style={{ fontFamily: "repo-bold",marginTop:"100px" }}
         >
         Track Prizes
         </h1>
@@ -316,7 +316,7 @@ export default function HomePage() {
         {/* Theme end */}
 
         {/* Schedule here */}
-        <Row style={{marginTop:"5vh"}}>
+        <Row style={{marginTop:"100px"}}>
     
           <Schedule  />
   
@@ -427,6 +427,7 @@ export default function HomePage() {
             </div>
             <div>
               <p className="more-title-sponsor">Silver Sponsor</p>
+              <p>To be declared soon...</p>
               <div className="more-title-sponsor-silver">
                 {silverSponsor.map((item, i) => (
                   <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
