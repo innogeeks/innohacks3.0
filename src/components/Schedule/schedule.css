@@ -384,6 +384,7 @@
   .image-container {
     display: flex; /* Use flexbox for positioning images */
     justify-content: center; /* Center images horizontally */
+    padding: 40px;
   }
   
   .mobile-image,
