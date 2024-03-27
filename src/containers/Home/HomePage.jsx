@@ -457,7 +457,7 @@ export default function HomePage() {
               <p className="more-title-sponsor">Silver Sponsor</p>
               <p>To be declared soon...</p>
               <div className="more-title-sponsor-silver">
-                {silverSponsor.map((item, i) => (
+                {silverSponsor.length!==1 && silverSponsor.map((item, i) => (
                   <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
                     <div className="sponsor-bg">
                       <img src={item.src} width={180} alt="" />
