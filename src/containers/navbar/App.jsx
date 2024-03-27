@@ -8,8 +8,6 @@ import hamLogo from './assets/ham.svg';
 import './styles.scss';
 import {MdxContent} from '../Mdx';
 import navLogo from "./assets/nav-logo.png"
-import Aos from "aos"
-import "aos/dist/aos.css"
 
 const NAVIGATION_OFFSET = 66;
 
@@ -59,8 +57,6 @@ const NAVBAR = ({}) => {
   };
 
   useEffect(() => {
-    Aos.init({duration:400})
-
     window.addEventListener('scroll', listenScrollEvent);
     return () => window.removeEventListener('scroll', listenScrollEvent);
   }, []);
@@ -68,7 +64,7 @@ const NAVBAR = ({}) => {
 
   return (
     <Router>
-      <nav data-aos="fade-down" className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`} >
+      <nav className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`} >
       
      
       <div className='logo-div'>
