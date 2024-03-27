@@ -505,8 +505,23 @@ margin-top: 15vh;
     font-size: 24px; /* Adjust the font size as needed */
     /* Add any other styles you need to make it visible and look good on smaller screens */
   }
+  .contact-us-container{
+    flex-direction: column;
+  }
 }
-
+.contact-us-container{
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.contact-us-container>h3{
+  font-family: "repo-bold";
+}
 
 /* Default styles for both divs */
 

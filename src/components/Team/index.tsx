@@ -20,13 +20,13 @@ const JoinTeam: React.FC<IJoinTeam> = ({placeholder, formLink, content}) => {
 };
 
 const Member = ({info}: {info: any}) => {
-  const {github, role, name, img, linkedin} = info;
+  const {github, role, Name, img, linkedin} = info;
   return (
     <div className="member">
       <img src={img} alt="Inno-Hack"></img>
       <div className="members-link">
-        <h3>{name}</h3>
-        <p className='namess'>{role}</p>
+        <h3 style={{fontFamily:"repo-bold"}}>{Name}</h3>
+        <p className='namess' style={{fontFamily:"repo-light", fontSize:"14px"}}>{role}</p>
         {/* <a href={linkedin}>
           <i className="fab fa-2x fa-linkedin"></i>
         </a> */}
