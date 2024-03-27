@@ -380,6 +380,9 @@
       .main-timeline .timeline:nth-child(even) .timeline-year{
           right: 9%;
       }
+      .image-container {
+        padding: 20px;
+      }
   } 
   .image-container {
     display: flex; /* Use flexbox for positioning images */
@@ -398,6 +401,7 @@
   @media only screen and (max-width: 767px) {
     .mobile-image {
       display: block; /* Display the mobile image */
+      margin: 10px;
     }
   }
   

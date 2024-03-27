@@ -452,10 +452,10 @@ h1 {
   background-size: 100%;
   background-clip: text;
   margin-top: 10%;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  -moz-text-fill-color: transparent; */
 }
 
 .more-title-sponsor-silver {
