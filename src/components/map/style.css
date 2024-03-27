@@ -4,12 +4,8 @@
 }
 
 .kiet-map{
-    width: 400px;
+    width: 800px;
     height: 400px;
+    margin: 20px;
 }
 
-@media (max-width:400px) {
-    .kiet-map{
-        width: 90vw;
-    }
-}

@@ -14,7 +14,7 @@ function SponsorsHead() {
       data-aos-duaration="800"
       className="shead"
     >
-      Past Sponsors & Partners
+      Our Sponsors & Partners
     </h1>
   );
 }

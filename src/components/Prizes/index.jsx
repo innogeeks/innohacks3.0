@@ -8,7 +8,7 @@ function PrizeHeading(props) {
     Aos.init({duration:400})
   },[])
   return (
-    <div data-aos="fade-up" data-aos-duaration="800"  className="PrizeHeading">
+    <div data-aos="fade-up" data-aos-duaration="800"  className="PrizeHeading" id="prize_">
       <h1>{props.type}</h1>
     </div>
   );
