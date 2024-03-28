@@ -1,0 +1,46 @@
+#hitCounter {
+  background-color: #000;
+  padding: 4px 6px;     
+  width: 100px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  overflow: hidden;
+}
+
+#hitCounter:hover {
+  background-color: aliceblue;
+  color: red;
+  animation: fill 1s forwards, increaseSize 0.1s forwards;
+}
+#hitCounter:active{
+  animation:  decreaseSize 0.1s forwards;
+}
+@keyframes fill {
+  0% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+@keyframes increaseSize {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes decreaseSize {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -8,8 +8,8 @@ import hamLogo from './assets/ham.svg';
 import './styles.scss';
 import {MdxContent} from '../Mdx';
 import navLogo from "./assets/nav-logo.png"
-import Aos from "aos"
-import "aos/dist/aos.css"
+import Counter from '../../components/Counter/Counter'
+
 
 const NAVIGATION_OFFSET = 66;
 
@@ -26,7 +26,7 @@ const Wrapper = styled.div`
     top: ${props => (props.toggle ? '-1000px' : '0px')};
     transition: top 1s;
     .nav-content {
-      height: 35%;
+      height: 340px;
       background-color: rgba(50, 13, 136);
       ul {
         margin-left: 0; // Remove margin-left in mobile view
@@ -59,8 +59,6 @@ const NAVBAR = ({}) => {
   };
 
   useEffect(() => {
-    Aos.init({duration:400})
-
     window.addEventListener('scroll', listenScrollEvent);
     return () => window.removeEventListener('scroll', listenScrollEvent);
   }, []);
@@ -68,7 +66,7 @@ const NAVBAR = ({}) => {
 
   return (
     <Router>
-      <nav data-aos="fade-down" className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`} >
+      <nav className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`} >
       
      
       <div className='logo-div'>
@@ -119,6 +117,8 @@ const NAVBAR = ({}) => {
                   <span className="links">Guidelines</span>{' '}
                 </a>
               </li>
+              {/* LIKE COUNTER */}
+              <li><Counter/></li>
               <img
                 className="s-close"
                 onClick={() => setToggle(true)}

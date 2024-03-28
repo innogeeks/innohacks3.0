@@ -380,28 +380,40 @@
       .main-timeline .timeline:nth-child(even) .timeline-year{
           right: 9%;
       }
+      .image-container {
+        padding: 20px;
+      }
   } 
   .image-container {
     display: flex; /* Use flexbox for positioning images */
     justify-content: center; /* Center images horizontally */
+    padding: 20px;
   }
   
-  .mobile-image,
-  .laptop-image {
+  .mobile-image {
     display: none; /* Hide all images by default */
-    max-width: 100%; /* Make images responsive */
+    max-width: 90%; /* Make images responsive */
+    /* width: 90%; */
     height: auto; /* Maintain aspect ratio */
+  }
+
+  .laptop-image{
+    display: none; /* Hide all images by default */
+    max-width: 90%; /* Make images responsive */
+    width: 50%;
+    height: auto;
   }
   
   /* Styles for mobile view (max-width: 767px) */
   @media only screen and (max-width: 767px) {
     .mobile-image {
       display: block; /* Display the mobile image */
+      margin: 10px;
     }
   }
   
   /* Styles for laptop view (min-width: 768px) */
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 767px) {
     .laptop-image {
       display: block; /* Display the laptop image */
     }

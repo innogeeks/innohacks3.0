@@ -342,21 +342,21 @@ const TeamInfo = [
     //Array 1
     {
       Name: "Love Babbar",
-      role: "Love Babbar",
+      role: "Founder-CodeHelp | Youtuber | Ex-Amazon, Microsoft",
       github: "",
       linkedin: "https://www.linkedin.com/in/love-babbar-38ab2887/",
       img: babbar,
     },
     {
       Name: "Striver",
-      role: "Striver",
+      role: "SWE-III @ Google | Youtuber |Ex-Media.net, Amazon ",
       github: "",
       linkedin: "https://www.linkedin.com/in/rajstriver/",
       img: striver,
     },
     {
       Name: "Akshay Saini",
-      role: "Akshay Saini",
+      role: "Founder-NamasteDev | Ex- Uber, PayTM | YouTuber",
       github: "",
       linkedin: "https://www.linkedin.com/in/akshaymarch7/",
       img: akshay,
@@ -366,35 +366,35 @@ const TeamInfo = [
     //Array 2
     {
       Name: "Sandeep Jain",
-      role: "Sandeep Jain",
+      role: "Founder & CEO at GeeksforGeeks",
       github: "",
       linkedin: "https://www.linkedin.com/in/sandeep-jain-/",
       img: sandeep,
     },
     {
       Name: "Arsh Goyal",
-      role: "Arsh Goyal",
+      role: "Samsung | Ex- ISRO | YouTuber",
       github: "",
       linkedin: "https://www.linkedin.com/in/arshgoyal/",
       img: arsh,
     },
     {
       Name: "Kshitiz Miglani",
-      role: "Kshitiz Miglani",
+      role: "Founder-Devsnest | Ex- Amazon",
       github: "",
       linkedin: "https://www.linkedin.com/in/kshitizmiglani/",
       img: kshitiz,
     },
     {
       Name: "Kushal Vijay",
-      role: "Kushal Vijay",
+      role: "Software Engineer 2 @Microsoft | Youtuber",
       github: "",
       linkedin: "https://www.linkedin.com/in/kushalvijay/",
       img: kushal,
     },
     {
       Name: "Khushboo Verma",
-      role: "Khushboo Verma",
+      role: "Software Engineer-Appwrite | Ex-Microsoft, Adobe",
       github: "",
       linkedin: "https://www.linkedin.com/in/verma-khushboo/",
       img: khushboo,
@@ -453,16 +453,16 @@ const frequentlyAskedQuestions = [
       {
         label: "What is a hackathon?",
         content:
-          'A hackathon is a 24 hour event where "hackers" all over the globe collaborate on creating a functioning software and hardware by the end of the event.',
+          'A hackathon is a 24 hour event where "hackers" all over the globe collaborate on creating a functioning software or hardware by the end of the event.',
       },
       {
         label: " Who can attend?",
-        content: "InnoHacks is open to all undergraduates from all over India.",
+        content: "InnoHacks is open to all B.Tech. students from all over India.",
       },
       {
         label: "I am a first time hacker, what should I do?",
         content:
-          "No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathons in general.",
+          "No worries, we love to welcome first time hackers and start their hacking journey from our hackathon. We have some awesome workshops and events which will help you get started with hackathons in general.",
       },
       {
         label: "How does team formation works?",
@@ -477,18 +477,18 @@ const frequentlyAskedQuestions = [
           "All you need to do is fill our form mentioned above and join our Discord channel, we will guide you through everything there",
       },
       {
-        label: "I have more questions?",
+        label: "I would like to ask additional questions.",
         content:
-          "Reach us directly at (innohacks@kiet.edu). We would happy to help you.",
+          "Reach us directly at (innohacks@kiet.edu). We would be happy to help you.",
       },
       {
         label: "Will there be a Registration Fee?",
-        content: "No!",
+        content: "No, there will be no registration cost for innohacks3.0.",
       },
       {
         label: "Will there be swags?",
         content:
-          "Yes! Participants will many chances to win InnoHacks 3.0 swags!.",
+          "Yes! Participants will have many chances to win InnoHacks 3.0 swags!.",
       },
     ],
   ],

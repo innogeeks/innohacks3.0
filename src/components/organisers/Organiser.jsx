@@ -68,7 +68,7 @@ const data =[
     name: 'Arjit Goyal',
     img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/Arjit+Goyal.jpg',
     review: 'Core Lead',
-    link:['https://linktr.ee/arjitgoyal']
+    link:['https://linktr.ee/iamarjitgoyal']
   },
   {
     name: 'Jyoti Ojha',
