@@ -38,14 +38,14 @@ const TOP_SECTION = {
     "Unleash your creativity for 24-Hour! Join us on April 28th for a nationwide hackathon alongside hundreds of other student innovators. Build, learn, and connect - are you in?",
   IMG_SRC:
     "https://s3.ap-south-1.amazonaws.com/innohacks3.0/Innohacks+3.0+Logo.png",
-  DISCORD_LINK: "",
+  DISCORD_LINK: "https://discord.gg/8c9TrtjqNE",
   JUDGES_FORM_LINK: "#",
   HACKERS_REGISTRATION_FORM_LINK: "#",
 };
 
 const SOCIALS = {
   instagram: "https://www.instagram.com/innogeeks.kiet/",
-  discord: "#",
+  discord: "https://discord.gg/8c9TrtjqNE",
   linkedin: "https://www.linkedin.com/company/innogeeks?originalSubdomain=in",
   twitter: "https://twitter.com/InnogeeksKiet",
   devpost: "#",
@@ -457,7 +457,7 @@ const frequentlyAskedQuestions = [
       },
       {
         label: " Who can attend?",
-        content: "InnoHacks is open to all undergraduates from all over India.",
+        content: "InnoHacks is open to all B.Tech undergraduates from all over India.",
       },
       {
         label: "I am a first time hacker, what should I do?",
@@ -477,13 +477,13 @@ const frequentlyAskedQuestions = [
           "All you need to do is fill our form mentioned above and join our Discord channel, we will guide you through everything there",
       },
       {
-        label: "I have more questions?",
+        label: "I have more questions, where can i ask them ?",
         content:
           "Reach us directly at (innohacks@kiet.edu). We would be happy to help you.",
       },
       {
         label: "Will there be a Registration Fee?",
-        content: "No!",
+        content: "No! It's Completely free!.",
       },
       {
         label: "Will there be swags?",
