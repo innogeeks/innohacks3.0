@@ -457,7 +457,7 @@ const frequentlyAskedQuestions = [
       },
       {
         label: " Who can attend?",
-        content: "InnoHacks is open to all undergraduates from all over India.",
+        content: "InnoHacks is open to all B.Tech. students from all over India.",
       },
       {
         label: "I am a first time hacker, what should I do?",
@@ -477,13 +477,13 @@ const frequentlyAskedQuestions = [
           "All you need to do is fill our form mentioned above and join our Discord channel, we will guide you through everything there",
       },
       {
-        label: "I have more questions?",
+        label: "I would like to ask additional questions.",
         content:
           "Reach us directly at (innohacks@kiet.edu). We would be happy to help you.",
       },
       {
         label: "Will there be a Registration Fee?",
-        content: "No!",
+        content: "No, there will be no registration cost for innohacks3.0.",
       },
       {
         label: "Will there be swags?",

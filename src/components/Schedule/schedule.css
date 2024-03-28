@@ -390,11 +390,18 @@
     padding: 20px;
   }
   
-  .mobile-image,
-  .laptop-image {
+  .mobile-image {
     display: none; /* Hide all images by default */
-    max-width: 100%; /* Make images responsive */
+    max-width: 90%; /* Make images responsive */
+    /* width: 90%; */
     height: auto; /* Maintain aspect ratio */
+  }
+
+  .laptop-image{
+    display: none; /* Hide all images by default */
+    max-width: 90%; /* Make images responsive */
+    width: 50%;
+    height: auto;
   }
   
   /* Styles for mobile view (max-width: 767px) */
