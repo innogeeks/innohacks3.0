@@ -10,6 +10,7 @@ import {MdxContent} from '../Mdx';
 import navLogo from "./assets/nav-logo.png"
 import Aos from "aos"
 import "aos/dist/aos.css"
+import Counter from '../../components/Counter/Counter'
 
 const NAVIGATION_OFFSET = 66;
 
@@ -119,6 +120,8 @@ const NAVBAR = ({}) => {
                   <span className="links">Guidelines</span>{' '}
                 </a>
               </li>
+              {/* LIKE COUNTER */}
+              <li><Counter/></li>
               <img
                 className="s-close"
                 onClick={() => setToggle(true)}
