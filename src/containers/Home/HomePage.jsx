@@ -102,7 +102,6 @@ export default function HomePage() {
         <Container fluid>
           <Row className="Row info">
             <Col
-              data-aos="fade-right"
               className="info-div"
               sm={12}
               lg={7}
@@ -110,7 +109,7 @@ export default function HomePage() {
             >
               <Myinfo />
             </Col>
-            <Col className="contain" data-aos="fade-left">
+            <Col className="contain">
               <img
                 className="imagee"
                 src={
