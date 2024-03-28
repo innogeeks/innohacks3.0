@@ -73,7 +73,7 @@ function CommunityPartner() {
         <div
           className="logo-community"
           data-aos="fade-up"
-          style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%" }}
+          style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%",backgroundColor:"white",borderRadius:"20px",padding:"10px",boxShadow:"10px 10px 60px #49494960 ,inset -10px -10px 40px #ffffff5d" }}
         >
           <img src={iosc} className="iosc_logo" width="100%" alt="" />
           <p style={{fontFamily:"repo-bold", fontSize:"16px"}}>IOSC</p>
@@ -81,7 +81,7 @@ function CommunityPartner() {
         <div
           className="logo-community"
           data-aos="fade-up"
-          style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%" }}
+          style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%",backgroundColor:"white",borderRadius:"20px",padding:"10px",boxShadow:"10px 10px 60px #49494960 ,inset -10px -10px 40px #ffffff5d"  }}
         >
           <img src={gdsc} className="iosc_logo" width="100%" alt="" />
           <p style={{fontFamily:"repo-bold", fontSize:"16px"}}>GDSC-ABESEC</p>
@@ -89,7 +89,7 @@ function CommunityPartner() {
         <div
           className="logo-community"
           data-aos="fade-up"
-          style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%" }}
+          style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%",backgroundColor:"white",borderRadius:"20px",padding:"10px",boxShadow:"10px 10px 60px #49494960 ,inset -10px -10px 40px #ffffff5d" }}
         >
           <img src={algos} className="iosc_logo" width="100%" alt="" />
           <p style={{fontFamily:"repo-bold", fontSize:"16px"}}>ALGOCS</p>

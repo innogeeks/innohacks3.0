@@ -359,7 +359,7 @@ export default function HomePage() {
           <SponsorUS />
           <div className="sponsor-grid">
             <div>
-              <p className="more-title-sponsor">Title sponsor</p>
+              <p className="more-title-sponsor" style={{color:"tomato"}}>Title sponsor</p>
               {titleSponsor.map((item, i) => (
                 <Col
                   data-aos="fade-left"
@@ -378,7 +378,7 @@ export default function HomePage() {
               ))}
             </div>
             <div>
-              <p className="more-title-sponsor">Education Sponsor</p>
+              <p className="more-title-sponsor" style={{color:"#F7418F"}}>Education Sponsor</p>
               {educationSponsor.map((item, i) => (
                 <Col
                   data-aos="fade-left"
@@ -397,7 +397,7 @@ export default function HomePage() {
               ))}
             </div>
             <div>
-              <p className="more-title-sponsor">Certificate Sponsor</p>
+              <p className="more-title-sponsor" style={{color:"#535C91"}}>Certificate Sponsor</p>
               {certificateSponsor.map((item, i) => (
                 <Col
                   data-aos="fade-left"
@@ -416,7 +416,7 @@ export default function HomePage() {
               ))}
             </div>
             <div>
-              <p className="more-title-sponsor">Platinum Sponsor</p>
+              <p className="more-title-sponsor" style={{color:"#E5E4E2"}}>Platinum Sponsor</p>
               {platinumSponsor.map((item, i) => (
                 <Col
                   data-aos="fade-left"
@@ -435,7 +435,7 @@ export default function HomePage() {
               ))}
             </div>
             <div>
-              <p className="more-title-sponsor">Gold Sponsor</p>
+              <p className="more-title-sponsor" style={{color:"gold"}}>Gold Sponsor</p>
               {goldSponsor.map((item, i) => (
                 <Col
                   data-aos="fade-left"
@@ -454,10 +454,10 @@ export default function HomePage() {
               ))}
             </div>
             <div>
-              <p className="more-title-sponsor">Silver Sponsor</p>
+              <p className="more-title-sponsor" style={{color:"#C0C0C0"}}>Silver Sponsor</p>
               <p>To be declared soon...</p>
               <div className="more-title-sponsor-silver">
-                {silverSponsor.map((item, i) => (
+                {silverSponsor.length!==1 && silverSponsor.map((item, i) => (
                   <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
                     <div className="sponsor-bg">
                       <img src={item.src} width={180} alt="" />
