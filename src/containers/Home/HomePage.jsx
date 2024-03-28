@@ -1,5 +1,5 @@
 import { UseMedia } from "hooks/useMedia";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -36,9 +36,12 @@ import {
   certificateSponsor,
   TeamInfo,
 } from "../../Module/General";
-import PastWinner from "components/pastWinners/index.jsx";
+// import PastWinner from "components/pastWinners/index.jsx";
 import Map from "components/map/index.jsx";
 import Organiser from "components/organisers/Organiser.jsx";
+import PastEdition from "components/PastEdition";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const PrizeGroup = (props, index) => {
   return (
@@ -53,11 +56,14 @@ const PrizeGroup = (props, index) => {
 };
 
 const TeamMembers = (props, index) => {
+  useEffect(() => {
+    Aos.init({ duration: 400 });
+  }, []);
   return (
     <Row key={index} className="members">
       {props.map((s, i) => (
-        <Col key={i} className="" sm={12} lg={4} md={4}>
-          <Member info={s} />
+        <Col data-aos="fade-up" key={i} className="" sm={12} lg={4} md={4}>
+          <Member info={s}/>
         </Col>
       ))}
     </Row>
@@ -68,7 +74,13 @@ const FrequentlyAsked = (props, index) => {
   return (
     <Row key={index} className="sf">
       {props.map((s, i) => (
-        <Col key={i} sm={12} lg={6} md={6}>
+        <Col
+          data-aos={`${i % 2 === 0 ? "fade-right" : "fade-left"}`}
+          key={i}
+          sm={12}
+          lg={6}
+          md={6}
+        >
           <Accordion panels={s} />
         </Col>
       ))}
@@ -77,6 +89,10 @@ const FrequentlyAsked = (props, index) => {
 };
 
 export default function HomePage() {
+  useEffect(() => {
+    Aos.init({ duration: 400 });
+  }, []);
+
   const [media, setMedia] = useState();
   UseMedia("min-width", 1000, setMedia);
 
@@ -85,10 +101,16 @@ export default function HomePage() {
       <div className="color_sectiom" id="home">
         <Container fluid>
           <Row className="Row info">
-            <Col className="info-div" sm={12} lg={7} md={7}>
+            <Col
+              data-aos="fade-right"
+              className="info-div"
+              sm={12}
+              lg={7}
+              md={7}
+            >
               <Myinfo />
             </Col>
-            <Col className="contain">
+            <Col className="contain" data-aos="fade-left">
               <img
                 className="imagee"
                 src={
@@ -106,7 +128,7 @@ export default function HomePage() {
         </Container>
       </div>
       <Container fluid>
-        <Row className=" logoSection" >
+        <Row className=" logoSection">
           <Col className="info-div">
             <LogoSectionAbout />
           </Col>
@@ -115,14 +137,14 @@ export default function HomePage() {
           </Col>
           <Col></Col>
         </Row>
-        <Row className="mediaInfo" >
+        <Row className="mediaInfo">
           <Col className="" sm={12} lg={12} md={12}>
             <h1
               data-aos="zoom-in"
               data-aos-duration="800"
               id="prizes"
               className="prize_heading"
-              style={{ fontFamily: "repo-bold", marginBottom: "10rem"  }}
+              style={{ fontFamily: "repo-bold", marginBottom: "10rem" }}
             >
               Past Statistics
             </h1>
@@ -135,7 +157,7 @@ export default function HomePage() {
           data-aos-duration="800"
           id="prizes"
           className="prize_heading"
-          style={{ fontFamily: "repo-bold" }}
+          style={{ fontFamily: "repo-bold", marginTop: "100px" }}
         >
           Prizes
         </h1>
@@ -239,16 +261,15 @@ export default function HomePage() {
             </div>
           </div>
           <h1
-          data-aos="zoom-in"
-          data-aos-duration="800"
-          id="prizes"
-          className="prize_heading"
-          style={{ fontFamily: "repo-bold" }}
-        >
-        Track Prizes
-        </h1>
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            id="prizes"
+            className="prize_heading"
+            style={{ fontFamily: "repo-bold", marginTop: "100px" }}
+          >
+            Track Prizes
+          </h1>
           <div className="more_prizes">
-            
             <div data-aos="fade-left" className="more-one">
               <img
                 className="gif_prize "
@@ -256,7 +277,9 @@ export default function HomePage() {
                   "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/xr.gif"
                 }
               ></img>
-              <p className="more-title">Best Use of XR</p>
+              <p className="more-title" style={{ fontFamily: "repo-light" }}>
+                Best Use of XR
+              </p>
             </div>
             <div data-aos="fade-right" className="more-one">
               <img
@@ -265,7 +288,9 @@ export default function HomePage() {
                   "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/blockchain.gif"
                 }
               ></img>
-              <p className="more-title">Best Use of Blockchain</p>
+              <p className="more-title" style={{ fontFamily: "repo-light" }}>
+                Best Use of Blockchain
+              </p>
             </div>
             <div data-aos="fade-left" className="more-one">
               <img
@@ -274,7 +299,9 @@ export default function HomePage() {
                   "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/aiIOT.gif"
                 }
               ></img>
-              <p className="more-title">Best Use of AIoT</p>
+              <p className="more-title" style={{ fontFamily: "repo-light" }}>
+                Best Use of AIoT
+              </p>
             </div>
             <div data-aos="fade-right" className="more-one">
               <img
@@ -285,7 +312,12 @@ export default function HomePage() {
               ></img>
               <div>
                 <div>
-                  <p className="more-title">Most Socially impactful Hack</p>
+                  <p
+                    className="more-title"
+                    style={{ fontFamily: "repo-light" }}
+                  >
+                    Most Socially impactful Hack
+                  </p>
                 </div>
               </div>
             </div>
@@ -296,7 +328,9 @@ export default function HomePage() {
                   "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/girl.gif"
                 }
               ></img>
-              <p className="more-title">Best All Girls Team</p>
+              <p className="more-title" style={{ fontFamily: "repo-light" }}>
+                Best All Girls Team
+              </p>
             </div>
           </div>
         </Row>
@@ -304,7 +338,6 @@ export default function HomePage() {
 
         {/* themes */}
         <Row className="prizesection" id="themes">
-          
           <PrizeHeading
             data-aos="zoom-in"
             data-aos-duration="800"
@@ -315,11 +348,8 @@ export default function HomePage() {
         {/* Theme end */}
 
         {/* Schedule here */}
-        <Row style={{marginTop:"5vh"}}>
-    
-          <Schedule  />
-  
-
+        <Row style={{ marginTop: "100px" }}>
+          <Schedule />
         </Row>
         {/* Schedule section ends here */}
 
@@ -329,8 +359,7 @@ export default function HomePage() {
           <SponsorUS />
           <div className="sponsor-grid">
             <div>
-
-              <p className="more-title-sponsor">Title sponsor</p>
+              <p className="more-title-sponsor" style={{color:"tomato"}}>Title sponsor</p>
               {titleSponsor.map((item, i) => (
                 <Col
                   data-aos="fade-left"
@@ -343,13 +372,13 @@ export default function HomePage() {
                   md={6}
                 >
                   <div className="sponsor-bg">
-                    <img src={item.src} width={200}  />
+                    <img src={item.src} width={200} />
                   </div>
                 </Col>
               ))}
             </div>
             <div>
-              <p className="more-title-sponsor">Education Sponsor</p>
+              <p className="more-title-sponsor" style={{color:"#F7418F"}}>Education Sponsor</p>
               {educationSponsor.map((item, i) => (
                 <Col
                   data-aos="fade-left"
@@ -368,7 +397,7 @@ export default function HomePage() {
               ))}
             </div>
             <div>
-              <p className="more-title-sponsor">Certificate Sponsor</p>
+              <p className="more-title-sponsor" style={{color:"#535C91"}}>Certificate Sponsor</p>
               {certificateSponsor.map((item, i) => (
                 <Col
                   data-aos="fade-left"
@@ -387,7 +416,7 @@ export default function HomePage() {
               ))}
             </div>
             <div>
-              <p className="more-title-sponsor">Platinum Sponsor</p>
+              <p className="more-title-sponsor" style={{color:"#E5E4E2"}}>Platinum Sponsor</p>
               {platinumSponsor.map((item, i) => (
                 <Col
                   data-aos="fade-left"
@@ -406,7 +435,7 @@ export default function HomePage() {
               ))}
             </div>
             <div>
-              <p className="more-title-sponsor">Gold Sponsor</p>
+              <p className="more-title-sponsor" style={{color:"gold"}}>Gold Sponsor</p>
               {goldSponsor.map((item, i) => (
                 <Col
                   data-aos="fade-left"
@@ -425,9 +454,10 @@ export default function HomePage() {
               ))}
             </div>
             <div>
-              <p className="more-title-sponsor">Silver Sponsor</p>
+              <p className="more-title-sponsor" style={{color:"#C0C0C0"}}>Silver Sponsor</p>
+              <p>To be declared soon...</p>
               <div className="more-title-sponsor-silver">
-                {silverSponsor.map((item, i) => (
+                {silverSponsor.length!==1 && silverSponsor.map((item, i) => (
                   <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
                     <div className="sponsor-bg">
                       <img src={item.src} width={180} alt="" />
@@ -442,7 +472,13 @@ export default function HomePage() {
 
         {/* Judges start */}
         <div id="judges">
-          <h1 className="title_community">Past Speakers and Judges</h1>
+          <h1
+            className="title_community"
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+          >
+            Past Speakers and Judges
+          </h1>
         </div>
         {TeamInfo.map(TeamMembers)}
         {/* Judges End */}
@@ -453,10 +489,16 @@ export default function HomePage() {
         </Row>
         {/* Cumminity partners End */}
 
-        {/* past winners */}
+        {/* Past Edition start*/}
         <Row>
-          <PastWinner />
+          <PastEdition />
         </Row>
+        {/* Past Edition end */}
+
+        {/* past winners */}
+        {/* <Row>
+          <PastWinner />
+        </Row> */}
         {/* past Winners End */}
 
         {/* organizing Team */}
@@ -467,17 +509,41 @@ export default function HomePage() {
 
         {/* ********Frequently asked Questions here ***** */}
         <div className="Myfaqs" id="faq">
-          <h1 className="my-faq-head">FAQs</h1>
+          <h1
+            className="my-faq-head"
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duaration="800"
+          >
+            FAQs
+          </h1>
           {frequentlyAskedQuestions.map(FrequentlyAsked)}
         </div>
         {/* FAQ Ends */}
 
         {/* Map */}
         <Row className="homepage-map PrizeHeading">
-          <h1>How to Reach ?</h1>
+          <h1
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duaration="800"
+          >
+            How to Reach ?
+          </h1>
           <Map />
         </Row>
         {/* Map End */}
+
+        {/* Contact Us */}
+        <Row>
+          <div className="contact-us-container">
+            <h3 >Have more Query?</h3>
+            <a href="mailto:innogeeks@kiet.edu">
+            <button>Contact Us</button>
+            </a>
+          </div>
+        </Row>
+        {/* Contact Us end */}
 
         {/* Footer */}
       </Container>

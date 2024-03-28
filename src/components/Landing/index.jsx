@@ -55,7 +55,7 @@ const Myinfo = () => {
       <div className="buttom-group" style={{display:"flex", flexDirection:"column"}}>
        
        <div
-            class="apply-button"
+            className="apply-button"
             data-hackathon-slug="innohacks-3"
             data-button-theme="light"
             style={{ height: "44px", width: "312px" }}
@@ -63,7 +63,7 @@ const Myinfo = () => {
 <br />
           <div className="registerbtn">
             <a href="https://forms.gle/LabTKRJEHvyZuXd78" target="_blank">
-              <Btn class="register" type="Register" overlay="Now" />
+              <Btn className="register" type="Register" overlay="Now" />
             </a>
           </div>
        

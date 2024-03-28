@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "./sponsors.scss";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import arrow from "./assets/arrow.png"
 
 function SponsorsHead() {
   useEffect(() => {
@@ -11,10 +12,9 @@ function SponsorsHead() {
     <h1
       data-aos="zoom-in"
       data-aos-anchor-placement="top-bottom"
-      data-aos-duaration="800"
       className="shead"
     >
-      Past Sponsors & Partners
+      Our Sponsors & Partners
     </h1>
   );
 }
@@ -37,7 +37,9 @@ function Sponsor(props) {
 function SponsorUS() {
   return (
     <div className="joinT sponsorUS">
-      <h3>Interested in Sponsoring Us</h3>
+      <h3 style={{color:"#754224"}}>Interested in Sponsoring Us</h3>
+      <div style={{position:"relative"}}>
+      <img src={arrow} width={100} alt="" style={{position:"absolute", left:"-100px",top:"-60px"}} />
       <button className="Sponsor-button">
         <a
           className="sponsor-link"
@@ -48,6 +50,7 @@ function SponsorUS() {
           <span className="sponsor-link">Click here</span>
         </a>
       </button>
+      </div>
     </div>
   );
 }
