@@ -213,6 +213,7 @@ button{
   width: 100%;
   margin-top: 8%;
   /* overflow: auto; */
+  z-index: 999;
 }
 
 .register {
@@ -246,6 +247,7 @@ p {
   text-align: left;
   margin-left: 10vh;
   margin-top: -5vh;
+  z-index: -100;
 }
 
 .Myinfo p {
@@ -490,4 +492,8 @@ button:hover .overlay {
 .anime-btn:hover .play {
   transform: translateX(200%);
   transition-delay: 100ms;
+}
+
+.discord{
+  z-index: 99;
 }
