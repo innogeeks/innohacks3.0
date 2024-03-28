@@ -8,6 +8,8 @@ import hamLogo from './assets/ham.svg';
 import './styles.scss';
 import {MdxContent} from '../Mdx';
 import navLogo from "./assets/nav-logo.png"
+import Counter from '../../components/Counter/Counter'
+
 
 const NAVIGATION_OFFSET = 66;
 
@@ -115,6 +117,8 @@ const NAVBAR = ({}) => {
                   <span className="links">Guidelines</span>{' '}
                 </a>
               </li>
+              {/* LIKE COUNTER */}
+              <li><Counter/></li>
               <img
                 className="s-close"
                 onClick={() => setToggle(true)}
