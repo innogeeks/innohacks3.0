@@ -387,7 +387,7 @@
   .image-container {
     display: flex; /* Use flexbox for positioning images */
     justify-content: center; /* Center images horizontally */
-    padding: 40px;
+    padding: 20px;
   }
   
   .mobile-image,
@@ -406,7 +406,7 @@
   }
   
   /* Styles for laptop view (min-width: 768px) */
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 767px) {
     .laptop-image {
       display: block; /* Display the laptop image */
     }
