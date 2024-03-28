@@ -1,11 +1,15 @@
 import { TOP_SECTION } from "../../Module/General";
 import MytypedComponent from "../Typed/index.js";
+import { BiLogoDiscordAlt } from "react-icons/bi";
 import "./style.css";
 import React from "react";
 const Btn = (props) => {
   return (
     <button className={props.class}>
       <i className={props.ico}></i>
+      <span style={{margin:"10px"}}>
+      <BiLogoDiscordAlt fontSize={32} />
+      </span>
       {props.type}
       <div className="overlay">
         <div className="overlay-text">{props.overlay}</div>
@@ -62,8 +66,9 @@ const Myinfo = () => {
           ></div>
 <br />
           <div className="registerbtn">
-            <a href="https://forms.gle/LabTKRJEHvyZuXd78" target="_blank">
-              <Btn className="register" type="Register" overlay="Now" />
+            <a href="https://discord.gg/8c9TrtjqNE" target="_blank">
+              {/* <BiLogoDiscordAlt fontSize={30}/> */}
+              <Btn className="discord"  type="Discord" overlay="Join Now" />
             </a>
           </div>
        
