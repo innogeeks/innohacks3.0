@@ -115,13 +115,28 @@ h1 {
   font-style: italic;
   font-size: 3rem;
   font-weight: 400;
-  color: #420457;
+  /* color: #420457; */
+  color: transparent;
+  background: linear-gradient(to right, #17e2d1, #06697b);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .prizee {
   font-style: oblique;
   font-size: 3rem;
-  color: #420457;
+  /* color: #420457; */
+  color: transparent; 
+  background: linear-gradient(to right, #17e2d1, #06697b);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.money{
+  color: transparent;
+  background: linear-gradient(to right, #17e2d1, #06697b);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .Prizes {
@@ -188,6 +203,7 @@ h1 {
 
   .imagee {
     display: none;
+    z-index: -100;
   }
 
   .reverse {
@@ -256,6 +272,7 @@ h1 {
   transition: all;
   margin-top: 5rem;
   margin-bottom: 5rem;
+  z-index: 10;
 }
 
 .imagee {

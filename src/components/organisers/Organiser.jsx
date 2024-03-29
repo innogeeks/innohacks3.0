@@ -77,6 +77,12 @@ const data =[
     link:['https://linktr.ee/jyoti0802']
   },
   {
+    name: 'Suraj Shukla',
+    img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/suraj.jpeg',
+    review: 'Core Lead',
+    link:['https://www.linkedin.com/in/098suraj/']
+  },
+  {
     name: 'Abhinav Saxena',
     img: 'https://innogeeks-images.s3.ap-south-1.amazonaws.com/IMG_7524.JPG',
     review: 'Core Lead',
