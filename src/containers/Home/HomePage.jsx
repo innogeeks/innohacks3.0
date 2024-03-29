@@ -200,7 +200,7 @@ export default function HomePage() {
                     alt=""
                   />
                   <div className="text_prizes">
-                    <p style={{ textShadow: "1px 1px 4px #702963" }}>₹ 30K</p>
+                    <p style={{ textShadow: "1px 1px 4px #06697b" }} className="money">₹ 30K</p>
                     <p>+</p>
                     <p>
                       Innohacks <br />
@@ -223,8 +223,9 @@ export default function HomePage() {
                     <p
                       style={{
                         fontSize: "35px",
-                        textShadow: "1px 1px 4px #702963",
+                        textShadow: "1px 1px 4px #06697b",
                       }}
+                      className="money"
                     >
                       ₹ 50k
                     </p>
@@ -248,7 +249,7 @@ export default function HomePage() {
                   alt=""
                 />
                 <div className="text_prizes">
-                  <p style={{ textShadow: "1px 1px 4px #702963" }}>₹ 20k</p>
+                  <p style={{ textShadow: "1px 1px 4px #06697b" }} className="money">₹ 20k</p>
                   <p>+</p>
                   <p>
                     Innohacks <br />
