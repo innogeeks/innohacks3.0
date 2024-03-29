@@ -3,6 +3,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { BiLogoDiscordAlt } from "react-icons/bi";
 import { CiLinkedin } from "react-icons/ci";
 import { IoLogoTwitter } from "react-icons/io";
+import { BiLogoTelegram } from "react-icons/bi";
 
 export default function Media() {
   return (
@@ -17,6 +18,12 @@ export default function Media() {
       <div className="single">
         <a rel="noreferrer" target="_blank" href="https://discord.gg/qNmEeAsuqQ">
            <BiLogoDiscordAlt fontSize={40} className='redBlue2'/>
+        </a>
+      </div>
+
+      <div className="single">
+        <a rel="noreferrer" target="_blank" href="https://t.me/innohacks1">
+           <BiLogoTelegram fontSize={40} className='redBlue2'/>
         </a>
       </div>
 

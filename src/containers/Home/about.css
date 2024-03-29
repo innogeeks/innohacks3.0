@@ -188,6 +188,7 @@ h1 {
 
   .imagee {
     display: none;
+    z-index: -100;
   }
 
   .reverse {
@@ -256,6 +257,7 @@ h1 {
   transition: all;
   margin-top: 5rem;
   margin-bottom: 5rem;
+  z-index: 10;
 }
 
 .imagee {
