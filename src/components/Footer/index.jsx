@@ -23,18 +23,6 @@ const Footer = () => {
         ></path>
       </svg>
       <div className="main-footer ">
-        <div className="Register_a">
-          <button className="register-button">
-            <a
-              smooth="true"
-              className="register-link"
-              href="https://forms.gle/LabTKRJEHvyZuXd78"
-              target="_blank"
-            >
-              <span>Register Now</span>
-            </a>
-          </button>
-        </div>
         <div className="social-links">
           <span className="single">
             <a rel="noreferrer " target="_blank" href={SOCIALS.instagram}>
