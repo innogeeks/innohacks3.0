@@ -2,10 +2,6 @@ import "./schedule.css";
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react";
-import mobImg from "./assets/Copy of Copy of Innohacks 3.0 brochure (7).png"
-import deskImg from"./assets/Copy of Copy of Innohacks 3.0 brochure (6).png"
-
-
 const Schedule = () => {
   useEffect(()=>{
     Aos.init({duration:400})
@@ -26,13 +22,13 @@ const Schedule = () => {
 
       <div className="image-container">
         <img
-          src={mobImg}
+          src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/Copy+of+Copy+of+Innohacks+3.0+brochure+(5).png"
           alt=""
           className="mobile-image"
           data-aos="fade-right"
         />
         <img
-          src={deskImg}
+          src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/Copy+of+Copy+of+Innohacks+3.0+brochure+(4).png"
           alt=""
           className="laptop-image"
           data-aos="fade-right"
