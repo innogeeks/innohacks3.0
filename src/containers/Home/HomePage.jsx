@@ -42,6 +42,9 @@ import Organiser from "components/organisers/Organiser.jsx";
 import PastEdition from "components/PastEdition";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import prize1 from "components/Prizes/assests/PRIZES (1).png";
+import prize2 from "components/Prizes/assests/PRIZES (2).png";
+import prize3 from "components/Prizes/assests/PRIZES (3).png";
 
 const PrizeGroup = (props, index) => {
   return (
@@ -193,7 +196,7 @@ export default function HomePage() {
             <div className="reverse">
               <div data-aos="fade-up" className="cardone cards_">
                 <div className="bg">
-                  <img
+                  {/* <img
                     src={
                       "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/2.png"
                     }
@@ -206,13 +209,14 @@ export default function HomePage() {
                       Innohacks <br />
                       swags, t-shirts, stickers.
                     </p>
-                  </div>
+                  </div> */}
+                  <img src={prize1}></img>
                 </div>
                 <div className="blob"> </div>
               </div>
               <div data-aos="fade-up" className="cardtwo cards_">
                 <div className="bg">
-                  <img
+                  {/* <img
                     src={
                       "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/1.png"
                     }
@@ -234,14 +238,15 @@ export default function HomePage() {
                       Innohacks <br />
                       swags, t-shirts, stickers.
                     </p>
-                  </div>
+                  </div> */}
+                  <img src={prize3}></img>
                 </div>
                 <div className="blob"></div>
               </div>
             </div>
             <div data-aos="fade-up" className="cardthree cards_">
               <div className="bg">
-                <img
+                {/* <img
                   src={
                     "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/3.png"
                   }
@@ -255,7 +260,8 @@ export default function HomePage() {
                     Innohacks <br />
                     swags, t-shirts, stickers.
                   </p>
-                </div>
+                </div> */}
+                <img src={prize2}></img>
               </div>
               <div className="blob"></div>
             </div>

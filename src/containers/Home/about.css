@@ -308,7 +308,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  /* box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff; */
   z-index: 1;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -318,10 +318,10 @@ h1 {
 
 .cardone .bg img {
   position: absolute;
-  top: -60px;
+  top: -150px;
   left: 50%;
   transform: translateX(-50%);
-  width: 150px;
+  width: 300px;
 
 }
 
@@ -372,7 +372,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  /* box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff; */
   z-index: 1;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -380,10 +380,10 @@ h1 {
 
 .cardtwo .bg img {
   position: absolute;
-  top: -130px;
+  top: -200px;
   left: 50%;
   transform: translateX(-50%);
-  width: 220px;
+  width: 320px;
   animation: imgRotate 2s infinite;
   transition: all 3s;
 }
@@ -403,7 +403,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  /* box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff; */
   z-index: 1;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -411,10 +411,10 @@ h1 {
 
 .cardthree .bg img {
   position: absolute;
-  top: -60px;
+  top: -120px;
   left: 50%;
   transform: translateX(-50%);
-  width: 150px;
+  width: 300px;
 }
 
 .cards_ {
