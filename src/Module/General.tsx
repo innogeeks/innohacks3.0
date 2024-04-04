@@ -421,6 +421,14 @@ const goldSponsor = [
     src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/polygon-removebg-preview.png",
     alt: "POLYGON LOGO",
   },
+  {
+    src: "https://bobble.ai/logo-final.png",
+    alt: "BOBBLE AI LOGO",
+  },
+  {
+    src: "https://static.toiimg.com/thumb/msid-103956807,width-1280,height-720,resizemode-4/103956807.jpg",
+    alt: "IDEA FORGE LOGO",
+  },
 ];
 const silverSponsor = [
   {
@@ -432,12 +440,20 @@ const silverSponsor = [
     src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/wolfram-corporate-logo-stacked-med.png",
     alt: " LOGO",
   },
+  // {
+  //   src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/balsamiq_logo_icon_167815.png",
+  //   alt: " LOGO",
+  // },
   {
-    src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/balsamiq_logo_icon_167815.png",
+    src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/xyz-logo1440615128.png",
     alt: " LOGO",
   },
   {
-    src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/xyz-logo1440615128.png",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Decathlon_Logo.png/1200px-Decathlon_Logo.png",
+    alt: " LOGO",
+  },
+  {
+    src: "https://inovact.in/assets/img/illustrations/inovact-about.png",
     alt: " LOGO",
   },
 
