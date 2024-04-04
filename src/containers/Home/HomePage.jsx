@@ -259,79 +259,8 @@ export default function HomePage() {
               <div className="blob"></div>
             </div>
           </div>
-          <h1
-            data-aos="zoom-in"
-            data-aos-duration="800"
-            id="prizes"
-            className="prize_heading"
-            style={{ fontFamily: "repo-bold", marginTop: "100px" }}
-          >
-            Track Prizes
-          </h1>
-          <div className="more_prizes">
-            <div data-aos="fade-left" className="more-one">
-              <img
-                className="gif_prize "
-                src={
-                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/xr.gif"
-                }
-              ></img>
-              <p className="more-title" style={{ fontFamily: "repo-light" }}>
-                Best Use of XR
-              </p>
-            </div>
-            <div data-aos="fade-right" className="more-one">
-              <img
-                className="gif_prize "
-                src={
-                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/blockchain.gif"
-                }
-              ></img>
-              <p className="more-title" style={{ fontFamily: "repo-light" }}>
-                Best Use of Blockchain
-              </p>
-            </div>
-            <div data-aos="fade-left" className="more-one">
-              <img
-                className="gif_prize "
-                src={
-                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/aiIOT.gif"
-                }
-              ></img>
-              <p className="more-title" style={{ fontFamily: "repo-light" }}>
-                Best Use of AIoT
-              </p>
-            </div>
-            <div data-aos="fade-right" className="more-one">
-              <img
-                className="gif_prize "
-                src={
-                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/social.gif"
-                }
-              ></img>
-              <div>
-                <div>
-                  <p
-                    className="more-title"
-                    style={{ fontFamily: "repo-light" }}
-                  >
-                    Most Socially impactful Hack
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div data-aos="fade-left" className="more-one">
-              <img
-                className="gif_prize "
-                src={
-                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/girl.gif"
-                }
-              ></img>
-              <p className="more-title" style={{ fontFamily: "repo-light" }}>
-                Best All Girls Team
-              </p>
-            </div>
-          </div>
+          
+ 
         </Row>
         {/* ********Prizes ending here ***** */}
 
@@ -454,7 +383,8 @@ export default function HomePage() {
             </div>
             <div>
               <p className="more-title-sponsor" style={{color:"#C0C0C0"}}>Silver Sponsor</p>
-              <p>To be declared soon...</p>
+              {/* <p>To be declared soon...</p>
+               */}
               <div className="more-title-sponsor-silver">
                 {silverSponsor.length!==1 && silverSponsor.map((item, i) => (
                   <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
