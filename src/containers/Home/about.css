@@ -100,6 +100,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   height: max-content;
+  margin-top: 70px;
 
 }
 
@@ -230,6 +231,7 @@ h1 {
 
   .prizesection {
     padding-top: 17vh;
+    margin-top: 70px;
   }
 
   .scheduleSection {
@@ -598,3 +600,101 @@ h1 {
 }
 
 /* Default styles for both divs */
+
+.card{
+  /* -webkit-flex-direction: row;
+  -ms-flex-direction: row; */
+  flex-direction: row;
+  height: 400px;
+  width: 500px;
+  padding: 1rem;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  /* -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; */
+  border-radius: 0.75rem 2.5rem;
+  background: linear-gradient(to right,rgb(8, 91, 142),rgb(10, 61, 116));
+  border: 1px solid rgba(3, 62, 110, 0.05);
+}
+
+.card2{
+  /* -webkit-flex-direction: row;
+  -ms-flex-direction: row; */
+  flex-direction: row;
+  height: 450px;
+  padding: 1rem;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  /* -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; */
+  border-radius: 0.75rem 2.5rem;
+  background: linear-gradient(to right,rgb(11, 94, 142),rgb(20, 101, 187));
+  border: 1px solid rgba(3, 44, 79, 0.05);
+}
+
+.content {
+  padding: 20px;
+}
+
+.content .description {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: -290px;
+  font-size: 14px;
+}
+
+.title{
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(10, 0, 0, 0.6);
+  margin-top: -300px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.img{
+  position: relative;
+  top: -200px; 
+  width: 350px;
+  left: 40%;
+  transform: translateX(-50%); 
+  border-radius: 50%; 
+}
+
+.buttonn {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: none;
+  outline: none;
+  color: rgb(255 255 255);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .75rem;
+  padding: 0.65rem 1.5rem;
+  border-radius: 0.5rem;
+  /* width: 50%; */
+  text-shadow: 0px 4px 18px #2c3442;
+  /* margin-left: 130px; */
+  display: flex;
+}
+
+.da{
+  flex-direction: row;
+  float: right;
+  color: white;
+}
+
+.ps{
+  flex-direction: row;
+  float: left;
+  margin-right: 5px;
+}

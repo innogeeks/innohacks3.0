@@ -18,7 +18,7 @@ import Footer from "../../components/Footer/index.jsx";
 import Schedule from "components/Schedule/schedule.jsx";
 import Footfall from "components/Footfall/footfall.jsx";
 import { Myinfo } from "../../components/Landing/index.jsx";
-import { PrizeHeading, ThemePrize } from "../../components/Prizes/index.jsx";
+import { PrizeHeading, ThemePrize, TrackPrize} from "../../components/Prizes/index.jsx";
 import Media from "../../components/Socials/index.jsx";
 import {
   SponsorsHead,
@@ -45,6 +45,8 @@ import "aos/dist/aos.css";
 import prize1 from "components/Prizes/assests/PRIZES (1).png";
 import prize2 from "components/Prizes/assests/PRIZES (2).png";
 import prize3 from "components/Prizes/assests/PRIZES (3).png";
+import ideaforge from "components/Prizes/assests/ideaforge.png";
+import innovact from "components/Prizes/assests/innovact.png";
 
 const PrizeGroup = (props, index) => {
   return (
@@ -277,7 +279,7 @@ export default function HomePage() {
           </h1>
           <div className="more_prizes">
             <div data-aos="fade-left" className="more-one">
-              <img
+              {/* <img
                 className="gif_prize "
                 src={
                   "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/xr.gif"
@@ -285,10 +287,27 @@ export default function HomePage() {
               ></img>
               <p className="more-title" style={{ fontFamily: "repo-light" }}>
                 Best Use of XR
-              </p>
-            </div>
+              </p> */}
+
+
+<div class="card">
+      <div class="content">
+        <img src={innovact} className="img"></img>
+        <div class="description">The most innovative post and project will win Goodies and Swags worth INR 5,000 (Exclusive Innohacks Swag Kit and the coveted Inovact Social Swag Kit).  Don't miss out on the chance to shine and connect with a vibrant community of students, entrepreneurs, and mentors. Let's innovate together at Inovact Social. 
+</div>
+      </div>
+      <div className="buttonn">
+      <button className="ps">
+          Problem Statement
+        </button>
+        <button className="da">
+          <a href="https://play.google.com/store/apps/details?id=in.pranaydas.inovact" style={{color:"white"}}>Download App</a>
+        </button>
+      </div>
+  </div>
+
             <div data-aos="fade-right" className="more-one">
-              <img
+              {/* <img
                 className="gif_prize "
                 src={
                   "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/blockchain.gif"
@@ -296,9 +315,9 @@ export default function HomePage() {
               ></img>
               <p className="more-title" style={{ fontFamily: "repo-light" }}>
                 Best Use of Blockchain
-              </p>
-            </div>
-            <div data-aos="fade-left" className="more-one">
+              </p> */}
+              </div>
+            {/*<div data-aos="fade-left" className="more-one">
               <img
                 className="gif_prize "
                 src={
@@ -336,9 +355,9 @@ export default function HomePage() {
               ></img>
               <p className="more-title" style={{ fontFamily: "repo-light" }}>
                 Best All Girls Team
-              </p>
+              </p> */}
             </div>
-          </div>
+          </div> 
         </Row>
         {/* ********Prizes ending here ***** */}
 
