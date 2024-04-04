@@ -447,21 +447,21 @@ h1 {
   justify-content: start;
 }
 
-.gif_prize {
+/* .gif_prize {
   width: 150px;
 }
 
 .more-title {
   font-family: repo-bold;
-  background-color: black;
+  background-color: black; */
   /* background-image: linear-gradient(45deg, red, #2D71D5); */
-  background-size: 100%;
+  /* background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-}
+} */
 
 .more-title-sponsor {
   font-family: repo-bold;

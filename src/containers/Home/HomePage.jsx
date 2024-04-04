@@ -42,9 +42,9 @@ import Organiser from "components/organisers/Organiser.jsx";
 import PastEdition from "components/PastEdition";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import prize1 from "components/Prizes/assests/PRIZES (1).png";
-import prize2 from "components/Prizes/assests/PRIZES (2).png";
-import prize3 from "components/Prizes/assests/PRIZES (3).png";
+import prize1 from "components/Prizes/assests/PRIZES (4).png";
+import prize2 from "components/Prizes/assests/PRIZES (5).png";
+import prize3 from "components/Prizes/assests/PRIZES (6).png";
 import ideaforge from "components/Prizes/assests/ideaforge.png";
 import innovact from "components/Prizes/assests/innovact.png";
 
@@ -212,7 +212,7 @@ export default function HomePage() {
                       swags, t-shirts, stickers.
                     </p>
                   </div> */}
-                  <img src={prize1}></img>
+                  <img src={prize2}></img>
                 </div>
                 <div className="blob"> </div>
               </div>
@@ -241,7 +241,7 @@ export default function HomePage() {
                       swags, t-shirts, stickers.
                     </p>
                   </div> */}
-                  <img src={prize3}></img>
+                  <img src={prize1}></img>
                 </div>
                 <div className="blob"></div>
               </div>
@@ -263,7 +263,7 @@ export default function HomePage() {
                     swags, t-shirts, stickers.
                   </p>
                 </div> */}
-                <img src={prize2}></img>
+                <img src={prize3}></img>
               </div>
               <div className="blob"></div>
             </div>
