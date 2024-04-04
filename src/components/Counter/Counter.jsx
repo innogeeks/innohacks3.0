@@ -33,10 +33,12 @@ const Counter = () => {
     const handleClick = () => {
         // Increment count
         const newCount = count + 1;
-        set(countRef,newCount);
+        if (newCount > count) {
+          set(countRef, newCount);
+      }
 
         // Store count in Firebase Realtime Database
-        set(countRef, newCount);
+
     };
 
     return (

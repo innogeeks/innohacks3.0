@@ -423,8 +423,24 @@ const goldSponsor = [
   },
 ];
 const silverSponsor = [
-  // { src: eight },
-  // { src: first },
+  {
+    src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/th2.jpeg",
+   
+  }
+  ,
+  {
+    src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/wolfram-corporate-logo-stacked-med.png",
+    alt: " LOGO",
+  },
+  {
+    src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/balsamiq_logo_icon_167815.png",
+    alt: " LOGO",
+  },
+  {
+    src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/xyz-logo1440615128.png",
+    alt: " LOGO",
+  },
+
   // { src: second },
   // { src: sixteen },
   // { src: forth },
@@ -437,7 +453,7 @@ const silverSponsor = [
   // { src: coding },
   // { src: auth },
   // { src: eighteen },
-  {}
+
 ];
 const educationSponsor = [{ src: eleven }];
 const certificateSponsor = [{ src: fourteen }];
