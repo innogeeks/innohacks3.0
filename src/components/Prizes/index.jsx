@@ -1,7 +1,13 @@
 import {useEffect} from 'react'
+import React, { useState } from 'react';
+import { Switch } from 'react-router-dom';
+import Box from '@mui/material/Box';
+import Grow from '@mui/material/Grow';
+import ideaforge from './assests/ideaforge.png';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import './style.scss';
+import { FormControlLabel, Checkbox } from '@material-ui/core';
 
 function PrizeHeading(props) {
   useEffect(()=>{
@@ -32,4 +38,32 @@ function ThemePrize(props){
     </div>
   );
 }
-export {FirstPrize, PrizeHeading,ThemePrize};
+
+function TrackPrize(props){
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = (event) => {
+    setIsChecked(event.target.checked);
+  };
+
+  return(
+    <>
+      <FormControlLabel
+        control={<Switch checked={isChecked} onChange={handleCheckboxChange} />}
+        label="Show"
+      />
+      <Box sx={{ display: 'flex' }}>
+        <Grow in={isChecked}>{ideaforge}</Grow>
+        <Grow
+          in={isChecked}
+          style={{ transformOrigin: '0 0 0' }}
+          {...(isChecked ? { timeout: 1000 } : {})}
+        >
+          {ideaforge}
+        </Grow>
+      </Box>
+    </>
+  );
+}
+
+export {FirstPrize, PrizeHeading,ThemePrize, TrackPrize};
