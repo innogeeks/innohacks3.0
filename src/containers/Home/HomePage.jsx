@@ -278,7 +278,7 @@ export default function HomePage() {
             Track Prizes
           </h1>
           <div className="more_prizes">
-            <div data-aos="fade-left" className="more-one">
+            {/* <div data-aos="fade-left" className="more-one"> */}
               {/* <img
                 className="gif_prize "
                 src={
@@ -290,24 +290,37 @@ export default function HomePage() {
               </p> */}
 
 
+<div data-aos="fade-left" className="more-one">
 <div class="card">
-      <div class="content">
-        <img src={innovact} className="img"></img>
-        <div class="description">The most innovative post and project will win Goodies and Swags worth INR 5,000 (Exclusive Innohacks Swag Kit and the coveted Inovact Social Swag Kit).  Don't miss out on the chance to shine and connect with a vibrant community of students, entrepreneurs, and mentors. Let's innovate together at Inovact Social. 
-</div>
-      </div>
-      <div className="buttonn">
-      <button className="ps">
-          Problem Statement
-        </button>
-        <button className="da">
-          <a href="https://play.google.com/store/apps/details?id=in.pranaydas.inovact" style={{color:"white"}}>Download App</a>
-        </button>
-      </div>
+  <div class="top-section">
+    <div class="border"></div>
+    <img src={innovact} className="image"></img>
   </div>
+  <div class="bottom-section">
+    <span class="title" style={{ fontFamily: "repo-light" }}>The most innovative post and project will win Goodies and Swags worth INR 5,000 (Exclusive Innohacks Swag Kit and the coveted Inovact Social Swag Kit).  Don't miss out on the chance to shine and connect with a vibrant community of students, entrepreneurs, and mentors. Let's innovate together at Inovact Social. 
+</span>
+      <button className="butt">Problem Statement</button>
+  </div>
+</div>
+</div>
 
-            <div data-aos="fade-right" className="more-one">
-              {/* <img
+<div data-aos="fade-right" className="more-one">
+<div class="card" id="card2">
+  <div class="top-section">
+    <div class="border"></div>
+    <img src={ideaforge} className="image2"></img>
+  </div>
+  <div class="bottom-section">
+    <span class="title" style={{ fontFamily: "repo-light" }}>The most innovative post and project will win Goodies and Swags worth INR 5,000 (Exclusive Innohacks Swag Kit and the coveted Inovact Social Swag Kit).  Don't miss out on the chance to shine and connect with a vibrant community of students, entrepreneurs, and mentors. Let's innovate together at Inovact Social. 
+</span>
+      <button className="butt">Problem Statement</button>
+  </div>
+</div>
+</div>
+
+
+            {/* <div data-aos="fade-right" className="more-one">
+              <img
                 className="gif_prize "
                 src={
                   "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/blockchain.gif"
@@ -315,8 +328,8 @@ export default function HomePage() {
               ></img>
               <p className="more-title" style={{ fontFamily: "repo-light" }}>
                 Best Use of Blockchain
-              </p> */}
-              </div>
+              </p>
+              </div> */}
             {/*<div data-aos="fade-left" className="more-one">
               <img
                 className="gif_prize "
@@ -356,7 +369,7 @@ export default function HomePage() {
               <p className="more-title" style={{ fontFamily: "repo-light" }}>
                 Best All Girls Team
               </p> */}
-            </div>
+            {/* </div> */}
           </div> 
         </Row>
         {/* ********Prizes ending here ***** */}
