@@ -493,7 +493,6 @@ export default function HomePage() {
             </div>
             <div>
               <p className="more-title-sponsor" style={{color:"#C0C0C0"}}>Silver Sponsor</p>
-              <p>To be declared soon...</p>
               <div className="more-title-sponsor-silver">
                 {silverSponsor.length!==1 && silverSponsor.map((item, i) => (
                   <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
