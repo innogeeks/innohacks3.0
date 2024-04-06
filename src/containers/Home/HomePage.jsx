@@ -300,13 +300,13 @@ export default function HomePage() {
 <div data-aos="fade-left" className="more-one">
 <div class="card">
   <div class="top-section">
-    <div class="border"></div>
-    <img src="https://inovact.in/assets/img/illustrations/inovact-about.png" className="image"></img>
+    {/* <div class="border"></div> */}
+    <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/tee_20240406_201109_0000+(1).png" className="image"></img>
   </div>
   <div class="bottom-section">
     <span class="title" style={{ fontFamily: "repo-light" }}>The most innovative post and project will win Goodies and Swags worth INR 5,000 (Exclusive Innohacks Swag Kit and the coveted Inovact Social Swag Kit).  Don't miss out on the chance to shine and connect with a vibrant community of students, entrepreneurs, and mentors. Let's innovate together at Inovact Social. 
 </span>
-      <button className="butt">Problem Statement</button>
+      <a href="https://drive.google.com/file/d/1xSYFH_CuEBA0Sts8Ts0zoAzy86AH7gN2/view?usp=sharing" style={{textDecoration: 'none'}}><button className="butt">Problem Statement</button></a>
   </div>
 </div>
 </div>
@@ -315,12 +315,12 @@ export default function HomePage() {
 <div class="card" id="card2">
   <div class="top-section">
     <div class="border"></div>
-    <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/Ideaforage+innovations+Logo+(1).png" className="image2"></img>
+    <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/tee+(1).png" className="image2"></img>
   </div>
   <div class="bottom-section">
     <span class="title" style={{ fontFamily: "repo-light" }}>The most innovative post and project will win Goodies and Swags worth INR 5,000 (Exclusive Innohacks Swag Kit and the coveted Inovact Social Swag Kit).  Don't miss out on the chance to shine and connect with a vibrant community of students, entrepreneurs, and mentors. Let's innovate together at Inovact Social. 
 </span>
-      <button className="butt">Problem Statement</button>
+      <a href="https://docs.google.com/document/d/1Xl8mrO0rEnVbkmGwVYwOm9PZTDJofFrvAZKqonB_C-Q/edit?usp=sharing" style={{textDecoration: 'none'}}><button className="butt">Problem Statement</button></a>
   </div>
 </div>
 </div>

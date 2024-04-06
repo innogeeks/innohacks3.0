@@ -617,8 +617,8 @@ h1 {
   width: 560px;
   border-radius: 30px;
   /* background: linear-gradient(rgb(58, 179, 226), rgb(4, 81, 109), rgb(2, 91, 123)); */
-  background: linear-gradient(rgb(50, 51, 51), rgb(90, 96, 99), rgb(11, 120, 160),rgb(7, 85, 122));
-  padding: 5px;
+  background: linear-gradient(to bottom right, #00C2B1, #002D5B, #000000);
+  padding: 30px;
   overflow: hidden;
   box-shadow: rgba(3, 31, 40, 0.4) 0px 2px 4px, rgba(3, 31, 40, 0.3) 8px 12px 18px -8px, rgba(3, 31, 40, 0.2) 10px -30px 10px inset;
   transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -656,7 +656,7 @@ h1 {
   height: 15px;
   top: 0;
   right: -15px;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(212, 25, 25, 0);
   border-top-left-radius: 10px;
 }
 
@@ -749,9 +749,10 @@ h1 {
 
 .image{
   /* margin-top: -35%; */
-  width: 70%;
-  mix-blend-mode: multiply;
-  margin-left: 15%;
+  width: 60%;
+  /* mix-blend-mode: multiply; */
+  margin-left: 22%;
+  margin-top: 10%;
 }
 
 .image2{
@@ -762,7 +763,7 @@ h1 {
 
 .butt {
   height: 50px;
-  margin: 10px 5px 5px 155px;
+  margin: 10px 5px 5px 135px;
   width: 220px;
   background: #333;
   -webkit-box-pack: center;
@@ -775,11 +776,12 @@ h1 {
   font-family: Consolas, Courier New, monospace;
   border: solid #404c5d 1px;
   font-size: 16px;
-  color: rgb(161, 161, 161);
+  color: rgb(255, 255, 255);
   -webkit-transition: 500ms;
   transition: 500ms;
   border-radius: 5px;
-  background: linear-gradient(145deg, #2e2d2d, #212121);
+  background: #000000;
+  /* background: linear-gradient(145deg, #2e2d2d, #212121); */
   -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
     inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
   box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
