@@ -334,7 +334,7 @@ export default function HomePage() {
               <img
                 className="gif_prize "
                 src={
-                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/aiIOT.gif"
+                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/aiIOT.gif"npm start
                 }
               ></img>
               <p className="more-title" style={{ fontFamily: "repo-light" }}>
