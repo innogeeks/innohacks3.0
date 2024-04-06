@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { Switch } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Grow from '@mui/material/Grow';
-import ideaforge from './assests/ideaforge.png';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import './style.scss';
