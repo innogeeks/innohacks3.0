@@ -34,6 +34,10 @@ import {
   silverSponsor,
   educationSponsor,
   certificateSponsor,
+  associateSponsor,
+  merchandiseSponsor,
+  hiringSponsor,
+  hostingPartner,
   TeamInfo,
 } from "../../Module/General";
 // import PastWinner from "components/pastWinners/index.jsx";
@@ -172,17 +176,24 @@ export default function HomePage() {
             id="prizes"
             className="worth"
           >
-            worth
+            Prize Pool Worth
           </p>
-          <h4
+          <p
             data-aos="zoom-in"
             data-aos-duration="800"
-            id="prizes"
             className="prizee"
-            style={{ fontFamily: "poppins" }}
+            // style={{ fontFamily: "poppins" }}
           >
-            ₹ 1.25 L
-          </h4>
+            ₹ 15Lakh
+          </p>
+        </div>
+        <div className="prizepool">
+        <div data-aos="zoom-in"
+            data-aos-duration="800"
+            id="prizes"
+            className="worthHeading">
+        (Potential seed funding of ₹10 lakhs + from Technology Business Incubator - KIET)
+        </div>
         </div>
         <Row
           className="prizesection"
@@ -394,7 +405,6 @@ export default function HomePage() {
         {/* ********Sponsors here ***** */}
         <Row className="sponsorSection" id="sponsors">
           <SponsorsHead />
-          <SponsorUS />
           <div className="sponsor-grid">
             <div>
               <p className="more-title-sponsor" style={{color:"tomato"}}>Title sponsor</p>
@@ -416,6 +426,54 @@ export default function HomePage() {
               ))}
             </div>
             <div>
+              <p className="more-title-sponsor" style={{color:"#C0C0C0"}}>Associate Sponsor</p>
+              <div className="more-title-sponsor-silver">
+                {associateSponsor.map((item, i) => (
+                  <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                    <div className="sponsor-bg">
+                      <img src={item.src} width={180} alt="" />
+                    </div>
+                  </Col>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="more-title-sponsor" style={{color:"#C0C0C0"}}>Hosting Partners</p>
+              <div className="more-title-sponsor-silver">
+                {hostingPartner.map((item, i) => (
+                  <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                    <div className="sponsor-bg">
+                      <img src={item.src} width={180} alt="" />
+                    </div>
+                  </Col>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="more-title-sponsor" style={{color:"#C0C0C0"}}>Merchandise Sponsors</p>
+              <div className="more-title-sponsor-silver">
+                {merchandiseSponsor.map((item, i) => (
+                  <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                    <div className="sponsor-bg">
+                      <img src={item.src} width={180} alt="" />
+                    </div>
+                  </Col>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="more-title-sponsor" style={{color:"#C0C0C0"}}>Hiring Partners</p>
+              <div className="more-title-sponsor-silver">
+                {hiringSponsor.length!==1 && hiringSponsor.map((item, i) => (
+                  <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                    <div className="sponsor-bg">
+                      <img src={item.src} width={180} alt="" />
+                    </div>
+                  </Col>
+                ))}
+              </div>
+            </div>
+            <div>
               <p className="more-title-sponsor" style={{color:"#F7418F"}}>Education Sponsor</p>
               {educationSponsor.map((item, i) => (
                 <Col
@@ -430,25 +488,6 @@ export default function HomePage() {
                 >
                   <div className="sponsor-bg">
                     <img src={item.src} width={200} alt="" />
-                  </div>
-                </Col>
-              ))}
-            </div>
-            <div>
-              <p className="more-title-sponsor" style={{color:"#535C91"}}>Certificate Sponsor</p>
-              {certificateSponsor.map((item, i) => (
-                <Col
-                  data-aos="fade-left"
-                  data-aos-anchor-placement="top-bottom"
-                  data-aos-duration="200"
-                  key={i}
-                  className="sponsor-logos"
-                  sm={12}
-                  lg={4}
-                  md={6}
-                >
-                  <div className="sponsor-bg">
-                    <img src={item.src} width={180} alt="" />
                   </div>
                 </Col>
               ))}
@@ -497,6 +536,25 @@ export default function HomePage() {
                   </Col>
                 ))}
               </div>
+            </div>
+            <div>
+              <p className="more-title-sponsor" style={{color:"#535C91"}}>Certificate Sponsor</p>
+              {certificateSponsor.map((item, i) => (
+                <Col
+                  data-aos="fade-left"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="200"
+                  key={i}
+                  className="sponsor-logos"
+                  sm={12}
+                  lg={4}
+                  md={6}
+                >
+                  <div className="sponsor-bg">
+                    <img src={item.src} width={180} alt="" />
+                  </div>
+                </Col>
+              ))}
             </div>
           </div>
         </Row>
