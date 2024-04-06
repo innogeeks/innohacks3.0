@@ -306,7 +306,7 @@ export default function HomePage() {
   <div class="bottom-section">
     <span class="title" style={{ fontFamily: "repo-light" }}>The most innovative post and project will win Goodies and Swags worth INR 5,000 (Exclusive Innohacks Swag Kit and the coveted Inovact Social Swag Kit).  Don't miss out on the chance to shine and connect with a vibrant community of students, entrepreneurs, and mentors. Let's innovate together at Inovact Social. 
 </span>
-      <a href="https://drive.google.com/file/d/1xSYFH_CuEBA0Sts8Ts0zoAzy86AH7gN2/view?usp=sharing" style={{textDecoration: 'none'}}><button className="butt">Problem Statement</button></a>
+      <a href="https://docs.google.com/document/d/1Xl8mrO0rEnVbkmGwVYwOm9PZTDJofFrvAZKqonB_C-Q/edit?usp=sharing" style={{textDecoration: 'none'}} target="_blank"><button className="butt">Problem Statement</button></a>
   </div>
 </div>
 </div>
@@ -318,9 +318,23 @@ export default function HomePage() {
     <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/tee+(1).png" className="image2"></img>
   </div>
   <div class="bottom-section">
-    <span class="title" style={{ fontFamily: "repo-light" }}>The most innovative post and project will win Goodies and Swags worth INR 5,000 (Exclusive Innohacks Swag Kit and the coveted Inovact Social Swag Kit).  Don't miss out on the chance to shine and connect with a vibrant community of students, entrepreneurs, and mentors. Let's innovate together at Inovact Social. 
+    <span class="title" style={{ fontFamily: "repo-light" }}>The most innovative post and project will win Goodies and Swags worth INR 5,000 (Exclusive Innohacks Swag Kit and the coveted Idea Forage Innovation Swag Kit).  Don't miss out on the chance to shine and connect with a vibrant community of students, entrepreneurs, and mentors. Let's innovate together at Idea Forage Innovation. 
 </span>
-      <a href="https://docs.google.com/document/d/1Xl8mrO0rEnVbkmGwVYwOm9PZTDJofFrvAZKqonB_C-Q/edit?usp=sharing" style={{textDecoration: 'none'}}><button className="butt">Problem Statement</button></a>
+      <a href="https://drive.google.com/file/d/1xSYFH_CuEBA0Sts8Ts0zoAzy86AH7gN2/view?usp=sharing" style={{textDecoration: 'none'}} target="_blank"><button className="butt">Problem Statement</button></a>
+  </div>
+</div>
+</div>
+
+<div data-aos="fade-right" className="more-one">
+<div class="card" id="card2">
+  <div class="top-section">
+    <div class="border"></div>
+    <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/decoding+draupadi+(1).png" className="image3"></img>
+  </div>
+  <div class="bottom-section">
+    <span class="title" style={{ fontFamily: "repo-light" }}>The most innovative post and project will win Goodies and Swags worth INR 5,000 (Exclusive Innohacks Swag Kit and the coveted Decoding Draupadi Swag Kit).  Don't miss out on the chance to shine and connect with a vibrant community of students, entrepreneurs, and mentors. Let's innovate together at Decoding Draupadi. 
+</span>
+      <a href="https://docs.google.com/document/d/18zXwsdKy95_5kkTMF4YS7kaCPSW-w3Q7W-VPpfaekNY/edit?usp=sharing" style={{textDecoration: 'none'}} target="_blank"><button className="butt">Problem Statement</button></a>
   </div>
 </div>
 </div>
