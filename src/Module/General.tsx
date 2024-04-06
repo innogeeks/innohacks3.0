@@ -426,7 +426,7 @@ const goldSponsor = [
     alt: "BOBBLE AI LOGO",
   },
   {
-    src: "https://static.toiimg.com/thumb/msid-103956807,width-1280,height-720,resizemode-4/103956807.jpg",
+    src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/Ideaforage+innovations+Logo+(1).png",
     alt: "IDEA FORGE LOGO",
   },
 ];
