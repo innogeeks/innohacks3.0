@@ -13,12 +13,11 @@ import {
   LogoSectionAbout,
 } from "../../components/About/index.jsx";
 import { Accordion } from "../../components/Accordian/index.jsx";
-import Birds from "../../components/Animation";
 import Footer from "../../components/Footer/index.jsx";
 import Schedule from "components/Schedule/schedule.jsx";
 import Footfall from "components/Footfall/footfall.jsx";
 import { Myinfo } from "../../components/Landing/index.jsx";
-import { PrizeHeading, ThemePrize } from "../../components/Prizes/index.jsx";
+import { PrizeHeading, ThemePrize, TrackPrize} from "../../components/Prizes/index.jsx";
 import Media from "../../components/Socials/index.jsx";
 import {
   SponsorsHead,
@@ -34,6 +33,10 @@ import {
   silverSponsor,
   educationSponsor,
   certificateSponsor,
+  associateSponsor,
+  merchandiseSponsor,
+  hiringSponsor,
+  hostingPartner,
   TeamInfo,
 } from "../../Module/General";
 // import PastWinner from "components/pastWinners/index.jsx";
@@ -42,6 +45,11 @@ import Organiser from "components/organisers/Organiser.jsx";
 import PastEdition from "components/PastEdition";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import prize1 from "components/Prizes/assests/PRIZES (4).png";
+import prize2 from "components/Prizes/assests/PRIZES (5).png";
+import prize3 from "components/Prizes/assests/PRIZES (6).png";
+import ideaforge from "components/Prizes/assests/ideaforge.png";
+import innovact from "components/Prizes/assests/innovact.png";
 
 const PrizeGroup = (props, index) => {
   return (
@@ -167,17 +175,23 @@ export default function HomePage() {
             id="prizes"
             className="worth"
           >
-            worth
+            Prize Pool Worth
           </p>
-          <h4
+          <p
             data-aos="zoom-in"
             data-aos-duration="800"
-            id="prizes"
             className="prizee"
-            style={{ fontFamily: "poppins" }}
           >
-            ₹ 1.25 L
-          </h4>
+            ₹15Lakh
+          </p>
+        </div>
+        <div className="prizepool">
+        <div data-aos="zoom-in"
+            data-aos-duration="800"
+            id="prizes"
+            className="worthHeading">
+        (Potential seed funding of ₹10 lakhs + ₹5 lakhs from Technology Business Incubator - KIET)
+        </div>
         </div>
         <Row
           className="prizesection"
@@ -193,26 +207,27 @@ export default function HomePage() {
             <div className="reverse">
               <div data-aos="fade-up" className="cardone cards_">
                 <div className="bg">
-                  <img
+                  {/* <img
                     src={
                       "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/2.png"
                     }
                     alt=""
                   />
                   <div className="text_prizes">
-                    <p style={{ textShadow: "1px 1px 4px #702963" }}>₹ 30K</p>
+                    <p style={{ textShadow: "1px 1px 4px #06697b" }} className="money">₹ 30K</p>
                     <p>+</p>
                     <p>
                       Innohacks <br />
                       swags, t-shirts, stickers.
                     </p>
-                  </div>
+                  </div> */}
+                  <img src={prize2}></img>
                 </div>
                 <div className="blob"> </div>
               </div>
               <div data-aos="fade-up" className="cardtwo cards_">
                 <div className="bg">
-                  <img
+                  {/* <img
                     src={
                       "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/1.png"
                     }
@@ -223,8 +238,9 @@ export default function HomePage() {
                     <p
                       style={{
                         fontSize: "35px",
-                        textShadow: "1px 1px 4px #702963",
+                        textShadow: "1px 1px 4px #06697b",
                       }}
+                      className="money"
                     >
                       ₹ 50k
                     </p>
@@ -233,14 +249,15 @@ export default function HomePage() {
                       Innohacks <br />
                       swags, t-shirts, stickers.
                     </p>
-                  </div>
+                  </div> */}
+                  <img src={prize1}></img>
                 </div>
                 <div className="blob"></div>
               </div>
             </div>
             <div data-aos="fade-up" className="cardthree cards_">
               <div className="bg">
-                <img
+                {/* <img
                   src={
                     "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/3.png"
                   }
@@ -248,19 +265,121 @@ export default function HomePage() {
                   alt=""
                 />
                 <div className="text_prizes">
-                  <p style={{ textShadow: "1px 1px 4px #702963" }}>₹ 20k</p>
+                  <p style={{ textShadow: "1px 1px 4px #06697b" }} className="money">₹ 20k</p>
                   <p>+</p>
                   <p>
                     Innohacks <br />
                     swags, t-shirts, stickers.
                   </p>
-                </div>
+                </div> */}
+                <img src={prize3}></img>
               </div>
               <div className="blob"></div>
             </div>
           </div>
-          
- 
+          <h1
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            id="prizes"
+            className="prize_heading"
+            style={{ fontFamily: "repo-bold", marginTop: "100px" }}
+          >
+            Track Prizes
+          </h1>
+          <div className="more_prizes">
+            {/* <div data-aos="fade-left" className="more-one"> */}
+              {/* <img
+                className="gif_prize "
+                src={
+                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/xr.gif"
+                }
+              ></img>
+              <p className="more-title" style={{ fontFamily: "repo-light" }}>
+                Best Use of XR
+              </p> */}
+
+
+<div data-aos="fade-left" className="more-one">
+<div class="card">
+  <div class="top-section">
+    <div class="border"></div>
+    <img src="https://inovact.in/assets/img/illustrations/inovact-about.png" className="image"></img>
+  </div>
+  <div class="bottom-section">
+    <span class="title" style={{ fontFamily: "repo-light" }}>The most innovative post and project will win Goodies and Swags worth INR 5,000 (Exclusive Innohacks Swag Kit and the coveted Inovact Social Swag Kit).  Don't miss out on the chance to shine and connect with a vibrant community of students, entrepreneurs, and mentors. Let's innovate together at Inovact Social. 
+</span>
+      <button className="butt">Problem Statement</button>
+  </div>
+</div>
+</div>
+
+<div data-aos="fade-right" className="more-one">
+<div class="card" id="card2">
+  <div class="top-section">
+    <div class="border"></div>
+    <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/Ideaforage+innovations+Logo+(1).png" className="image2"></img>
+  </div>
+  <div class="bottom-section">
+    <span class="title" style={{ fontFamily: "repo-light" }}>The most innovative post and project will win Goodies and Swags worth INR 5,000 (Exclusive Innohacks Swag Kit and the coveted Inovact Social Swag Kit).  Don't miss out on the chance to shine and connect with a vibrant community of students, entrepreneurs, and mentors. Let's innovate together at Inovact Social. 
+</span>
+      <button className="butt">Problem Statement</button>
+  </div>
+</div>
+</div>
+
+
+            {/* <div data-aos="fade-right" className="more-one">
+              <img
+                className="gif_prize "
+                src={
+                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/blockchain.gif"
+                }
+              ></img>
+              <p className="more-title" style={{ fontFamily: "repo-light" }}>
+                Best Use of Blockchain
+              </p>
+              </div> */}
+            {/*<div data-aos="fade-left" className="more-one">
+              <img
+                className="gif_prize "
+                src={
+                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/aiIOT.gif"
+                }
+              ></img>
+              <p className="more-title" style={{ fontFamily: "repo-light" }}>
+                Best Use of AIoT
+              </p>
+            </div>
+            <div data-aos="fade-right" className="more-one">
+              <img
+                className="gif_prize "
+                src={
+                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/social.gif"
+                }
+              ></img>
+              <div>
+                <div>
+                  <p
+                    className="more-title"
+                    style={{ fontFamily: "repo-light" }}
+                  >
+                    Most Socially impactful Hack
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-left" className="more-one">
+              <img
+                className="gif_prize "
+                src={
+                  "https://s3.ap-south-1.amazonaws.com/innohacks3.0/prizes/girl.gif"
+                }
+              ></img>
+              <p className="more-title" style={{ fontFamily: "repo-light" }}>
+                Best All Girls Team
+              </p> */}
+            {/* </div> */}
+          </div> 
         </Row>
         {/* ********Prizes ending here ***** */}
 
@@ -284,7 +403,6 @@ export default function HomePage() {
         {/* ********Sponsors here ***** */}
         <Row className="sponsorSection" id="sponsors">
           <SponsorsHead />
-          <SponsorUS />
           <div className="sponsor-grid">
             <div>
               <p className="more-title-sponsor" style={{color:"tomato"}}>Title sponsor</p>
@@ -306,6 +424,54 @@ export default function HomePage() {
               ))}
             </div>
             <div>
+              <p className="more-title-sponsor" style={{color:"#C0C0C0"}}>Associate Sponsor</p>
+              <div className="more-title-sponsor-silver">
+                {associateSponsor.map((item, i) => (
+                  <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                    <div className="sponsor-bg">
+                      <img src={item.src} width={180} alt="" />
+                    </div>
+                  </Col>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="more-title-sponsor" style={{color:"#C0C0C0"}}>Hosting Partners</p>
+              <div className="more-title-sponsor-silver">
+                {hostingPartner.map((item, i) => (
+                  <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                    <div className="sponsor-bg">
+                      <img src={item.src} width={180} alt="" />
+                    </div>
+                  </Col>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="more-title-sponsor" style={{color:"#C0C0C0"}}>Merchandise Sponsors</p>
+              <div className="more-title-sponsor-silver">
+                {merchandiseSponsor.map((item, i) => (
+                  <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                    <div className="sponsor-bg">
+                      <img src={item.src} width={180} alt="" />
+                    </div>
+                  </Col>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="more-title-sponsor" style={{color:"#C0C0C0"}}>Hiring Partners</p>
+              <div className="more-title-sponsor-silver">
+                {hiringSponsor.length!==1 && hiringSponsor.map((item, i) => (
+                  <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                    <div className="sponsor-bg">
+                      <img src={item.src} width={180} alt="" />
+                    </div>
+                  </Col>
+                ))}
+              </div>
+            </div>
+            <div>
               <p className="more-title-sponsor" style={{color:"#F7418F"}}>Education Sponsor</p>
               {educationSponsor.map((item, i) => (
                 <Col
@@ -320,25 +486,6 @@ export default function HomePage() {
                 >
                   <div className="sponsor-bg">
                     <img src={item.src} width={200} alt="" />
-                  </div>
-                </Col>
-              ))}
-            </div>
-            <div>
-              <p className="more-title-sponsor" style={{color:"#535C91"}}>Certificate Sponsor</p>
-              {certificateSponsor.map((item, i) => (
-                <Col
-                  data-aos="fade-left"
-                  data-aos-anchor-placement="top-bottom"
-                  data-aos-duration="200"
-                  key={i}
-                  className="sponsor-logos"
-                  sm={12}
-                  lg={4}
-                  md={6}
-                >
-                  <div className="sponsor-bg">
-                    <img src={item.src} width={180} alt="" />
                   </div>
                 </Col>
               ))}
@@ -378,8 +525,6 @@ export default function HomePage() {
             </div>
             <div>
               <p className="more-title-sponsor" style={{color:"#C0C0C0"}}>Silver Sponsor</p>
-              {/* <p>To be declared soon...</p>
-               */}
               <div className="more-title-sponsor-silver">
                 {silverSponsor.length!==1 && silverSponsor.map((item, i) => (
                   <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
@@ -389,6 +534,25 @@ export default function HomePage() {
                   </Col>
                 ))}
               </div>
+            </div>
+            <div>
+              <p className="more-title-sponsor" style={{color:"#535C91"}}>Certificate Sponsor</p>
+              {certificateSponsor.map((item, i) => (
+                <Col
+                  data-aos="fade-left"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="200"
+                  key={i}
+                  className="sponsor-logos"
+                  sm={12}
+                  lg={4}
+                  md={6}
+                >
+                  <div className="sponsor-bg">
+                    <img src={item.src} width={180} alt="" />
+                  </div>
+                </Col>
+              ))}
             </div>
           </div>
         </Row>

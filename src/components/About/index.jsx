@@ -8,6 +8,10 @@ import "aos/dist/aos.css";
 import algos from "./img/algocs.png";
 import gdsc from "./img/gdsc.png";
 import iosc from "./img/iosc.png";
+import loop from "./img/loop.png";
+import oscomm from "./img/oscomm.png";
+import befikra from "./img/befikra.png";
+import cafe from "./img/cafe.png";
 
 import { MIDDLE_SECTION } from "../../Module/General";
 import { useEffect } from "react";
@@ -93,6 +97,78 @@ function CommunityPartner() {
         >
           <img src={algos} className="iosc_logo" width="100%" alt="" />
           <p style={{fontFamily:"repo-bold", fontSize:"16px"}}>ALGOCS</p>
+        </div>
+        <div
+          className="logo-community"
+          data-aos="fade-up"
+          style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%",backgroundColor:"white",borderRadius:"20px",padding:"10px",boxShadow:"10px 10px 60px #49494960 ,inset -10px -10px 40px #ffffff5d"  }}
+        >
+          <img src={gdsc} className="iosc_logo" width="100%" alt="" />
+          <p style={{fontFamily:"repo-bold", fontSize:"16px"}}>DSC-ABES</p>
+        </div>
+        <div
+          className="logo-community"
+          data-aos="fade-up"
+          style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%",backgroundColor:"white",borderRadius:"20px",padding:"10px",boxShadow:"10px 10px 60px #49494960 ,inset -10px -10px 40px #ffffff5d"  }}
+        >
+          <img src={gdsc} className="iosc_logo" width="100%" alt="" />
+          <p style={{fontFamily:"repo-bold", fontSize:"16px"}}>GDSC-GCET</p>
+        </div>
+        <div
+          className="logo-community"
+          data-aos="fade-up"
+          style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%",backgroundColor:"white",borderRadius:"20px",padding:"10px",boxShadow:"10px 10px 60px #49494960 ,inset -10px -10px 40px #ffffff5d"  }}
+        >
+          <img src={loop} className="iosc_logo" width="100%" alt="" />
+          <p style={{fontFamily:"repo-bold", fontSize:"16px"}}>Loop</p>
+        </div>
+        <div
+          className="logo-community"
+          data-aos="fade-up"
+          style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%",backgroundColor:"white",borderRadius:"20px",padding:"10px",boxShadow:"10px 10px 60px #49494960 ,inset -10px -10px 40px #ffffff5d"  }}
+        >
+          <img src={gdsc} className="iosc_logo" width="100%" alt="" />
+          <p style={{fontFamily:"repo-bold", fontSize:"16px"}}>GDSC-  GL-BAJAJ</p>
+        </div>
+        <div
+          className="logo-community"
+          data-aos="fade-up"
+          style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%",backgroundColor:"white",borderRadius:"20px",padding:"10px",boxShadow:"10px 10px 60px #49494960 ,inset -10px -10px 40px #ffffff5d"  }}
+        >
+          <img src={gdsc} className="iosc_logo" width="100%" alt="" />
+          <p style={{fontFamily:"repo-bold", fontSize:"16px"}}>GDSC-PIET</p>
+        </div>
+        <div
+          className="logo-community"
+          data-aos="fade-up"
+          style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%",backgroundColor:"white",borderRadius:"20px",padding:"10px",boxShadow:"10px 10px 60px #49494960 ,inset -10px -10px 40px #ffffff5d"  }}
+        >
+          <img src={oscomm} className="iosc_logo" width="100%" alt="" />
+          <p style={{fontFamily:"repo-bold", fontSize:"16px"}}>OS Community</p>
+        </div>
+        <div
+          className="logo-community"
+          data-aos="fade-up"
+          style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%",backgroundColor:"white",borderRadius:"20px",padding:"10px",boxShadow:"10px 10px 60px #49494960 ,inset -10px -10px 40px #ffffff5d"  }}
+        >
+          <img src={befikra} className="iosc_logo" width="100%" alt="" />
+          <p style={{fontFamily:"repo-bold", fontSize:"16px"}}>Befikra Community</p>
+        </div>
+        <div
+          className="logo-community"
+          data-aos="fade-up"
+          style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%",backgroundColor:"white",borderRadius:"20px",padding:"10px",boxShadow:"10px 10px 60px #49494960 ,inset -10px -10px 40px #ffffff5d"  }}
+        >
+          <img src={cafe} className="iosc_logo" width="100%" alt="" />
+          <p style={{fontFamily:"repo-bold", fontSize:"16px"}}>Codess Cafe</p>
+        </div>
+        <div
+          className="logo-community"
+          data-aos="fade-up"
+          style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%",backgroundColor:"white",borderRadius:"20px",padding:"10px",boxShadow:"10px 10px 60px #49494960 ,inset -10px -10px 40px #ffffff5d"  }}
+        >
+          <img src={gdsc} className="iosc_logo" width="100%" alt="" />
+          <p style={{fontFamily:"repo-bold", fontSize:"16px"}}>GDG-DELHI</p>
         </div>
       </div>
     </div>

@@ -38,14 +38,14 @@ const TOP_SECTION = {
     "Unleash your creativity for 24-Hour! Join us on April 28th for a nationwide hackathon alongside hundreds of other student innovators. Build, learn, and connect - are you in?",
   IMG_SRC:
     "https://s3.ap-south-1.amazonaws.com/innohacks3.0/Innohacks+3.0+Logo.png",
-  DISCORD_LINK: "",
+  DISCORD_LINK: "https://discord.gg/8c9TrtjqNE",
   JUDGES_FORM_LINK: "#",
   HACKERS_REGISTRATION_FORM_LINK: "#",
 };
 
 const SOCIALS = {
   instagram: "https://www.instagram.com/innogeeks.kiet/",
-  discord: "#",
+  discord: "https://discord.gg/8c9TrtjqNE",
   linkedin: "https://www.linkedin.com/company/innogeeks?originalSubdomain=in",
   twitter: "https://twitter.com/InnogeeksKiet",
   devpost: "#",
@@ -403,47 +403,63 @@ const TeamInfo = [
 ];
 
 const titleSponsor = [{ src: twentyone }];
-const platinumSponsor = [
-  // { src: seventeen, alt: "images" },
-  // { src: fire, alt: "images" },
+const associateSponsor = [{ src:  "https://www.algoprep.in/img/logo_1.png"}];
+const hostingPartner = [{
+  src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/devfolio-removebg-preview.png",
+  alt: "DEVFOLIO LOGO",
+},];
+const merchandiseSponsor = [{
+  src: "https://bobble.ai/logo-final.png",
+  alt: "BOBBLE AI LOGO",
+}];
+const hiringSponsor = [
   {
-    src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/devfolio-removebg-preview.png",
-    alt: "DEVFOLIO LOGO",
+  src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/Ideaforage+innovations+Logo+(1).png",
+  alt: "IDEA FORGE LOGO",
+},
+  {
+  src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/decoding+draupadi.png",
+  alt: "DECODING LOGO",
+},
+  {
+  src: "https://techhiring.in/wp-content/uploads/2024/03/Light-Tosca-Minimalist-We-Are-Hiring-Facebook-Post-940-%C3%97-750-px-940-%C3%97-500-px-4.png",
+  alt: "open gig LOGO",
+},
+];
+const educationSponsor = [{ src: eleven }];
+const platinumSponsor = [
+  {
+    src: "https://miro.medium.com/v2/resize:fit:1125/0*N1fmHtI8gmkH_2Vu.png",
+    alt: "github LOGO",
   },
 ];
 const goldSponsor = [
   {
+    src: "https://media.licdn.com/dms/image/C560BAQHRD8_tPD_c4w/company-logo_200_200/0/1668973159544/inovact_pvt_ltd2_logo?e=2147483647&v=beta&t=xjA6pxYsJ8gpQtYCINavsZlW4seUXYPaVVR4KdtxPVo",
+    alt: "INOVACT LOGO",
+  },
+  {
     src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/Untitled-BUcWHqrv.png",
     alt: "ETHINDIA LOGO",
   },
-  ,
   {
     src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/polygon-removebg-preview.png",
     alt: "POLYGON LOGO",
   },
   {
-    src: "https://bobble.ai/logo-final.png",
-    alt: "BOBBLE AI LOGO",
-  },
-  {
-    src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/Ideaforage+innovations+Logo+(1).png",
-    alt: "IDEA FORGE LOGO",
+    src: "https://media.licdn.com/dms/image/D560BAQHn6vdu1MHoFw/company-logo_200_200/0/1706979113923/xerocodee_logo?e=2147483647&v=beta&t=7zlukXPc3tjivaEJU3nigF3blDJK9WhnUUCialAC-gM",
+    alt: "xerocodee LOGO",
   },
 ];
 const silverSponsor = [
   {
     src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/th2.jpeg",
-   
   }
   ,
   {
     src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/wolfram-corporate-logo-stacked-med.png",
     alt: " LOGO",
   },
-  // {
-  //   src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/balsamiq_logo_icon_167815.png",
-  //   alt: " LOGO",
-  // },
   {
     src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/xyz-logo1440615128.png",
     alt: " LOGO",
@@ -452,26 +468,7 @@ const silverSponsor = [
     src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Decathlon_Logo.png/1200px-Decathlon_Logo.png",
     alt: " LOGO",
   },
-  {
-    src: "https://inovact.in/assets/img/illustrations/inovact-about.png",
-    alt: " LOGO",
-  },
-
-  // { src: second },
-  // { src: sixteen },
-  // { src: forth },
-  // { src: fifth },
-  // { src: sixth },
-  // { src: seventh },
-  // { src: nine },
-  // { src: twelve },
-  // { src: thirteen },
-  // { src: coding },
-  // { src: auth },
-  // { src: eighteen },
-
 ];
-const educationSponsor = [{ src: eleven }];
 const certificateSponsor = [{ src: fourteen }];
 
 // const sponsorLogos = [ ];
@@ -489,7 +486,9 @@ const frequentlyAskedQuestions = [
       },
       {
         label: " Who can attend?",
-        content: "InnoHacks is open to all B.Tech. students from all over India.",
+
+        content: "InnoHacks is open to all B.Tech undergraduates from all over India.",
+
       },
       {
         label: "I am a first time hacker, what should I do?",
@@ -509,13 +508,17 @@ const frequentlyAskedQuestions = [
           "All you need to do is fill our form mentioned above and join our Discord channel, we will guide you through everything there",
       },
       {
+
         label: "I would like to ask additional questions.",
+
         content:
           "Reach us directly at (innohacks@kiet.edu). We would be happy to help you.",
       },
       {
         label: "Will there be a Registration Fee?",
+
         content: "No, there will be no registration cost for innohacks3.0.",
+
       },
       {
         label: "Will there be swags?",
@@ -543,4 +546,8 @@ export {
   silverSponsor,
   educationSponsor,
   certificateSponsor,
+  associateSponsor,
+  merchandiseSponsor,
+  hiringSponsor,
+  hostingPartner
 };
