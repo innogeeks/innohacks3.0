@@ -318,7 +318,7 @@ export default function HomePage() {
     <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/tee+(1).png" className="image2"></img>
   </div>
   <div class="bottom-section">
-    <span class="title" style={{ fontFamily: "repo-light" }}>The most innovative project will win Goodies and Swags worth INR 5,000 (Exclusive Innohacks Swag Kit and the coveted Idea Forage Innovation Swag Kit).  Don't miss out on the chance to shine and connect with a vibrant community of students, entrepreneurs, and mentors. Let's innovate together at Idea Forage Innovation. 
+    <span class="title" style={{ fontFamily: "repo-light" }}>Take a journey of creativity with Idea Forage creativity! Create a pioneering virtual reality (VR) simulation for breathing exercises and you may win exclusive gifts and swag worth INR 5,000. Join our dynamic community of students, entrepreneurs, and mentors as we shine and revolutionise wellness together. 
 </span>
       <a href="https://drive.google.com/file/d/1xSYFH_CuEBA0Sts8Ts0zoAzy86AH7gN2/view?usp=sharing" style={{textDecoration: 'none'}} target="_blank"><button className="butt">Problem Statement</button></a>
   </div>
@@ -332,7 +332,7 @@ export default function HomePage() {
     <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/decoding+draupadi+(1).png" className="image3"></img>
   </div>
   <div class="bottom-section">
-    <span class="title" style={{ fontFamily: "repo-light" }}>The most innovative project will win Goodies and Swags worth INR 5,000 (Exclusive Innohacks Swag Kit and the coveted Decoding Draupadi Swag Kit).  Don't miss out on the chance to shine and connect with a vibrant community of students, entrepreneurs, and mentors. Let's innovate together at Decoding Draupadi. 
+    <span class="title" style={{ fontFamily: "repo-light" }}>Create a cutting-edge platform for discovering female professionals and speakers across the country, revolutionising event planning. Join Decoding Draupadi for a chance to win INR 5,000 in exclusive merchandise and interact with an active community of innovators and mentors. 
 </span>
       <a href="https://docs.google.com/document/d/18zXwsdKy95_5kkTMF4YS7kaCPSW-w3Q7W-VPpfaekNY/edit?usp=sharing" style={{textDecoration: 'none'}} target="_blank"><button className="butt">Problem Statement</button></a>
   </div>
