@@ -474,22 +474,17 @@ export default function HomePage() {
             </div>
             <div>
               <p className="more-title-sponsor" style={{color:"gold"}}>Gold Sponsor</p>
-              {goldSponsor.map((item, i) => (
-                <Col
-                  data-aos="fade-left"
-                  data-aos-anchor-placement="top-bottom"
-                  data-aos-duration="200"
-                  key={i}
-                  className="sponsor-logos"
-                  sm={12}
-                  lg={4}
-                  md={6}
-                >
-                  <div className="sponsor-bg">
-                    <img src={item.src} width={180} alt={item.alt} />
-                  </div>
-                </Col>
-              ))}
+              {/* <p>To be declared soon...</p>
+               */}
+              <div className="more-title-sponsor-silver">
+                {silverSponsor.length!==1 && goldSponsor.map((item, i) => (
+                  <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                    <div className="sponsor-bg">
+                      <img src={item.src} width={180} alt="" />
+                    </div>
+                  </Col>
+                ))}
+              </div>
             </div>
             <div>
               <p className="more-title-sponsor" style={{color:"#C0C0C0"}}>Silver Sponsor</p>
