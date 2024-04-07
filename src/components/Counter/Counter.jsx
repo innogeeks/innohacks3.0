@@ -31,13 +31,18 @@ const Counter = () => {
         return () => unsubscribe();
     }, []);    
     const handleClick = () => {
-        // Increment count
-        const newCount = count + 1;
-        set(countRef,newCount);
-
-        // Store count in Firebase Realtime Database
-        set(countRef, newCount);
-    };
+      // Increment count
+      const newCount = count + 1;
+      
+      // Update count in Firebase Realtime Database
+      set(countRef, newCount)
+        .then(() => {
+          setCount(newCount);
+        })
+        .catch(error => {
+          console.error('Error updating count in Firebase:', error);
+        });
+  };
 
     return (
         <button id="hitCounter" onClick={handleClick}>

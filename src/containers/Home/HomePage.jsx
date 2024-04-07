@@ -13,7 +13,6 @@ import {
   LogoSectionAbout,
 } from "../../components/About/index.jsx";
 import { Accordion } from "../../components/Accordian/index.jsx";
-import Birds from "../../components/Animation";
 import Footer from "../../components/Footer/index.jsx";
 import Schedule from "components/Schedule/schedule.jsx";
 import Footfall from "components/Footfall/footfall.jsx";
@@ -49,8 +48,6 @@ import "aos/dist/aos.css";
 import prize1 from "components/Prizes/assests/PRIZES (4).png";
 import prize2 from "components/Prizes/assests/PRIZES (5).png";
 import prize3 from "components/Prizes/assests/PRIZES (6).png";
-import ideaforge from "components/Prizes/assests/ideaforge.png";
-import innovact from "components/Prizes/assests/innovact.png";
 
 const PrizeGroup = (props, index) => {
   return (
@@ -182,9 +179,8 @@ export default function HomePage() {
             data-aos="zoom-in"
             data-aos-duration="800"
             className="prizee"
-            // style={{ fontFamily: "poppins" }}
           >
-            ₹ 15Lakh
+            ₹15Lakh
           </p>
         </div>
         <div className="prizepool">
@@ -192,7 +188,7 @@ export default function HomePage() {
             data-aos-duration="800"
             id="prizes"
             className="worthHeading">
-        (Potential seed funding of ₹10 lakhs + from Technology Business Incubator - KIET)
+        (Potential seed funding of ₹10 lakh+ from Technology Business Incubator - KIET)
         </div>
         </div>
         <Row
@@ -304,13 +300,13 @@ export default function HomePage() {
 <div data-aos="fade-left" className="more-one">
 <div class="card">
   <div class="top-section">
-    <div class="border"></div>
-    <img src={innovact} className="image"></img>
+    {/* <div class="border"></div> */}
+    <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/tee_20240406_201109_0000+(1).png" className="image"></img>
   </div>
   <div class="bottom-section">
     <span class="title" style={{ fontFamily: "repo-light" }}>The most innovative post and project will win Goodies and Swags worth INR 5,000 (Exclusive Innohacks Swag Kit and the coveted Inovact Social Swag Kit).  Don't miss out on the chance to shine and connect with a vibrant community of students, entrepreneurs, and mentors. Let's innovate together at Inovact Social. 
 </span>
-      <button className="butt">Problem Statement</button>
+      <a href="https://docs.google.com/document/d/1Xl8mrO0rEnVbkmGwVYwOm9PZTDJofFrvAZKqonB_C-Q/edit?usp=sharing" style={{textDecoration: 'none'}} target="_blank"><button className="butt">Problem Statement</button></a>
   </div>
 </div>
 </div>
@@ -319,12 +315,29 @@ export default function HomePage() {
 <div class="card" id="card2">
   <div class="top-section">
     <div class="border"></div>
-    <img src={ideaforge} className="image2"></img>
+    <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/tee+(1).png" className="image2"></img>
   </div>
   <div class="bottom-section">
-    <span class="title" style={{ fontFamily: "repo-light" }}>The most innovative post and project will win Goodies and Swags worth INR 5,000 (Exclusive Innohacks Swag Kit and the coveted Inovact Social Swag Kit).  Don't miss out on the chance to shine and connect with a vibrant community of students, entrepreneurs, and mentors. Let's innovate together at Inovact Social. 
+    <span class="title" style={{ fontFamily: "repo-light" }}>Take a journey of creativity with Idea Forage creativity! Create a pioneering virtual reality (VR) simulation for breathing exercises and you may win exclusive swags worth INR 5,000 along with internship opportunity. Join our dynamic community of students, entrepreneurs, and mentors as we shine and revolutionise wellness together. 
 </span>
-      <button className="butt">Problem Statement</button>
+<div style={{display: "flex"}}>
+<a href="https://drive.google.com/file/d/1xSYFH_CuEBA0Sts8Ts0zoAzy86AH7gN2/view?usp=sharing" style={{textDecoration: 'none'}} target="_blank"><button className="butt" style={{margin: "10px 5px 5px 15px"}}>Problem Statement 1</button></a>
+      <a href="https://drive.google.com/file/d/1-WW2hPCjH6Vk3t64Bx4kGXH5kg9Q47ME/view?usp=sharing" style={{textDecoration: 'none'}} target="_blank"><button className="butt" style={{margin: "10px 5px 5px 25px"}}>Problem Statement 2</button></a>
+</div>
+  </div>
+</div>
+</div>
+
+<div data-aos="fade-right" className="more-one">
+<div class="card" id="card2">
+  <div class="top-section">
+    <div class="border"></div>
+    <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/decoding+draupadi+(1).png" className="image3"></img>
+  </div>
+  <div class="bottom-section">
+    <span class="title" style={{ fontFamily: "repo-light" }}>Create a cutting-edge platform for discovering female professionals and speakers across the country, revolutionising event planning. Join Decoding Draupadi for a chance to win INR 5,000 amazon vouchers along with internship opportunity and interact with an active community of innovators and mentors. 
+</span>
+<a href="https://docs.google.com/document/d/18zXwsdKy95_5kkTMF4YS7kaCPSW-w3Q7W-VPpfaekNY/edit?usp=sharing" style={{textDecoration: 'none'}} target="_blank"><button className="butt" >Problem Statement</button></a>
   </div>
 </div>
 </div>

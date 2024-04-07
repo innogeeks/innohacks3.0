@@ -436,7 +436,7 @@ const platinumSponsor = [
 const goldSponsor = [
   {
     src: "https://media.licdn.com/dms/image/C560BAQHRD8_tPD_c4w/company-logo_200_200/0/1668973159544/inovact_pvt_ltd2_logo?e=2147483647&v=beta&t=xjA6pxYsJ8gpQtYCINavsZlW4seUXYPaVVR4KdtxPVo",
-    alt: "INNOVACT LOGO",
+    alt: "INOVACT LOGO",
   },
   {
     src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/Untitled-BUcWHqrv.png",
@@ -487,7 +487,7 @@ const frequentlyAskedQuestions = [
       {
         label: " Who can attend?",
 
-        content: "InnoHacks is open to all B.Tech undergraduates from all over India.",
+        content: "Innohacks is open to all B.Tech undergraduates from all over India.",
 
       },
       {
@@ -517,13 +517,13 @@ const frequentlyAskedQuestions = [
       {
         label: "Will there be a Registration Fee?",
 
-        content: "No, there will be no registration cost for innohacks3.0.",
+        content: "No, there will be no registration cost for Innohacks3.0.",
 
       },
       {
         label: "Will there be swags?",
         content:
-          "Yes! Participants will have many chances to win InnoHacks 3.0 swags!.",
+          "Yes! Participants will have many chances to win Innohacks 3.0 swags!.",
       },
     ],
   ],
