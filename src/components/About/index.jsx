@@ -184,7 +184,6 @@ function CommunityPartner() {
         <div class="logos">
           <div class="logos-slide" ref={logosSlideRef}>
             <img src={abesec} />
-            <img src={abesec} />
             <img src={algos} />
             <img src={bajaj} />
             <img src={befikra} />
