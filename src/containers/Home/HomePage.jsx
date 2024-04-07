@@ -188,7 +188,7 @@ export default function HomePage() {
             data-aos-duration="800"
             id="prizes"
             className="worthHeading">
-        (Potential seed funding of ₹10 lakhs + ₹5 lakhs from Technology Business Incubator - KIET)
+        (Potential seed funding of ₹10 lakh+ from Technology Business Incubator - KIET)
         </div>
         </div>
         <Row
@@ -318,9 +318,12 @@ export default function HomePage() {
     <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/tee+(1).png" className="image2"></img>
   </div>
   <div class="bottom-section">
-    <span class="title" style={{ fontFamily: "repo-light" }}>Take a journey of creativity with Idea Forage creativity! Create a pioneering virtual reality (VR) simulation for breathing exercises and you may win exclusive gifts and swag worth INR 5,000. Join our dynamic community of students, entrepreneurs, and mentors as we shine and revolutionise wellness together. 
+    <span class="title" style={{ fontFamily: "repo-light" }}>Take a journey of creativity with Idea Forage creativity! Create a pioneering virtual reality (VR) simulation for breathing exercises and you may win exclusive swags worth INR 5,000 along with internship opportunity. Join our dynamic community of students, entrepreneurs, and mentors as we shine and revolutionise wellness together. 
 </span>
-      <a href="https://drive.google.com/file/d/1xSYFH_CuEBA0Sts8Ts0zoAzy86AH7gN2/view?usp=sharing" style={{textDecoration: 'none'}} target="_blank"><button className="butt">Problem Statement</button></a>
+<div style={{display: "flex"}}>
+<a href="https://drive.google.com/file/d/1xSYFH_CuEBA0Sts8Ts0zoAzy86AH7gN2/view?usp=sharing" style={{textDecoration: 'none'}} target="_blank"><button className="butt" style={{margin: "10px 5px 5px 15px"}}>Problem Statement 1</button></a>
+      <a href="https://drive.google.com/file/d/1-WW2hPCjH6Vk3t64Bx4kGXH5kg9Q47ME/view?usp=sharing" style={{textDecoration: 'none'}} target="_blank"><button className="butt" style={{margin: "10px 5px 5px 25px"}}>Problem Statement 2</button></a>
+</div>
   </div>
 </div>
 </div>
@@ -332,9 +335,9 @@ export default function HomePage() {
     <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/decoding+draupadi+(1).png" className="image3"></img>
   </div>
   <div class="bottom-section">
-    <span class="title" style={{ fontFamily: "repo-light" }}>Create a cutting-edge platform for discovering female professionals and speakers across the country, revolutionising event planning. Join Decoding Draupadi for a chance to win INR 5,000 in exclusive merchandise and interact with an active community of innovators and mentors. 
+    <span class="title" style={{ fontFamily: "repo-light" }}>Create a cutting-edge platform for discovering female professionals and speakers across the country, revolutionising event planning. Join Decoding Draupadi for a chance to win INR 5,000 amazon vouchers along with internship opportunity and interact with an active community of innovators and mentors. 
 </span>
-      <a href="https://docs.google.com/document/d/18zXwsdKy95_5kkTMF4YS7kaCPSW-w3Q7W-VPpfaekNY/edit?usp=sharing" style={{textDecoration: 'none'}} target="_blank"><button className="butt">Problem Statement</button></a>
+<a href="https://docs.google.com/document/d/18zXwsdKy95_5kkTMF4YS7kaCPSW-w3Q7W-VPpfaekNY/edit?usp=sharing" style={{textDecoration: 'none'}} target="_blank"><button className="butt" >Problem Statement</button></a>
   </div>
 </div>
 </div>
