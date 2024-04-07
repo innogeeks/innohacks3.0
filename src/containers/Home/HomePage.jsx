@@ -172,6 +172,7 @@ export default function HomePage() {
             data-aos-duration="800"
             id="prizes"
             className="worth"
+            style={{alignItems:"center"}}
           >
             Prize Pool Worth
           </p>
