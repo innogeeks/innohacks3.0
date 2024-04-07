@@ -168,7 +168,7 @@ h1 {
   background: #06697b;
   -webkit-background-clip: text;
   background-clip: text;
-  animation: neon 3s infinite;
+  /* animation: neon 3s infinite; */
 }
 
 .money{
