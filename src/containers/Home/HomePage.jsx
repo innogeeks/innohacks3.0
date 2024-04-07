@@ -172,6 +172,7 @@ export default function HomePage() {
             data-aos-duration="800"
             id="prizes"
             className="worth"
+            style={{alignItems:"center"}}
           >
             Prize Pool Worth
           </p>
@@ -335,7 +336,7 @@ export default function HomePage() {
     <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/decoding+draupadi+(1).png" className="image3"></img>
   </div>
   <div class="bottom-section">
-    <span class="title" style={{ fontFamily: "repo-light" }}>Create a cutting-edge platform for discovering female professionals and speakers across the country, revolutionising event planning. Join Decoding Draupadi for a chance to win INR 5,000 amazon vouchers along with internship opportunity and interact with an active community of innovators and mentors. 
+    <span class="title" style={{ fontFamily: "repo-light" }}>Join Decoding Draupadi, where diversity thrives! Teams led by women receive preference, fostering inclusivity in our community. Stand a chance to win INR 5,000 Amazon vouchers, plus an internship opportunity, as you interact with a vibrant network of innovators and mentors.
 </span>
 <a href="https://docs.google.com/document/d/18zXwsdKy95_5kkTMF4YS7kaCPSW-w3Q7W-VPpfaekNY/edit?usp=sharing" style={{textDecoration: 'none'}} target="_blank"><button className="butt" >Problem Statement</button></a>
   </div>

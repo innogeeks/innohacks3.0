@@ -5,16 +5,21 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 // images
-import algos from "./img/algocs.png";
-import gdsc from "./img/gdsc.png";
-import iosc from "./img/iosc.png";
+import algos from "./img/algos.png";
+import abesec from "./img/abesec.png";
+import iosc from "./img/abesec.png";
 import loop from "./img/loop.png";
-import oscomm from "./img/oscomm.png";
+import oscomm from "./img/os.png";
 import befikra from "./img/befikra.png";
-import cafe from "./img/cafe.png";
+import bajaj from "./img/bajaj.png";
+import codess from "./img/codess.png"
+import delhi from "./img/delhi.png"
+import gcet from "./img/gcet.png"
+import piet from "./img/piet.png"
+
 
 import { MIDDLE_SECTION } from "../../Module/General";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 function LogoSectionAbout() {
   useEffect(() => {
@@ -60,9 +65,13 @@ function Logo() {
 }
 
 function CommunityPartner() {
+  const logosSlideRef = useRef(null);
   useEffect(() => {
     Aos.init({ duration: 400 });
+    const copy = logosSlideRef.current.cloneNode(true);
+    logosSlideRef.current.parentNode.appendChild(copy);
   }, []);
+
   return (
     <div className="community-partner">
       <h1
@@ -74,7 +83,7 @@ function CommunityPartner() {
         Community Partners
       </h1>
       <div className="community_logo_container">
-        <div
+        {/* <div
           className="logo-community"
           data-aos="fade-up"
           style={{ color: "white", textAlign: "center", margin: "0 5% 2% 5%",backgroundColor:"white",borderRadius:"20px",padding:"10px",boxShadow:"10px 10px 60px #49494960 ,inset -10px -10px 40px #ffffff5d" }}
@@ -169,6 +178,24 @@ function CommunityPartner() {
         >
           <img src={gdsc} className="iosc_logo" width="100%" alt="" />
           <p style={{fontFamily:"repo-bold", fontSize:"16px"}}>GDG-DELHI</p>
+        </div> */}
+      </div>
+      <div className="slider-container">
+        <div class="logos">
+          <div class="logos-slide" ref={logosSlideRef}>
+            <img src={abesec} />
+            <img src={algos} />
+            <img src={bajaj} />
+            <img src={befikra} />
+            <img src={codess} />
+            <img src={delhi} />
+            <img src={gcet} />
+            <img src={iosc} />
+            <img src={loop} />
+            <img src={oscomm} />
+            <img src={piet} />
+            
+          </div>
         </div>
       </div>
     </div>
