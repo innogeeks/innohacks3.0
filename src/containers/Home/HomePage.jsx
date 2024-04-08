@@ -464,7 +464,7 @@ export default function HomePage() {
               </div>
             </div>
             <div>
-              <p className="more-title-sponsor" style={{color:"#C0C0C0"}}>Merchandise Sponsors</p>
+              <p className="more-title-sponsor" style={{color:"#C0C0C0"}}>Merchandise Partners</p>
               <div className="more-title-sponsor-silver">
                 {merchandiseSponsor.map((item, i) => (
                   <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
@@ -488,7 +488,7 @@ export default function HomePage() {
               </div>
             </div>
             <div>
-              <p className="more-title-sponsor" style={{color:"#F7418F"}}>Education Sponsor</p>
+              <p className="more-title-sponsor" style={{color:"#F7418F"}}>Education Partners</p>
               {educationSponsor.map((item, i) => (
                 <Col
                   data-aos="fade-left"
@@ -552,7 +552,7 @@ export default function HomePage() {
               </div>
             </div>
             <div>
-              <p className="more-title-sponsor" style={{color:"#535C91"}}>Certificate Sponsor</p>
+              <p className="more-title-sponsor" style={{color:"#535C91"}}>Certificate Partners</p>
               {certificateSponsor.map((item, i) => (
                 <Col
                   data-aos="fade-left"

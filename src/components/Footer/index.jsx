@@ -3,7 +3,9 @@ import { FaInstagram } from "react-icons/fa6";
 import { BiLogoDiscordAlt } from "react-icons/bi";
 import { CiLinkedin } from "react-icons/ci";
 import { IoLogoTwitter } from "react-icons/io";
-import { FaPhone } from "react-icons/fa";
+// import { FaPhone } from "react-icons/fa";
+import { IoCall } from "react-icons/io5";
+
 import { BiLogoTelegram } from "react-icons/bi";
 import { HashLink } from "react-router-hash-link";
 import "./style.scss";
@@ -55,7 +57,7 @@ const Footer = () => {
           </span>
           <span className="single">
             <a rel="noreferrer" href="tel:+917669816088">
-              <FaPhone fontSize={35} className="redBlue5" />
+              <IoCall fontSize={35} className="redBlue5" />
             </a>
           </span>
         </div>
