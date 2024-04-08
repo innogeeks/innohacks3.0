@@ -64,6 +64,10 @@
   }
 }
 @media (max-width: 570px) {
+  .single{
+    padding-left: 4%;
+    padding-right: 4%;
+  }
   .Register_a a {
     margin-left: 0;
     margin-right: 0;
@@ -198,6 +202,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
 
 .footer-team p{
   color: gray;
