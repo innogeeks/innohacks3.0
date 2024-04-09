@@ -342,7 +342,19 @@ export default function HomePage() {
   </div>
 </div>
 </div>
-
+<div data-aos="fade-right" className="more-one">
+<div class="card" id="card2">
+  <div class="top-section">
+    <div class="border"></div>
+    <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/Logo.png" className="image3"></img>
+  </div>
+  <div class="bottom-section">
+    <span class="title" style={{ fontFamily: "repo-light" }}>The objective of this Problem Statement is to design and develop a live streaming platform that enables educational experts to broadcast live sessions, workshops, or lectures to students who have subscribed to the service. The platform should offer features that foster engagement, interaction, and learning among participants.
+</span>
+<a href="https://docs.google.com/document/d/1l27ZOnpx0yPA_tc_AEcUbH2RHLkUDCgXuoV6_-MtTp4/edit?usp=sharing" style={{textDecoration: 'none'}} target="_blank"><button className="butt" >Problem Statement</button></a>
+  </div>
+</div>
+</div>
 
             {/* <div data-aos="fade-right" className="more-one">
               <img
