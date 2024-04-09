@@ -56,7 +56,7 @@ const Footer = () => {
             </a>
           </span>
           <span className="single">
-            <a rel="noreferrer" href="tel:+917669816088">
+            <a rel="noreferrer" href="tel:+918858311388">
               <IoCall fontSize={35} className="redBlue5" />
             </a>
           </span>
