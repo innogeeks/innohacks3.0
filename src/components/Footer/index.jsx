@@ -5,12 +5,61 @@ import { CiLinkedin } from "react-icons/ci";
 import { IoLogoTwitter } from "react-icons/io";
 // import { FaPhone } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
-
 import { BiLogoTelegram } from "react-icons/bi";
 import { HashLink } from "react-router-hash-link";
 import "./style.scss";
+import { initializeApp } from "firebase/app";
+import { getDatabase, ref, set } from "firebase/database";
+import { onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyB8JNy6K7F-FleyUxq4BmfCO0mIGqnvEfs",
+  authDomain: "innohacks-like-counter.firebaseapp.com",
+  databaseURL:
+    "https://innohacks-like-counter-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "innohacks-like-counter",
+  storageBucket: "innohacks-like-counter.appspot.com",
+  messagingSenderId: "227514540661",
+  appId: "1:227514540661:web:4736b67774954f5f580e3c",
+};
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+const clickCount = ref(database, "clicked");
+
 
 const Footer = () => {
+  const [clicked, setClicked] = useState(0);
+
+  useEffect(() => {
+    const unsubscribeClicked = onValue(clickCount, (snapshot) => {
+      setClicked(snapshot.val() || 0);
+    });
+    return () => {
+      unsubscribeClicked();
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleClickAnywhere = () => {
+      // Increment clicked count
+      const newClicked = clicked + 1;
+      set(clickCount, newClicked)
+        .then(() => {
+          setClicked(newClicked);
+        })
+        .catch(error => {
+          console.error('Error updating clicked count in Firebase:', error);
+        });
+    };
+
+    document.addEventListener("click", handleClickAnywhere);
+    
+    return () => {
+      document.removeEventListener("click", handleClickAnywhere);
+    };
+  }, [clicked]);
+
   return (
     <div className="footer new_footer_top">
       <svg
@@ -56,7 +105,7 @@ const Footer = () => {
             </a>
           </span>
           <span className="single">
-            <a rel="noreferrer" href="tel:+917669816088">
+            <a rel="noreferrer" href="tel:+918858311388">
               <IoCall fontSize={35} className="redBlue5" />
             </a>
           </span>
@@ -96,6 +145,12 @@ const Footer = () => {
         </p>
       </div>
       <div className="footer_bg"></div>
+      <div className="clickCount">
+        <span>Over</span> 
+        <span>&nbsp;{clicked}</span>
+        <span>+ clicks on the site!</span>
+        <p></p>
+      </div>
     </div>
   );
 };

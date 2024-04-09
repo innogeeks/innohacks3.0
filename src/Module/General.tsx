@@ -425,6 +425,10 @@ const hiringSponsor = [
   src: "https://techhiring.in/wp-content/uploads/2024/03/Light-Tosca-Minimalist-We-Are-Hiring-Facebook-Post-940-%C3%97-750-px-940-%C3%97-500-px-4.png",
   alt: "open gig LOGO",
 },
+{
+  src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/Logo.png",
+  alt: "open gig LOGO",
+},
 ];
 const educationSponsor = [{ src: eleven }];
 const platinumSponsor = [
