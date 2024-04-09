@@ -298,7 +298,7 @@ export default function HomePage() {
               </p> */}
 
 
-<div data-aos="fade-left" className="more-one">
+<div data-aos="fade-right" className="more-one">
 <div class="card">
   <div class="top-section">
     {/* <div class="border"></div> */}
@@ -312,7 +312,7 @@ export default function HomePage() {
 </div>
 </div>
 
-<div data-aos="fade-right" className="more-one">
+<div data-aos="fade-left" className="more-one">
 <div class="card" id="card2">
   <div class="top-section">
     <div class="border"></div>
@@ -342,7 +342,7 @@ export default function HomePage() {
   </div>
 </div>
 </div>
-<div data-aos="fade-right" className="more-one">
+<div data-aos="fade-left" className="more-one">
 <div class="card" id="card2">
   <div class="top-section">
     <div class="border"></div>
