@@ -25,6 +25,7 @@ import {
   SponsorUS,
 } from "../../components/Sponsors/sponsors.jsx";
 import { Member } from "../../components/Team";
+import { Mentor } from "../../components/Mentors";
 import {
   frequentlyAskedQuestions,
   Themeinfo,
@@ -35,6 +36,7 @@ import {
   educationSponsor,
   certificateSponsor,
   TeamInfo,
+  MentorInfo,
 } from "../../Module/General";
 // import PastWinner from "components/pastWinners/index.jsx";
 import Map from "components/map/index.jsx";
@@ -507,6 +509,19 @@ export default function HomePage() {
           </div>
         </Row>
         {/* ********Sponsors ending here ***** */}
+
+        {/* Mentors starts*/}
+        <div id="judges">
+          <h1
+            className="title_community"
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+          >
+            Mentors
+          </h1>
+        </div>
+        {MentorInfo.map(TeamMembers)}
+        {/* Mentors ends*/}
 
         {/* Judges start */}
         <div id="judges">

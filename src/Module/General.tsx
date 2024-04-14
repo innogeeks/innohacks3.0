@@ -31,6 +31,10 @@ import akshay from "./Assets/teami/akshay saini.jpg";
 import arsh from "./Assets/teami/arsh goyal.jpg";
 import kushal from "./Assets/teami/kushal.jpeg";
 
+import akhil from "./Assets/mentors/akhil gupta.jpeg";
+import nikhil from "./Assets/mentors/nikhil-gehlot.jpg";
+import yuvraj from "./Assets/mentors/yuvraj.jpeg";
+
 const TOP_SECTION = {
   TITLE: "Join Innohacks3.0",
   Typed_effect: ["24-Hour of Innovation", "Win awesome prizes"],
@@ -402,6 +406,33 @@ const TeamInfo = [
   ],
 ];
 
+const MentorInfo = [
+  [
+    //Array 1
+    {
+      Name: "Nikhil Gehlot",
+      role: "Director | Ideaforage Innovations",
+      github: "",
+      linkedin: "https://www.linkedin.com/in/nikhhiilgehlot555/",
+      img: nikhil,
+    },
+    {
+      Name: "Akhil Gupta",
+      role: "Bluetick Consultants ",
+      github: "",
+      linkedin: "https://www.linkedin.com/in/akhil-gupta-2810/",
+      img: akhil,
+    },
+    {
+      Name: "Yuvraj Kachhawaha",
+      role: "Founder - CEO | Vorldbox",
+      github: "",
+      linkedin: "https://www.linkedin.com/in/yuvraj23aiwarex80/",
+      img: yuvraj,
+    },
+  ],
+];
+
 const titleSponsor = [{ src: twentyone }];
 const platinumSponsor = [
   // { src: seventeen, alt: "images" },
@@ -507,6 +538,7 @@ export {
   FOOTER,
   Prizeinfo,
   TeamInfo,
+  MentorInfo,
   frequentlyAskedQuestions,
   schedule,
   calenderStartingDate,
