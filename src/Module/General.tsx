@@ -432,8 +432,34 @@ const MentorInfo = [
     },
   ],
 ];
-
 const titleSponsor = [{ src: twentyone }];
+const associateSponsor = [{ src:  "https://www.algoprep.in/img/logo_1.png"}];
+const hostingPartner = [{
+  src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/devfolio-removebg-preview.png",
+  alt: "DEVFOLIO LOGO",
+},];
+const merchandiseSponsor = [{
+  src: "https://bobble.ai/logo-final.png",
+  alt: "BOBBLE AI LOGO",
+}];
+const hiringSponsor = [
+  {
+  src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/Ideaforage+innovations+Logo+(1).png",
+  alt: "IDEA FORGE LOGO",
+},
+  {
+  src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/decoding+draupadi.png",
+  alt: "DECODING LOGO",
+},
+  {
+  src: "https://techhiring.in/wp-content/uploads/2024/03/Light-Tosca-Minimalist-We-Are-Hiring-Facebook-Post-940-%C3%97-750-px-940-%C3%97-500-px-4.png",
+  alt: "open gig LOGO",
+},
+{
+  src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/Logo.png",
+  alt: "open gig LOGO",
+},
+];
 const platinumSponsor = [
   // { src: seventeen, alt: "images" },
   // { src: fire, alt: "images" },
@@ -484,7 +510,7 @@ const frequentlyAskedQuestions = [
       {
         label: "What is a hackathon?",
         content:
-          'A hackathon is a 24 hour event where "hackers" all over the globe collaborate on creating a functioning software or hardware by the end of the event.',
+          'A hackathon is an event where "hackers" all over the globe collaborate on creating a functioning software or hardware by the end of the event.',
       },
       {
         label: " Who can attend?",
@@ -495,19 +521,18 @@ const frequentlyAskedQuestions = [
       {
         label: "I am a first time hacker, what should I do?",
         content:
-          "No worries, we love to welcome first time hackers and start their hacking journey from our hackathon. We have some awesome workshops and events which will help you get started with hackathons in general.",
+          "No worries, we love to welcome first time hackers at Innohacks. We have many awesome workshops and events which will help you get started with hackathons in general.",
       },
       {
         label: "How does team formation works?",
         content:
-          "You can form team with maximum 4 members. If you don't have a team, there will be plenty of opportunities for you to meet hackers and form a team!",
+          "You can form a team with a maximum of four members. If you don't already have a team, there will be plenty of opportunities for you to meet other hackers and create one!"
       },
     ],
     [
       {
         label: "How to register myself in the Innohacks 3.0?",
-        content:
-          "All you need to do is fill our form mentioned above and join our Discord channel, we will guide you through everything there",
+        content: "To get started, simply fill out the form mentioned on Devfolio, our hosting partner and join our Discord server (Link Below!). We'll guide you through everything once you're there."
       },
       {
 

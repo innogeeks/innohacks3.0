@@ -133,7 +133,7 @@ export default function HomePage() {
           </Row>
         </Container>
       </div>
-      <Container fluid>
+      <Container fluid/>
         <Row className=" logoSection">
           <Col className="info-div">
             <LogoSectionAbout />
@@ -292,7 +292,7 @@ export default function HomePage() {
               </p> */}
 
 
-<div data-aos="fade-left" className="more-one">
+<div data-aos="fade-right" className="more-one">
 <div class="card">
   <div class="top-section">
     <div class="border"></div>
@@ -306,7 +306,7 @@ export default function HomePage() {
 </div>
 </div>
 
-<div data-aos="fade-right" className="more-one">
+<div data-aos="fade-left" className="more-one">
 <div class="card" id="card2">
   <div class="top-section">
     <div class="border"></div>
@@ -319,7 +319,19 @@ export default function HomePage() {
   </div>
 </div>
 </div>
-
+<div data-aos="fade-left" className="more-one">
+<div class="card" id="card2">
+  <div class="top-section">
+    <div class="border"></div>
+    <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/Logo.png" className="image3"></img>
+  </div>
+  <div class="bottom-section">
+    <span class="title" style={{ fontFamily: "repo-light" }}>The objective of this Problem Statement is to design and develop a live streaming platform that enables educational experts to broadcast live sessions, workshops, or lectures to students who have subscribed to the service. The platform should offer features that foster engagement, interaction, and learning among participants.
+</span>
+<a href="https://docs.google.com/document/d/1l27ZOnpx0yPA_tc_AEcUbH2RHLkUDCgXuoV6_-MtTp4/edit?usp=sharing" style={{textDecoration: 'none'}} target="_blank"><button className="butt" >Problem Statement</button></a>
+  </div>
+</div>
+</div>
 
             {/* <div data-aos="fade-right" className="more-one">
               <img
@@ -394,10 +406,10 @@ export default function HomePage() {
         {/* Schedule section ends here */}
 
         {/* ********Sponsors here ***** */}
-        <Row className="sponsorSection" id="sponsors">
+        <Row className="sponsorSection" id="sponsors"/>
           <SponsorsHead />
           <SponsorUS />
-          <div className="sponsor-grid">
+          <div className="sponsor-grid"/>
             <div>
               <p className="more-title-sponsor" style={{color:"tomato"}}>Title sponsor</p>
               {titleSponsor.map((item, i) => (
@@ -418,7 +430,58 @@ export default function HomePage() {
               ))}
             </div>
             <div>
+
               <p className="more-title-sponsor" style={{color:"#F7418F"}}>Education Sponsor</p>
+
+              <p className="more-title-sponsor" style={{color:"#F7418F"}}>Associate Sponsor</p>
+              <div className="more-title-sponsor-silver">
+                {associateSponsor.map((item, i) => (
+                  <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                    <div className="sponsor-bg">
+                      <img src={item.src} width={180} alt="" />
+                    </div>
+                  </Col>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="more-title-sponsor" style={{color:"#7AA2E3"}}>Hosting Partners</p>
+              <div className="more-title-sponsor-silver">
+                {hostingPartner.map((item, i) => (
+                  <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                    <div className="sponsor-bg">
+                      <img src={item.src} width={180} alt="" />
+                    </div>
+                  </Col>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="more-title-sponsor" style={{color:"#97E7E1"}}>Merchandise Partners</p>
+              <div className="more-title-sponsor-silver">
+                {merchandiseSponsor.map((item, i) => (
+                  <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                    <div className="sponsor-bg">
+                      <img src={item.src} width={180} alt="" />
+                    </div>
+                  </Col>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="more-title-sponsor" style={{color:"#FF204E"}}>Hiring Partners</p>
+              <div className="more-title-sponsor-silver">
+                {hiringSponsor.length!==1 && hiringSponsor.map((item, i) => (
+                  <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                    <div className="sponsor-bg">
+                      <img src={item.src} width={180} alt="" />
+                    </div>
+                  </Col>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="more-title-sponsor" style={{color:"#F7418F"}}>Education Partners</p>
               {educationSponsor.map((item, i) => (
                 <Col
                   data-aos="fade-left"
@@ -437,46 +500,71 @@ export default function HomePage() {
               ))}
             </div>
             <div>
-              <p className="more-title-sponsor" style={{color:"#535C91"}}>Certificate Sponsor</p>
+                <p className="more-title-sponsor" style={{ color: "#535C91" }}>Certificate Sponsor</p>
+                {certificateSponsor.map((item, i) => (
+                  <Col
+                    data-aos="fade-left"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="200"
+                    key={i}
+                    className="sponsor-logos"
+                    sm={12}
+                    lg={4}
+                    md={6}
+                  >
+                    <div className="sponsor-bg">
+                      <img src={item.src} width={180} alt="" />
+                    </div>
+                  </Col>
+                ))}
+              </div><div>
+                  <p className="more-title-sponsor" style={{ color: "#E5E4E2" }}>Platinum Sponsor</p>
+                  {platinumSponsor.map((item, i) => (
+                    <Col
+                      data-aos="fade-left"
+                      data-aos-anchor-placement="top-bottom"
+                      data-aos-duration="200"
+                      key={i}
+                      className="sponsor-logos"
+                      sm={12}
+                      lg={4}
+                      md={6}
+                    >
+                      <div className="sponsor-bg">
+                        <img src={item.src} width={180} alt="DEVFOLIO LOGO" />
+                      </div>
+                    </Col>
+                  ))}
+                </div>
+                <div>
+                  <p className="more-title-sponsor" style={{ color: "gold" }}>Gold Sponsor</p>
+              {/* <p>To be declared soon...</p>
+               */}
+               <div className='more-title-sponsor-silver'>
+                {silverSponsor.length!==1 && goldSponsor.map((item, i) => (
+                  <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                    <div className="sponsor-bg">
+                      <img src={item.src} width={180} alt="" />
+                    </div>
+                  </Col>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="more-title-sponsor" style={{color:"#C0C0C0"}}>Silver Sponsor</p>
+              <div className="more-title-sponsor-silver">
+                {silverSponsor.length!==1 && silverSponsor.map((item, i) => (
+                  <Col key={i} className="sponsor-logos" sm={12} lg={4} md={6}>
+                    <div className="sponsor-bg">
+                      <img src={item.src} width={180} alt="" />
+                    </div>
+                  </Col>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="more-title-sponsor" style={{color:"#535C91"}}>Certificate Partners</p>
               {certificateSponsor.map((item, i) => (
-                <Col
-                  data-aos="fade-left"
-                  data-aos-anchor-placement="top-bottom"
-                  data-aos-duration="200"
-                  key={i}
-                  className="sponsor-logos"
-                  sm={12}
-                  lg={4}
-                  md={6}
-                >
-                  <div className="sponsor-bg">
-                    <img src={item.src} width={180} alt="" />
-                  </div>
-                </Col>
-              ))}
-            </div>
-            <div>
-              <p className="more-title-sponsor" style={{color:"#E5E4E2"}}>Platinum Sponsor</p>
-              {platinumSponsor.map((item, i) => (
-                <Col
-                  data-aos="fade-left"
-                  data-aos-anchor-placement="top-bottom"
-                  data-aos-duration="200"
-                  key={i}
-                  className="sponsor-logos"
-                  sm={12}
-                  lg={4}
-                  md={6}
-                >
-                  <div className="sponsor-bg">
-                    <img src={item.src} width={180} alt="DEVFOLIO LOGO" />
-                  </div>
-                </Col>
-              ))}
-            </div>
-            <div>
-              <p className="more-title-sponsor" style={{color:"gold"}}>Gold Sponsor</p>
-              {goldSponsor.map((item, i) => (
                 <Col
                   data-aos="fade-left"
                   data-aos-anchor-placement="top-bottom"
@@ -506,10 +594,9 @@ export default function HomePage() {
                 ))}
               </div>
             </div>
-          </div>
+            <Row>
         </Row>
         {/* ********Sponsors ending here ***** */}
-
         {/* Mentors starts*/}
         <div id="judges">
           <h1
@@ -586,7 +673,6 @@ export default function HomePage() {
           <Map />
         </Row>
         {/* Map End */}
-
         {/* Contact Us */}
         <Row>
           <div className="contact-us-container">
@@ -597,11 +683,13 @@ export default function HomePage() {
           </div>
         </Row>
         {/* Contact Us end */}
-
+        <div>
+      <Container>
         {/* Footer */}
-      </Container>
+      
       <Footer />
       {/* Footer End */}
+      </Container>
     </div>
   );
 }
