@@ -402,6 +402,34 @@ const TeamInfo = [
   ],
 ];
 
+
+const MentorInfo = [
+  [
+    //Array 1
+    {
+      Name: "Nikhhiil Gehlot ",
+      role: "",
+      github: "",
+      linkedin: "",
+      img: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/nikhilgehlot.jpeg",
+    },
+    {
+      Name: "Akhil Gupta",
+      role: " ",
+      github: "",
+      linkedin: "https://www.linkedin.com/in/akhil-gupta-2810",
+      img: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/akhilgupta.jpeg",
+    },
+    {
+      Name: " Yuvraj Kachhawaha",
+      role: "",
+      github: "",
+      linkedin: "https://www.linkedin.com/in/yuvraj23aiwarex80/overlay/photo/",
+      img: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/yuvrajkachhwa.jpeg",
+    },
+  ],
+];
+
 const titleSponsor = [{ src: twentyone }];
 const associateSponsor = [{ src:  "https://www.algoprep.in/img/logo_1.png"}];
 const hostingPartner = [{
@@ -553,4 +581,5 @@ export {
   merchandiseSponsor,
   hiringSponsor,
   hostingPartner
+  , MentorInfo
 };
