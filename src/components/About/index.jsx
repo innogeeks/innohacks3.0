@@ -194,6 +194,7 @@ function CommunityPartner() {
             <img src={loop} />
             <img src={oscomm} />
             <img src={piet} />
+            <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/Kotlin+UG+LOGO.png" />
             
           </div>
         </div>
