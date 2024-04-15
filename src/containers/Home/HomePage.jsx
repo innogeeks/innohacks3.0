@@ -38,6 +38,7 @@ import {
   hiringSponsor,
   hostingPartner,
   TeamInfo,
+  MentorInfo
 } from "../../Module/General";
 // import PastWinner from "components/pastWinners/index.jsx";
 import Map from "components/map/index.jsx";
@@ -76,6 +77,20 @@ const TeamMembers = (props, index) => {
   );
 };
 
+const MentorMembers = (props, index) => {
+  useEffect(() => {
+    Aos.init({ duration: 400 });
+  }, []);
+  return (
+    <Row key={index} className="members">
+      {props.map((s, i) => (
+        <Col data-aos="fade-up" key={i} className="" sm={12} lg={4} md={4}>
+          <Member info={s}/>
+        </Col>
+      ))}
+    </Row>
+  );
+};
 const FrequentlyAsked = (props, index) => {
   return (
     <Row key={index} className="sf">
@@ -599,6 +614,18 @@ export default function HomePage() {
         {TeamInfo.map(TeamMembers)}
         {/* Judges End */}
 
+
+        <div id="judges">
+          <h1
+            className="title_community"
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
+          >
+            Mentors
+          </h1>
+        </div>
+        {MentorInfo.map(MentorMembers)}
+        {/* Judges End */}
         {/* Community partners */}
         <Row>
           <CommunityPartner />
