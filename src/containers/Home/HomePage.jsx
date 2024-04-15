@@ -34,6 +34,10 @@ import {
   goldSponsor,
   silverSponsor,
   educationSponsor,
+  associateSponsor,
+  hostingPartner,
+  merchandiseSponsor,
+  hiringSponsor,
   certificateSponsor,
   TeamInfo,
   MentorInfo,
@@ -690,6 +694,7 @@ export default function HomePage() {
       <Footer />
       {/* Footer End */}
       </Container>
+    </div>
     </div>
   );
 }

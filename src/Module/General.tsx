@@ -573,5 +573,9 @@ export {
   goldSponsor,
   silverSponsor,
   educationSponsor,
+  associateSponsor,
+  hostingPartner,
+  merchandiseSponsor,
+  hiringSponsor,
   certificateSponsor,
 };
