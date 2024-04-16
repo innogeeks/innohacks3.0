@@ -497,7 +497,7 @@ const silverSponsor = [
     alt: " LOGO",
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Decathlon_Logo.png/1200px-Decathlon_Logo.png",
+    src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/DEACT.png",
     alt: " LOGO",
   },
 ];
