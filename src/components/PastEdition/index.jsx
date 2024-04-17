@@ -30,9 +30,6 @@ function PastEdition() {
   return (
     <div className="past-edition-container">
       <h1
-        data-aos="zoom-in"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duaration="800"
         className="past-heading"
         style={{ fontWeight: 900, marginTop: "100px", marginBottom: "20px" }}
       >

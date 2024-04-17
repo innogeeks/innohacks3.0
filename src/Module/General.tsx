@@ -408,21 +408,21 @@ const MentorInfo = [
     //Array 1
     {
       Name: "Nikhhiil Gehlot ",
-      role: "",
+      role: "Innovator & Entrepreneur | iHub Drishti Foundation",
       github: "",
       linkedin: "",
       img: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/nikhilgehlot.jpeg",
     },
     {
       Name: "Akhil Gupta",
-      role: " ",
+      role: "Senior Software Engineer at Bluetick Consultants",
       github: "",
       linkedin: "https://www.linkedin.com/in/akhil-gupta-2810",
       img: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/akhilgupta.jpeg",
     },
     {
-      Name: " Yuvraj Kachhawaha",
-      role: "",
+      Name: "Yuvraj Kachhawaha",
+      role: "Founder & CEO of Vorldbox",
       github: "",
       linkedin: "https://www.linkedin.com/in/yuvraj23aiwarex80/overlay/photo/",
       img: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/yuvrajkachhwa.jpeg",
