@@ -16,6 +16,7 @@ const firebaseConfig = {
   messagingSenderId: "227514540661",
   appId: "1:227514540661:web:4736b67774954f5f580e3c",
 };
+
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 const countRef = ref(database, "count");
@@ -24,7 +25,7 @@ const Counter = () => {
   const [count, setCount] = useState(0);
   useEffect(() => {
     const unsubscribe = onValue(countRef, (snapshot) => {
-      setCount(snapshot.val() || 0);
+      setCount(snapshot.val() || Math.abs(Math.floor(Math.random() * 1000) + 9000));
     });
     return () => {
       unsubscribe();
