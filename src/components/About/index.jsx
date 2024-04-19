@@ -76,9 +76,6 @@ function CommunityPartner() {
     <div className="community-partner">
       <h1
         className="title_community"
-        data-aos="zoom-in"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duaration="800"
       >
         Community Partners
       </h1>

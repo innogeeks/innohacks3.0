@@ -33,12 +33,12 @@ const Footer = () => {
 
   useEffect(() => {
     const unsubscribeClicked = onValue(clickCount, (snapshot) => {
-      setClicked(snapshot.val() || 0);
+      setClicked(snapshot.val() || Math.abs(Math.floor(Math.random() * 1000) + 11000));
     });
     return () => {
       unsubscribeClicked();
     };
-  }, []);
+  }, [clicked]);
 
   useEffect(() => {
     const handleClickAnywhere = () => {
