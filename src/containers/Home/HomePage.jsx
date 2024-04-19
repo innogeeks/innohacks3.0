@@ -39,6 +39,7 @@ import {
   hostingPartner,
   JudgeInfo,
   TeamInfo,
+  MentorInfo
 } from "../../Module/General";
 // import PastWinner from "components/pastWinners/index.jsx";
 import Map from "components/map/index.jsx";
@@ -63,13 +64,10 @@ const PrizeGroup = (props, index) => {
 };
 
 const TeamMembers = (props, index) => {
-  useEffect(() => {
-    Aos.init({ duration: 400 });
-  }, []);
   return (
     <Row key={index} className="members">
       {props.map((s, i) => (
-        <Col data-aos="fade-up" key={i} className="" sm={12} lg={4} md={4}>
+        <Col key={i} className="" sm={12} lg={4} md={4}>
           <Member info={s}/>
         </Col>
       ))}
@@ -77,12 +75,22 @@ const TeamMembers = (props, index) => {
   );
 };
 
+const MentorMembers = (props, index) => {
+  return (
+    <Row key={index} className="members">
+      {props.map((s, i) => (
+        <Col key={i} className="" sm={12} lg={4} md={4}>
+          <Member info={s}/>
+        </Col>
+      ))}
+    </Row>
+  );
+};
 const FrequentlyAsked = (props, index) => {
   return (
     <Row key={index} className="sf">
       {props.map((s, i) => (
         <Col
-          data-aos={`${i % 2 === 0 ? "fade-right" : "fade-left"}`}
           key={i}
           sm={12}
           lg={6}
@@ -437,9 +445,6 @@ export default function HomePage() {
               <p className="more-title-sponsor" style={{color:"tomato"}}>Title sponsor</p>
               {titleSponsor.map((item, i) => (
                 <Col
-                  data-aos="fade-left"
-                  data-aos-anchor-placement="top-bottom"
-                  data-aos-duration="200"
                   key={i}
                   className="sponsor-logos"
                   sm={12}
@@ -504,9 +509,6 @@ export default function HomePage() {
               <p className="more-title-sponsor" style={{color:"#F7418F"}}>Education Partners</p>
               {educationSponsor.map((item, i) => (
                 <Col
-                  data-aos="fade-left"
-                  data-aos-anchor-placement="top-bottom"
-                  data-aos-duration="200"
                   key={i}
                   className="sponsor-logos"
                   sm={12}
@@ -523,9 +525,6 @@ export default function HomePage() {
               <p className="more-title-sponsor" style={{color:"#E5E4E2"}}>Platinum Sponsor</p>
               {platinumSponsor.map((item, i) => (
                 <Col
-                  data-aos="fade-left"
-                  data-aos-anchor-placement="top-bottom"
-                  data-aos-duration="200"
                   key={i}
                   className="sponsor-logos"
                   sm={12}
@@ -568,9 +567,6 @@ export default function HomePage() {
               <p className="more-title-sponsor" style={{color:"#535C91"}}>Certificate Partners</p>
               {certificateSponsor.map((item, i) => (
                 <Col
-                  data-aos="fade-left"
-                  data-aos-anchor-placement="top-bottom"
-                  data-aos-duration="200"
                   key={i}
                   className="sponsor-logos"
                   sm={12}
@@ -616,6 +612,16 @@ export default function HomePage() {
         {TeamInfo.map(TeamMembers)} */}
         {/* Judges End */}
 
+
+        <div id="judges">
+          <h1
+            className="title_community"
+          >
+            Mentors
+          </h1>
+        </div>
+        {MentorInfo.map(MentorMembers)}
+        {/* Judges End */}
         {/* Community partners */}
         <Row>
           <CommunityPartner />
@@ -644,9 +650,6 @@ export default function HomePage() {
         <div className="Myfaqs" id="faq">
           <h1
             className="my-faq-head"
-            data-aos="zoom-in"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duaration="800"
           >
             FAQs
           </h1>
@@ -657,9 +660,6 @@ export default function HomePage() {
         {/* Map */}
         <Row className="homepage-map PrizeHeading">
           <h1
-            data-aos="zoom-in"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duaration="800"
           >
             How to Reach ?
           </h1>

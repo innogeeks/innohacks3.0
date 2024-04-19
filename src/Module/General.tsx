@@ -419,6 +419,34 @@ const TeamInfo = [
   ],
 ];
 
+
+const MentorInfo = [
+  [
+    //Array 1
+    {
+      Name: "Nikhhiil Gehlot ",
+      role: "Innovator & Entrepreneur | iHub Drishti Foundation",
+      github: "",
+      linkedin: "",
+      img: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/nikhilgehlot.jpeg",
+    },
+    {
+      Name: "Akhil Gupta",
+      role: "Senior Software Engineer at Bluetick Consultants",
+      github: "",
+      linkedin: "https://www.linkedin.com/in/akhil-gupta-2810",
+      img: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/akhilgupta.jpeg",
+    },
+    {
+      Name: "Yuvraj Kachhawaha",
+      role: "Founder & CEO of Vorldbox",
+      github: "",
+      linkedin: "https://www.linkedin.com/in/yuvraj23aiwarex80/overlay/photo/",
+      img: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/yuvrajkachhwa.jpeg",
+    },
+  ],
+];
+
 const titleSponsor = [{ src: twentyone }];
 const associateSponsor = [{ src:  "https://www.algoprep.in/img/logo_1.png"}];
 const hostingPartner = [{
@@ -486,7 +514,7 @@ const silverSponsor = [
     alt: " LOGO",
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Decathlon_Logo.png/1200px-Decathlon_Logo.png",
+    src: "https://s3.ap-south-1.amazonaws.com/innohacks3.0/DEACT.png",
     alt: " LOGO",
   },
 ];
@@ -571,4 +599,5 @@ export {
   merchandiseSponsor,
   hiringSponsor,
   hostingPartner
+  , MentorInfo
 };

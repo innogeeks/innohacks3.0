@@ -76,9 +76,6 @@ function CommunityPartner() {
     <div className="community-partner">
       <h1
         className="title_community"
-        data-aos="zoom-in"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-duaration="800"
       >
         Community Partners
       </h1>
@@ -194,6 +191,7 @@ function CommunityPartner() {
             <img src={loop} />
             <img src={oscomm} />
             <img src={piet} />
+            <img src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/Kotlin+UG+LOGO.png" />
             
           </div>
         </div>

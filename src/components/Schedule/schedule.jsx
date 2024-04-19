@@ -22,13 +22,13 @@ const Schedule = () => {
 
       <div className="image-container">
         <img
-          src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/Copy+of+Copy+of+Innohacks+3.0+brochure+(5).png"
+          src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/mobile_schedule.png"
           alt=""
           className="mobile-image"
           data-aos="fade-right"
         />
         <img
-          src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/Copy+of+Copy+of+Innohacks+3.0+brochure+(4).png"
+          src="https://s3.ap-south-1.amazonaws.com/innohacks3.0/schedule.png"
           alt=""
           className="laptop-image"
           data-aos="fade-right"

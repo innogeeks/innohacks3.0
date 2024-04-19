@@ -1,17 +1,10 @@
 import { useEffect } from "react";
 import "./sponsors.scss";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import arrow from "./assets/arrow.png"
 
 function SponsorsHead() {
-  useEffect(() => {
-    Aos.init({ duration: 1200 });
-  }, []);
   return (
     <h1
-      data-aos="zoom-in"
-      data-aos-anchor-placement="top-bottom"
       className="shead"
     >
       Our Sponsors & Partners
@@ -20,13 +13,8 @@ function SponsorsHead() {
 }
 
 function Sponsor(props) {
-  useEffect(() => {
-    Aos.init({ duration: 1200 });
-  }, []);
   return (
     <div
-      data-aos="zoom-in"
-      data-aos-anchor-placement="top-bottom"
       className="Sponsor"
     >
       <img src={props} alt="InnoHacks"></img>
