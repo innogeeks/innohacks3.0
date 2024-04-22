@@ -587,7 +587,7 @@ export default function HomePage() {
           <h1
             className="title_community"
           >
-            Past Speakers and Judges
+            Speakers and Judges
           </h1>
         </div>
         {TeamInfo.map(TeamMembers)}
