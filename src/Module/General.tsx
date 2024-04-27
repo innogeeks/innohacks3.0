@@ -26,7 +26,9 @@ import babbar from "./Assets/teami/babbar.jpg";
 import khushboo from "./Assets/teami/khushboo.jpg";
 import striver from "./Assets/teami/striver.jpeg";
 import sandeep from "./Assets/teami/sandeep jain.jpg";
-import kshitiz from "./Assets/teami/kshitiz.jpeg";
+import kshitizz from "./Assets/teami/kshitizz.png";
+import nishant from "./Assets/teami/nishant.png";
+import tanya from "./Assets/teami/tanya.png";
 import akshay from "./Assets/teami/akshay saini.jpg";
 import arsh from "./Assets/teami/arsh goyal.jpg";
 import kushal from "./Assets/teami/kushal.jpeg";
@@ -341,65 +343,65 @@ const TeamInfo = [
   [
     //Array 1
     {
-      Name: "Love Babbar",
-      role: "Founder-CodeHelp | Youtuber | Ex-Amazon, Microsoft",
+      Name: "Nishant Chahar",
+      role: " Ex-SDE @ Microsoft | Youtuber ",
       github: "",
-      linkedin: "https://www.linkedin.com/in/love-babbar-38ab2887/",
-      img: babbar,
+      linkedin: "https://www.linkedin.com/in/chaharnishant11/?originalSubdomain=in",
+      img: nishant,
     },
     {
-      Name: "Striver",
-      role: "SWE-III @ Google | Youtuber |Ex-Media.net, Amazon ",
+      Name: "Tanya Rajhans",
+      role: " Ex - Google, LinkedIn | Member @DevRev ",
       github: "",
-      linkedin: "https://www.linkedin.com/in/rajstriver/",
-      img: striver,
-    },
-    {
-      Name: "Akshay Saini",
-      role: "Founder-NamasteDev | Ex- Uber, PayTM | YouTuber",
-      github: "",
-      linkedin: "https://www.linkedin.com/in/akshaymarch7/",
-      img: akshay,
-    },
-  ],
-  [
-    //Array 2
-    {
-      Name: "Sandeep Jain",
-      role: "Founder & CEO at GeeksforGeeks",
-      github: "",
-      linkedin: "https://www.linkedin.com/in/sandeep-jain-/",
-      img: sandeep,
-    },
-    {
-      Name: "Arsh Goyal",
-      role: "Samsung | Ex- ISRO | YouTuber",
-      github: "",
-      linkedin: "https://www.linkedin.com/in/arshgoyal/",
-      img: arsh,
+      linkedin: "https://www.linkedin.com/in/tanyarajhans/?originalSubdomain=in",
+      img: tanya,
     },
     {
       Name: "Kshitiz Miglani",
       role: "Founder-Devsnest | Ex- Amazon",
       github: "",
       linkedin: "https://www.linkedin.com/in/kshitizmiglani/",
-      img: kshitiz,
-    },
-    {
-      Name: "Kushal Vijay",
-      role: "Software Engineer 2 @Microsoft | Youtuber",
-      github: "",
-      linkedin: "https://www.linkedin.com/in/kushalvijay/",
-      img: kushal,
-    },
-    {
-      Name: "Khushboo Verma",
-      role: "Software Engineer-Appwrite | Ex-Microsoft, Adobe",
-      github: "",
-      linkedin: "https://www.linkedin.com/in/verma-khushboo/",
-      img: khushboo,
+      img: kshitizz,
     },
   ],
+  // [
+  //   //Array 2
+  //   {
+  //     Name: "Sandeep Jain",
+  //     role: "Founder & CEO at GeeksforGeeks",
+  //     github: "",
+  //     linkedin: "https://www.linkedin.com/in/sandeep-jain-/",
+  //     img: sandeep,
+  //   },
+  //   {
+  //     Name: "Arsh Goyal",
+  //     role: "Samsung | Ex- ISRO | YouTuber",
+  //     github: "",
+  //     linkedin: "https://www.linkedin.com/in/arshgoyal/",
+  //     img: arsh,
+  //   },
+  //   {
+  //     Name: "Kshitiz Miglani",
+  //     role: "Founder-Devsnest | Ex- Amazon",
+  //     github: "",
+  //     linkedin: "https://www.linkedin.com/in/kshitizmiglani/",
+  //     img: kshitiz,
+  //   },
+  //   {
+  //     Name: "Kushal Vijay",
+  //     role: "Software Engineer 2 @Microsoft | Youtuber",
+  //     github: "",
+  //     linkedin: "https://www.linkedin.com/in/kushalvijay/",
+  //     img: kushal,
+  //   },
+  //   {
+  //     Name: "Khushboo Verma",
+  //     role: "Software Engineer-Appwrite | Ex-Microsoft, Adobe",
+  //     github: "",
+  //     linkedin: "https://www.linkedin.com/in/verma-khushboo/",
+  //     img: khushboo,
+  //   },
+  // ],
 ];
 
 
