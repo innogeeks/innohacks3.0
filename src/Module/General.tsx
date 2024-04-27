@@ -439,8 +439,8 @@ const hostingPartner = [{
   alt: "DEVFOLIO LOGO",
 },];
 const merchandiseSponsor = [{
-  src: "https://bobble.ai/logo-final.png",
-  alt: "BOBBLE AI LOGO",
+  src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqq5CfvzACMXxB7DJtZOCXCBxKJN_gv9xwUoOl7io8kw&s",
+  alt: "BOBBLE AI FANSTORE LOGO",
 }];
 const hiringSponsor = [
   {
