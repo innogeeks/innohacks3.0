@@ -37,6 +37,7 @@ import {
   merchandiseSponsor,
   hiringSponsor,
   hostingPartner,
+  JudgeInfo,
   TeamInfo,
   MentorInfo
 } from "../../Module/General";
@@ -582,15 +583,33 @@ export default function HomePage() {
         </Row>
         {/* ********Sponsors ending here ***** */}
 
-        {/* Judges start */}
+        {/* Current Judges start */}
         <div id="judges">
+                  <h1
+                    className="title_community"
+                    data-aos-duration="200"
+                    data-aos="zoom-in"
+                    data-aos-anchor-placement="top-bottom"
+                  >
+                     Our Esteemed Judges 
+                  </h1>
+                </div>
+                {JudgeInfo.map(TeamMembers)}
+        {/* Current Judges End */}
+        <Row><h3>More Reveals Comming Soon...</h3></Row>
+
+        {/* Judges start */}
+        {/* <div id="judges">
           <h1
-            className="title_community"
+            className="title_community",
+            data-aos-duration="300"
+            data-aos="zoom-in"
+            data-aos-anchor-placement="top-bottom"
           >
             Speakers and Judges
           </h1>
         </div>
-        {TeamInfo.map(TeamMembers)}
+        {TeamInfo.map(TeamMembers)} */}
         {/* Judges End */}
 
 

@@ -22,6 +22,8 @@ import fire from "./Assets/sponsorsLogos/5ire.png";
 import twenty from "./Assets/sponsorsLogos/20.png";
 import twentyone from "./Assets/sponsorsLogos/21.png";
 
+import tanya from "./Assets/teami/tanya_rajhans.jpg"
+
 import babbar from "./Assets/teami/babbar.jpg";
 import khushboo from "./Assets/teami/khushboo.jpg";
 import striver from "./Assets/teami/striver.jpeg";
@@ -339,6 +341,21 @@ const Themeinfo = [
   ],
 ];
 
+const JudgeInfo = [
+  [
+    {
+      Name : "Tanya Rajhans",
+      role : "Technical Staff @DevRev | Ex - Google, LinkedIn | Youtuber",
+      github : "",  
+      linkedin : "https://www.linkedin.com/in/tanyarajhans/",
+      img : tanya,
+    }
+  ]
+]
+
+
+
+
 const TeamInfo = [
   [
     //Array 1
@@ -568,6 +585,7 @@ export {
   SOCIALS,
   FOOTER,
   Prizeinfo,
+  JudgeInfo,
   TeamInfo,
   frequentlyAskedQuestions,
   schedule,
